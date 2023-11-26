@@ -1,0 +1,221 @@
+$primary-border: #F9DF7B, #B57E10, #B78113, #BE8C1F, #CB9D32, #DCB64E, #F2D570, #F9DF7B, #FFF3A6, #F9DF7B, #B57E10, #E5C25B, #F9DF7B;
+$background: rgba(36, 36, 36, 1), rgba(10, 0, 0, 1), rgba(25, 25, 25, 1), rgba(0, 0, 0, 1), rgba(36, 36, 36, 1);
+$primary-btn: rgba(193, 147, 59, 1);
+$color-background-input: rgba(67, 61, 61, 1);
+$white: #FFFF;
+$green: rgba(15, 184, 0, 1);
+$text-primary: rgba(255, 170, 0, 1);
+$text-error: rgba(255, 0, 0, 1);
+$text-link: rgba(0, 252, 252, 1);
+
+// font-size
+$fs-head: 25px;
+$fs-modal-tile: 20px;
+$fs-default: 14px;
+$fs-btn: 17px;
+$fs-tile: 12px;
+
+// Define variables for breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+.test {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to left, $primary-border) 1;
+}
+
+// Define variables for breakpoints
+
+
+// Mixin for responsive media queries
+@mixin respond-to($breakpoint) {
+  @if $breakpoint ==mobile {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==desktop {
+    @media (max-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}
+
+// Base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 61px;
+  background: linear-gradient(to right, #242424, #0A0000, #191919, #000000, #242424);
+  padding: 16px 23px 18px 23px;
+
+  .left {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+
+  }
+
+  .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+
+    .membership {
+      color: $white;
+      font-weight: 600;
+      background-color: #000000;
+      font-size: 16px;
+      padding: 7px 5px 8px 4px;
+      border-radius: 38px;
+      border: 1px solid #A68859;
+      height: 38px;
+    }
+
+    .login {
+      color: $white;
+      font-weight: 600;
+      font-size: 14px;
+      background-color: #000000;
+      padding: 2px 5px 6px 4px;
+      border-radius: 38px;
+      border: 1px solid #A68859;
+      height: 38px;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  background: #eee;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+}
+
+.description {
+  margin-top: 1.5px;
+  text-align: end;
+  font-size: 14px;
+  background: #242424;
+  padding: 8px 8px;
+  color: $white
+}
+
+.brand {
+  img {
+    height: 237px;
+    width: 100%;
+  }
+}
+
+.search:focus-within {
+  width: 100%;
+  .input-icons i {
+    grid-area: search;
+    overflow: visible;
+    color: hsl(215, 100%, 50%);
+    fill: none;
+    stroke: currentColor;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background: #000000;
+    border-radius: 33px;
+    border: 1px solid #A68859;
+
+  }
+}
+
+.main {
+  flex: 1;
+  min-width: 200px;
+}
+
+.sidebar {
+  flex-basis: 200px;
+}
+
+// Responsive styles
+@include respond-to(mobile) {
+  .header {
+    .left {
+      .hamburger {
+        display: none;
+      }
+    }
+
+    .right {
+      .logo-thai {
+        display: none;
+      }
+
+      .membership {
+        color: $white;
+        font-weight: 600;
+        background-color: #000000;
+        font-size: 12px;
+        padding: 5px 5px 6px 4px;
+        border-radius: 38px;
+        border: 1px solid #A68859;
+
+      }
+
+      .login {
+        color: $white;
+        font-weight: 600;
+        font-size: 12px;
+        background-color: #000000;
+        padding: 5px 5px 6px 4px;
+        border-radius: 38px;
+        border: 1px solid #A68859;
+      }
+    }
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
+
+@include respond-to(tablet) {
+  .main {
+    flex: 3;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+}

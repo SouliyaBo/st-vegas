@@ -1,0 +1,153 @@
+.test {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to left, #F9DF7B, #B57E10, #B78113, #BE8C1F, #CB9D32, #DCB64E, #F2D570, #F9DF7B, #FFF3A6, #F9DF7B, #B57E10, #E5C25B, #F9DF7B) 1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 61px;
+  background: linear-gradient(to right, #242424, #0A0000, #191919, #000000, #242424);
+  padding: 16px 23px 18px 23px;
+}
+.header .left {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
+.header .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.header .right .membership {
+  color: white;
+  font-weight: 600;
+  background-color: #000000;
+  font-size: 16px;
+  padding: 7px 5px 8px 4px;
+  border-radius: 38px;
+  border: 1px solid #A68859;
+  height: 38px;
+}
+.header .right .login {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #000000;
+  padding: 2px 5px 6px 4px;
+  border-radius: 38px;
+  border: 1px solid #A68859;
+  height: 38px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  background: #eee;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 1em;
+}
+
+.description {
+  margin-top: 1.5px;
+  text-align: end;
+  font-size: 14px;
+  background: #242424;
+  padding: 8px 8px;
+  color: white;
+}
+
+.brand img {
+  height: 237px;
+  width: 100%;
+}
+
+.search:focus-within {
+  width: 100%;
+}
+.search:focus-within .input-icons i {
+  grid-area: search;
+  overflow: visible;
+  color: hsl(215, 100%, 50%);
+  fill: none;
+  stroke: currentColor;
+}
+.search:focus-within .input-field {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  background: #000000;
+  border-radius: 33px;
+  border: 1px solid #A68859;
+}
+
+.main {
+  flex: 1;
+  min-width: 200px;
+}
+
+.sidebar {
+  flex-basis: 200px;
+}
+
+@media (max-width: 480px) {
+  .header .left .hamburger {
+    display: none;
+  }
+  .header .right .logo-thai {
+    display: none;
+  }
+  .header .right .membership {
+    color: white;
+    font-weight: 600;
+    background-color: #000000;
+    font-size: 12px;
+    padding: 5px 5px 6px 4px;
+    border-radius: 38px;
+    border: 1px solid #A68859;
+  }
+  .header .right .login {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #000000;
+    padding: 5px 5px 6px 4px;
+    border-radius: 38px;
+    border: 1px solid #A68859;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    flex: 3;
+  }
+  .sidebar {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
