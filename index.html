@@ -1,46 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>ST Vegas</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Responsive Design Example</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="left">
-            <img src="/assets//images/icon-hamburger.svg" alt="hamburger" class="hamburger" height="37px" width="35px">
-            <img src="/assets/images/logo.svg" alt="logo" height="49px">
-        </div>
-        <div class="right">
-            <button class="membership">สมัครสมาชิก</button>
-            <button class="login">เข้าสู่ระบบ</button>
-            <img src="/assets/images/logo-thai.svg" class="logo-thai" alt="logo thai">
-        </div>
+      <div class="left">
+        <img
+          src="/assets//images/icon-hamburger.svg"
+          alt="hamburger"
+          class="hamburger"
+          height="37px"
+          width="35px"
+        />
+        <img src="/assets/images/logo.svg" alt="logo" height="49px" />
+      </div>
+      <div class="right">
+        <button class="font-20">สมัครสมาชิก</button>
+        <button class="font-20" id="loginBtn">เข้าสู่ระบบ</button>
+        <img
+          src="/assets/images/logo-thai.svg"
+          class="logo-thai"
+          alt="logo thai"
+        />
+      </div>
     </header>
-    <div>
+    <main>
+      <div>
         <marquee class="description">
-            เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ 100 ล้าน สล็อต บาคาร่า หวย กีฬา
-            มีครบจบที่เดียว
+          เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ
+          100 ล้าน สล็อต บาคาร่า หวย กีฬา มีครบจบที่เดียว
         </marquee>
-    </div>
-    <div class="search">
-        <div class="input-icons">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" placeholder="ค้นหา" type="text" name="search" id="search"/>
-        </div>
+      </div>
 
-    </div>
-    <div class="brand">
-        <img src="/assets/images/brand.png" alt="brand">
-    </div>
+      <div class="search-container">
+        <img
+          src="/assets/icons/search-icon.svg"
+          alt="icon"
+          class="search-icon"
+        />
+        <label for="search"></label>
+        <input type="text" name="search" id="search" placeholder="ค้นหา" />
+      </div>
+      <div class="brand">
+        <img src="/assets/images/brand.png" alt="brand" />
+      </div>
+
+      <section class="featured-game-wrapper">
+        <div class="container flexBetween">
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/slot-machine.svg" alt="game icon" />
+            <p>สล็อต</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/circle.svg" alt="game icon" />
+            <p>คาสิโน</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/fish.svg" alt="game icon" />
+            <p>ยิงปลา</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/poker-card.svg" alt="game icon" />
+            <p>ป็อกเด้ง</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/ball.svg" alt="game icon" />
+            <p>กีฬา</p>
+          </div>
+          <div class="featured-game flexBetween">
+            <img src="/assets/icons/graph.svg" alt="game icon" />
+            <p>เกมกราฟ</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-container">
+        <div class="card-wrapper">
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+          <img src="/assets/images/jilli_card.svg" alt="card" />
+        </div>
+      </section>
+
+      <section class="info-wrapper">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+        soluta, sint porro reprehenderit et eius perspiciatis dolores ullam
+        accusantium debitis vel neque nam ex. Quam quo dolor soluta sequi ipsa
+        recusandae asperiores ea mollitia accusamus, animi exercitationem
+        perspiciatis nobis porro unde! Delectus cupiditate id quaerat tempore
+        numquam saepe dolorem excepturi iste libero. Fugiat officiis nobis
+        eligendi ab, recusandae explicabo molestias, ex quia voluptates
+        laudantium, nulla illum in dignissimos voluptatum ipsa. Deserunt porro
+        culpa, animi quia quod voluptatum assumenda corporis quae quam pariatur
+        fuga. Illum rerum officiis quos repudiandae animi! Cum aperiam culpa
+        necessitatibus eaque! Magnam, aspernatur totam. Impedit, quasi. Dolores,
+        voluptatum ipsum. Assumenda molestias maiores ad ipsum beatae
+        voluptatum, a tempore quidem dicta quia omnis, culpa voluptas earum
+        expedita repellendus iste ex itaque, aspernatur modi harum. Dicta modi,
+        quidem, nihil corrupti doloremque laborum a, saepe eligendi sequi culpa
+        veritatis vel dolorum quisquam quas quis deleniti obcaecati corporis
+        repellendus quos doloribus laudantium labore excepturi in soluta! Modi
+        eum harum commodi neque consectetur blanditiis odio tempore deserunt
+        error, possimus dolorum deleniti numquam placeat ut, maiores dolore
+        alias sint necessitatibus quis laboriosam magnam tempora quo omnis non!
+        Earum reprehenderit iusto cumque, sint porro explicabo cupiditate? Ab
+        voluptatum, minus harum sapiente assumenda at porro ex quibusdam atque
+        nesciunt fugit in aut ducimus quisquam suscipit sed, aspernatur illum
+        qui labore? Eius animi, rem optio repellendus veniam officia ratione,
+        nihil debitis repellat quasi laudantium rerum commodi? Amet repellendus
+        assumenda temporibus odit ducimus vero sit optio perspiciatis, eaque
+        minima neque. Non quae incidunt dolorem! Neque sint ipsam perferendis
+        aperiam iure. Sequi, assumenda dolores. Molestiae quam veritatis earum
+        nihil odio placeat magnam illum similique ipsam sint dolorem expedita
+        consectetur velit atque deleniti distinctio sit iure accusamus amet,
+        exercitationem rem eligendi blanditiis. Possimus nostrum officiis
+        aliquid, amet nemo totam adipisci, officia provident nulla saepe
+        facilis, doloremque aperiam ipsum illum vel doloribus velit accusantium
+        sint excepturi eos maxime neque. Modi cumque distinctio, inventore
+        placeat minus iure! Cum fuga asperiores iure non vel pariatur
+        repellendus perferendis at minus, optio facere? Velit repellat nam
+        distinctio sequi fugit incidunt consequuntur! Maiores autem repellat
+        neque laboriosam inventore id voluptate quos sed omnis asperiores odio
+        at quas quaerat quis facilis, eveniet magni ipsum provident illum
+        blanditiis explicabo, dolore quidem necessitatibus hic. Quo quibusdam
+        sunt, inventore in ipsum modi laborum ab officiis neque cumque quasi
+        dignissimos exercitationem error. Dolore distinctio beatae libero,
+        cumque magni fuga nihil quam eius, doloremque exercitationem placeat
+        consequatur deserunt obcaecati nulla sapiente enim est expedita dolores
+        eligendi. Provident, nulla reprehenderit, autem voluptates minus quaerat
+        non numquam voluptas consequatur maiores ducimus iste natus recusandae,
+        eligendi laborum repudiandae! Nulla veniam iure in atque rem fuga
+        consectetur vero ut ab suscipit libero, maiores accusantium! A sequi
+        quasi cupiditate sit inventore voluptatem soluta dicta nostrum nulla
+        dolor corporis iure, repudiandae quas autem pariatur! Dolorum
+        praesentium reprehenderit molestias saepe. Ratione aspernatur repellat,
+        consequuntur voluptatem eum, molestiae nam delectus sunt quia, harum
+        pariatur commodi laboriosam labore esse porro cum ex quis? Rerum, porro!
+        Accusantium dolorem magni molestiae culpa deserunt libero. Nesciunt
+        optio aliquam quis! Praesentium incidunt error labore itaque consectetur
+        animi recusandae dignissimos blanditiis minima eius? Commodi velit eaque
+        sint? A fugit sunt voluptates illum modi vero molestiae, cum
+        voluptatibus eius officia earum quaerat consequatur voluptas
+        necessitatibus laudantium? Voluptatum, placeat perferendis ab aut eaque
+        inventore quis minima in? Corrupti mollitia iste sunt, magni beatae
+        recusandae error officia porro voluptate. Obcaecati tempore ratione
+        beatae incidunt amet quo explicabo, minus, voluptas veniam, officia
+        perferendis? Ipsum sequi necessitatibus, vero quos harum consequatur quo
+        qui. Eaque aperiam neque voluptatum minima fugit sunt rem aliquam
+        voluptate, culpa autem. Iusto molestias omnis expedita impedit ducimus
+        sapiente enim excepturi accusantium officiis, iure molestiae quae vel
+        eaque rem, debitis officia sunt, asperiores minus ipsam dolorem nobis
+        cum repellat voluptatem minima. Inventore facere facilis voluptate illum
+        soluta consectetur, sed eum distinctio, expedita sint voluptates unde
+        aliquam provident. Odio, vitae ut ex voluptate officia inventore tempore
+        porro? Dolorum libero pariatur quis, ab ipsum quo voluptatibus dolore
+        quasi nam veniam nisi, doloribus consequuntur vero? Porro rem magni
+        reiciendis molestias similique corrupti consequuntur obcaecati
+        aspernatur maxime omnis sapiente sit distinctio ea, quibusdam quia!
+        Illum nulla doloribus voluptate tempore amet, delectus nam qui?
+        Obcaecati quasi earum debitis? Esse iusto sed, voluptatem temporibus
+        voluptas dolores at expedita hic cum est qui, dolorum rem ipsa vel
+        veniam neque distinctio repellat autem id harum deserunt. Eos voluptas
+        officiis reiciendis aut recusandae quo sint? Perferendis totam ea
+        aspernatur iste at cupiditate! Veritatis quo modi expedita itaque sit
+        corrupti libero quibusdam obcaecati veniam officia? Culpa dolorem
+        doloribus ipsam quae quaerat molestias provident dignissimos, porro
+        natus dolore commodi deleniti laborum cum eos ducimus facere accusantium
+        blanditiis sapiente amet repellendus sint! Tempora doloribus qui dolore
+        deleniti quisquam ipsa necessitatibus repellendus, eveniet iure ipsam
+        praesentium, molestiae commodi tempore architecto aperiam nihil
+        consequuntur! Voluptate fugiat dicta tenetur, quo sed accusamus at a
+        inventore cupiditate placeat optio molestiae sint delectus id labore
+        maiores sit magni quia nulla doloribus assumenda natus tempora.
+        Aspernatur doloremque omnis et vel, enim eaque! Rerum adipisci magnam
+        sapiente optio repellendus fugit at dolorem maxime, placeat corporis
+        perspiciatis harum tempora eum. Cupiditate quia eum ipsa facere
+        asperiores eius quibusdam hic corrupti minima aspernatur accusamus
+        voluptatum consectetur, inventore laborum nisi voluptates nulla fugit
+        omnis perspiciatis sunt a. Facilis veritatis debitis eligendi? Odit,
+        quia alias dicta architecto at maxime consectetur ratione iure officiis!
+        Consequuntur rerum accusamus nulla et cum temporibus odit error modi eos
+        consectetur. Saepe beatae id sint esse, quidem error quisquam, aut harum
+        ipsum consequatur magni placeat dicta eligendi voluptates enim
+        laboriosam dolorum animi deleniti ipsam, consectetur inventore
+        reiciendis ex et. Maxime nobis excepturi quaerat eligendi quam nostrum
+        earum reiciendis facilis animi culpa voluptatum pariatur similique quas,
+        dolorem tenetur ea harum officiis veritatis, voluptas officia.
+        Consequuntur ut numquam eaque inventore doloribus, quaerat fugit
+        repudiandae ratione rem soluta voluptatibus iusto dolores accusamus
+        architecto impedit eum incidunt repellat consectetur quisquam
+        perferendis dignissimos. Repellendus, quaerat quo quasi error hic cumque
+        omnis itaque nihil placeat molestiae inventore sint unde aperiam
+        molestias sapiente eaque atque nam labore veritatis eos officia quod
+        voluptatibus. Dolorum minima corrupti laborum voluptates. Facere cumque
+        saepe quasi. Adipisci, laudantium?
+      </section>
+
+      <div class="sidebar-container">
+        <aside class="sidebar">
+          <img src="/assets/images/logo-landscape.svg" alt="logo" />
+          <div class="flexBetween font-17">
+            <p>Username:</p>
+            <p>ST1561651</p>
+          </div>
+          <div class="flexBetween font-17">
+            <p>Phone :</p>
+            <p>095-222-9999</p>
+          </div>
+          <div class="balance">
+            <small>ยอดเงินคงเหลือ</small>
+            <p>1,000.00</p>
+          </div>
+
+          <div class="flexBetween" style="gap: 13px">
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              โปรไฟล์
+            </button>
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              ฝาก-ถอน
+            </button>
+          </div>
+          <div class="flexBetween" style="gap: 13px">
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              กระเป๋า
+            </button>
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              ประวัติ
+            </button>
+          </div>
+          <div class="flexBetween" style="gap: 13px">
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="width: 50%"
+            >
+              ไลน์บอท
+            </button>
+            <button
+              class="gradient-border sidebar-button flexCenter"
+              style="font-size: 17px; width: 50%"
+            >
+              ติดต่อพนักงาน
+            </button>
+          </div>
+          <button
+            class="gradient-border sidebar-button flexCenter"
+            style="width: 100%; margin-bottom: 16px"
+          >
+            เปลี่ยนรหัสผ่าน
+          </button>
+          <button
+            class="gradient-border sidebar-button flexCenter"
+            style="width: 100%; margin-bottom: 16px"
+          >
+            ออกจากระบบ
+          </button>
+
+          <div class="download-container">
+            <h3>ดาวน์โหลดแอปเลย !</h3>
+            <div class="flexBetween" style="gap: 16px">
+              <img
+                src="/assets//images/get-it-playstore.svg"
+                alt="download icon"
+                style="height: 32px; cursor: pointer"
+              />
+              <img
+                src="/assets//images/get-it-appstore.svg"
+                alt="download icon"
+                style="height: 32px; cursor: pointer"
+              />
+            </div>
+          </div>
+
+          <h4>Power by</h4>
+          <img src="/assets/images/powerby.svg" alt="powerby" />
+        </aside>
+        <div class="sidebar-container-background"></div>
+      </div>
+
+      <div class="login-modal flexCenter">
+        <div class="modal gradient-border">
+          <h1 style="color: wheat">Hello</h1>
+        </div>
+        <div class="background"></div>
+      </div>
+    </main>
 
     <footer class="footer">
-        <p>Copyright &copy; 2023</p>
+      <div class="menu-wrapper">
+        <div class="footer-item flexCenter">
+          <img src="/assets/icons/login-icon.svg" alt="login" />
+          <p class="font-20">เข้าสู่ระบบ</p>
+        </div>
+        <div class="footer-item flexCenter">
+          <img src="/assets/icons/register-icon.svg" alt="login" />
+          <p class="font-20">สมัครสมาชิก</p>
+        </div>
+        <div class="footer-item flexCenter">
+          <img src="/assets/icons/contact-admin.svg" alt="login" />
+          <p class="font-20">ติดต่อแอดมิน</p>
+        </div>
+      </div>
     </footer>
-</body>
 
+    <script type="module" src="/scripts/sidebar.js"></script>
+    <script type="module" src="/scripts/modal/login.js"></script>
+  </body>
 </html>
