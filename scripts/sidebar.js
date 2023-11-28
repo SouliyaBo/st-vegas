@@ -1,8 +1,6 @@
 const hamburgerElement = document.querySelector(".hamburger");
 
 hamburgerElement.addEventListener("click", () => {
-  //document.body.classList.toggle("sidebar-open");
-
   const sideBarElement = document.querySelector(".sidebar-container");
   sideBarElement.setAttribute("style", "display: flex;");
 
