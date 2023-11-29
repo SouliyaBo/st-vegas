@@ -636,6 +636,7 @@ main {
   .modal-body {
     color: #fff;
     padding: 40px 16px 0 16px;
+    
   }
 
   .modal-title {
@@ -681,4 +682,18 @@ main {
 @keyframes slideOut {
   from {bottom: 0; opacity: 1} 
   to {bottom: -300px; opacity: 0}
+}
+
+.detail-kbank {
+  width: 416px;
+  background-image: url("/assets/images/card-kbank.svg");
+  background-size: cover;
+  padding: 8px 10px 10px 18px;
+  font-size: 22px;
+  font-weight: 600;
+  .name-kbank {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

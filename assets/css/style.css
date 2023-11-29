@@ -490,3 +490,15 @@ main {
   to {
     bottom: -300px;
     opacity: 0; } }
+
+.detail-kbank {
+  width: 416px;
+  background-image: url("/assets/images/card-kbank.svg");
+  background-size: cover;
+  padding: 8px 10px 10px 18px;
+  font-size: 22px;
+  font-weight: 600; }
+  .detail-kbank .name-kbank {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
