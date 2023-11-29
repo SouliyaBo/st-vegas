@@ -623,3 +623,118 @@ main {
     transform: scale(1.1); }
   100% {
     transform: scale(0.5); } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  /* Add more styling to .card as needed for content */
+  /* The Close Button */ }
+  .modal .modal-border {
+    position: relative;
+    z-index: -15;
+    background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
+    border-radius: 20px;
+    margin: auto;
+    padding: 3px;
+    min-width: 25%;
+    width: fit-content;
+    animation-name: slideIn;
+    animation-duration: 0.4s; }
+  .modal .modal-content {
+    position: relative;
+    z-index: -10;
+    background-color: #000;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .modal .modal-header-container {
+    position: absolute;
+    top: -45px;
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .modal .modal-header-container .modal-header {
+      position: relative;
+      margin: auto;
+      min-width: 400px;
+      width: fit-content;
+      background: linear-gradient(270deg, #242424 0%, #0A0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
+      border-radius: 15px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px; }
+    .modal .modal-header-container .modal-header::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      z-index: -1;
+      background: linear-gradient(90deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
+      border-radius: 15px;
+      pointer-events: none; }
+    .modal .modal-header-container .modal-icon-back {
+      cursor: pointer; }
+    .modal .modal-header-container .modal-icon-close {
+      cursor: pointer; }
+  .modal .modal-body {
+    color: #fff;
+    padding: 40px 16px 0 16px; }
+  .modal .modal-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0; }
+  .modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold; }
+  .modal .close:hover,
+  .modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; }
+
+/* Add Animation */
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* Animation for hiding the modal */
+.modal.hide .modal-border {
+  animation-name: slideOut;
+  animation-duration: 0.4s; }
+
+@keyframes slideOut {
+  from {
+    bottom: 0;
+    opacity: 1; }
+  to {
+    bottom: -300px;
+    opacity: 0; } }
