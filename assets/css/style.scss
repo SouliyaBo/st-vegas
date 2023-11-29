@@ -59,7 +59,6 @@ $breakpoint-desktop: 1024px;
 }
 
 body {
-  font-family: "Arial", sans-serif;
   background: #000000;
 
   display: flex;
@@ -109,17 +108,23 @@ body {
     flex-direction: row;
     gap: 15px;
 
-    button {
+    .button {
       color: $white;
       font-weight: 600;
       background-color: #000000;
       font-size: 20px;
       border-radius: 38px;
       border: 1px solid #a68859;
+      cursor: pointer;
+    }
+
+    .desktop-button {
       height: 45px;
       width: 114px;
+    }
 
-      cursor: pointer;
+    .mobile-button {
+      display: none;
     }
 
     img {
@@ -213,7 +218,7 @@ body {
   }
 }
 
-main {
+.home {
   flex: 1;
   width: 100%;
   padding-top: 4rem;
@@ -235,8 +240,9 @@ main {
 
 .brand {
   margin-top: 8px;
+  height: 237px;
   img {
-    height: 237px;
+    height: 100%;
     width: 100%;
   }
 }
@@ -244,10 +250,6 @@ main {
 .main {
   flex: 1;
   min-width: 200px;
-}
-
-.sidebar {
-  flex-basis: 200px;
 }
 
 // Home Page
@@ -491,7 +493,8 @@ main {
   .sidebar {
     width: 320px;
     height: 100vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     flex-basis: unset;
     z-index: 20; // Increase z-index to be higher than .sidebar-container-background
 
@@ -815,10 +818,19 @@ main {
       }
     }
     .right {
-      button {
+      .desktop-button {
+        display: none;
+      }
+      .mobile-button {
+        display: inherit;
+
         width: 74px;
         height: 29px;
         font-size: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .logo-thai {
         display: none;
@@ -826,9 +838,14 @@ main {
     }
   }
 
-  main {
+  .home {
     padding: calc(6rem + 61px) 0 6rem 0;
     overflow: hidden;
+
+    .brand {
+      height: 155px;
+    }
+
     .featured-game-wrapper#mobile {
       position: fixed;
       z-index: 10;
@@ -863,6 +880,78 @@ main {
       }
     }
 
+    .mobile-suggest-game-container {
+      width: 348px;
+      height: 333px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.95);
+      margin: 10px auto;
+
+      .top {
+        gap: 11px;
+        padding: 13px 8px;
+
+        .active-card {
+          border: 1px solid #f9df7b;
+          background: #2e2e2e;
+          color: white;
+
+          width: 75px;
+          height: 113px;
+          border-radius: 10px;
+
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 12px;
+          font-weight: 600;
+
+          img {
+            width: 53px;
+            height: 53px;
+          }
+        }
+
+        .card {
+          width: 75px;
+          height: 113px;
+          border-radius: 10px;
+          color: white;
+
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 12px;
+          font-weight: 600;
+
+          border-radius: 10px;
+          border: 1px solid #f9df7b;
+          opacity: 0.3;
+          background: #303030;
+
+          img {
+            width: 53px;
+            height: 53px;
+          }
+        }
+      }
+
+      .bottom {
+        margin: 0 auto;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+
     .description {
       position: fixed;
       z-index: 10;
@@ -894,10 +983,494 @@ main {
   .footer {
     display: none;
   }
+
+  // Pages for Mobile
+  .register-page,
+  .login-page {
+    background-image: url("/assets//images/login-modal-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    position: relative;
+    flex-direction: column;
+
+    #mobile-home-button {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+
+      cursor: pointer;
+    }
+
+    .phone-input {
+      .input-container {
+        width: 320px;
+        height: 50px;
+        border-radius: 5px;
+        background: #433d3d;
+        margin-bottom: 33px;
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin: 0 22px;
+        }
+
+        input {
+          width: 100%;
+          height: 100%;
+          background: none;
+          border: none;
+          outline: none;
+
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+
+          &::placeholder {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      small {
+        color: #f00;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    .next-step-button {
+      color: #000;
+      font-size: 17px;
+      font-weight: 600;
+
+      border-radius: 5px;
+      background: #c1933b;
+      width: 320px;
+      height: 50px;
+      flex-shrink: 0;
+      outline: none;
+      border: none;
+
+      cursor: pointer;
+    }
+  }
+
+  .login-page {
+    h1 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+
+    .button-container {
+      flex-direction: column;
+      margin-bottom: 8px;
+      gap: 14px;
+      button {
+        width: 320px;
+        height: 50px;
+        border-radius: 5px;
+
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      #loginBtn {
+        background: #c1933b;
+        color: black;
+      }
+
+      #signupBtn {
+        border-radius: 5px;
+        border: 2px solid #f9df7b;
+        background: #3f3f3f;
+        color: white;
+      }
+    }
+
+    a {
+      color: #fa0;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration-line: underline;
+    }
+  }
+
+  .register-page {
+    .logo {
+      width: 216px;
+      height: 60px;
+    }
+
+    .progress-step-container {
+      gap: 7px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      .progress-step {
+        color: #fff;
+        font-size: 11px;
+        font-weight: 300;
+
+        flex-direction: column;
+
+        .step-active {
+          border: 1px solid #f9df7b;
+          background: #000;
+
+          color: #fff;
+          width: 41px;
+          height: 41px;
+          border-radius: 6px;
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        .step {
+          width: 41px;
+          height: 41px;
+          border-radius: 6px;
+          color: #676767;
+          font-size: 22px;
+          font-weight: 600;
+
+          border-radius: 6px;
+          border: 1px solid #797979;
+          background: #3d3d3d;
+        }
+      }
+
+      hr {
+        width: 35px;
+        height: 1px;
+        background: #676767;
+      }
+    }
+
+    .text-container {
+      width: 100%;
+      text-align: left;
+
+      padding: 0 30px;
+      margin-bottom: 30px;
+
+      h3 {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+      }
+
+      p {
+        color: #fa0;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+      width: 100%;
+      padding: 0 30px;
+
+      a {
+        color: #fa0;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration-line: underline;
+      }
+    }
+
+    .banking-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+  }
+
+  .after-login-mobile-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/assets/images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 7.5rem 0;
+
+    .header {
+      height: 73px;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10;
+
+      .left {
+        padding-left: 20px;
+
+        .hamburger {
+          width: 25px;
+          height: 25px;
+          object-fit: contain;
+          display: block;
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+
+        .balance-container {
+          .balance {
+            width: 137px;
+            height: 27px;
+            border-radius: 16px;
+            border: 1px solid #a68859;
+            background: #000;
+
+            margin: 2px 0;
+            display: flex;
+
+            .icon {
+              width: 31px;
+              height: 100%;
+              border-radius: 16px 0px 0px 16px;
+              background: #c1933b;
+
+              img {
+                width: 15px;
+                height: 15px;
+              }
+            }
+
+            .balance-text {
+              width: calc(100% - 31px);
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding-left: 5px;
+
+              p {
+                color: #8e8e8e;
+                font-size: 12px;
+                font-weight: 500;
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .system-option {
+          flex-direction: column;
+          gap: 10px;
+          .thai-logo {
+            width: 15px;
+            height: 15px;
+          }
+
+          .logout-btn {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            color: #fff;
+            font-size: 7px;
+            font-weight: 500;
+
+            img {
+              width: 19px;
+              height: 19px;
+            }
+          }
+        }
+      }
+    }
+
+    .marquee-container {
+      position: fixed;
+      top: calc(73px);
+
+      .description {
+        border-radius: 0px 0px 10px 10px;
+      }
+    }
+
+    .search-input {
+      width: 100%;
+      height: 37px;
+      border-radius: 33px;
+      border: 0.5px solid #969696;
+      background: rgba(0, 0, 0, 0.76);
+      padding: 11px 8px;
+
+      img {
+        width: 22px;
+        height: 22px;
+        margin-right: 7px;
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background: none;
+
+        width: 100%;
+        height: 100%;
+
+        &::placeholder {
+          color: #838383;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      z-index: 10;
+
+      .menu-wrapper {
+        gap: 34px;
+        width: 100%;
+        justify-content: space-around;
+
+        .footer-item {
+          img {
+            height: 30px;
+            width: 30px;
+          }
+
+          p {
+            font-size: 12px;
+            color: white;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .sidebar-container {
+    .sidebar {
+      width: 221px;
+      padding: 28px 17px;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      img {
+        width: 100%;
+      }
+
+      .flexBetween {
+        width: 100%;
+        margin: 20px 0;
+
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+
+        margin: 13px;
+      }
+
+      .balance {
+        width: 154px;
+        height: 42px;
+        padding: 0;
+
+        small {
+          font-size: 10px;
+        }
+
+        p {
+          font-size: 15px;
+          padding: 0;
+        }
+      }
+    }
+
+    .balance {
+      height: 65px;
+      padding: 4px 8px;
+      border-radius: 10px;
+      border: 1px solid #f9df7b;
+      background: #565656;
+      box-shadow: 0px 4px 4px 0px #000;
+      color: white;
+
+      small {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: right;
+      }
+    }
+
+    .sidebar-button {
+      width: 73px;
+      height: 42px;
+
+      font-size: 13px;
+    }
+
+    .download-container {
+      width: 154px;
+      height: 64px;
+      padding: 0;
+
+      h3 {
+        font-size: 14px;
+      }
+
+      .flexBetween {
+        margin: 9px 0;
+        padding: 0;
+      }
+    }
+  }
 }
+
+// End of Mobile Page
 
 @media (min-width: 481px) {
   .featured-game-wrapper#mobile {
+    display: none;
+  }
+
+  .mobile-suggest-game-container {
     display: none;
   }
 }

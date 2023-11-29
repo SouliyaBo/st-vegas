@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ST Vegas</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <main class="login-page flexCenter">
+      <img
+        src="../assets/icons/home-icon.svg"
+        id="mobile-home-button"
+        alt="home-icon"
+      />
+
+      <img
+        width="332"
+        height="92"
+        src="../assets/images/logo-landscape.svg"
+        alt="banner"
+      />
+
+      <h1>เข้าสู่ระบบ</h1>
+
+      <div class="phone-input">
+        <small>กรุณากรอกเบอร์โทรศัพท์</small>
+        <div class="input-container flexCenter">
+          <img src="../assets/icons/phone.svg" alt="phone icon" />
+          <label for="phone"></label>
+          <input
+            name="phone"
+            id="phone"
+            type="text"
+            maxlength="9"
+            placeholder="เบอร์โทรศัพท์"
+          />
+        </div>
+      </div>
+
+      <div class="button-container flexCenter">
+        <button style="cursor: pointer" id="loginBtn">เข้าสู่ระบบ</button>
+        <button style="cursor: pointer" id="signupBtn">สมัครสมาชิก</button>
+      </div>
+
+      <a href="/">พบปัญหาติดต่อเรา</a>
+    </main>
+  </body>
+
+  <script>
+    const loginBtn = document.getElementById("loginBtn");
+    const signupBtn = document.getElementById("signupBtn");
+    const phoneInput = document.getElementById("phone");
+    const homeBtn = document.getElementById("mobile-home-button");
+
+    loginBtn.addEventListener("click", () => {
+      // if (phoneInput.value.length < 9) {
+      //   alert("กรุณากรอกเบอร์โทรศัพท์ให้ครบ");
+      // } else {
+      //
+      // }
+      window.location.href = "/pages/after-login-mobile.html";
+    });
+
+    signupBtn.addEventListener("click", () => {
+      window.location.href = "/pages/register-step1.html";
+    });
+
+    homeBtn.addEventListener("click", () => {
+      window.location.href = "/";
+    });
+  </script>
+</html>
