@@ -1269,7 +1269,7 @@ body {
     .modal .modal-header-container .modal-icon-close {
       cursor: pointer; }
   .modal .modal-body {
-    padding: 8px 16px; }
+    padding: 8px 16px;
     color: #fff;
     padding: 8px 16px; }
   .modal .modal-title {
@@ -1357,7 +1357,8 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 15px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: white; }
   .button-line div {
     display: flex;
     justify-content: center;
