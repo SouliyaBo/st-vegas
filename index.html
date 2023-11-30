@@ -30,9 +30,27 @@
         />
       </div>
       <div class="right">
-        <button type="button" class="font-20" id="singup-btn" data-bs-toggle="modal" data-bs-target="#signUpModal">สมัครสมาชิก</button>
-        
-        <button class="font-20" id="loginBtn">เข้าสู่ระบบ</button>
+        <button
+          type="button"
+          class="font-20 desktop-button button"
+          id="singup-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#signUpModal"
+        >
+          สมัครสมาชิก
+        </button>
+
+        <button class="font-20 desktop-button button" id="loginBtn">
+          เข้าสู่ระบบ
+        </button>
+
+        <button class="font-20 mobile-button button" id="registerBtn-mobile">
+          สมัครสมาชิก
+        </button>
+        <button class="font-20 mobile-button button" id="loginBtn-mobile">
+          เข้าสู่ระบบ
+        </button>
+
         <img
           src="/assets/images/logo-thai.svg"
           class="logo-thai"
@@ -40,7 +58,7 @@
         />
       </div>
     </header>
-    <main>
+    <main class="home">
       <div class="featured-game-wrapper" id="mobile">
         <div class="featured-game flexBetween">
           <img src="/assets/icons/slot-machine.svg" alt="game icon" />
@@ -136,6 +154,33 @@
           <img src="/assets/images/jilli_card.svg" alt="card" />
           <img src="/assets/images/jilli_card.svg" alt="card" />
           <img src="/assets/images/jilli_card.svg" alt="card" />
+        </div>
+      </section>
+
+      <section class="mobile-suggest-game-container">
+        <div class="top flexBetween">
+          <div class="active-card">
+            <img src="/assets/images/image 84.svg" alt="game icon" />
+            <p>แนะนำบาคาร่า</p>
+          </div>
+          <div class="card">
+            <img src="/assets/images/image 85.svg" alt="game icon" />
+            <p>สล็อตมาแรง</p>
+          </div>
+          <div class="card">
+            <img src="/assets/images/image 86.svg" alt="game icon" />
+            <p>4 เกมสล็อต แตกหนัก</p>
+          </div>
+          <div class="card">
+            <img src="/assets/images/image 87.svg" alt="game icon" />
+            <p>เกมฮิต</p>
+          </div>
+        </div>
+        <div class="bottom">
+          <img src="/assets/images/Rectangle 382.svg" alt="game icon" />
+          <img src="/assets/images/Rectangle 383.svg" alt="game icon" />
+          <img src="/assets/images/Rectangle 384.svg" alt="game icon" />
+          <img src="/assets/images/Rectangle 385.svg" alt="game icon" />
         </div>
       </section>
 
@@ -451,8 +496,8 @@
         <div class="background" id="login-modal-background"></div>
       </div>
 
-    <!-- Modal -->
-    <!-- <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal -->
+      <!-- <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-border">
         <div class="modal-content">
           <div class="modal-header-container">
@@ -468,121 +513,236 @@
         </div>
       </div>
     </div> -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-border">
-        <div class="modal-content">
-          <div class="signup-background"></div>
-          <div class="signup-modal-content">
-            <img
-              src="/assets/icons/x-close.svg"
-              alt="close-icon"
-              class="close-btn"
-              id="login-modal-close-btn"
-              data-bs-dismiss="modal" 
-              aria-label="Close"
-            />
-            <div class="signup-modal-body">
-              <img src="/assets/images/logo-landscape.svg" class="logo" alt="logo" />
-              <div class="step-container">
-                <div class="step-item active" id="step-item1">
-                  <span class="step-item-box">1</span>  
-                  <span class="step-item-text">กรอกเบอร์</span>
+      <div
+        class="modal fade"
+        id="signUpModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="signup-background"></div>
+            <div class="signup-modal-content">
+              <img
+                src="/assets/icons/x-close.svg"
+                alt="close-icon"
+                class="close-btn"
+                id="login-modal-close-btn"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+              <div class="signup-modal-body">
+                <img
+                  src="/assets/images/logo-landscape.svg"
+                  class="logo"
+                  alt="logo"
+                />
+                <div class="step-container">
+                  <div class="step-item active" id="step-item1">
+                    <span class="step-item-box">1</span>
+                    <span class="step-item-text">กรอกเบอร์</span>
+                  </div>
+                  <span class="step-line"></span>
+                  <div class="step-item" id="step-item2">
+                    <span class="step-item-box">2</span>
+                    <span class="step-item-text">บัญชีธนาคาร</span>
+                  </div>
+                  <span class="step-line"></span>
+                  <div class="step-item" id="step-item3">
+                    <span class="step-item-box">3</span>
+                    <span class="step-item-text">สำเร็จ</span>
+                  </div>
                 </div>
-                <span class="step-line"></span>
-                <div class="step-item" id="step-item2">
-                  <span class="step-item-box">2</span>  
-                  <span class="step-item-text">บัญชีธนาคาร</span>
-                </div>
-                <span class="step-line"></span>
-                <div class="step-item" id="step-item3">
-                  <span class="step-item-box">3</span>  
-                  <span class="step-item-text">สำเร็จ</span>
-                </div>
-              </div>
 
-              <!-- step one -->
-              <div class="step-one" id="form-step-one">
-                <h3 class="signup-header">สมัครสมาชิก</h3>
-                <h3 class="signup-title">กรอกเบอร์</h3>
-  
-                <div class="phone-input">
-                  <img src="/assets/icons/phone.svg" alt="icon" />
-                  <label for="phone"></label>
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    placeholder="เบอร์โทรศัพท์"
-                    maxlength="9"
-                  />
-                </div>
-      
-                <button id="goto-step2">ถัดไป</button>
-                <div class="already-have-account">
-                  คุณมีบัญชีอยู่แล้ว
-                  <span class="go-to-login">เข้าสู่ระบบ</span>
-                </div>
-              </div>
-              <!-- end step one -->
+                <!-- step one -->
+                <div class="step-one" id="form-step-one">
+                  <h3 class="signup-header">สมัครสมาชิก</h3>
+                  <h3 class="signup-title">กรอกเบอร์</h3>
 
-              <!-- step two -->
-              <div class="step-two" id="form-step-two">
-                <h3 class="signup-header">สมัครสมาชิก</h3>
-                <h3 class="signup-title">กรอกเลขที่บัญชี</h3>
-  
-                <div class="bank-list-container" id="bank-list-container">
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 10.svg" id="bank1" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 11.svg" id="bank2" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 12.svg" id="bank3" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 13.svg" id="bank4" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 14.svg" id="bank5" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 15.svg" id="bank6" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 16.svg" id="bank7" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 17.svg" id="bank8" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 18.svg" id="bank9" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 19.svg" id="bank10" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 20.svg" id="bank11" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 21.svg" id="bank12" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 22.svg" id="bank13" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 23.svg" id="bank14" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 24.svg" id="bank15" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 25.svg" id="bank16" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 26.svg" id="bank17" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 27.svg" id="bank18" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 28.svg" id="bank19" alt="icon" />
-                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 29.svg" id="bank20" alt="icon" />
-                </div>
-                <div class="phone-input">
-                  <img src="/assets/icons/bank.svg" alt="icon" />
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    placeholder="เลขบัญชีธนาคาร"
-                    maxlength="9"
-                  />
-                </div>
-      
-                <button id="goto-step3">ถัดไป</button>
-              </div>
-              <!-- step two end -->
+                  <div class="phone-input">
+                    <img src="/assets/icons/phone.svg" alt="icon" />
+                    <label for="phone"></label>
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="เบอร์โทรศัพท์"
+                      maxlength="9"
+                    />
+                  </div>
 
-              <!-- step three -->
-              <div class="step-three" id="form-step-three">
-                <h3 class="signup-header-success">สมัครสมาชิกสำเร็จ</h3>
-                <div class="img-success-container">
-                  <img src="/assets/images/ezgif.svg" alt="login" />
+                  <button id="goto-step2">ถัดไป</button>
+                  <div class="already-have-account">
+                    คุณมีบัญชีอยู่แล้ว
+                    <span class="go-to-login">เข้าสู่ระบบ</span>
+                  </div>
                 </div>
-                <button id="goToLoginBtn" class="modal-icon-close" data-bs-dismiss="modal" aria-label="Close">เข้าสู่ระบบ</button>
-              </div>
-              <!-- step three end -->
+                <!-- end step one -->
 
+                <!-- step two -->
+                <div class="step-two" id="form-step-two">
+                  <h3 class="signup-header">สมัครสมาชิก</h3>
+                  <h3 class="signup-title">กรอกเลขที่บัญชี</h3>
+
+                  <div class="bank-list-container" id="bank-list-container">
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 10.svg"
+                      id="bank1"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 11.svg"
+                      id="bank2"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 12.svg"
+                      id="bank3"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 13.svg"
+                      id="bank4"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 14.svg"
+                      id="bank5"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 15.svg"
+                      id="bank6"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 16.svg"
+                      id="bank7"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 17.svg"
+                      id="bank8"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 18.svg"
+                      id="bank9"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 19.svg"
+                      id="bank10"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 20.svg"
+                      id="bank11"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 21.svg"
+                      id="bank12"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 22.svg"
+                      id="bank13"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 23.svg"
+                      id="bank14"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 24.svg"
+                      id="bank15"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 25.svg"
+                      id="bank16"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 26.svg"
+                      id="bank17"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 27.svg"
+                      id="bank18"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 28.svg"
+                      id="bank19"
+                      alt="icon"
+                    />
+                    <img
+                      class="bank-item"
+                      src="/assets/icons/icon-bank-default/Ellipse 29.svg"
+                      id="bank20"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="phone-input">
+                    <img src="/assets/icons/bank.svg" alt="icon" />
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="เลขบัญชีธนาคาร"
+                      maxlength="9"
+                    />
+                  </div>
+
+                  <button id="goto-step3">ถัดไป</button>
+                </div>
+                <!-- step two end -->
+
+                <!-- step three -->
+                <div class="step-three" id="form-step-three">
+                  <h3 class="signup-header-success">สมัครสมาชิกสำเร็จ</h3>
+                  <div class="img-success-container">
+                    <img src="/assets/images/ezgif.svg" alt="login" />
+                  </div>
+                  <button
+                    id="goToLoginBtn"
+                    class="modal-icon-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    เข้าสู่ระบบ
+                  </button>
+                </div>
+                <!-- step three end -->
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
     </main>
 
     <footer class="footer">
