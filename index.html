@@ -378,10 +378,10 @@
           </button>
         </div>
         <div class="flexBetween" style="gap: 13px">
-          <button class="gradient-border sidebar-button flexCenter" style="width: 50%">
+          <button class="gradient-border sidebar-button flexCenter" style="width: 50%" id="bag-modal-btn" data-bs-toggle="modal" data-bs-target="#bagModal">
             กระเป๋า
           </button>
-          <button class="gradient-border sidebar-button flexCenter" style="width: 50%">
+          <button class="gradient-border sidebar-button flexCenter" style="width: 50%" id="history-btn" data-bs-toggle="modal" data-bs-target="#historyModal">
             ประวัติ
           </button>
         </div>
@@ -441,7 +441,7 @@
           <div class="modal-header-container">
             <div class="modal-header">
               <img src="./assets/icons/icon-back-modal.svg" class="modal-icon-back" alt="">
-              <p class="modal-title" id="exampleModalLabel">Modal title</p>
+              <p class="modal-title">Modal title</p>
               <img src="./assets/icons/icon-close-modal.svg" class="modal-icon-close" data-bs-dismiss="modal"
                 aria-label="Close" alt="">
             </div>
@@ -891,6 +891,230 @@
       </div>
     </div>
     <!-- end  modal ฝาก - ถอน -->
+
+    <!-- history modal -->
+    <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <p class="modal-title" id="history-title-deposit">ประวัติฝาก</p>
+              <p class="modal-title" id="history-title-withdraw">ประวัติถอน</p>
+              <p class="modal-title" id="history-title-bonus">ประวัติโบนัส</p>
+              <img src="./assets/icons/icon-close-modal.svg" class="modal-icon-close" data-bs-dismiss="modal"
+                aria-label="Close" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="history-modal-content">
+              <div class="history-tab">
+                <div class="history-tab-item active" id="tab-deposit">ฝาก</div>
+                <div class="history-tab-item" id="tab-withdraw">ถอน</div>
+                <div class="history-tab-item" id="tab-bonus">โบนัส</div>
+              </div>
+              <!-- ฝาก -->
+              <div class="history-deposit" id="history-content-deposit">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- ถอน -->
+              <div class="history-withdraw" id="history-content-withdraw">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- โบนัส -->
+              <div class="history-bonus" id="history-content-bonus">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ :  ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- history modal end -->
+
+    <!-- bag modal -->
+    <div class="modal fade" id="bagModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <p class="modal-title">กระเป๋า</p>
+              <img src="./assets/icons/icon-close-modal.svg" class="modal-icon-close" data-bs-dismiss="modal"
+                aria-label="Close" alt="">
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="bag-modal-content">
+              <div class="bag-modal-slide-container">
+                <img src="./assets/images/bag-background.png" alt="">
+              </div>
+              
+              <div class="bag-modal-menu">
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-promotion.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">โปรโมชั่น</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-withdraw.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">ฝาก - ถอน</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-earn-money.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">สร้างรายได้</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-ticket.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">กรอกโค้ด</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-spinner.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">กงล้อ</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-teasure.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">เครดิตฟรี</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-back-cash.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">คืนยอดเสีย</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-diamond.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">แลกเพรช</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-trophy.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">ทัวร์นาเมนต์</p>
+                </div>
+                <div class="bag-modal-menu-item">
+                  <div class="bag-menu-img-container">
+                    <img class="bag-menu-icon" src="./assets/icons/icon-road-map.svg" alt="">
+                  </div>
+                  <p class="bag-modal-menu-title">Road Map</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bag modal end -->
     </main>
 
   <footer class="footer">

@@ -1226,6 +1226,7 @@ body {
     padding: 3px;
     min-width: 25%;
     width: fit-content;
+    margin-top: 80px;
     animation-name: slideIn;
     animation-duration: 0.4s; }
   .modal .modal-content {
@@ -1244,13 +1245,13 @@ body {
     .modal .modal-header-container .modal-header {
       position: relative;
       margin: auto;
-      min-width: 400px;
+      min-width: 384px;
       width: fit-content;
       background: linear-gradient(270deg, #242424 0%, #0A0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
       border-radius: 15px;
       padding: 20px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       gap: 8px; }
     .modal .modal-header-container .modal-header::before {
@@ -1265,11 +1266,14 @@ body {
       border-radius: 15px;
       pointer-events: none; }
     .modal .modal-header-container .modal-icon-back {
+      position: absolute;
+      left: 20px;
       cursor: pointer; }
     .modal .modal-header-container .modal-icon-close {
+      position: absolute;
+      right: 20px;
       cursor: pointer; }
   .modal .modal-body {
-    padding: 8px 16px;
     color: #fff;
     padding: 8px 16px; }
   .modal .modal-title {
@@ -1431,3 +1435,107 @@ body {
   text-align: end;
   font-size: 18px;
   font-weight: 300; }
+
+.history-modal-content {
+  width: 464px;
+  padding-top: 40px; }
+  .history-modal-content .history-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .history-modal-content .history-tab .history-tab-item {
+      padding: 6px 18px;
+      font-size: 21px;
+      font-weight: 700;
+      color: #646464;
+      cursor: pointer; }
+      .history-modal-content .history-tab .history-tab-item.active {
+        color: #fff; }
+  .history-modal-content .history-list {
+    display: flex;
+    padding: 16px 0 24px 0;
+    border-bottom: 1px solid #FFFFFF; }
+    .history-modal-content .history-list.border-0 {
+      border: 0; }
+    .history-modal-content .history-list .history-list-left {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .history-modal-content .history-list .history-list-left .history-list-label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff; }
+    .history-modal-content .history-list .history-list-right {
+      padding-top: 14px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end; }
+      .history-modal-content .history-list .history-list-right .history-status {
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 13px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff; }
+        .history-modal-content .history-list .history-list-right .history-status.success {
+          background-color: #00C136;
+          color: #fff; }
+      .history-modal-content .history-list .history-list-right .history-date {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff; }
+
+.bag-modal-content {
+  padding: 56px 28px 20px 28px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .bag-modal-content .bag-modal-slide-container {
+    width: 100%;
+    height: 100%; }
+    .bag-modal-content .bag-modal-slide-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .bag-modal-content .bag-modal-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-gap: 21px; }
+    .bag-modal-content .bag-modal-menu .bag-modal-menu-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      width: 134px;
+      border-radius: 10px;
+      padding: 20px;
+      background: linear-gradient(270deg, #242424 0%, #0A0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
+      cursor: pointer; }
+    .bag-modal-content .bag-modal-menu .bag-modal-menu-item::before {
+      content: '';
+      position: absolute;
+      top: -1.5px;
+      left: -1.5px;
+      right: -1.5px;
+      bottom: -1.5px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
+      z-index: -1; }
+
+.border-gradient-gold {
+  position: relative;
+  z-index: -15;
+  background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
+  border-radius: 10px;
+  margin: auto;
+  padding: 30px;
+  width: fit-content; }
