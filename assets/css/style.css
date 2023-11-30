@@ -542,6 +542,185 @@ body {
     position: fixed;
     z-index: -10; }
 
+#signUpModal .modal-border {
+  border-radius: 60px;
+  padding: 6px; }
+
+#signUpModal .modal-content {
+  border-radius: 60px;
+  overflow: hidden;
+  padding: 0; }
+
+#signUpModal .signup-modal-content {
+  position: relative;
+  width: 734px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+  #signUpModal .signup-modal-content .close-btn {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer; }
+  #signUpModal .signup-modal-content .signup-modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 66px; }
+  #signUpModal .signup-modal-content .step-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 36px; }
+    #signUpModal .signup-modal-content .step-container .step-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #signUpModal .signup-modal-content .step-container .step-item .step-item-box {
+        width: 94px;
+        height: 94px;
+        border-radius: 10px;
+        border: 1px solid #797979;
+        font-size: 45px;
+        font-weight: 600;
+        color: #676767;
+        background-color: #3D3D3D;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      #signUpModal .signup-modal-content .step-container .step-item .step-item-text {
+        position: absolute;
+        top: 100px;
+        white-space: nowrap;
+        font-size: 30px;
+        font-weight: 300;
+        color: #676767;
+        text-align: center; }
+    #signUpModal .signup-modal-content .step-container .step-item.active .step-item-box {
+      position: relative;
+      color: #fff;
+      background-color: #000;
+      border: 1px solid #000; }
+    #signUpModal .signup-modal-content .step-container .step-item.active .step-item-box::before {
+      content: '';
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      right: -3px;
+      bottom: -3px;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
+      z-index: -1; }
+    #signUpModal .signup-modal-content .step-container .step-item.active .step-item-text {
+      color: #fff; }
+    #signUpModal .signup-modal-content .step-container .step-line {
+      width: 79px;
+      height: 1px;
+      background-color: #676767; }
+  #signUpModal .signup-modal-content .step-one, #signUpModal .signup-modal-content .step-two, #signUpModal .signup-modal-content .step-three {
+    width: 100%; }
+  #signUpModal .signup-modal-content .signup-header {
+    margin-top: 52px;
+    font-size: 33px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%; }
+  #signUpModal .signup-modal-content .signup-header-success {
+    margin-top: 82px;
+    font-size: 57px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    text-align: center; }
+  #signUpModal .signup-modal-content .signup-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFAA00;
+    width: 100%; }
+  #signUpModal .signup-modal-content .phone-input {
+    border-radius: 10px;
+    background: #433d3d;
+    width: 100%;
+    height: 71px;
+    padding: 10px 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 19px; }
+    #signUpModal .signup-modal-content .phone-input img {
+      width: 50px;
+      height: 50px; }
+    #signUpModal .signup-modal-content .phone-input input {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600; }
+      #signUpModal .signup-modal-content .phone-input input::placeholder {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600; }
+  #signUpModal .signup-modal-content button {
+    width: 100%;
+    height: 71px;
+    margin-top: 23px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 600;
+    border-radius: 10px;
+    background: #c1933b;
+    color: black; }
+  #signUpModal .signup-modal-content .already-have-account {
+    text-align: end;
+    width: 100%;
+    font-size: 21px;
+    font-weight: 600;
+    color: #fff; }
+    #signUpModal .signup-modal-content .already-have-account .go-to-login {
+      color: #FFAA00;
+      text-decoration: underline; }
+  #signUpModal .signup-modal-content .bank-list-container {
+    padding: 16px 12px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* Creates 3 columns of equal size */
+    justify-content: center;
+    grid-gap: 11px; }
+    #signUpModal .signup-modal-content .bank-list-container .bank-item {
+      text-align: center; }
+  #signUpModal .signup-modal-content .img-success-container {
+    width: 100%;
+    text-align: center; }
+
+#signUpModal .signup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets//images/login-modal-background.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -15;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+
+#signUpModal .logo {
+  width: 476px; }
+
 @media (max-width: 480px) {
   .header {
     padding: 13px 7px; }
@@ -1090,7 +1269,6 @@ body {
     .modal .modal-header-container .modal-icon-close {
       cursor: pointer; }
   .modal .modal-body {
-    color: #fff;
     padding: 8px 16px; }
   .modal .modal-title {
     font-size: 30px;
