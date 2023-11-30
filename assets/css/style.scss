@@ -801,6 +801,229 @@ main {
   }
 }
 
+#signUpModal {
+  .modal-border {
+    border-radius: 60px;
+    padding: 6px;
+  }
+  .modal-content {
+    border-radius: 60px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .signup-modal-content {
+    position: relative;
+    width: 734px;
+    // height: 699px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+
+    .close-btn {
+      position: absolute;
+      top: 32px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+    }
+    .signup-modal-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 66px;
+    }
+    .step-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-top: 36px;
+
+      .step-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .step-item-box {
+          width: 94px;
+          height: 94px;
+          border-radius: 10px;
+          border: 1px solid #797979;
+          font-size: 45px;
+          font-weight: 600;
+          color: #676767;
+          background-color: #3D3D3D;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .step-item-text {
+          position: absolute;
+          top: 100px;
+          white-space: nowrap;
+          font-size: 30px;
+          font-weight: 300;
+          color: #676767;
+          text-align: center;
+        }
+      }
+      .step-item.active {
+        .step-item-box {
+          position: relative;
+          color: #fff;
+          background-color: #000;
+          border: 1px solid #000;
+        }
+
+        .step-item-box::before {
+          content: '';
+          position: absolute;
+          top: -3px;
+          left: -3px;
+          right: -3px;
+          bottom: -3px;
+          border-radius: 10px;
+          background: linear-gradient(90deg, rgba(249, 223, 123, 1) 0%, rgba(181, 126, 16, 1) 20%, rgba(183, 129, 19, 1) 26%, rgba(190, 140, 31, 1) 32%, rgba(203, 157, 50, 1) 38%, rgba(220, 182, 78, 1) 44%, rgba(242, 213, 112, 1) 49%, rgba(249, 223, 123, 1) 51%, rgba(255, 243, 166, 1) 52%, rgba(249, 223, 123, 1) 59%, rgba(181, 126, 16, 1) 84%, rgba(229, 194, 91, 1) 95%, rgba(249, 223, 123, 1) 100%);
+          z-index: -1;
+        }
+
+        .step-item-text {
+          color: #fff;
+        }
+      }
+      .step-line {
+        width: 79px;
+        height: 1px;
+        background-color: #676767;
+      }
+    }
+    .step-one, .step-two, .step-three {
+      width: 100%;
+    }
+    .signup-header {
+      margin-top: 52px;
+      font-size: 33px;
+      font-weight: 600;
+      color: #fff;
+      width: 100%;
+    }
+    .signup-header-success {
+      margin-top: 82px;
+      font-size: 57px;
+      font-weight: 600;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+    }
+    .signup-title {
+      font-size: 25px;
+      font-weight: 600;
+      color: #FFAA00;
+      width: 100%;
+    }
+    .phone-input {
+      border-radius: 10px;
+      background: #433d3d;
+      width: 100%;
+      height: 71px;
+      padding: 10px 17px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 19px;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      input {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        outline: none;
+
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+
+        &::placeholder {
+          color: #fff;
+          font-size: 25px;
+          font-weight: 600;
+        }
+      }
+    }
+    button {
+      width: 100%;
+      height: 71px;
+      margin-top: 23px;
+      margin-bottom: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      font-size: 35px;
+      font-weight: 600;
+      border-radius: 10px;
+      background: #c1933b;
+      color: black;
+    }
+    .already-have-account {
+      text-align: end;
+      width: 100%;
+      font-size: 21px;
+      font-weight: 600;
+      color: #fff;
+
+      .go-to-login {
+        color: #FFAA00;
+        text-decoration: underline;
+      }
+    }
+
+    .bank-list-container {
+      padding: 16px 12px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr); /* Creates 3 columns of equal size */
+      justify-content: center;
+      grid-gap: 11px;
+
+      .bank-item {
+        text-align: center;
+      }
+    }
+
+    .img-success-container {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .signup-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets//images/login-modal-background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -15;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .logo {
+    width: 476px;
+  }
+}
+
 // Responsive Mobile
 @media (max-width: 480px) {
   .header {
@@ -1024,8 +1247,7 @@ main {
   }
 
   .modal-body {
-    color: #fff;
-    padding: 40px 16px 0 16px;
+    padding: 8px 16px;
   }
 
   .modal-title {

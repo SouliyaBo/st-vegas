@@ -30,9 +30,7 @@
         />
       </div>
       <div class="right">
-        <!-- <button class="font-20" id="signUp">สมัครสมาชิก</button> -->
-        <button type="button" class="font-20" data-bs-toggle="modal" data-bs-target="#exampleModal">สมัครสมาชิก</button>
-        <button type="button" class="font-20" data-bs-toggle="modal" data-bs-target="#exampleModal2">สมัครสมาชิก</button>
+        <button type="button" class="font-20" id="singup-btn" data-bs-toggle="modal" data-bs-target="#signUpModal">สมัครสมาชิก</button>
         
         <button class="font-20" id="loginBtn">เข้าสู่ระบบ</button>
         <img
@@ -454,7 +452,7 @@
       </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-border">
         <div class="modal-content">
           <div class="modal-header-container">
@@ -466,6 +464,120 @@
           </div>
           <div class="modal-body">
             <h1>hello</h1>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="signup-background"></div>
+          <div class="signup-modal-content">
+            <img
+              src="/assets/icons/x-close.svg"
+              alt="close-icon"
+              class="close-btn"
+              id="login-modal-close-btn"
+              data-bs-dismiss="modal" 
+              aria-label="Close"
+            />
+            <div class="signup-modal-body">
+              <img src="/assets/images/logo-landscape.svg" class="logo" alt="logo" />
+              <div class="step-container">
+                <div class="step-item active" id="step-item1">
+                  <span class="step-item-box">1</span>  
+                  <span class="step-item-text">กรอกเบอร์</span>
+                </div>
+                <span class="step-line"></span>
+                <div class="step-item" id="step-item2">
+                  <span class="step-item-box">2</span>  
+                  <span class="step-item-text">บัญชีธนาคาร</span>
+                </div>
+                <span class="step-line"></span>
+                <div class="step-item" id="step-item3">
+                  <span class="step-item-box">3</span>  
+                  <span class="step-item-text">สำเร็จ</span>
+                </div>
+              </div>
+
+              <!-- step one -->
+              <div class="step-one" id="form-step-one">
+                <h3 class="signup-header">สมัครสมาชิก</h3>
+                <h3 class="signup-title">กรอกเบอร์</h3>
+  
+                <div class="phone-input">
+                  <img src="/assets/icons/phone.svg" alt="icon" />
+                  <label for="phone"></label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="เบอร์โทรศัพท์"
+                    maxlength="9"
+                  />
+                </div>
+      
+                <button id="goto-step2">ถัดไป</button>
+                <div class="already-have-account">
+                  คุณมีบัญชีอยู่แล้ว
+                  <span class="go-to-login">เข้าสู่ระบบ</span>
+                </div>
+              </div>
+              <!-- end step one -->
+
+              <!-- step two -->
+              <div class="step-two" id="form-step-two">
+                <h3 class="signup-header">สมัครสมาชิก</h3>
+                <h3 class="signup-title">กรอกเลขที่บัญชี</h3>
+  
+                <div class="bank-list-container" id="bank-list-container">
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 10.svg" id="bank1" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 11.svg" id="bank2" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 12.svg" id="bank3" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 13.svg" id="bank4" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 14.svg" id="bank5" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 15.svg" id="bank6" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 16.svg" id="bank7" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 17.svg" id="bank8" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 18.svg" id="bank9" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 19.svg" id="bank10" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 20.svg" id="bank11" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 21.svg" id="bank12" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 22.svg" id="bank13" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 23.svg" id="bank14" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 24.svg" id="bank15" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 25.svg" id="bank16" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 26.svg" id="bank17" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 27.svg" id="bank18" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 28.svg" id="bank19" alt="icon" />
+                  <img class="bank-item" src="/assets/icons/icon-bank-default/Ellipse 29.svg" id="bank20" alt="icon" />
+                </div>
+                <div class="phone-input">
+                  <img src="/assets/icons/bank.svg" alt="icon" />
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="เลขบัญชีธนาคาร"
+                    maxlength="9"
+                  />
+                </div>
+      
+                <button id="goto-step3">ถัดไป</button>
+              </div>
+              <!-- step two end -->
+
+              <!-- step three -->
+              <div class="step-three" id="form-step-three">
+                <h3 class="signup-header-success">สมัครสมาชิกสำเร็จ</h3>
+                <div class="img-success-container">
+                  <img src="/assets/images/ezgif.svg" alt="login" />
+                </div>
+                <button id="goToLoginBtn" class="modal-icon-close" data-bs-dismiss="modal" aria-label="Close">เข้าสู่ระบบ</button>
+              </div>
+              <!-- step three end -->
+
+            </div>
           </div>
         </div>
       </div>
@@ -492,6 +604,7 @@
 
     <script type="module" src="/scripts/sidebar.js"></script>
     <script type="module" src="/scripts/modal/login.js"></script>
+    <script type="module" src="/scripts/modal/signup.js"></script>
     <script type="module" src="/scripts/index.js"></script>
     <script type="module" src="/scripts/main.js"></script>
   </body>
