@@ -383,6 +383,8 @@
             </button>
             <button
               class="gradient-border sidebar-button flexCenter"
+              data-bs-toggle="modal"
+              data-bs-target="#depositWithdraw"
               style="width: 50%"
             >
               ฝาก-ถอน
@@ -392,12 +394,18 @@
             <button
               class="gradient-border sidebar-button flexCenter"
               style="width: 50%"
+              id="bag-modal-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#bagModal"
             >
               กระเป๋า
             </button>
             <button
               class="gradient-border sidebar-button flexCenter"
               style="width: 50%"
+              id="history-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#historyModal"
             >
               ประวัติ
             </button>
@@ -482,6 +490,159 @@
       </div>
     </main>
 
+    <!-- modal -->
+
+    <!-- history modal -->
+    <div
+      class="modal fade"
+      id="historyModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <p class="modal-title" id="history-title-deposit">ประวัติฝาก</p>
+              <p class="modal-title" id="history-title-withdraw">ประวัติถอน</p>
+              <p class="modal-title" id="history-title-bonus">ประวัติโบนัส</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="history-modal-content">
+              <div class="history-tab">
+                <div class="history-tab-item active" id="tab-deposit">ฝาก</div>
+                <div class="history-tab-item" id="tab-withdraw">ถอน</div>
+                <div class="history-tab-item" id="tab-bonus">โบนัส</div>
+              </div>
+              <!-- ฝาก -->
+              <div class="history-deposit" id="history-content-deposit">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการฝาก</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ถอน -->
+              <div class="history-withdraw" id="history-content-withdraw">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการถอน</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- โบนัส -->
+              <div class="history-bonus" id="history-content-bonus">
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+                <div class="history-list border-0">
+                  <div class="history-list-left">
+                    <label class="history-list-label">รายการโบนัส</label>
+                    <p class="history-list-label">55</p>
+                    <p class="history-list-label">หมายเหตุ : ไม่รับโบนัส</p>
+                  </div>
+                  <div class="history-list-right">
+                    <div class="history-status success">สำเร็จ</div>
+                    <p class="history-date">2022-10-16 16.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end history modal -->
+
+    <!-- Modal -->
+
     <footer class="footer">
       <div class="menu-wrapper">
         <div class="footer-item flexCenter">
@@ -510,5 +671,6 @@
     <script type="module" src="/scripts/sidebar.js"></script>
     <script type="module" src="/scripts/modal/login.js"></script>
     <script type="module" src="/scripts/index.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
   </body>
 </html>

@@ -629,6 +629,10 @@ body {
       flex-direction: column;
       cursor: pointer;
 
+      background: none;
+      outline: none;
+      border: none;
+
       img {
         width: 44px;
         height: 44px;
@@ -673,6 +677,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.font-14 {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .font-17 {
@@ -1894,6 +1906,72 @@ body {
       }
     }
   }
+
+  // Modal
+  .modal {
+    .modal-border {
+    }
+
+    .modal-content {
+      width: 300px;
+    }
+
+    .modal-header-container {
+      .modal-header {
+        min-width: 230px;
+      }
+    }
+
+    .modal-title {
+      font-size: 20px;
+    }
+
+    .modal-icon-close {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  // Modal ฝากถอน
+  .detail-card-kbank {
+    padding: 12px;
+    .card-kbank {
+      width: 100%;
+    }
+  }
+
+  .type-of-withdrawal {
+    gap: 10;
+
+    width: 80px;
+    .withdrawal {
+      margin: 0;
+      img {
+        width: 35px;
+        height: 35px;
+      }
+      font-size: 13px;
+    }
+  }
+
+  .button-line {
+    margin: 20px 0;
+
+    div {
+      margin: 6px;
+      font-size: 14px;
+    }
+  }
+
+  // End Modal ฝากถอน
+
+  // History Modal
+  .history-modal-content {
+    padding-top: 20px;
+  }
+  // End History Modal
+
+  // End Modal
 }
 
 // End of Mobile Page
@@ -1910,6 +1988,59 @@ body {
   .game-section {
     display: none;
   }
+
+  // Modal
+  .modal {
+    .modal-header-container {
+      .modal-header {
+        min-width: 384px;
+      }
+    }
+
+    .modal-title {
+      font-size: 30px;
+    }
+  }
+
+  // Modal ฝากถอน
+  .detail-card-kbank {
+    min-width: 500px;
+
+    .card-kbank {
+      padding: 18px 20px 0px 20px;
+      width: 100%;
+    }
+  }
+
+  .type-of-withdrawal {
+    width: 127px;
+
+    .withdrawal {
+      padding: 10px 14px 10px 10px;
+      font-size: 18px;
+    }
+  }
+
+  .button-line {
+    margin: 20px 0;
+
+    div {
+      padding: 8px 23px 8px 23px;
+      width: 80%;
+    }
+  }
+  // End Modal ฝากถอน
+
+  // History Modal
+
+  .history-modal-content {
+    width: 464px;
+    padding-top: 40px;
+  }
+
+  // End History Modal
+
+  // End Modal
 }
 
 // Animation
@@ -2026,7 +2157,6 @@ body {
     .modal-header {
       position: relative;
       margin: auto;
-      min-width: 384px;
       width: fit-content;
       background: linear-gradient(
         270deg,
@@ -2091,7 +2221,6 @@ body {
   }
 
   .modal-title {
-    font-size: 30px;
     font-weight: 600;
     color: #fff;
     margin: 0;
@@ -2160,7 +2289,6 @@ body {
   background-size: cover;
 
   .card-kbank {
-    padding: 18px 20px 0px 20px;
     display: flex;
     flex-direction: column;
 
@@ -2195,13 +2323,10 @@ body {
   margin: auto;
   padding: 2px;
   min-width: 25%;
-  width: fit-content;
   animation-name: slideIn;
   animation-duration: 0.4s;
-  width: 127px;
 
   .withdrawal {
-    padding: 10px 14px 10px 10px;
     background: linear-gradient(
       to left,
       #242424,
@@ -2215,7 +2340,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 18px;
     font-weight: 600;
     justify-content: center;
     align-items: center;
@@ -2225,8 +2349,7 @@ body {
 .button-line {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
-  margin-bottom: 20px;
+
   color: white;
   div {
     display: flex;
@@ -2235,8 +2358,6 @@ body {
     border-radius: 10px;
     background-color: $green;
     border: 1px solid $white;
-    padding: 8px 23px 8px 23px;
-    width: 80%;
   }
 }
 
@@ -2351,9 +2472,6 @@ body {
 }
 
 .history-modal-content {
-  width: 464px;
-  padding-top: 40px;
-
   .history-tab {
     display: flex;
     justify-content: space-between;

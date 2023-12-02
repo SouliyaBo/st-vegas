@@ -979,9 +979,17 @@
                 <div class="none-active"></div>
               </div>
 
-              <div style="display: flex; color: white">
+              <div
+                style="
+                  display: grid;
+                  color: white;
+                  grid-template-columns: repeat(3, 127px);
+                  gap: 16px 16px;
+                  justify-content: center;
+                "
+              >
                 <div
-                  style="cursor: pointer; margin-left: 5px"
+                  style="cursor: pointer"
                   data-bs-toggle="modal"
                   data-bs-target="#autoDeposit"
                   data-bs-dismiss="modal"
@@ -997,7 +1005,7 @@
                   </div>
                 </div>
                 <div
-                  style="cursor: pointer; margin-left: 10px"
+                  style="cursor: pointer"
                   data-bs-toggle="modal"
                   data-bs-target="#leaveAdecimal"
                   data-bs-dismiss="modal"
@@ -1009,40 +1017,46 @@
                     </div>
                   </div>
                 </div>
-                <div class="type-of-withdrawal">
-                  <div class="withdrawal">
-                    <img src="/assets/images/Withdraw-money.svg" alt="kkk" />
-                    <div>ถอนเงิน</div>
+                <div>
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/Withdraw-money.svg" alt="kkk" />
+                      <div>ถอนเงิน</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/scan.svg" alt="kkk" />
+                      <div>QR PAY</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img src="/assets/images/verified.svg" alt="kkk" />
+                      <div>Slip Verify</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="type-of-withdrawal">
+                    <div class="withdrawal">
+                      <img
+                        src="/assets/images/true-money-wallet.svg"
+                        alt="kkk"
+                      />
+                      <div>Truewallet</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                style="
-                  display: flex;
-                  gap: 10xp 10px;
-                  margin-top: 15px;
-                  color: white;
-                "
-              >
-                <div class="type-of-withdrawal">
-                  <div class="withdrawal">
-                    <img src="/assets/images/scan.svg" alt="kkk" />
-                    <div>QR PAY</div>
-                  </div>
-                </div>
-                <div class="type-of-withdrawal">
-                  <div class="withdrawal">
-                    <img src="/assets/images/verified.svg" alt="kkk" />
-                    <div>Slip Verify</div>
-                  </div>
-                </div>
-                <div class="type-of-withdrawal">
-                  <div class="withdrawal">
-                    <img src="/assets/images/true-money-wallet.svg" alt="kkk" />
-                    <div>Truewallet</div>
-                  </div>
-                </div>
-              </div>
+
               <div style="text-align: center; margin-top: 10px">
                 <div>
                   พบปัญหา
