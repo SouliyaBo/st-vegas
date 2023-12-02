@@ -36,5 +36,5 @@ loginModalCloseBtn.addEventListener("click", () => {
 
 const loginButton = document.querySelector("#login-btn");
 loginButton.addEventListener("click", () => {
-  window.location.href = "http://localhost:5500/after-login.html";
+  window.location.href = "/after-login.html";
 });
