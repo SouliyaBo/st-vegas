@@ -1,0 +1,23 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "index",
+  "steps": [
+    {
+      "file": "index.html",
+      "description": "QR PAY",
+      "line": 775
+    },
+    {
+      "file": "index.html",
+      "description": "Modal QR",
+      "line": 1048,
+      "title": "QR Pay"
+    },
+    {
+      "file": "index.html",
+      "description": "show QR",
+      "line": 1123,
+      "title": "show qr"
+    }
+  ]
+}

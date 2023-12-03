@@ -38,11 +38,15 @@ $breakpoint-desktop: 1024px;
     @media (max-width: $breakpoint-mobile) {
       @content;
     }
-  } @else if $breakpoint ==tablet {
+  }
+
+  @else if $breakpoint ==tablet {
     @media (max-width: $breakpoint-tablet) {
       @content;
     }
-  } @else if $breakpoint ==desktop {
+  }
+
+  @else if $breakpoint ==desktop {
     @media (max-width: $breakpoint-desktop) {
       @content;
     }
@@ -80,14 +84,12 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(
-    to right,
-    #242424,
-    #0a0000,
-    #191919,
-    #000000,
-    #242424
-  );
+  background: linear-gradient(to right,
+      #242424,
+      #0a0000,
+      #191919,
+      #000000,
+      #242424);
   padding: 16px 23px 18px 23px;
 
   .left {
@@ -143,14 +145,12 @@ body {
   justify-content: space-around;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(
-    to right,
-    #242424,
-    #0a0000,
-    #191919,
-    #000000,
-    #242424
-  );
+  background: linear-gradient(to right,
+      #242424,
+      #0a0000,
+      #191919,
+      #000000,
+      #242424);
   padding: 16px 23px 18px 23px;
 
   .coin-balance,
@@ -242,6 +242,7 @@ body {
 .brand {
   margin-top: 8px;
   height: 237px;
+
   img {
     height: 100%;
     width: 100%;
@@ -317,14 +318,12 @@ body {
       /* !importanté */
       border-radius: 1em;
       border: 3px solid #f9df7b;
-      background: linear-gradient(
-        0deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(0deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000 81.25%,
+          #242424 100%);
 
       box-shadow: 0px 5px 4px 0px #000;
 
@@ -403,6 +402,7 @@ body {
 
   ol {
     padding-left: 1rem;
+
     li {
       margin-bottom: 0.5rem;
     }
@@ -438,7 +438,7 @@ body {
   gap: 1rem;
   justify-content: center;
 
-  & > div {
+  &>div {
     img {
       width: 100px;
       height: 100px;
@@ -511,14 +511,12 @@ body {
 
     border-radius: 0px 20px 20px 0px;
     border: 2px solid #f9df7b;
-    background: linear-gradient(
-      270deg,
-      #242424 0%,
-      #0a0000 23.44%,
-      #191919 52.6%,
-      #000 81.25%,
-      #242424 100%
-    );
+    background: linear-gradient(270deg,
+        #242424 0%,
+        #0a0000 23.44%,
+        #191919 52.6%,
+        #000 81.25%,
+        #242424 100%);
 
     animation: slideInFromLeft 0.5s ease-in-out;
     padding: 39px 44px;
@@ -608,14 +606,12 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(
-    270deg,
-    #242424 0%,
-    #0a0000 23.44%,
-    #191919 52.6%,
-    #000 81.25%,
-    #242424 100%
-  );
+  background: linear-gradient(270deg,
+      #242424 0%,
+      #0a0000 23.44%,
+      #191919 52.6%,
+      #000 81.25%,
+      #242424 100%);
   box-shadow: 0px -4px 7px 0px rgba(0, 0, 0, 0.39);
 
   .menu-wrapper {
@@ -844,11 +840,13 @@ body {
     border-radius: 60px;
     padding: 6px;
   }
+
   .modal-content {
     border-radius: 60px;
     overflow: hidden;
     padding: 0;
   }
+
   .signup-modal-content {
     position: relative;
     width: 734px;
@@ -865,12 +863,14 @@ body {
       height: 60px;
       cursor: pointer;
     }
+
     .signup-modal-body {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 30px 66px;
     }
+
     .step-container {
       display: flex;
       justify-content: center;
@@ -908,6 +908,7 @@ body {
           text-align: center;
         }
       }
+
       .step-item.active {
         .step-item-box {
           position: relative;
@@ -924,22 +925,20 @@ body {
           right: -3px;
           bottom: -3px;
           border-radius: 10px;
-          background: linear-gradient(
-            90deg,
-            rgba(249, 223, 123, 1) 0%,
-            rgba(181, 126, 16, 1) 20%,
-            rgba(183, 129, 19, 1) 26%,
-            rgba(190, 140, 31, 1) 32%,
-            rgba(203, 157, 50, 1) 38%,
-            rgba(220, 182, 78, 1) 44%,
-            rgba(242, 213, 112, 1) 49%,
-            rgba(249, 223, 123, 1) 51%,
-            rgba(255, 243, 166, 1) 52%,
-            rgba(249, 223, 123, 1) 59%,
-            rgba(181, 126, 16, 1) 84%,
-            rgba(229, 194, 91, 1) 95%,
-            rgba(249, 223, 123, 1) 100%
-          );
+          background: linear-gradient(90deg,
+              rgba(249, 223, 123, 1) 0%,
+              rgba(181, 126, 16, 1) 20%,
+              rgba(183, 129, 19, 1) 26%,
+              rgba(190, 140, 31, 1) 32%,
+              rgba(203, 157, 50, 1) 38%,
+              rgba(220, 182, 78, 1) 44%,
+              rgba(242, 213, 112, 1) 49%,
+              rgba(249, 223, 123, 1) 51%,
+              rgba(255, 243, 166, 1) 52%,
+              rgba(249, 223, 123, 1) 59%,
+              rgba(181, 126, 16, 1) 84%,
+              rgba(229, 194, 91, 1) 95%,
+              rgba(249, 223, 123, 1) 100%);
           z-index: -1;
         }
 
@@ -947,17 +946,20 @@ body {
           color: #fff;
         }
       }
+
       .step-line {
         width: 79px;
         height: 1px;
         background-color: #676767;
       }
     }
+
     .step-one,
     .step-two,
     .step-three {
       width: 100%;
     }
+
     .signup-header {
       margin-top: 52px;
       font-size: 33px;
@@ -965,6 +967,7 @@ body {
       color: #fff;
       width: 100%;
     }
+
     .signup-header-success {
       margin-top: 82px;
       font-size: 57px;
@@ -973,12 +976,14 @@ body {
       width: 100%;
       text-align: center;
     }
+
     .signup-title {
       font-size: 25px;
       font-weight: 600;
       color: #ffaa00;
       width: 100%;
     }
+
     .phone-input {
       border-radius: 10px;
       background: #433d3d;
@@ -1013,6 +1018,7 @@ body {
         }
       }
     }
+
     button {
       width: 100%;
       height: 71px;
@@ -1028,6 +1034,7 @@ body {
       background: #c1933b;
       color: black;
     }
+
     .already-have-account {
       text-align: end;
       width: 100%;
@@ -1044,10 +1051,9 @@ body {
     .bank-list-container {
       padding: 16px 12px;
       display: grid;
-      grid-template-columns: repeat(
-        8,
-        1fr
-      ); /* Creates 3 columns of equal size */
+      grid-template-columns: repeat(8,
+          1fr);
+      /* Creates 3 columns of equal size */
       justify-content: center;
       grid-gap: 11px;
 
@@ -1061,6 +1067,7 @@ body {
       text-align: center;
     }
   }
+
   .signup-background {
     position: absolute;
     top: 0;
@@ -1077,6 +1084,7 @@ body {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+
   .logo {
     width: 476px;
   }
@@ -1101,6 +1109,7 @@ body {
       .desktop-button {
         display: none;
       }
+
       .mobile-button {
         display: inherit;
 
@@ -1146,7 +1155,7 @@ body {
 
       top: 30px;
 
-      & > * {
+      &>* {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1281,10 +1290,12 @@ body {
       .title {
         .left {
           gap: 4px;
+
           img {
             width: 50px;
             height: 50px;
           }
+
           h4 {
             font-size: 15px;
             font-weight: 700;
@@ -1312,6 +1323,7 @@ body {
         height: 100%;
         margin: 10px 0;
       }
+
       .game-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1343,7 +1355,7 @@ body {
       gap: 1rem;
       justify-content: center;
 
-      & > div {
+      &>div {
         img {
           width: 40px;
           height: 40px;
@@ -1452,6 +1464,7 @@ body {
       flex-direction: column;
       margin-bottom: 8px;
       gap: 14px;
+
       button {
         width: 320px;
         height: 50px;
@@ -1492,6 +1505,7 @@ body {
       gap: 7px;
       margin-top: 20px;
       margin-bottom: 50px;
+
       .progress-step {
         color: #fff;
         font-size: 11px;
@@ -1663,6 +1677,7 @@ body {
         .system-option {
           flex-direction: column;
           gap: 10px;
+
           .thai-logo {
             width: 15px;
             height: 15px;
@@ -1738,7 +1753,7 @@ body {
       padding: 6px 17px;
       color: white;
 
-      & > * {
+      &>* {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1799,6 +1814,7 @@ body {
       grid: auto-flow / repeat(2, 1fr);
 
       place-items: center;
+
       button {
         background: none;
         outline: none;
@@ -1909,8 +1925,7 @@ body {
 
   // Modal
   .modal {
-    .modal-border {
-    }
+    .modal-border {}
 
     .modal-content {
       width: 300px;
@@ -1935,6 +1950,7 @@ body {
   // Modal ฝากถอน
   .detail-card-kbank {
     padding: 12px;
+
     .card-kbank {
       width: 100%;
     }
@@ -1944,12 +1960,15 @@ body {
     gap: 10;
 
     width: 80px;
+
     .withdrawal {
       margin: 0;
+
       img {
         width: 35px;
         height: 35px;
       }
+
       font-size: 13px;
     }
   }
@@ -1969,6 +1988,7 @@ body {
   .history-modal-content {
     padding-top: 20px;
   }
+
   // End History Modal
 
   // End Modal
@@ -2029,6 +2049,7 @@ body {
       width: 80%;
     }
   }
+
   // End Modal ฝากถอน
 
   // History Modal
@@ -2111,22 +2132,20 @@ body {
   .modal-border {
     position: relative;
     z-index: -15;
-    background: linear-gradient(
-      90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%);
     border-radius: 20px;
     margin: auto;
     padding: 3px;
@@ -2158,14 +2177,12 @@ body {
       position: relative;
       margin: auto;
       width: fit-content;
-      background: linear-gradient(
-        270deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(270deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000000 81.25%,
+          #242424 100%);
       border-radius: 15px;
       padding: 20px;
       display: flex;
@@ -2182,22 +2199,20 @@ body {
       right: -3px;
       bottom: -3px;
       z-index: -1;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 0.8) 0%,
-        rgba(181, 126, 16, 0.8) 20%,
-        rgba(183, 129, 19, 0.8) 26%,
-        rgba(190, 140, 31, 0.8) 32%,
-        rgba(203, 157, 50, 0.8) 38%,
-        rgba(220, 182, 78, 0.8) 44%,
-        rgba(242, 213, 112, 0.8) 49%,
-        rgba(249, 223, 123, 0.8) 51%,
-        rgba(255, 243, 166, 0.8) 52%,
-        rgba(249, 223, 123, 0.8) 59%,
-        rgba(181, 126, 16, 0.8) 84%,
-        rgba(229, 194, 91, 0.8) 95%,
-        rgba(249, 223, 123, 0.8) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%);
       border-radius: 15px;
       pointer-events: none;
     }
@@ -2303,22 +2318,20 @@ body {
 .type-of-withdrawal {
   position: relative;
   z-index: -15;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 223, 123, 1) 0%,
-    rgba(181, 126, 16, 1) 20%,
-    rgba(183, 129, 19, 1) 26%,
-    rgba(190, 140, 31, 1) 32%,
-    rgba(203, 157, 50, 1) 38%,
-    rgba(220, 182, 78, 1) 44%,
-    rgba(242, 213, 112, 1) 49%,
-    rgba(249, 223, 123, 1) 51%,
-    rgba(255, 243, 166, 1) 52%,
-    rgba(249, 223, 123, 1) 59%,
-    rgba(181, 126, 16, 1) 84%,
-    rgba(229, 194, 91, 1) 95%,
-    rgba(249, 223, 123, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%);
   border-radius: 10px;
   margin: auto;
   padding: 2px;
@@ -2327,14 +2340,12 @@ body {
   animation-duration: 0.4s;
 
   .withdrawal {
-    background: linear-gradient(
-      to left,
-      #242424,
-      #0a0000,
-      #191919,
-      #000000,
-      #242424
-    );
+    background: linear-gradient(to left,
+        #242424,
+        #0a0000,
+        #191919,
+        #000000,
+        #242424);
     width: 100%;
     border-radius: 9px;
     display: flex;
@@ -2351,6 +2362,7 @@ body {
   justify-content: center;
 
   color: white;
+
   div {
     display: flex;
     justify-content: center;
@@ -2371,22 +2383,20 @@ body {
     border-radius: 10px;
     min-width: 25%;
     padding: 2px;
-    background: linear-gradient(
-      90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%);
   }
 
   .none-active {
@@ -2465,6 +2475,7 @@ body {
   border-bottom: 1px solid #0572ce;
   color: white;
 }
+
 .text-amount-money input::placeholder {
   text-align: end;
   font-size: 18px;
@@ -2494,6 +2505,7 @@ body {
     display: flex;
     padding: 16px 0 24px 0;
     border-bottom: 1px solid #ffffff;
+
     &.border-0 {
       border: 0;
     }
@@ -2510,6 +2522,7 @@ body {
         color: #fff;
       }
     }
+
     .history-list-right {
       padding-top: 14px;
       width: 100%;
@@ -2532,6 +2545,7 @@ body {
           color: #fff;
         }
       }
+
       .history-date {
         font-size: 14px;
         font-weight: 500;
@@ -2578,14 +2592,12 @@ body {
       width: 134px;
       border-radius: 10px;
       padding: 20px;
-      background: linear-gradient(
-        270deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(270deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000000 81.25%,
+          #242424 100%);
       cursor: pointer;
     }
 
@@ -2597,52 +2609,48 @@ body {
       right: -1.5px;
       bottom: -1.5px;
       border-radius: 10px;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 1) 0%,
+          rgba(181, 126, 16, 1) 20%,
+          rgba(183, 129, 19, 1) 26%,
+          rgba(190, 140, 31, 1) 32%,
+          rgba(203, 157, 50, 1) 38%,
+          rgba(220, 182, 78, 1) 44%,
+          rgba(242, 213, 112, 1) 49%,
+          rgba(249, 223, 123, 1) 51%,
+          rgba(255, 243, 166, 1) 52%,
+          rgba(249, 223, 123, 1) 59%,
+          rgba(181, 126, 16, 1) 84%,
+          rgba(229, 194, 91, 1) 95%,
+          rgba(249, 223, 123, 1) 100%);
       z-index: -1;
     }
-    .bag-menu-img-container {
-    }
-    .bag-menu-icon {
-    }
-    .bag-modal-menu-title {
-    }
+
+    .bag-menu-img-container {}
+
+    .bag-menu-icon {}
+
+    .bag-modal-menu-title {}
   }
 }
 
 .border-gradient-gold {
   position: relative;
   z-index: -15;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 223, 123, 1) 0%,
-    rgba(181, 126, 16, 1) 20%,
-    rgba(183, 129, 19, 1) 26%,
-    rgba(190, 140, 31, 1) 32%,
-    rgba(203, 157, 50, 1) 38%,
-    rgba(220, 182, 78, 1) 44%,
-    rgba(242, 213, 112, 1) 49%,
-    rgba(249, 223, 123, 1) 51%,
-    rgba(255, 243, 166, 1) 52%,
-    rgba(249, 223, 123, 1) 59%,
-    rgba(181, 126, 16, 1) 84%,
-    rgba(229, 194, 91, 1) 95%,
-    rgba(249, 223, 123, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%);
   border-radius: 10px;
   margin: auto;
   padding: 30px;
@@ -2708,14 +2716,13 @@ body {
   max-width: 350px;
   width: 66.19px;
   height: 58.73px;
-  top: 427.59px;
-  left: 787.78px;
   border-radius: 6px;
   border: 1px;
   text-align: center;
   background-color: #1f1e1eb3;
   border: 1px solid #7d7d7d;
 }
+
 .btn-select li {
   list-style: none;
   margin-right: -20px;
@@ -2736,15 +2743,18 @@ body {
   outline: none;
 }
 
-.lang-select {
-  margin-left: 50px;
-}
 
 .show-username-bank {
   background-color: $color-background-input;
-  border: none;
-  margin-bottom: -20ypx;
+  border: 2px solid #676767;
+  margin-top: 10px;
   height: 58.73px;
+  width: 73%;
+  border-radius: 4px;
+  font-size: 18px;
+  color: $white;
+  padding: 13px 0 10px 0;
+  text-align: center;
 }
 
 .promotion-modal-content {
@@ -2766,12 +2776,14 @@ body {
         object-fit: cover;
       }
     }
+
     .promotion-content-title {
       font-size: 30px;
       font-weight: 600;
       color: #FF8A00;
       margin-top: 29px;
     }
+
     .promotion-content-text {
       font-size: 21px;
       font-weight: 300;
@@ -2784,7 +2796,7 @@ body {
   .promotion-modal-footer {
     width: 100%;
     padding: 0 27px;
-    
+
     .promotion-modal-footer-content {
       position: relative;
       display: flex;
@@ -2807,22 +2819,20 @@ body {
       right: -1.5px;
       bottom: -1.5px;
       border-radius: 20px;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 1) 0%,
+          rgba(181, 126, 16, 1) 20%,
+          rgba(183, 129, 19, 1) 26%,
+          rgba(190, 140, 31, 1) 32%,
+          rgba(203, 157, 50, 1) 38%,
+          rgba(220, 182, 78, 1) 44%,
+          rgba(242, 213, 112, 1) 49%,
+          rgba(249, 223, 123, 1) 51%,
+          rgba(255, 243, 166, 1) 52%,
+          rgba(249, 223, 123, 1) 59%,
+          rgba(181, 126, 16, 1) 84%,
+          rgba(229, 194, 91, 1) 95%,
+          rgba(249, 223, 123, 1) 100%);
       z-index: -1;
     }
 
@@ -2832,26 +2842,29 @@ body {
       color: #fff;
       margin-bottom: 12px;
     }
+
     .promotion-checkbox-group {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 10px;
-      
+
 
       .promotion-default-radio {
         opacity: 0;
         position: fixed;
         width: 0;
       }
-      .promotion-default-radio:checked + .promotion-checkbox-title {
+
+      .promotion-default-radio:checked+.promotion-checkbox-title {
         background: linear-gradient(180deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
-        
+
         .promotion-custom-radio {
           background-color: #000;
         }
       }
+
       .promotion-checkbox-title {
         width: fit-content;
         font-size: 20px;
@@ -2875,6 +2888,7 @@ body {
           border-radius: 50%;
           background-color: #fff;
         }
+
         &.active {
           background: linear-gradient(180deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
         }
@@ -2900,6 +2914,7 @@ body {
 
   .change-password-hr {
     padding: 6px 40px;
+
     .hr {
       width: 100%;
       height: 2px;
@@ -2922,6 +2937,7 @@ body {
   &:focus-within {
     outline: 0;
   }
+
   &::placeholder {
     color: #9D9D9D;
   }
@@ -2944,6 +2960,7 @@ body {
   &:focus-within {
     outline: 0;
   }
+
   &::placeholder {
     color: #565656;
   }
@@ -2963,22 +2980,20 @@ body {
 }
 
 .border-input-gold {
-  background: linear-gradient(
-    90deg,
-    rgba(249, 223, 123, 1) 0%,
-    rgba(181, 126, 16, 1) 20%,
-    rgba(183, 129, 19, 1) 26%,
-    rgba(190, 140, 31, 1) 32%,
-    rgba(203, 157, 50, 1) 38%,
-    rgba(220, 182, 78, 1) 44%,
-    rgba(242, 213, 112, 1) 49%,
-    rgba(249, 223, 123, 1) 51%,
-    rgba(255, 243, 166, 1) 52%,
-    rgba(249, 223, 123, 1) 59%,
-    rgba(181, 126, 16, 1) 84%,
-    rgba(229, 194, 91, 1) 95%,
-    rgba(249, 223, 123, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%);
   border-radius: 10px;
   margin: auto;
   padding: 1px;
@@ -2999,7 +3014,97 @@ body {
   &:focus-within {
     outline: 0;
   }
+
   &::placeholder {
     color: #565656;
+  }
+}
+
+.qrpay {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 30px 0 30px;
+}
+
+.detail-qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  .div1 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .div2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #F2D570;
+  }
+
+  .div3 {
+    width: 358px;
+    height: 359px;
+    border-radius: 26px;
+    border: 3px solid #F9DF7B;
+    background: #3E3939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    .save {
+      width: 149px;
+      height: 48px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 7px;
+      border: 1px solid #F9DF7B;
+      background: #C1933B;
+      font-size: 20px;
+      font-weight: 500;
+      color: $white;
+    }
+    .refresh {
+      width: 149px;
+      height: 48px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 7px;
+      border: 1px solid #F9DF7B;
+      background: linear-gradient(to left, #242424, #0A0000, #191919, #000000, #242424);
+      font-size: 20px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+  .div5 {
+    margin-top: 17px;
+    font-size: 25px;
+    font-weight: 700;
+    color: $white;
+  }
+  .div6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    .danger {
+      color: red;
+    }
   }
 }
