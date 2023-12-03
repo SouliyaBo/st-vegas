@@ -2319,7 +2319,8 @@ body {
             border-radius: 5px;
             font-size: 20px;
             font-weight: 600;
-            color: #fff; }
+            color: #fff;
+            cursor: pointer; }
         .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
           width: 100%;
           height: 47px;
@@ -2328,7 +2329,8 @@ body {
           border-radius: 5px;
           font-size: 20px;
           font-weight: 600;
-          color: #fff; }
+          color: #fff;
+          cursor: pointer; }
   .earn-modal-content .earn-menu-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
