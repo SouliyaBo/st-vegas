@@ -1995,6 +1995,37 @@ body {
       min-width: 501px;
 
       .modal-body {
+        // Modal ฝากถอน
+        .detail-card-kbank {
+          min-width: 500px;
+
+          .card-kbank {
+            padding: 18px 20px 0px 20px;
+            width: 100%;
+            width: 416.705px;
+            height: 201.99px;
+          }
+        }
+
+        .type-of-withdrawal {
+          width: 127px;
+
+          .withdrawal {
+            padding: 10px 14px 10px 10px;
+            font-size: 18px;
+          }
+        }
+
+        .button-line {
+          margin: 20px 0;
+
+          div {
+            padding: 8px 23px 8px 23px;
+            width: 80%;
+          }
+        }
+        // End Modal ฝากถอน
+
         // Promotion Modal
         .promotion-modal-content {
           padding: 30px 65px;
@@ -2107,6 +2138,117 @@ body {
           }
         }
         // End Code Modal
+
+        // Start Slip Verify
+        .slip-verify-content {
+          padding: 70px 33px 30px 33px;
+          gap: 20px;
+
+          .warning-text {
+            font-size: 23px;
+          }
+
+          .bank-selector {
+            label {
+              font-size: 18px;
+            }
+
+            div {
+              div {
+                height: 59px;
+              }
+              input {
+                height: 59px;
+
+                &::placeholder {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+
+          .bank-input {
+            label {
+              font-size: 18px;
+            }
+
+            input {
+              height: 63px;
+              font-size: 22px;
+
+              &::placeholder {
+                font-size: 22px;
+              }
+            }
+
+            small {
+              font-size: 18px;
+            }
+          }
+
+          .button-warning {
+            height: 60px;
+            font-size: 25px;
+          }
+        }
+
+        // End Slip Verify
+
+        // Start True Wallet
+        .true-wallet-content {
+          padding: 40px 16px 15px 16px;
+          gap: 20px;
+
+          .card {
+            width: 415.873px;
+            height: 142.857px;
+
+            .left {
+              p {
+                font-size: 21px;
+              }
+            }
+            .right {
+              gap: 2rem;
+
+              .true-wallet-title {
+                p {
+                  font-size: 20px;
+                }
+
+                div {
+                  width: 48px;
+                  height: 48px;
+                }
+              }
+
+              .visa {
+                width: 80px;
+              }
+            }
+          }
+        }
+
+        .warning-box {
+          font-size: 22px;
+          width: 445px;
+        }
+
+        .suggest-text {
+          font-size: 16px;
+        }
+
+        .line-button {
+          height: 63px;
+          width: 396px;
+          img {
+            width: 44px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        // End True Wallet
       }
     }
     .modal-header-container {
@@ -2119,35 +2261,6 @@ body {
       font-size: 30px;
     }
   }
-
-  // Modal ฝากถอน
-  .detail-card-kbank {
-    min-width: 500px;
-
-    .card-kbank {
-      padding: 18px 20px 0px 20px;
-      width: 100%;
-    }
-  }
-
-  .type-of-withdrawal {
-    width: 127px;
-
-    .withdrawal {
-      padding: 10px 14px 10px 10px;
-      font-size: 18px;
-    }
-  }
-
-  .button-line {
-    margin: 20px 0;
-
-    div {
-      padding: 8px 23px 8px 23px;
-      width: 80%;
-    }
-  }
-  // End Modal ฝากถอน
 
   // History Modal
 
@@ -2405,13 +2518,18 @@ body {
 }
 
 .detail-card-kbank {
-  background-image: url("/assets/images/card-kbank.svg");
   margin-top: 50px;
-  background-size: cover;
 
   .card-kbank {
     display: flex;
     flex-direction: column;
+    background-image: url("/assets/images/card-kbank.svg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+
+    width: 250px;
+    height: 127px;
 
     // gap: 9px;
     div {
@@ -3067,6 +3185,224 @@ body {
       width: 100%;
       height: 2px;
       background-color: #4e4e4e;
+    }
+  }
+}
+
+.slip-verify-content {
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 39px 10px 15px 10px;
+
+  & > * {
+    width: 100%;
+  }
+
+  .warning-text {
+    color: #f00;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .bank-selector {
+    label {
+      font-weight: 300;
+      color: #f00;
+      font-size: 14px;
+    }
+
+    div {
+      div {
+        height: 37px;
+        border-radius: 6px;
+        border: 1px solid #7d7d7d;
+        background: #151515;
+      }
+      input {
+        border-radius: 6px;
+        border: 1px solid #7d7d7d;
+        background: #151515;
+        outline: none;
+        color: #fff;
+        height: 37px;
+
+        &::placeholder {
+          color: #fff;
+          font-weight: 300;
+          text-align: center;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .bank-input {
+    position: relative;
+
+    & > * {
+      display: block;
+      width: 100%;
+    }
+
+    label {
+      color: #f00;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    input {
+      border-radius: 6px;
+      height: 37px;
+      font-size: 13px;
+      border: 1px solid #f00;
+      background: #151515;
+      padding: 16px 12px;
+      outline: none;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+
+    small {
+      position: absolute;
+      color: #e6e6e6;
+      font-size: 12px;
+      font-weight: 500;
+
+      top: 30%;
+      left: 2%;
+    }
+  }
+
+  .button-warning {
+    height: 40px;
+    font-size: 20px;
+  }
+  p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 600;
+    a {
+      color: #00fcfc;
+    }
+  }
+}
+
+.true-wallet-content {
+  padding: 70px 33px 30px 33px;
+  gap: 20px;
+  flex-direction: column;
+
+  .card {
+    width: 262px;
+    height: 90px;
+    border-radius: 15px;
+    border: 2px solid #f9df7b;
+    background: linear-gradient(257deg, #ee4700 0%, #ff8731 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+
+    .left {
+      flex-direction: column;
+      text-align: left;
+
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        width: 100%;
+      }
+    }
+
+    .right {
+      gap: 1.5rem;
+      flex-direction: column;
+      .true-wallet-title {
+        gap: 10px;
+        p {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        div {
+          background-color: #fff;
+          border-radius: 100%;
+
+          object-fit: contain;
+          height: 30px;
+          width: 30px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .visa {
+        margin-left: 50%;
+        width: 50px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  .warning-box {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #f00;
+    background: #0b0b0b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .suggest-text {
+    font-size: 12px;
+
+    font-weight: 600;
+
+    a {
+      color: #00fcfc;
+    }
+  }
+
+  .line-button {
+    width: 249px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #0fb800;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+    outline: none;
+
+    img {
+      width: 25px;
+    }
+
+    p {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
     }
   }
 }

@@ -1321,6 +1321,23 @@ body {
     display: none; }
   .modal .modal-content {
     min-width: 501px; }
+    .modal .modal-content .modal-body .detail-card-kbank {
+      min-width: 500px; }
+      .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
+        padding: 18px 20px 0px 20px;
+        width: 100%;
+        width: 416.705px;
+        height: 201.99px; }
+    .modal .modal-content .modal-body .type-of-withdrawal {
+      width: 127px; }
+      .modal .modal-content .modal-body .type-of-withdrawal .withdrawal {
+        padding: 10px 14px 10px 10px;
+        font-size: 18px; }
+    .modal .modal-content .modal-body .button-line {
+      margin: 20px 0; }
+      .modal .modal-content .modal-body .button-line div {
+        padding: 8px 23px 8px 23px;
+        width: 80%; }
     .modal .modal-content .modal-body .promotion-modal-content {
       padding: 30px 65px;
       min-width: 500px;
@@ -1381,25 +1398,64 @@ body {
       .modal .modal-content .modal-body .code-modal-content .button-warning {
         height: 60px;
         font-size: 18px; }
+    .modal .modal-content .modal-body .slip-verify-content {
+      padding: 70px 33px 30px 33px;
+      gap: 20px; }
+      .modal .modal-content .modal-body .slip-verify-content .warning-text {
+        font-size: 23px; }
+      .modal .modal-content .modal-body .slip-verify-content .bank-selector label {
+        font-size: 18px; }
+      .modal .modal-content .modal-body .slip-verify-content .bank-selector div div {
+        height: 59px; }
+      .modal .modal-content .modal-body .slip-verify-content .bank-selector div input {
+        height: 59px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-selector div input::placeholder {
+          font-size: 22px; }
+      .modal .modal-content .modal-body .slip-verify-content .bank-input label {
+        font-size: 18px; }
+      .modal .modal-content .modal-body .slip-verify-content .bank-input input {
+        height: 63px;
+        font-size: 22px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-input input::placeholder {
+          font-size: 22px; }
+      .modal .modal-content .modal-body .slip-verify-content .bank-input small {
+        font-size: 18px; }
+      .modal .modal-content .modal-body .slip-verify-content .button-warning {
+        height: 60px;
+        font-size: 25px; }
+    .modal .modal-content .modal-body .true-wallet-content {
+      padding: 40px 16px 15px 16px;
+      gap: 20px; }
+      .modal .modal-content .modal-body .true-wallet-content .card {
+        width: 415.873px;
+        height: 142.857px; }
+        .modal .modal-content .modal-body .true-wallet-content .card .left p {
+          font-size: 21px; }
+        .modal .modal-content .modal-body .true-wallet-content .card .right {
+          gap: 2rem; }
+          .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title p {
+            font-size: 20px; }
+          .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title div {
+            width: 48px;
+            height: 48px; }
+          .modal .modal-content .modal-body .true-wallet-content .card .right .visa {
+            width: 80px; }
+    .modal .modal-content .modal-body .warning-box {
+      font-size: 22px;
+      width: 445px; }
+    .modal .modal-content .modal-body .suggest-text {
+      font-size: 16px; }
+    .modal .modal-content .modal-body .line-button {
+      height: 63px;
+      width: 396px; }
+      .modal .modal-content .modal-body .line-button img {
+        width: 44px; }
+      .modal .modal-content .modal-body .line-button p {
+        font-size: 20px; }
   .modal .modal-header-container .modal-header {
     min-width: 384px; }
   .modal .modal-title {
     font-size: 30px; }
-  .detail-card-kbank {
-    min-width: 500px; }
-    .detail-card-kbank .card-kbank {
-      padding: 18px 20px 0px 20px;
-      width: 100%; }
-  .type-of-withdrawal {
-    width: 127px; }
-    .type-of-withdrawal .withdrawal {
-      padding: 10px 14px 10px 10px;
-      font-size: 18px; }
-  .button-line {
-    margin: 20px 0; }
-    .button-line div {
-      padding: 8px 23px 8px 23px;
-      width: 80%; }
   .history-modal-content {
     width: 464px;
     padding-top: 40px; } }
@@ -1551,12 +1607,16 @@ body {
   animation-duration: 0.4s; }
 
 .detail-card-kbank {
-  background-image: url("/assets/images/card-kbank.svg");
-  margin-top: 50px;
-  background-size: cover; }
+  margin-top: 50px; }
   .detail-card-kbank .card-kbank {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    background-image: url("/assets/images/card-kbank.svg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    width: 250px;
+    height: 127px; }
     .detail-card-kbank .card-kbank div {
       display: flex;
       justify-content: space-between; }
@@ -1964,6 +2024,156 @@ body {
       width: 100%;
       height: 2px;
       background-color: #4e4e4e; }
+
+.slip-verify-content {
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 39px 10px 15px 10px; }
+  .slip-verify-content > * {
+    width: 100%; }
+  .slip-verify-content .warning-text {
+    color: #f00;
+    font-weight: 300;
+    font-size: 15px; }
+  .slip-verify-content .bank-selector label {
+    font-weight: 300;
+    color: #f00;
+    font-size: 14px; }
+  .slip-verify-content .bank-selector div div {
+    height: 37px;
+    border-radius: 6px;
+    border: 1px solid #7d7d7d;
+    background: #151515; }
+  .slip-verify-content .bank-selector div input {
+    border-radius: 6px;
+    border: 1px solid #7d7d7d;
+    background: #151515;
+    outline: none;
+    color: #fff;
+    height: 37px; }
+    .slip-verify-content .bank-selector div input::placeholder {
+      color: #fff;
+      font-weight: 300;
+      text-align: center;
+      font-size: 12px; }
+  .slip-verify-content .bank-input {
+    position: relative; }
+    .slip-verify-content .bank-input > * {
+      display: block;
+      width: 100%; }
+    .slip-verify-content .bank-input label {
+      color: #f00;
+      font-size: 14px;
+      font-weight: 300; }
+    .slip-verify-content .bank-input input {
+      border-radius: 6px;
+      height: 37px;
+      font-size: 13px;
+      border: 1px solid #f00;
+      background: #151515;
+      padding: 16px 12px;
+      outline: none;
+      color: #fff; }
+      .slip-verify-content .bank-input input::placeholder {
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px; }
+    .slip-verify-content .bank-input small {
+      position: absolute;
+      color: #e6e6e6;
+      font-size: 12px;
+      font-weight: 500;
+      top: 30%;
+      left: 2%; }
+  .slip-verify-content .button-warning {
+    height: 40px;
+    font-size: 20px; }
+  .slip-verify-content p {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    font-weight: 600; }
+    .slip-verify-content p a {
+      color: #00fcfc; }
+
+.true-wallet-content {
+  padding: 70px 33px 30px 33px;
+  gap: 20px;
+  flex-direction: column; }
+  .true-wallet-content .card {
+    width: 262px;
+    height: 90px;
+    border-radius: 15px;
+    border: 2px solid #f9df7b;
+    background: linear-gradient(257deg, #ee4700 0%, #ff8731 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px; }
+    .true-wallet-content .card .left {
+      flex-direction: column;
+      text-align: left; }
+      .true-wallet-content .card .left p {
+        font-size: 14px;
+        font-weight: 600;
+        width: 100%; }
+    .true-wallet-content .card .right {
+      gap: 1.5rem;
+      flex-direction: column; }
+      .true-wallet-content .card .right .true-wallet-title {
+        gap: 10px; }
+        .true-wallet-content .card .right .true-wallet-title p {
+          font-size: 14px;
+          font-weight: 600; }
+        .true-wallet-content .card .right .true-wallet-title div {
+          background-color: #fff;
+          border-radius: 100%;
+          object-fit: contain;
+          height: 30px;
+          width: 30px; }
+          .true-wallet-content .card .right .true-wallet-title div img {
+            width: 100%;
+            height: 100%; }
+      .true-wallet-content .card .right .visa {
+        margin-left: 50%;
+        width: 50px; }
+        .true-wallet-content .card .right .visa img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+  .true-wallet-content .warning-box {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #f00;
+    background: #0b0b0b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center; }
+  .true-wallet-content .suggest-text {
+    font-size: 12px;
+    font-weight: 600; }
+    .true-wallet-content .suggest-text a {
+      color: #00fcfc; }
+  .true-wallet-content .line-button {
+    width: 249px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #0fb800;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    outline: none; }
+    .true-wallet-content .line-button img {
+      width: 25px; }
+    .true-wallet-content .line-button p {
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px; }
 
 .input-box {
   width: 100%;

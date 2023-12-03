@@ -37,6 +37,18 @@
       "description": "ຝາກອໍໂຕ້ Modal",
       "line": 1087,
       "title": "ຝາກອໍໂຕ້ Modal"
+    },
+    {
+      "file": "index.html",
+      "description": "Slip Verify Modal",
+      "line": 1496,
+      "title": "Slip Verify Modal"
+    },
+    {
+      "file": "index.html",
+      "description": "Truewallet Modal",
+      "line": 1593,
+      "title": "Truewallet Modal"
     }
   ]
 }

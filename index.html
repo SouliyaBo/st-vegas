@@ -1037,7 +1037,12 @@
                   </div>
                 </div>
 
-                <div>
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#slipVerify"
+                  data-bs-dismiss="modal"
+                >
                   <div class="type-of-withdrawal">
                     <div class="withdrawal">
                       <img src="/assets/images/verified.svg" alt="kkk" />
@@ -1046,7 +1051,12 @@
                   </div>
                 </div>
 
-                <div>
+                <div
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#trueWallet"
+                  data-bs-dismiss="modal"
+                >
                   <div class="type-of-withdrawal">
                     <div class="withdrawal">
                       <img
@@ -1487,6 +1497,169 @@
       </div>
     </main>
     <!-- end  modal ฝากทศนิยม -->
+
+    <!-- slip verify modal -->
+    <div
+      class="modal fade"
+      id="slipVerify"
+      tabindex="-1"
+      aria-labelledby="slipVerifyLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#depositWithdraw"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">Slip Verify</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="slip-verify-content flexCenter">
+              <p class="warning-text">
+                *ใช้ในกรณีที่ธนาคารมีปัญหาหรือยอดฝากไม่เข้า*
+              </p>
+              <div class="bank-selector">
+                <label for="name">เลือกธนาคารบัญชีฝาก</label>
+                <div class="flexCenter" style="gap: 8px">
+                  <div class="flexCenter" style="width: 20%">
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 10.svg"
+                      alt="bank icon"
+                      width="33"
+                      height="33"
+                    />
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 26 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.5442 17.1414L6.28711 10.9062H18.8013L12.5442 17.1414Z"
+                        fill="#FF9900"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    style="width: 80%"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="นาย ปปปปป ปปปปป"
+                  />
+                </div>
+              </div>
+
+              <div class="bank-input">
+                <label for="bank">เลือกธนาคารที่ทำรายการฝาก</label>
+                <input type="text" name="bank" placeholder="เลือกธนาคาร" />
+              </div>
+              <div class="bank-input">
+                <label for="bank">กรุณากรอกข้อมูล</label>
+                <input type="text" name="bank" placeholder="0" />
+                <small>กรอกจำนวนเงินตามสลิป</small>
+              </div>
+              <div class="bank-input">
+                <label for="bank">กรุณากรอกข้อมูล</label>
+                <input type="text" name="bank" placeholder="0" />
+                <small>วันที่ทำรายการฝาก</small>
+              </div>
+
+              <button class="button-warning">ยืนยันยอดฝาก</button>
+              <p>พบปัญหา <a href="/">ติดต่อฝ่ายบริการลูกค้า</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slip verify end -->
+
+    <!-- true wallet end modal -->
+    <div
+      class="modal fade"
+      id="trueWallet"
+      tabindex="-1"
+      aria-labelledby="trueWalletLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="/assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#depositWithdraw"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">Truewallet</p>
+              <img
+                src="/assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="true-wallet-content flexCenter">
+              <div class="card flexBetween">
+                <div class="flexCenter left">
+                  <p>ทรูมันนี่ วอทเล็ท</p>
+                  <p>026-999999-9</p>
+                  <p>นาย xxxxx xxxxx</p>
+                </div>
+                <div class="flexBetween right">
+                  <div class="true-wallet-title flexBetween">
+                    <p>True Wallet</p>
+
+                    <div>
+                      <img src="/assets/images/true-money-wallet.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="visa">
+                    <img src="/assets/icons/visa.svg" alt="visa" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="warning-box flexCenter">
+                กรุณาใช้เลขบัญชีที่สมัครโอนเข้ามาเท่านั้น
+              </div>
+
+              <p class="suggest-text">
+                พบปัญหา <a href="/">ติดต่อฝ่ายบริการลูกค้า</a>
+              </p>
+
+              <button class="line-button">
+                <img src="/assets/icons/icon-line.svg" alt="line icon" />
+                <p>ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- true wallet end -->
 
     <!-- history modal -->
     <div
