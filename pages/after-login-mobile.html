@@ -226,7 +226,12 @@
             <img src="/assets/icons/home.svg" alt="login" />
             <p>หน้าหลัก</p>
           </button>
-          <button class="footer-item flexCenter">
+          <button
+            class="footer-item flexCenter"
+            data-bs-toggle="modal"
+            data-bs-target="#promotionModal"
+            data-bs-dismiss="modal"
+          >
             <img src="/assets/icons/gift.svg" alt="login" />
             <p>โปรโมชั่น</p>
           </button>
@@ -238,7 +243,11 @@
             <img src="/assets/icons/return-money.svg" alt="login" />
             <p>ฝาก-ถอน</p>
           </button>
-          <button class="footer-item flexCenter">
+          <button
+            class="footer-item flexCenter"
+            data-bs-toggle="modal"
+            data-bs-target="#bagModal"
+          >
             <img src="/assets/icons/money-bag.svg" alt="login" />
             <p>กระเป๋า</p>
           </button>
@@ -363,6 +372,8 @@
                 border-radius: 10px;
                 font-size: 13px;
               "
+              data-bs-toggle="modal"
+              data-bs-target="#changePasswordModal"
             >
               เปลี่ยนรหัสผ่าน
             </button>
@@ -1125,6 +1136,355 @@
         </div>
       </div>
       <!-- history modal end -->
+
+      <!-- promotion modal -->
+      <div
+        class="modal fade"
+        id="promotionModal"
+        tabindex="-1"
+        aria-labelledby="promotionModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#bagModal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title">โปรโมชั่น</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="promotion-modal-content">
+                <div class="promotion-modal-body">
+                  <div class="promotion-modal-image-container">
+                    <img
+                      src="/assets/images/image-promotion-modal.svg"
+                      class="promotion-modal-image"
+                      alt=""
+                    />
+                  </div>
+                  <p class="promotion-content-title">สมาชิกใหม่หมุนกงล้อฟรี</p>
+                  <p class="promotion-content-text">วันเกิด หมุนกงล้อฟรี !!</p>
+                  <p class="promotion-content-text">
+                    (สอบถามข้อมูลเพิ่มเติมได้ที่แอดมิน)
+                  </p>
+                </div>
+                <div class="promotion-modal-footer">
+                  <div class="promotion-modal-footer-content">
+                    <p class="promotion-modal-footer-title">สถานะโปรโมชั่น</p>
+                    <div class="promotion-checkbox-group">
+                      <input
+                        type="radio"
+                        class="promotion-default-radio"
+                        name="promotion-status"
+                        id="get-promotion"
+                      />
+                      <label
+                        class="promotion-checkbox-title"
+                        for="get-promotion"
+                      >
+                        <div class="promotion-custom-radio"></div>
+                        รับโบนัส
+                      </label>
+                      <input
+                        type="radio"
+                        class="promotion-default-radio"
+                        name="promotion-status"
+                        id="not-get-promotion"
+                      />
+                      <label
+                        class="promotion-checkbox-title"
+                        for="not-get-promotion"
+                      >
+                        <div class="promotion-custom-radio"></div>
+                        ไม่รับโบนัส
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- promotion modal end -->
+
+      <!-- change password modal -->
+      <div
+        class="modal fade"
+        id="changePasswordModal"
+        tabindex="-1"
+        aria-labelledby="changePasswordModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#bagModal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title">เปลี่ยนรหัส</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="change-password-modal-content">
+                <div class="border-input-gold">
+                  <input
+                    type="text"
+                    placeholder="กรุณากรอกรหัสผ่านเดิม"
+                    class="input-for-border-gold"
+                  />
+                </div>
+                <div class="change-password-hr">
+                  <div class="hr"></div>
+                </div>
+                <div class="border-input-gold">
+                  <input
+                    type="text"
+                    placeholder="กรุณากรอกรหัสผ่านใหม่"
+                    class="input-for-border-gold"
+                  />
+                </div>
+                <div class="border-input-gold">
+                  <input
+                    type="text"
+                    placeholder="กรุณากรอกรหัสผ่านใหม่อีกครั้ง"
+                    class="input-for-border-gold"
+                  />
+                </div>
+
+                <button type="button" class="button-warning">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- change password modal end -->
+
+      <div
+        class="modal fade"
+        id="bagModal"
+        tabindex="-1"
+        aria-labelledby="bagModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <p class="modal-title">กระเป๋า</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="bag-modal-content">
+                <div class="bag-modal-slide-container">
+                  <img src="/assets/images/bag-background.png" alt="" />
+                </div>
+
+                <div class="bag-modal-menu">
+                  <div
+                    class="bag-modal-menu-item"
+                    id="promotion-modal-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#promotionModal"
+                    data-bs-dismiss="modal"
+                  >
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-promotion.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">โปรโมชั่น</p>
+                  </div>
+                  <div
+                    class="bag-modal-menu-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#depositWithdraw"
+                    data-bs-dismiss="modal"
+                  >
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-withdraw.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">ฝาก - ถอน</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-earn-money.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">สร้างรายได้</p>
+                  </div>
+                  <div
+                    class="bag-modal-menu-item"
+                    id="code-modal-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#codeModal"
+                    data-bs-dismiss="modal"
+                  >
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-ticket.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">กรอกโค้ด</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-spinner.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">กงล้อ</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-teasure.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">เครดิตฟรี</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-back-cash.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">คืนยอดเสีย</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-diamond.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">แลกเพรช</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-trophy.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">ทัวร์นาเมนต์</p>
+                  </div>
+                  <div class="bag-modal-menu-item">
+                    <div class="bag-menu-img-container">
+                      <img
+                        class="bag-menu-icon"
+                        src="/assets/icons/icon-road-map.svg"
+                        alt=""
+                      />
+                    </div>
+                    <p class="bag-modal-menu-title">Road Map</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- code modal -->
+      <div
+        class="modal fade"
+        id="codeModal"
+        tabindex="-1"
+        aria-labelledby="codeModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#bagModal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title">กรอกโค้ด</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="code-modal-content">
+                <input
+                  type="text"
+                  placeholder="กรุณากรอกโค้ด"
+                  class="input-box"
+                />
+
+                <button type="button" class="button-warning">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- code modal end -->
 
       <!-- End Modal -->
     </main>

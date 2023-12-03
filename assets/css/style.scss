@@ -1976,7 +1976,7 @@ body {
 
 // End of Mobile Page
 
-@media (min-width: 481px) {
+@media only screen and (min-width: 481px) {
   .featured-game-wrapper#mobile {
     display: none;
   }
@@ -1991,6 +1991,124 @@ body {
 
   // Modal
   .modal {
+    .modal-content {
+      min-width: 501px;
+
+      .modal-body {
+        // Promotion Modal
+        .promotion-modal-content {
+          padding: 30px 65px;
+
+          min-width: 500px;
+          max-width: 500px;
+
+          .promotion-modal-body {
+            .promotion-modal-image-container {
+              margin-top: 20px;
+              width: 370px;
+              height: 370px;
+            }
+
+            .promotion-content-title {
+              font-size: 30px;
+              margin-top: 29px;
+            }
+            .promotion-content-text {
+              font-size: 21px;
+              margin-top: 10px;
+            }
+          }
+
+          .promotion-modal-footer {
+            // padding: 0 27px;
+            margin-top: 30px;
+
+            .promotion-modal-footer-content {
+              padding: 15px 40px;
+              height: 114px;
+
+              .promotion-modal-footer-title {
+                font-size: 30px;
+              }
+
+              .promotion-modal-footer-text {
+                font-size: 22px;
+              }
+
+              .promotion-checkbox-title {
+                font-size: 20px;
+                padding: 8px;
+
+                .promotion-custom-radio {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+
+              .promotion-checkbox-group {
+                width: 100%;
+              }
+            }
+          }
+        }
+        // End Promotion Modal
+
+        // Start Change Password
+
+        .change-password-modal-content {
+          width: 500px;
+
+          .input-for-border-gold {
+            height: 60px;
+          }
+
+          .button-warning {
+            height: 60px;
+          }
+        }
+
+        // End Change Password
+
+        // Start Bag Modal
+        .bag-modal-content {
+          padding: 56px 28px 20px 28px;
+          max-width: 1000px;
+
+          .bag-modal-slide-container {
+            width: 905px;
+            height: 402px;
+            margin-top: 0;
+          }
+          .bag-modal-menu {
+            grid-gap: 21px;
+
+            .bag-modal-menu-item {
+              width: 134px;
+              height: 134px;
+              padding: 20px;
+
+              .bag-menu-img-container {
+                width: 66px;
+                height: 66px;
+              }
+            }
+          }
+        }
+        // End Bag Modal
+
+        // Start Code Modal
+        .code-modal-content {
+          width: 476px;
+          padding: 78px 20px 42px 20px;
+          gap: 44px;
+          .button-warning {
+            height: 60px;
+            font-size: 18px;
+          }
+        }
+        // End Code Modal
+      }
+    }
     .modal-header-container {
       .modal-header {
         min-width: 384px;
@@ -2040,10 +2158,46 @@ body {
 
   // End History Modal
 
+  // Start Promotion Modal
+
+  // End Promotion Modal
+
   // End Modal
 }
 
 // Animation
+/* Add Animation */
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+
+  to {
+    bottom: -300px;
+    opacity: 0;
+  }
+}
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -2102,7 +2256,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
   animation-name: fadeIn;
@@ -2110,6 +2264,7 @@ body {
 
   .modal-border {
     position: relative;
+
     z-index: -15;
     background: linear-gradient(
       90deg,
@@ -2140,6 +2295,7 @@ body {
   /* Add more styling to .card as needed for content */
   .modal-content {
     position: relative;
+
     z-index: -10;
     background-color: #000;
     border-radius: 20px;
@@ -2242,45 +2398,10 @@ body {
   }
 }
 
-/* Add Animation */
-@keyframes slideIn {
-  from {
-    bottom: -300px;
-    opacity: 0;
-  }
-
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 /* Animation for hiding the modal */
 .modal.hide .modal-border {
   animation-name: slideOut;
   animation-duration: 0.4s;
-}
-
-@keyframes slideOut {
-  from {
-    bottom: 0;
-    opacity: 1;
-  }
-
-  to {
-    bottom: -300px;
-    opacity: 0;
-  }
 }
 
 .detail-card-kbank {
@@ -2542,8 +2663,6 @@ body {
 }
 
 .bag-modal-content {
-  padding: 56px 28px 20px 28px;
-  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2551,13 +2670,14 @@ body {
   .bag-modal-slide-container {
     // width: 100%;
     // height: 400px;
-    width: 100%;
-    height: 100%;
+    width: 232px;
+    height: 142px;
+    margin-top: 12px;
 
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 
@@ -2565,9 +2685,11 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    grid-gap: 21px;
+    gap: 8px 11px;
 
     .bag-modal-menu-item {
+      height: 70px;
+      width: 70px;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -2575,9 +2697,7 @@ body {
       align-items: center;
       text-align: center;
       color: #fff;
-      width: 134px;
       border-radius: 10px;
-      padding: 20px;
       background: linear-gradient(
         270deg,
         #242424 0%,
@@ -2616,10 +2736,17 @@ body {
       z-index: -1;
     }
     .bag-menu-img-container {
+      width: 35px;
+      height: 35px;
     }
     .bag-menu-icon {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
     .bag-modal-menu-title {
+      font-size: 13px;
+      font-weight: 600;
     }
   }
 }
@@ -2748,17 +2875,18 @@ body {
 }
 
 .promotion-modal-content {
-  width: 500px;
+  max-width: 300px;
+
   padding: 70px 0 30px 0;
   text-align: center;
 
   .promotion-modal-body {
     width: 100%;
-    padding: 0 65px 30px 65px;
 
     .promotion-modal-image-container {
-      width: 370px;
-      height: 370px;
+      width: 222px;
+      height: 222px;
+      margin: 0 auto;
 
       .promotion-modal-image {
         width: 100%;
@@ -2767,24 +2895,21 @@ body {
       }
     }
     .promotion-content-title {
-      font-size: 30px;
+      font-size: 15px;
       font-weight: 600;
-      color: #FF8A00;
-      margin-top: 29px;
+      color: #ff8a00;
     }
     .promotion-content-text {
-      font-size: 21px;
+      font-size: 12px;
       font-weight: 300;
       color: #fff;
-      margin-top: 10px;
     }
   }
 
-
   .promotion-modal-footer {
     width: 100%;
-    padding: 0 27px;
-    
+    margin-top: 29px;
+
     .promotion-modal-footer-content {
       position: relative;
       display: flex;
@@ -2795,8 +2920,15 @@ body {
       color: #fff;
       width: 100%;
       border-radius: 20px;
-      padding: 15px 40px;
-      background: linear-gradient(270deg, #242424 0%, #0A0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
+      height: 71px;
+      background: linear-gradient(
+        270deg,
+        #242424 0%,
+        #0a0000 23.44%,
+        #191919 52.6%,
+        #000000 81.25%,
+        #242424 100%
+      );
     }
 
     .promotion-modal-footer-content::before {
@@ -2827,18 +2959,16 @@ body {
     }
 
     .promotion-modal-footer-title {
-      font-size: 22px;
       font-weight: 600;
       color: #fff;
       margin-bottom: 12px;
     }
     .promotion-checkbox-group {
-      width: 100%;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 10px;
-      
 
       .promotion-default-radio {
         opacity: 0;
@@ -2846,21 +2976,41 @@ body {
         width: 0;
       }
       .promotion-default-radio:checked + .promotion-checkbox-title {
-        background: linear-gradient(180deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
-        
+        background: linear-gradient(
+          180deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%
+        );
+
         .promotion-custom-radio {
           background-color: #000;
         }
       }
       .promotion-checkbox-title {
+        font-size: 13px;
+        padding: 4px;
         width: fit-content;
-        font-size: 20px;
         font-weight: 600;
         color: #fff;
-        padding: 8px;
         margin: 0;
         border-radius: 5px;
-        background: linear-gradient(180deg, #000000 0%, #3C3B3B 48.96%, #000000 100%);
+        background: linear-gradient(
+          180deg,
+          #000000 0%,
+          #3c3b3b 48.96%,
+          #000000 100%
+        );
 
         display: flex;
         justify-content: center;
@@ -2869,14 +3019,29 @@ body {
         cursor: pointer;
 
         .promotion-custom-radio {
-          width: 24px;
-          height: 24px;
+          width: 16px;
+          height: 16px;
           border: 3px solid #fff;
           border-radius: 50%;
           background-color: #fff;
         }
         &.active {
-          background: linear-gradient(180deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
+          background: linear-gradient(
+            180deg,
+            rgba(249, 223, 123, 0.8) 0%,
+            rgba(181, 126, 16, 0.8) 20%,
+            rgba(183, 129, 19, 0.8) 26%,
+            rgba(190, 140, 31, 0.8) 32%,
+            rgba(203, 157, 50, 0.8) 38%,
+            rgba(220, 182, 78, 0.8) 44%,
+            rgba(242, 213, 112, 0.8) 49%,
+            rgba(249, 223, 123, 0.8) 51%,
+            rgba(255, 243, 166, 0.8) 52%,
+            rgba(249, 223, 123, 0.8) 59%,
+            rgba(181, 126, 16, 0.8) 84%,
+            rgba(229, 194, 91, 0.8) 95%,
+            rgba(249, 223, 123, 0.8) 100%
+          );
         }
       }
     }
@@ -2884,15 +3049,13 @@ body {
 }
 
 .code-modal-content {
-  width: 476px;
-  padding: 78px 20px 42px 20px;
+  gap: 22px;
+  padding: 34px 10px 21px 10px;
   display: flex;
   flex-direction: column;
-  gap: 44px;
 }
 
 .change-password-modal-content {
-  width: 500px;
   padding: 78px 20px 32px 20px;
   display: flex;
   flex-direction: column;
@@ -2903,7 +3066,7 @@ body {
     .hr {
       width: 100%;
       height: 2px;
-      background-color: #4E4E4E;
+      background-color: #4e4e4e;
     }
   }
 }
@@ -2913,7 +3076,7 @@ body {
   height: 60px;
   border: 0;
   border-radius: 4px;
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
   padding: 18px 15px;
   font-size: 16px;
   font-weight: 400;
@@ -2923,7 +3086,7 @@ body {
     outline: 0;
   }
   &::placeholder {
-    color: #9D9D9D;
+    color: #9d9d9d;
   }
 }
 
@@ -2951,12 +3114,11 @@ body {
 
 .button-warning {
   width: 100%;
-  height: 60px;
+  height: 35px;
+  font-size: 18px;
   border: 0;
   border-radius: 4px;
-  background-color: #C1933B;
-  padding: 8px 15px;
-  font-size: 25px;
+  background-color: #c1933b;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -2987,7 +3149,7 @@ body {
 
 .input-for-border-gold {
   width: 100%;
-  height: 60px;
+  height: 44px;
   border: 0;
   border-radius: 10px;
   background-color: #000;
