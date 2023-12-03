@@ -2009,6 +2009,17 @@ body {
   color: #fff;
   text-align: center; }
 
+.button-confirm-warning {
+  width: 100%;
+  height: 78px;
+  font-size: 25px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #c1933b;
+  font-weight: 700;
+  color: #fff;
+  text-align: center; }
+
 .border-input-gold {
   background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
   border-radius: 10px;
@@ -2030,3 +2041,324 @@ body {
     outline: 0; }
   .input-for-border-gold::placeholder {
     color: #565656; }
+
+.credit-modal-content {
+  width: 500px;
+  padding: 110px 37px 90px 37px; }
+  .credit-modal-content .credit-modal-body {
+    width: 100%; }
+    .credit-modal-content .credit-modal-body .no-credit {
+      margin: 2px;
+      padding: 42px 37px;
+      background-color: #414141;
+      border-radius: 10px;
+      display: flex;
+      justify-content: flex-end; }
+      .credit-modal-content .credit-modal-body .no-credit .no-credit-right .no-credit-text {
+        font-size: 28px;
+        font-weight: 500;
+        color: #828282; }
+    .credit-modal-content .credit-modal-body .free-credit {
+      margin: 2px;
+      padding: 29px 24px 24px 50px;
+      background-color: #000;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between; }
+      .credit-modal-content .credit-modal-body .free-credit .credit-point-content {
+        text-align: center; }
+        .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
+          width: 87px;
+          height: 87px;
+          object-fit: cover; }
+        .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
+          font-size: 28px;
+          font-weight: 700;
+          color: #fff;
+          margin: 0; }
+      .credit-modal-content .credit-modal-body .free-credit .credit-button-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end; }
+        .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
+          font-size: 24px;
+          font-weight: 700;
+          color: #fff;
+          margin: 0; }
+        .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
+          min-width: 167px;
+          height: 45px;
+          background-color: #C1933B;
+          font-size: 28px;
+          font-weight: 600;
+          color: #fff;
+          border: 0;
+          border-radius: 10px;
+          cursor: pointer; }
+
+.tournament-modal-content {
+  padding: 50px 12px 12px 12px; }
+  .tournament-modal-content .top-recharge-select-container {
+    padding: 0 60px; }
+    .tournament-modal-content .top-recharge-select-container .top-recharge-select {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: #F3F3F3;
+      border-radius: 40px;
+      padding-right: 20px; }
+      .tournament-modal-content .top-recharge-select-container .top-recharge-select .select-icon {
+        position: absolute;
+        left: 10px;
+        z-index: 1; }
+      .tournament-modal-content .top-recharge-select-container .top-recharge-select .top-recharge-select-content {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 10px 10px 40px;
+        border: 0;
+        border-radius: 40px 0 0 40px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        background-color: #F3F3F3; }
+        .tournament-modal-content .top-recharge-select-container .top-recharge-select .top-recharge-select-content:focus {
+          outline: 0; }
+  .tournament-modal-content .top-rank {
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFB800;
+    margin-top: 17px; }
+  .tournament-modal-content .slide-rank {
+    width: 450px;
+    overflow-x: auto;
+    white-space: nowrap; }
+    .tournament-modal-content .slide-rank .slide-rank-item {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      width: 135px;
+      height: 191.7px;
+      border: 1px solid rgba(203, 157, 50, 0.8);
+      border-radius: 10px;
+      background-color: #000;
+      margin: 20px 6px; }
+      .tournament-modal-content .slide-rank .slide-rank-item.top1 {
+        border: 1px solid #FCABAB;
+        box-shadow: 0px 0px 4px 2px #FF0000; }
+      .tournament-modal-content .slide-rank .slide-rank-item.top2 {
+        border: 1px solid #FFFB91;
+        box-shadow: 0px 0px 4px 2px #FF9900; }
+      .tournament-modal-content .slide-rank .slide-rank-item.top3 {
+        border: 1px solid #A2DB00;
+        box-shadow: 0px 0px 4px 2px #368E00; }
+      .tournament-modal-content .slide-rank .slide-rank-item .rank-icon {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 35.1px;
+        height: 43.2px;
+        object-fit: contain; }
+      .tournament-modal-content .slide-rank .slide-rank-item .rank-profile {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 32.4px; }
+      .tournament-modal-content .slide-rank .slide-rank-item .rank-item-text {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff; }
+  .tournament-modal-content .table-rank {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; }
+    .tournament-modal-content .table-rank .table-rank-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .tournament-modal-content .table-rank .table-rank-item .no-rank {
+        width: 60px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff; }
+      .tournament-modal-content .table-rank .table-rank-item .rank-detail {
+        width: 100%;
+        font-size: 19px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #5E5E5E;
+        padding: 8px 22px;
+        border-radius: 10px;
+        display: flex; }
+      .tournament-modal-content .table-rank .table-rank-item .rank-phone {
+        width: 50%; }
+      .tournament-modal-content .table-rank .table-rank-item .rank-detail-title {
+        width: 20%; }
+      .tournament-modal-content .table-rank .table-rank-item .rank-money {
+        width: 30%; }
+
+.spinner-modal-content {
+  padding: 64px 43px 27px 43px; }
+  .spinner-modal-content .spinner-modal-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff; }
+  .spinner-modal-content .spinner-modal-subtitle {
+    font-size: 23px;
+    font-weight: 500;
+    color: #fff; }
+  .spinner-modal-content .spinner-modal-body {
+    width: 100%;
+    padding: 10px 48px 0 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .spinner-modal-content .spinner-modal-body .spinner-modal-img {
+      width: 280px;
+      height: auto; }
+    .spinner-modal-content .spinner-modal-body .btn-spinner {
+      width: 161px;
+      height: 46px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #00FFFF;
+      font-size: 23px;
+      font-weight: 600;
+      color: #000;
+      cursor: pointer; }
+    .spinner-modal-content .spinner-modal-body .spinner-modal-subtitle2 {
+      align-self: self-start;
+      font-size: 21px;
+      font-weight: 600;
+      color: #fff; }
+    .spinner-modal-content .spinner-modal-body .spinner-modal-text-danger {
+      align-self: self-start;
+      font-size: 17px;
+      font-weight: 400;
+      color: #FF0000; }
+    .spinner-modal-content .spinner-modal-body .spinner-rule-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px; }
+      .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-rule-text {
+        font-size: 17px;
+        font-weight: 600;
+        color: #fff; }
+      .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-icon-info {
+        width: 26px;
+        height: 26px;
+        cursor: pointer; }
+
+.earn-modal-content {
+  padding: 60px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .earn-modal-content .earn-qr-container {
+    padding: 0 48px; }
+    .earn-modal-content .earn-qr-container .border-input-gold {
+      padding: 2px;
+      border-radius: 26px; }
+      .earn-modal-content .earn-qr-container .border-input-gold .earn-qr-content {
+        background-color: #3E3939;
+        border-radius: 26px;
+        padding: 40px; }
+        .earn-modal-content .earn-qr-container .border-input-gold .earn-qr-content .earn-qr-img {
+          width: 259px;
+          height: 259px;
+          object-fit: cover;
+          border-radius: 16px; }
+  .earn-modal-content .border-input-gold {
+    border-radius: 20px; }
+    .earn-modal-content .border-input-gold .link-shared {
+      padding: 12px 18px 18px 18px;
+      background-color: #000;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px; }
+      .earn-modal-content .border-input-gold .link-shared .link-shared-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff; }
+      .earn-modal-content .border-input-gold .link-shared .link-shared-subtitle {
+        font-size: 17px;
+        font-weight: 400;
+        color: #fff; }
+      .earn-modal-content .border-input-gold .link-shared .link-shared-input {
+        width: 100%;
+        height: 33px;
+        border: 0;
+        border-radius: 5px;
+        padding: 0 10px; }
+        .earn-modal-content .border-input-gold .link-shared .link-shared-input:focus {
+          outline: 0; }
+      .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        margin-top: 10px; }
+        .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn {
+          border-radius: 5px; }
+          .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
+            width: 100%;
+            height: 47px;
+            background-color: #000;
+            border: 0;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff; }
+        .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
+          width: 100%;
+          height: 47px;
+          background: linear-gradient(180deg, #FFC757 0%, #A76F00 100%);
+          border: 0;
+          border-radius: 5px;
+          font-size: 20px;
+          font-weight: 600;
+          color: #fff; }
+  .earn-modal-content .earn-menu-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; }
+    .earn-modal-content .earn-menu-content .border-input-gold {
+      border-radius: 20px; }
+      .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
+        width: 100%;
+        padding: 14px;
+        border-radius: 20px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-title {
+          font-size: 20px;
+          font-weight: 600;
+          color: #fff; }
+        .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-subtitle {
+          font-size: 15px;
+          font-weight: 400;
+          color: #fff; }
+  .earn-modal-content .read-earn-rule {
+    font-size: 12px;
+    font-weight: 300;
+    color: #00FFF0;
+    text-align: center;
+    margin-top: 10px; }
+    .earn-modal-content .read-earn-rule a {
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer; }
