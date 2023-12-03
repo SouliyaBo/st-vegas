@@ -40,6 +40,12 @@
     },
     {
       "file": "index.html",
+      "description": "Qr Modal Ster 1",
+      "line": 1506,
+      "title": "Qr Play Step 1 modal"
+    },
+    {
+      "file": "index.html",
       "description": "Slip Verify Modal",
       "line": 1496,
       "title": "Slip Verify Modal"

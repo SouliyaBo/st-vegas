@@ -2026,6 +2026,19 @@ body {
         }
         // End Modal ฝากถอน
 
+        // Auto Modal
+        .detail-card-scb {
+          .card-scb {
+            width: 416.705px;
+            height: 143.143px;
+
+            padding: 1rem 2rem;
+            margin-top: 50px;
+          }
+        }
+
+        // End Auto Modal
+
         // Promotion Modal
         .promotion-modal-content {
           padding: 30px 65px;
@@ -2249,6 +2262,91 @@ body {
           }
         }
         // End True Wallet
+
+        // Start Qr Modal
+        .qr-pay-content-1 {
+          padding: 70px 33px 30px 33px;
+
+          .bank-selector {
+            #a img,
+            .btn-select img {
+              width: 30px;
+            }
+
+            #a li {
+              list-style: none;
+              width: 68px;
+            }
+
+            #a li img {
+              margin: 14px;
+            }
+
+            #a li span,
+            .btn-select li span {
+              margin-left: 30px;
+            }
+          }
+
+          .confirmation {
+          }
+
+          .info-text {
+          }
+
+          .qrpay {
+          }
+
+          .button-line {
+            div {
+              width: 396.029px;
+              height: 62.029px;
+              font-size: 20px;
+              img {
+                width: 44px;
+              }
+            }
+          }
+        }
+
+        .detail-qr {
+          .div1 {
+            font-size: 20px;
+          }
+
+          .div2 {
+            font-size: 40px;
+          }
+
+          .div3 {
+            width: 358px;
+            height: 359px;
+          }
+
+          .div4 {
+            .save {
+              width: 149px;
+              height: 48px;
+            }
+            .refresh {
+              width: 149px;
+              height: 48px;
+            }
+          }
+
+          .div5 {
+            font-size: 25px;
+          }
+
+          .div6 {
+            font-size: 19px;
+
+            .danger {
+            }
+          }
+        }
+
+        // End Qr Modal
       }
     }
     .modal-header-container {
@@ -2271,9 +2369,9 @@ body {
 
   // End History Modal
 
-  // Start Promotion Modal
+  // Start Qr Modal
 
-  // End Promotion Modal
+  // End Qr Modal
 
   // End Modal
 }
@@ -2517,19 +2615,321 @@ body {
   animation-duration: 0.4s;
 }
 
+.change-profile-modal-content {
+  width: 500px;
+  padding: 78px 20px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .change-password-hr {
+    padding: 6px 40px;
+    .hr {
+      width: 100%;
+      height: 2px;
+      background-color: #4e4e4e;
+    }
+  }
+  .custom-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .setting {
+      width: 100%;
+      height: 67px;
+      border-radius: 10px;
+      border: 1px solid #f9df7b;
+      background: #c1933b;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .add-account {
+      width: 100%;
+      height: 67px;
+      border-radius: 10px;
+      border: 1px solid #f9df7b;
+      background: #000000;
+      font-size: 20px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    .username {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    .result {
+      font-size: 21px;
+      font-weight: 100;
+    }
+  }
+  .password {
+    display: flex;
+    justify-content: space-between;
+    .pass {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    .result {
+      font-size: 21px;
+      font-weight: 300;
+    }
+  }
+  .change-password {
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #373737;
+    p {
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+}
+
+.change-cashback-modal-content {
+  width: 567px;
+  padding: 78px 10px 32px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .card-cashback {
+    display: grid;
+    grid-template-columns: repeat(2, 264px);
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+    .card-body {
+      position: relative;
+      z-index: -15;
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%
+      );
+      border-radius: 10px;
+      margin: auto;
+      padding: 2px;
+      min-width: 25%;
+      animation-name: slideIn;
+      animation-duration: 0.4s;
+      .name-cashback-game {
+        // width: 264px;
+        height: 120px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        border-radius: 10px;
+        background: linear-gradient(
+          270deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000 81.25%,
+          #242424 100%
+        );
+        padding-left: 16px;
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .name-game {
+            font-size: 18px;
+            font-weight: 600;
+          }
+          .balance {
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.change-cashback-detail-modal-content {
+  width: 500px;
+  padding: 60px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .detail {
+    width: 100%s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-size: 14px;
+      font-weight: 600px;
+    }
+    .accumulated-lot-amount {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .text-amount {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .text-left {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        .text-left {
+          font-size: 22px;
+          font-weight: 500;
+        }
+      }
+    }
+    .your-loss {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .loss {
+      font-size: 50px;
+      font-weight: 600;
+    }
+    .updated {
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+    .btn {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      .receive-credit {
+        border-radius: 5px;
+        background: #c1933b;
+        width: 361.902px;
+        height: 63.582px;
+        flex-shrink: 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: $white;
+      }
+      .withdraw-to-accont {
+        border-radius: 5px;
+        border-color: rgba(229, 194, 91, 1);
+        background: #0000;
+        width: 361.902px;
+        height: 63.582px;
+        flex-shrink: 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: $white;
+      }
+    }
+    .description {
+      background: none;
+      width: 100%;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      // background-color: #00c136;
+      .text-left {
+        font-size: 19px;
+        font-weight: 500;
+      }
+      .text-right {
+        font-size: 19px;
+        font-weight: 500;
+        color: #ff0000;
+      }
+    }
+  }
+}
+
 .detail-card-kbank {
   margin-top: 50px;
 
   .card-kbank {
-    display: flex;
-    flex-direction: column;
-    background-image: url("/assets/images/card-kbank.svg");
-    background-size: cover;
+    background-image: url("/assets/images/green-card-bg.svg");
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     margin: 0 auto;
 
     width: 250px;
     height: 127px;
+    padding: 12px;
+
+    .left {
+      flex-direction: column;
+      gap: 0.5rem;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    .right {
+      flex-direction: column;
+      gap: 10px;
+
+      .bank {
+        gap: 5px;
+        h4 {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          width: 30px;
+          height: 30px;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .balance {
+        flex-direction: column;
+        & :first-child {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .visa {
+        width: 50px;
+        transform: translateX(20px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
 
     // gap: 9px;
     div {
@@ -2637,35 +3037,76 @@ body {
 }
 
 .detail-card-scb {
-  background-image: url("/assets/images/card-scb.svg");
   margin-top: 5px;
-  background-size: cover;
 
   .card-scb {
-    padding: 60px 20px 0px 20px;
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
+    background-image: url("/assets/images/purple-card-bg.svg");
 
-    div {
-      display: flex;
-      justify-content: space-between;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+    margin-top: 30px;
+    width: 262px;
+    height: 90px;
+    padding: 16px;
+
+    .left {
+      flex-direction: column;
+      gap: 0.3rem;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        width: 100%;
+      }
     }
-  }
-}
 
-.detail-card-scb1 {
-  background-image: url("/assets/images/card-scb.svg");
-  margin-top: -55px;
-  background-size: cover;
+    .right {
+      flex-direction: column;
+      gap: 16px;
 
-  .card-scb1 {
-    padding: 60px 20px 0px 20px;
-    display: flex;
-    flex-direction: column;
+      .bank {
+        gap: 5px;
+        h4 {
+          font-size: 14px;
+          font-weight: 600;
+        }
 
-    div {
-      display: flex;
-      justify-content: space-between;
+        & :last-child {
+          width: 30px;
+          height: 30px;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .balance {
+        flex-direction: column;
+        & :first-child {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .visa {
+        width: 50px;
+        transform: translateX(8px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
     }
   }
 }
@@ -2709,6 +3150,171 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+
+// Start ถอนเงิน Modal
+.withdraw-modal-content {
+  flex-direction: column;
+  gap: 20px;
+  .card {
+    width: 262px;
+    height: 127px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 12px;
+
+    border-radius: 15px;
+    border: 2px solid #f9df7b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    background-image: url("/assets/images/green-card-bg.svg");
+    background-position: center;
+
+    .left {
+      flex-direction: column;
+      gap: 0.5rem;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    .right {
+      flex-direction: column;
+      gap: 10px;
+
+      .bank {
+        gap: 5px;
+        h4 {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          width: 30px;
+          height: 30px;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .balance {
+        & :first-child {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .visa {
+        width: 50px;
+        transform: translateX(20px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+
+  .slider-wrapper {
+    gap: 6px;
+
+    .active.slider,
+    .slider {
+      width: 47px;
+      height: 3px;
+      border-radius: 16px;
+    }
+
+    .active.slider {
+      background: linear-gradient(
+        90deg,
+        rgba(249, 223, 123, 0.8) 0%,
+        rgba(181, 126, 16, 0.8) 20%,
+        rgba(183, 129, 19, 0.8) 26%,
+        rgba(190, 140, 31, 0.8) 32%,
+        rgba(203, 157, 50, 0.8) 38%,
+        rgba(220, 182, 78, 0.8) 44%,
+        rgba(242, 213, 112, 0.8) 49%,
+        rgba(249, 223, 123, 0.8) 51%,
+        rgba(255, 243, 166, 0.8) 52%,
+        rgba(249, 223, 123, 0.8) 59%,
+        rgba(181, 126, 16, 0.8) 84%,
+        rgba(229, 194, 91, 0.8) 95%,
+        rgba(249, 223, 123, 0.8) 100%
+      );
+    }
+
+    .slider {
+      background: #d9d9d9;
+    }
+  }
+
+  .money-input {
+    border-bottom: 1px solid #545353;
+
+    p {
+      color: #b5b5b5;
+      width: 50%;
+      font-size: 13px;
+    }
+    input {
+      border: none;
+      outline: none;
+      background: none;
+      width: 50%;
+
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+
+      &::placeholder {
+        color: #b5b5b5;
+        text-align: end;
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 600;
+
+    a {
+      color: #00fcfc;
+    }
+  }
+
+  .line-button {
+    width: 249px;
+    height: 39px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #0fb800;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    img {
+      width: 28px;
+      object-fit: contain;
+    }
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #fff;
+  }
+}
+// End ถอนเงิน Modal
 
 .history-modal-content {
   .history-tab {
@@ -2892,104 +3498,6 @@ body {
   margin: auto;
   padding: 30px;
   width: fit-content;
-}
-
-.vodiapicker {
-  display: none;
-  position: relative;
-  border: 1px solid green;
-}
-
-#a {
-  padding-left: 0px;
-  position: absolute;
-  z-index: 9000;
-  height: auto;
-  background: #3d3d3d;
-}
-
-#a img,
-.btn-select img {
-  width: 30px;
-}
-
-#a li {
-  list-style: none;
-  width: 68px;
-  // padding-top: 5px;
-  // padding-bottom: 5px;
-}
-
-#a li:hover {
-  background-color: #242424;
-}
-
-#a li img {
-  margin: 14px;
-}
-
-#a li span,
-.btn-select li span {
-  margin-left: 30px;
-}
-
-/* item list */
-
-.b {
-  display: none;
-  width: 100%;
-  max-width: 350px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-}
-
-.open {
-  display: show !important;
-}
-
-.btn-select {
-  margin-top: 10px;
-  max-width: 350px;
-  width: 66.19px;
-  height: 58.73px;
-  top: 427.59px;
-  left: 787.78px;
-  border-radius: 6px;
-  border: 1px;
-  text-align: center;
-  background-color: #1f1e1eb3;
-  border: 1px solid #7d7d7d;
-}
-.btn-select li {
-  list-style: none;
-  margin-right: -20px;
-  padding-bottom: 0px;
-}
-
-.btn-select:hover li {
-  margin-left: 0px;
-}
-
-.btn-select:hover {
-  background-color: #1f1e1eb3;
-  border: 1px solid transparent;
-  // box-shadow: inset 0 0px 0px 1px #ccc;
-}
-
-.btn-select:focus {
-  outline: none;
-}
-
-.lang-select {
-  margin-left: 50px;
-}
-
-.show-username-bank {
-  background-color: $color-background-input;
-  border: none;
-  margin-bottom: -20ypx;
-  height: 58.73px;
 }
 
 .promotion-modal-content {
@@ -3189,6 +3697,249 @@ body {
   }
 }
 
+// Start QR Play
+
+.qr-pay-content-1 {
+  padding: 35px 17px 15px 17px;
+  .notic-text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .bank-selector {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+    .vodiapicker {
+      display: none;
+      position: relative;
+      border: 1px solid green;
+    }
+
+    #a {
+      padding-left: 0px;
+      position: absolute;
+      z-index: 9000;
+      height: auto;
+      background: #3d3d3d;
+    }
+
+    #a img,
+    .btn-select img {
+      // width: 30px;
+    }
+
+    #a li {
+      list-style: none;
+      // width: 68px;
+    }
+
+    #a li:hover {
+      background-color: #242424;
+    }
+
+    #a li img {
+      // margin: 14px;
+    }
+
+    #a li span,
+    .btn-select li span {
+      // margin-left: 30px;
+    }
+
+    /* item list */
+
+    .b {
+      display: none;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+    }
+
+    .open {
+      display: show !important;
+    }
+
+    .btn-select {
+      margin-top: 10px;
+      max-width: 350px;
+      width: 66.19px;
+      height: 58.73px;
+      border-radius: 6px;
+      border: 1px;
+      text-align: center;
+      background-color: #1f1e1eb3;
+      border: 1px solid #7d7d7d;
+    }
+
+    .btn-select li {
+      list-style: none;
+      margin-right: -20px;
+      padding-bottom: 0px;
+    }
+
+    .btn-select:hover li {
+      margin-left: 0px;
+    }
+
+    .btn-select:hover {
+      background-color: #1f1e1eb3;
+      border: 1px solid transparent;
+      // box-shadow: inset 0 0px 0px 1px #ccc;
+    }
+
+    .btn-select:focus {
+      outline: none;
+    }
+
+    .show-username-bank {
+      background-color: $color-background-input;
+      border: 2px solid #676767;
+      margin-top: 10px;
+      height: 58.73px;
+      width: 73%;
+      border-radius: 4px;
+      font-size: 18px;
+      color: $white;
+      padding: 13px 0 10px 0;
+      text-align: center;
+      outline: none;
+    }
+  }
+
+  .confirmation {
+  }
+
+  .info-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .qrpay {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 30px 0 30px;
+  }
+
+  .button-line {
+    div {
+      font-size: 13px;
+      width: 249px;
+      height: 39px;
+      gap: 5px;
+      img {
+        width: 28px;
+
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.detail-qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  .div1 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .div2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #f2d570;
+  }
+
+  .div3 {
+    width: 226px;
+    height: 226px;
+    border-radius: 26px;
+    border: 3px solid #f9df7b;
+    background: #3e3939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 90%;
+      height: 90%;
+      border-radius: 26px;
+    }
+  }
+
+  .div4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    .save {
+      width: 100px;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 7px;
+      border: 1px solid #f9df7b;
+      background: #c1933b;
+      font-size: 20px;
+      font-weight: 500;
+      color: $white;
+    }
+    .refresh {
+      width: 100px;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 7px;
+      border: 1px solid #f9df7b;
+      background: linear-gradient(
+        to left,
+        #242424,
+        #0a0000,
+        #191919,
+        #000000,
+        #242424
+      );
+      font-size: 20px;
+      font-weight: 500;
+      color: $white;
+    }
+  }
+  .div5 {
+    font-size: 16px;
+    margin-top: 17px;
+    font-weight: 700;
+    color: $white;
+  }
+  .div6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    .danger {
+      color: red;
+    }
+  }
+}
+
+// End Qr Pay
+
+// Start Slip verify
 .slip-verify-content {
   width: 100%;
   flex-direction: column;
@@ -3293,6 +4044,10 @@ body {
     }
   }
 }
+
+// End Slip verify
+
+// Start True Wallet
 
 .true-wallet-content {
   padding: 70px 33px 30px 33px;
@@ -3407,6 +4162,8 @@ body {
   }
 }
 
+// End True Wallet
+
 .input-box {
   width: 100%;
   height: 60px;
@@ -3458,6 +4215,7 @@ body {
   font-weight: 600;
   color: #fff;
   text-align: center;
+  cursor: pointer;
 }
 
 .border-input-gold {

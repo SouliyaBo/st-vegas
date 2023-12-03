@@ -110,7 +110,13 @@
           </div>
           แจ้งฝาก
         </button>
-        <button class="flexBetween">
+        <button
+          class="flexBetween"
+          style="cursor: pointer"
+          data-bs-toggle="modal"
+          data-bs-target="#withdraw"
+          data-bs-dismiss="modal"
+        >
           <div style="background-color: #d70000">
             <img src="../assets/icons/saving-money 2.svg" alt="icon" />
           </div>
@@ -442,37 +448,26 @@
             </div>
             <div class="modal-body">
               <div class="detail-card-kbank">
-                <div class="card-kbank">
-                  <div class="font-14">
+                <div class="card-kbank flexBetween">
+                  <div class="left flexCenter">
                     <p>ธนาคารกสิกรไทย</p>
-                    <div style="display: flex; justify-content: space-between">
-                      KBank
-                      <img
-                        src="/assets/icons/logo-kbank.svg"
-                        alt="logo"
-                        style="margin-top: -10px"
-                      />
+                    <p>นาย xxxxx xxxxx</p>
+                    <p>026-999999-9</p>
+                  </div>
+                  <div class="right flexCenter">
+                    <div class="flexCenter bank">
+                      <h4>KBank</h4>
+                      <div style="background-color: #fff; border-radius: 100%">
+                        <img src="/assets/images/kbank 1.png" alt="kbank" />
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <p class="font-14">นาย xxxxx xxxxx</p>
-                    <p style="margin-top: 13px; font-size: 14px">
-                      ยอดคงเหลือในระบบ
-                    </p>
-                  </div>
-                  <div class="font-14">
-                    <p style="margin-top: -2px">026-999999-9</p>
-                    <p>1000.00 บาท</p>
-                  </div>
-                  <div
-                    style="
-                      margin-top: 20px;
-                      margin-bottom: 30px;
-                      display: flex;
-                      justify-content: end;
-                    "
-                  >
-                    <img src="/assets/icons/visa.svg" alt="visa" />
+                    <div class="balance flexCenter">
+                      <p>ยอดคงเหลือในระบบ</p>
+                      <p>1000.00 บาท</p>
+                    </div>
+                    <div class="visa">
+                      <img src="/assets/icons/visa.svg" alt="visa" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -527,7 +522,12 @@
                   </div>
                 </div>
 
-                <div>
+                <div
+                  data-bs-toggle="modal"
+                  data-bs-target="#qrplay"
+                  data-bs-dismiss="modal"
+                  style="cursor: pointer"
+                >
                   <div class="type-of-withdrawal">
                     <div class="withdrawal">
                       <img src="/assets/images/scan.svg" alt="kkk" />
@@ -536,6 +536,7 @@
                   </div>
                 </div>
                 <div
+                  style="cursor: pointer"
                   data-bs-toggle="modal"
                   data-bs-target="#slipVerify"
                   data-bs-dismiss="modal"
@@ -549,6 +550,7 @@
                 </div>
 
                 <div
+                  style="cursor: pointer"
                   data-bs-toggle="modal"
                   data-bs-target="#trueWallet"
                   data-bs-dismiss="modal"
@@ -623,39 +625,23 @@
             </div>
             <div class="modal-body">
               <div class="detail-card-scb">
-                <div class="card-scb">
-                  <div class="font-14">
-                    <p>ธนาคารไทยพาณิชย์</p>
-                    <div
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        margin-top: 5px;
-                      "
-                    >
-                      SCB
-                      <img
-                        src="/assets/images/logo-scb.svg"
-                        style="margin-top: -5px; margin-left: 10px"
-                        alt="logo"
-                      />
+                <div class="card-scb flexBetween">
+                  <div class="left flexCenter">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <p>นาย xxxxx xxxxx</p>
+                    <p>026-999999-9</p>
+                  </div>
+                  <div class="right flexCenter">
+                    <div class="flexCenter bank">
+                      <h4>SCB</h4>
+                      <div style="border-radius: 100%">
+                        <img src="/assets/images/scb 1.png" alt="scb" />
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <p class="font-14">นาย xxxxx xxxxx</p>
-                  </div>
-                  <div class="font-14">
-                    <p style="margin-top: -2px">026-999999-9</p>
-                  </div>
-                  <div
-                    style="
-                      margin-bottom: 30px;
-                      display: flex;
-                      justify-content: end;
-                      margin-top: -10px;
-                    "
-                  >
-                    <img src="/assets/icons/visa.svg" alt="visa" />
+
+                    <div class="visa">
+                      <img src="/assets/icons/visa.svg" alt="visa" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -903,7 +889,92 @@
       </div>
       <!-- end  modal ฝากทศนิยม -->
 
-      <!-- start  modal ฝากทศนิยม -->
+      <!-- ถอนเงิน start  modal -->
+
+      <div
+        class="modal fade"
+        id="withdraw"
+        tabindex="-1"
+        aria-labelledby="withdraw"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#depositWithdraw"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="withdraw">ถอนเงิน</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="withdraw-modal-content flexCenter">
+                <div class="card flexBetween">
+                  <div class="left flexCenter">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <p>นาย xxxxx xxxxx</p>
+                    <p>026-999999-9</p>
+                  </div>
+                  <div class="right flexCenter">
+                    <div class="flexCenter bank">
+                      <h4>KBank</h4>
+                      <div style="background-color: #fff; border-radius: 100%">
+                        <img src="/assets/images/kbank 1.png" alt="kbank" />
+                      </div>
+                    </div>
+                    <div class="balance">
+                      <p>ยอดคงเหลือในระบบ</p>
+                      <p>1000.00 บาท</p>
+                    </div>
+                    <div class="visa">
+                      <img src="/assets/icons/visa.svg" alt="visa" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slider-wrapper flexBetween">
+                  <div class="active slider"></div>
+                  <div class="slider"></div>
+                </div>
+
+                <div class="money-input flexBetween">
+                  <p>จำนวนเงินที่ถอนได้</p>
+                  <input type="text" placeholder="1000" />
+                </div>
+                <div class="money-input flexBetween">
+                  <p style="color: red">กรุณาระบุจำนวนที่จะถอน</p>
+                  <input type="text" placeholder="1000" />
+                </div>
+
+                <div class="button-warning">ถอนเงิน</div>
+
+                <p>พบปัญหา <a href="/">ติดต่อฝ่ายบริการลูกค้า</a></p>
+
+                <button class="line-button flexCenter">
+                  <img src="/assets/icons/icon-line.svg" alt="line icon" />
+                  <p>ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ถอนเงิน end modal -->
+
+      <!-- start  modal QR Pay -->
       <div
         class="modal fade"
         id="qrplay"
@@ -916,7 +987,7 @@
             <div class="modal-header-container">
               <div class="modal-header">
                 <img
-                  src="./assets/icons/icon-back-modal.svg"
+                  src="/assets/icons/icon-back-modal.svg"
                   class="modal-icon-back"
                   alt=""
                   data-bs-toggle="modal"
@@ -925,7 +996,7 @@
                 />
                 <p class="modal-title" id="qrplay">QR PAY</p>
                 <img
-                  src="./assets/icons/icon-close-modal.svg"
+                  src="/assets/icons/icon-close-modal.svg"
                   class="modal-icon-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
@@ -934,13 +1005,12 @@
               </div>
             </div>
             <div class="modal-body">
-              <div style="padding: 20px; margin-top: 30px">
-                <ul>
+              <div class="qr-pay-content-1">
+                <ul class="notic-text">
                   <li>ฝากขั้นต่ำ 100 บาท สูงสุด 50,000.00 บาท *</li>
                 </ul>
-              </div>
-              <div>
-                <div style="display: flex">
+
+                <div class="bank-selector">
                   <select class="vodiapicker">
                     <option
                       value="kbank"
@@ -965,9 +1035,113 @@
                     </div>
                   </div>
 
-                  <input type="text" class="show-username-bank" />
+                  <input
+                    type="text"
+                    class="show-username-bank"
+                    placeholder="นาย ปปปปป ปปปปป"
+                  />
                 </div>
 
+                <div class="confirmation">
+                  <input
+                    type="text"
+                    class="text-amount-money"
+                    placeholder="กรอกจำนวนเงินที่ต้องการฝาก"
+                  />
+                  <button
+                    class="button-warning"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#showQR"
+                    data-bs-dismiss="modal"
+                  >
+                    <div>ยืนยันจำนวนเงิน</div>
+                  </button>
+                </div>
+
+                <div class="info-text">
+                  <p>
+                    พบปัญหา
+                    <a
+                      href="/"
+                      style="
+                        color: rgba(0, 252, 252, 1);
+                        text-decoration: underline;
+                        cursor: pointer;
+                      "
+                      >ติดต่อฝ่ายบริการลูกค้า</a
+                    >
+                  </p>
+                </div>
+                <div class="button-line">
+                  <div class="flexBetween">
+                    <img src="/assets/icons/icon-line.svg" alt="line" /> ไลน์บอท
+                    / แจ้งเตือนยอดฝาก - ถอน
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal QR Pay -->
+      <!-- start modal QR  -->
+      <div
+        class="modal fade"
+        id="showQR"
+        tabindex="-1"
+        aria-labelledby="showQR"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-target="#qrplay"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="showQR">QR PAY</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="detail-qr">
+                <div class="div1">จำนวนเงินฝากผ่าน QR Code</div>
+                <div class="div2">111.11 บาท</div>
+                <div class="div3">
+                  <img src="/assets/images/qrpay.png" alt="qr" />
+                </div>
+                <div class="div4">
+                  <button class="save">
+                    <img src="/assets/icons/farm.svg" alt="save" /> บันทึก
+                  </button>
+                  <button class="refresh">
+                    <img src="/assets/icons/reload.svg" alt="save" /> รีเฟรช
+                  </button>
+                </div>
+                <div class="div5">วิธีการชำระเงิน</div>
+                <div class="div6">
+                  <p>1.บันทึกภาพ หรือ แคปหน้าจอ QR Code</p>
+                  <p>2.เข้าแอปพลิเคชั่นธนาคารที่ต้องการทำรายการฝาก</p>
+                  <p class="danger">
+                    ต้องใช้บัญชีที่ผูกกับระบบทำรายการเข้ามาเท่านั้น
+                  </p>
+                  <p>3.กดเลือกสแกนจ่ายที่แอปธนาคารนั้น ๆ</p>
+                  <p>
+                    4.เลือกรูปภาพ QR Code ที่บันทึกหรือแคป เพื่อทำรายการจ่าย
+                  </p>
+                </div>
                 <div style="text-align: center; margin-top: 10px">
                   <div>
                     พบปัญหา
@@ -981,17 +1155,13 @@
                     >
                   </div>
                 </div>
-                <div class="button-line">
-                  <div>
-                    <img src="/assets/icons/icon-line.svg" alt="line" /> ไลน์บอท
-                    / แจ้งเตือนยอดฝาก - ถอน
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- end modal qr -->
 
       <!-- slip verify modal -->
       <div
