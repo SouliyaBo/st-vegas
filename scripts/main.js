@@ -118,3 +118,32 @@ tabBonus.addEventListener('click', function () {
   historyContentBonus.style.display = 'block';
 })
 // history modal end
+
+// top rank select
+const topRankSelect = document.getElementById('top-rank-select');
+const iconTopPlay = document.getElementById('icon-top-play');
+const iconTopRecharge = document.getElementById('icon-top-recharge');
+const iconTopLose = document.getElementById('icon-top-lose');
+iconTopPlay.style.display = 'block';
+iconTopRecharge.style.display = 'none';
+iconTopLose.style.display = 'none';
+
+topRankSelect.addEventListener('change', function() {
+  console.log('Selected value:', this.value);
+
+  if (this.value == 'top-play') {
+    iconTopPlay.style.display = 'block';
+    iconTopRecharge.style.display = 'none';
+    iconTopLose.style.display = 'none';
+  }
+  if (this.value == 'top-recharge') {
+    iconTopPlay.style.display = 'none';
+    iconTopRecharge.style.display = 'block';
+    iconTopLose.style.display = 'none';
+  }
+  if (this.value == 'top-lose') {
+    iconTopPlay.style.display = 'none';
+    iconTopRecharge.style.display = 'none';
+    iconTopLose.style.display = 'block';
+  }
+});
