@@ -241,7 +241,9 @@ body {
 
 .brand {
   margin-top: 8px;
-  height: 237px;
+  height: 307px;
+  padding-left: 25px;
+  padding-right: 25px;
   img {
     height: 100%;
     width: 100%;
@@ -257,8 +259,8 @@ body {
 // Section..................................
 
 .search-container {
-  margin: 12px 0;
-  width: 100%;
+  margin: 12px 12px 12px 25px;
+  width: 97%;
   height: 56px;
   border-radius: 33px;
   border: 1px solid #969696;
@@ -1927,8 +1929,8 @@ body {
     }
 
     .modal-icon-close {
-      width: 25px;
-      height: 25px;
+      width: 18px !important;
+      height: 18px !important;
     }
   }
 
@@ -1992,15 +1994,15 @@ body {
   // Modal
   .modal {
     .modal-content {
-      min-width: 501px;
+      min-width: 400px;
 
       .modal-body {
         // Modal ฝากถอน
         .detail-card-kbank {
-          min-width: 500px;
+          min-width: 400px;
 
           .card-kbank {
-            padding: 18px 20px 0px 20px;
+            padding: 18px 30px 0px 30px;
             width: 100%;
             width: 416.705px;
             height: 201.99px;
@@ -2351,7 +2353,7 @@ body {
     }
     .modal-header-container {
       .modal-header {
-        min-width: 384px;
+        min-width: 284px;
       }
     }
 
@@ -2473,6 +2475,7 @@ body {
   animation-name: fadeIn;
   animation-duration: 0.4s;
 
+  //pc
   .modal-border {
     position: relative;
 
@@ -2495,9 +2498,9 @@ body {
     );
     border-radius: 20px;
     margin: auto;
-    padding: 3px;
-    min-width: 25%;
-    width: fit-content;
+    padding: 2px;
+    // min-width: 25%;
+    // width: fit-content;
     margin-top: 80px;
     animation-name: slideIn;
     animation-duration: 0.4s;
@@ -2506,7 +2509,6 @@ body {
   /* Add more styling to .card as needed for content */
   .modal-content {
     position: relative;
-
     z-index: -10;
     background-color: #000;
     border-radius: 20px;
@@ -2514,9 +2516,10 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+  // PC
   .modal-header-container {
     position: absolute;
-    top: -45px;
+    top: -30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -2534,7 +2537,7 @@ body {
         #242424 100%
       );
       border-radius: 15px;
-      padding: 20px;
+      padding: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2571,13 +2574,13 @@ body {
 
     .modal-icon-back {
       position: absolute;
-      left: 20px;
+      left: 10px;
       cursor: pointer;
     }
 
     .modal-icon-close {
       position: absolute;
-      right: 20px;
+      right: 12px;
       cursor: pointer;
     }
   }
@@ -2591,6 +2594,7 @@ body {
     font-weight: 600;
     color: #fff;
     margin: 0;
+    font-size: 20px;
   }
 
   /* The Close Button */
@@ -2616,11 +2620,86 @@ body {
 }
 
 .change-profile-modal-content {
-  width: 500px;
-  padding: 78px 20px 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  .detail-card-kbank {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-kbank {
+      background-image: url("/assets/images/green-card-bg.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      // margin: 0;
+
+      .left {
+        flex-direction: column;
+        gap: 0.5rem;
+        p {
+          font-size: 12px;
+          font-weight: 600;
+          text-align: left;
+          width: 100%;
+        }
+      }
+  
+      .right {
+        flex-direction: column;
+        gap: 10px;
+  
+        .bank {
+          gap: 5px;
+          h4 {
+            font-size: 14px;
+            font-weight: 600;
+          }
+  
+          & :last-child {
+            width: 30px;
+            height: 30px;
+            img {
+              object-fit: contain;
+            }
+          }
+        }
+  
+        .balance {
+          flex-direction: column;
+          & :first-child {
+            font-size: 10px;
+            font-weight: 600;
+          }
+  
+          & :last-child {
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+  
+        .visa {
+          width: 50px;
+          transform: translateX(20px);
+  
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+  
+      // gap: 9px;
+      div {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
   .change-password-hr {
     padding: 6px 40px;
     .hr {
@@ -2629,26 +2708,29 @@ body {
       background-color: #4e4e4e;
     }
   }
+
   .custom-btn {
     display: flex;
     flex-direction: row;
     gap: 20px;
     .setting {
-      width: 100%;
-      height: 67px;
+      width: 80%;
+      height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
+      cursor: pointer;
     }
     .add-account {
-      width: 100%;
-      height: 67px;
+      cursor: pointer;
+      width: 80%;
+      height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #000000;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
       color: $white;
     }
@@ -2658,11 +2740,11 @@ body {
     display: flex;
     justify-content: space-between;
     .username {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 700;
     }
     .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 100;
     }
   }
@@ -2670,26 +2752,28 @@ body {
     display: flex;
     justify-content: space-between;
     .pass {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 700;
     }
     .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 300;
     }
   }
   .change-password {
-    height: 66px;
+    height: 56px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
     gap: 16px;
     border-radius: 10px;
     border: 1px solid #fff;
     background: #373737;
     p {
-      font-size: 26px;
+      margin-top: -8px;
+      font-size: 18px;
       font-weight: 600;
     }
   }
@@ -2869,11 +2953,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-
-    width: 250px;
-    height: 127px;
-    padding: 12px;
+    margin: 0;
 
     .left {
       flex-direction: column;

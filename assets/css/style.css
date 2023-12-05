@@ -134,7 +134,9 @@ body {
 
 .brand {
   margin-top: 8px;
-  height: 237px; }
+  height: 307px;
+  padding-left: 25px;
+  padding-right: 25px; }
   .brand img {
     height: 100%;
     width: 100%; }
@@ -144,8 +146,8 @@ body {
   min-width: 200px; }
 
 .search-container {
-  margin: 12px 0;
-  width: 100%;
+  margin: 12px 12px 12px 25px;
+  width: 97%;
   height: 56px;
   border-radius: 33px;
   border: 1px solid #969696;
@@ -1289,8 +1291,8 @@ body {
   .modal .modal-title {
     font-size: 20px; }
   .modal .modal-icon-close {
-    width: 25px;
-    height: 25px; }
+    width: 18px !important;
+    height: 18px !important; }
   .detail-card-kbank {
     padding: 12px; }
     .detail-card-kbank .card-kbank {
@@ -1320,11 +1322,11 @@ body {
   .game-section {
     display: none; }
   .modal .modal-content {
-    min-width: 501px; }
+    min-width: 400px; }
     .modal .modal-content .modal-body .detail-card-kbank {
-      min-width: 500px; }
+      min-width: 400px; }
       .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
-        padding: 18px 20px 0px 20px;
+        padding: 18px 30px 0px 30px;
         width: 100%;
         width: 416.705px;
         height: 201.99px; }
@@ -1494,7 +1496,7 @@ body {
     .modal .modal-content .modal-body .detail-qr .div6 {
       font-size: 19px; }
   .modal .modal-header-container .modal-header {
-    min-width: 384px; }
+    min-width: 284px; }
   .modal .modal-title {
     font-size: 30px; }
   .history-modal-content {
@@ -1575,9 +1577,7 @@ body {
     background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
     border-radius: 20px;
     margin: auto;
-    padding: 3px;
-    min-width: 25%;
-    width: fit-content;
+    padding: 2px;
     margin-top: 80px;
     animation-name: slideIn;
     animation-duration: 0.4s; }
@@ -1590,7 +1590,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .modal .modal-header-container {
     position: absolute;
-    top: -45px;
+    top: -30px;
     width: 100%;
     display: flex;
     justify-content: center; }
@@ -1600,7 +1600,7 @@ body {
       width: fit-content;
       background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
       border-radius: 15px;
-      padding: 20px;
+      padding: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1618,11 +1618,11 @@ body {
       pointer-events: none; }
     .modal .modal-header-container .modal-icon-back {
       position: absolute;
-      left: 20px;
+      left: 10px;
       cursor: pointer; }
     .modal .modal-header-container .modal-icon-close {
       position: absolute;
-      right: 20px;
+      right: 12px;
       cursor: pointer; }
   .modal .modal-body {
     color: #fff;
@@ -1630,7 +1630,8 @@ body {
   .modal .modal-title {
     font-weight: 600;
     color: #fff;
-    margin: 0; }
+    margin: 0;
+    font-size: 20px; }
   .modal .close {
     color: #aaa;
     float: right;
@@ -1648,11 +1649,60 @@ body {
   animation-duration: 0.4s; }
 
 .change-profile-modal-content {
-  width: 500px;
-  padding: 78px 20px 32px 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px; }
+  gap: 16px;
+  padding-left: 12px;
+  padding-right: 12px; }
+  .change-profile-modal-content .detail-card-kbank {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .change-profile-modal-content .detail-card-kbank .card-kbank {
+      background-image: url("/assets/images/green-card-bg.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank .left {
+        flex-direction: column;
+        gap: 0.5rem; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .left p {
+          font-size: 12px;
+          font-weight: 600;
+          text-align: left;
+          width: 100%; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank .right {
+        flex-direction: column;
+        gap: 10px; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank {
+          gap: 5px; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank h4 {
+            font-size: 14px;
+            font-weight: 600; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank :last-child {
+            width: 30px;
+            height: 30px; }
+            .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank :last-child img {
+              object-fit: contain; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance {
+          flex-direction: column; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance :first-child {
+            font-size: 10px;
+            font-weight: 600; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance :last-child {
+            font-size: 14px;
+            font-weight: 600; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .right .visa {
+          width: 50px;
+          transform: translateX(20px); }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .visa img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank div {
+        display: flex;
+        justify-content: space-between; }
   .change-profile-modal-content .change-password-hr {
     padding: 6px 40px; }
     .change-profile-modal-content .change-password-hr .hr {
@@ -1664,52 +1714,56 @@ body {
     flex-direction: row;
     gap: 20px; }
     .change-profile-modal-content .custom-btn .setting {
-      width: 100%;
-      height: 67px;
+      width: 80%;
+      height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 20px;
-      font-weight: 500; }
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer; }
     .change-profile-modal-content .custom-btn .add-account {
-      width: 100%;
-      height: 67px;
+      cursor: pointer;
+      width: 80%;
+      height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #000000;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 500;
       color: #ffff; }
   .change-profile-modal-content .user {
     display: flex;
     justify-content: space-between; }
     .change-profile-modal-content .user .username {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 700; }
     .change-profile-modal-content .user .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 100; }
   .change-profile-modal-content .password {
     display: flex;
     justify-content: space-between; }
     .change-profile-modal-content .password .pass {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 700; }
     .change-profile-modal-content .password .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 300; }
   .change-profile-modal-content .change-password {
-    height: 66px;
+    height: 56px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
     gap: 16px;
     border-radius: 10px;
     border: 1px solid #fff;
     background: #373737; }
     .change-profile-modal-content .change-password p {
-      font-size: 26px;
+      margin-top: -8px;
+      font-size: 18px;
       font-weight: 600; }
 
 .change-cashback-modal-content {
@@ -1837,10 +1891,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 250px;
-    height: 127px;
-    padding: 12px; }
+    margin: 0; }
     .detail-card-kbank .card-kbank .left {
       flex-direction: column;
       gap: 0.5rem; }
