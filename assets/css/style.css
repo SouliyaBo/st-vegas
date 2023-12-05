@@ -1321,6 +1321,11 @@ body {
     display: none; }
   .modal .modal-content {
     min-width: 501px; }
+    .modal .modal-content .modal-header-container .modal-header {
+      min-width: 384px;
+      height: 85px; }
+    .modal .modal-content .modal-title {
+      font-size: 30px; }
     .modal .modal-content .modal-body .change-profile-modal-content {
       width: 500px;
       padding: 78px 20px 32px 20px; }
@@ -1432,6 +1437,105 @@ body {
           .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu .bag-modal-menu-item .bag-menu-img-container {
             width: 66px;
             height: 66px; }
+    .modal .modal-content .modal-body .earn-modal-content {
+      padding: 32px 32px 32px 32px;
+      gap: 20px;
+      overflow: unset;
+      max-height: unset; }
+      .modal .modal-content .modal-body .earn-modal-content .earn-qr-container {
+        width: 340px;
+        height: 340px;
+        margin: 0 auto; }
+        .modal .modal-content .modal-body .earn-modal-content .earn-qr-container .earn-qr-content {
+          padding: 40px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-qr-container .earn-qr-content .earn-qr-img {
+            width: 259px;
+            height: 259px; }
+      .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared {
+        padding: 12px 18px 18px 18px;
+        gap: 8px; }
+        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-title {
+          font-size: 20px; }
+        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-subtitle {
+          font-size: 17px; }
+        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-input {
+          height: 33px;
+          padding: 0 10px; }
+        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
+          gap: 22px;
+          margin-top: 10px; }
+          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
+            height: 47px;
+            font-size: 20px; }
+          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
+            height: 47px;
+            font-size: 20px; }
+      .modal .modal-content .modal-body .earn-modal-content .earn-menu-content {
+        grid-template-columns: repeat(2, 208px);
+        gap: 20px; }
+        .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
+          height: 153px;
+          padding: 14px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-img {
+            width: 70px;
+            height: 70px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-title {
+            font-size: 20px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-subtitle {
+            font-size: 15px; }
+    .modal .modal-content .modal-body .credit-modal-content {
+      padding: 110px 37px 90px 37px; }
+      .modal .modal-content .modal-body .credit-modal-content .credit-modal-body {
+        width: 500px; }
+        .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit {
+          margin: 2px;
+          padding: 42px 37px; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit .no-credit-right .no-credit-text {
+            font-size: 28px; }
+        .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit {
+          width: unset;
+          transform: unset;
+          margin: 2px;
+          padding: 29px 24px 24px 50px;
+          border: none; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
+            width: 87px;
+            height: 87px; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
+            font-size: 28px; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
+            font-size: 24px; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
+            min-width: 167px;
+            height: 45px;
+            font-size: 28px; }
+    .modal .modal-content .modal-body .spinner-modal-content {
+      padding: 64px 43px 27px 43px; }
+      .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-title {
+        font-size: 26px; }
+      .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-subtitle {
+        font-size: 23px; }
+      .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body {
+        padding: 10px 48px 0 48px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-img {
+          width: 280px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .btn-spinner {
+          width: 188px;
+          height: 47px;
+          font-size: 23px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-subtitle2 {
+          font-size: 21px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-text-danger {
+          font-size: 17px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-rule-text {
+          font-size: 17px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-icon-info {
+          width: 26px;
+          height: 26px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .button-confirm-warning {
+          width: 315px;
+          height: 78px;
+          font-size: 25px; }
     .modal .modal-content .modal-body .code-modal-content {
       width: 476px;
       padding: 78px 20px 42px 20px;
@@ -1529,11 +1633,6 @@ body {
       font-size: 25px; }
     .modal .modal-content .modal-body .detail-qr .div6 {
       font-size: 19px; }
-  .modal .modal-header-container .modal-header {
-    min-width: 384px;
-    height: 85px; }
-  .modal .modal-title {
-    font-size: 30px; }
   .history-modal-content {
     width: 464px;
     padding-top: 40px; } }
@@ -2854,59 +2953,58 @@ body {
     color: #565656; }
 
 .credit-modal-content {
-  width: 500px;
-  padding: 110px 37px 90px 37px; }
+  padding: 65px 23px 55px 23px; }
   .credit-modal-content .credit-modal-body {
     width: 100%; }
     .credit-modal-content .credit-modal-body .no-credit {
-      margin: 2px;
-      padding: 42px 37px;
       background-color: #414141;
       border-radius: 10px;
       display: flex;
       justify-content: flex-end; }
       .credit-modal-content .credit-modal-body .no-credit .no-credit-right .no-credit-text {
-        font-size: 28px;
         font-weight: 500;
         color: #828282; }
     .credit-modal-content .credit-modal-body .free-credit {
-      margin: 2px;
-      padding: 29px 24px 24px 50px;
+      width: 254px;
+      transform: translateX(-6%);
+      margin: 0 auto;
       background-color: #000;
       border-radius: 10px;
+      border: 2px solid #f9df7b;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 13px 16px; }
       .credit-modal-content .credit-modal-body .free-credit .credit-point-content {
         text-align: center; }
         .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
-          width: 87px;
-          height: 87px;
+          width: 42px;
+          height: 42px;
           object-fit: cover; }
         .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
-          font-size: 28px;
           font-weight: 700;
           color: #fff;
-          margin: 0; }
+          margin: 0;
+          font-size: 16px; }
       .credit-modal-content .credit-modal-body .free-credit .credit-button-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-end; }
         .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
-          font-size: 24px;
           font-weight: 700;
           color: #fff;
-          margin: 0; }
+          margin: 0;
+          font-size: 15px; }
         .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
-          min-width: 167px;
-          height: 45px;
           background-color: #c1933b;
-          font-size: 28px;
           font-weight: 600;
           color: #fff;
           border: 0;
           border-radius: 10px;
-          cursor: pointer; }
+          cursor: pointer;
+          font-size: 17px;
+          width: 98px;
+          height: 30px; }
 
 .tournament-modal-content {
   padding: 50px 12px 12px 12px; }
@@ -3013,104 +3111,110 @@ body {
         width: 30%; }
 
 .spinner-modal-content {
-  padding: 64px 43px 27px 43px; }
+  padding: 39px 26px 19px 26px; }
   .spinner-modal-content .spinner-modal-title {
-    font-size: 26px;
     font-weight: 500;
+    font-size: 18px;
     color: #fff; }
   .spinner-modal-content .spinner-modal-subtitle {
-    font-size: 23px;
+    font-size: 11px;
     font-weight: 500;
     color: #fff; }
   .spinner-modal-content .spinner-modal-body {
     width: 100%;
-    padding: 10px 48px 0 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px; }
     .spinner-modal-content .spinner-modal-body .spinner-modal-img {
-      width: 280px;
-      height: auto; }
+      height: auto;
+      width: 167px; }
     .spinner-modal-content .spinner-modal-body .btn-spinner {
-      width: 161px;
-      height: 46px;
+      width: 97px;
+      height: 28px;
+      font-size: 15px;
       border: 0;
       border-radius: 5px;
       background-color: #00ffff;
-      font-size: 23px;
       font-weight: 600;
       color: #000;
       cursor: pointer; }
     .spinner-modal-content .spinner-modal-body .spinner-modal-subtitle2 {
       align-self: self-start;
-      font-size: 21px;
       font-weight: 600;
-      color: #fff; }
+      color: #fff;
+      font-size: 18px; }
     .spinner-modal-content .spinner-modal-body .spinner-modal-text-danger {
       align-self: self-start;
-      font-size: 17px;
       font-weight: 400;
-      color: #ff0000; }
+      color: #ff0000;
+      font-size: 13px; }
     .spinner-modal-content .spinner-modal-body .spinner-rule-container {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px; }
       .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-rule-text {
-        font-size: 17px;
         font-weight: 600;
         color: #fff; }
       .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-icon-info {
-        width: 26px;
-        height: 26px;
-        cursor: pointer; }
+        cursor: pointer;
+        width: 15px;
+        height: 15px; }
+    .spinner-modal-content .spinner-modal-body .button-confirm-warning {
+      width: 188px;
+      height: 47px;
+      font-size: 16px; }
 
 .earn-modal-content {
-  padding: 60px 32px 32px 32px;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 20px; }
+  gap: 1rem;
+  max-height: 589px;
+  overflow-y: scroll; }
   .earn-modal-content .earn-qr-container {
-    padding: 0 48px; }
+    width: 202px;
+    height: 202px;
+    margin: 0 auto; }
     .earn-modal-content .earn-qr-container .border-input-gold {
       padding: 2px;
       border-radius: 26px; }
       .earn-modal-content .earn-qr-container .border-input-gold .earn-qr-content {
         background-color: #3e3939;
         border-radius: 26px;
-        padding: 40px; }
+        padding: 24px; }
         .earn-modal-content .earn-qr-container .border-input-gold .earn-qr-content .earn-qr-img {
-          width: 259px;
-          height: 259px;
           object-fit: cover;
-          border-radius: 16px; }
+          border-radius: 16px;
+          width: 154px;
+          height: 154px; }
   .earn-modal-content .border-input-gold {
     border-radius: 20px; }
     .earn-modal-content .border-input-gold .link-shared {
-      padding: 12px 18px 18px 18px;
+      gap: 8px;
+      padding: 11px;
       background-color: #000;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      gap: 8px; }
+      align-items: center; }
       .earn-modal-content .border-input-gold .link-shared .link-shared-title {
-        font-size: 20px;
         font-weight: 600;
-        color: #fff; }
+        color: #fff;
+        font-size: 14px; }
       .earn-modal-content .border-input-gold .link-shared .link-shared-subtitle {
-        font-size: 17px;
         font-weight: 400;
-        color: #fff; }
+        color: #fff;
+        font-size: 10px; }
       .earn-modal-content .border-input-gold .link-shared .link-shared-input {
         width: 100%;
-        height: 33px;
         border: 0;
         border-radius: 5px;
-        padding: 0 10px; }
+        padding: 0 10px;
+        height: 20px; }
         .earn-modal-content .border-input-gold .link-shared .link-shared-input:focus {
           outline: 0; }
       .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
@@ -3118,39 +3222,40 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 22px;
-        margin-top: 10px; }
+        gap: 13px; }
         .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn {
           border-radius: 5px; }
           .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
             width: 100%;
-            height: 47px;
             background-color: #000;
             border: 0;
             border-radius: 5px;
-            font-size: 20px;
             font-weight: 600;
             color: #fff;
-            cursor: pointer; }
+            cursor: pointer;
+            height: 28px;
+            font-size: 14px; }
         .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
           width: 100%;
-          height: 47px;
           background: linear-gradient(180deg, #ffc757 0%, #a76f00 100%);
           border: 0;
           border-radius: 5px;
           font-size: 20px;
           font-weight: 600;
           color: #fff;
-          cursor: pointer; }
+          cursor: pointer;
+          height: 28px;
+          font-size: 14px; }
   .earn-modal-content .earn-menu-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; }
+    grid-template-columns: repeat(2, 124px);
+    align-items: center;
+    gap: 11px; }
     .earn-modal-content .earn-menu-content .border-input-gold {
       border-radius: 20px; }
       .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
         width: 100%;
-        padding: 14px;
+        height: 91px;
         border-radius: 20px;
         background-color: #000;
         display: flex;
@@ -3158,12 +3263,15 @@ body {
         justify-content: center;
         align-items: center;
         cursor: pointer; }
+        .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-img {
+          width: 40px;
+          height: 40px; }
         .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-title {
-          font-size: 20px;
+          font-size: 14px;
           font-weight: 600;
           color: #fff; }
         .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-subtitle {
-          font-size: 15px;
+          font-size: 10px;
           font-weight: 400;
           color: #fff; }
   .earn-modal-content .read-earn-rule {
