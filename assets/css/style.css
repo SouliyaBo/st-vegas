@@ -1321,6 +1321,42 @@ body {
     display: none; }
   .modal .modal-content {
     min-width: 501px; }
+    .modal .modal-content .modal-body .change-profile-modal-content {
+      width: 500px;
+      padding: 78px 20px 32px 20px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
+        margin: 0;
+        border: 1px solid red; }
+        .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank {
+          margin: 0 auto;
+          width: 416.705px;
+          height: 201.99px;
+          border: 1px solid green; }
+      .modal .modal-content .modal-body .change-profile-modal-content .change-password-hr {
+        padding: 6px 40px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
+        gap: 20px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .setting {
+          height: 67px;
+          width: 100%;
+          font-size: 20px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .add-account {
+          height: 67px;
+          width: 100%;
+          font-size: 20px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .user .username {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .user .result {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .password .pass {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .password .result {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .change-password {
+        height: 66px;
+        gap: 16px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .change-password p {
+          font-size: 26px; }
     .modal .modal-content .modal-body .detail-card-kbank {
       min-width: 500px; }
       .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
@@ -1494,7 +1530,8 @@ body {
     .modal .modal-content .modal-body .detail-qr .div6 {
       font-size: 19px; }
   .modal .modal-header-container .modal-header {
-    min-width: 384px; }
+    min-width: 384px;
+    height: 85px; }
   .modal .modal-title {
     font-size: 30px; }
   .history-modal-content {
@@ -1595,6 +1632,7 @@ body {
     display: flex;
     justify-content: center; }
     .modal .modal-header-container .modal-header {
+      height: 54px;
       position: relative;
       margin: auto;
       width: fit-content;
@@ -1648,69 +1686,171 @@ body {
   animation-duration: 0.4s; }
 
 .change-profile-modal-content {
-  width: 500px;
-  padding: 78px 20px 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 16px; }
-  .change-profile-modal-content .change-password-hr {
-    padding: 6px 40px; }
-    .change-profile-modal-content .change-password-hr .hr {
+  .change-profile-modal-content .detail-card-kbank {
+    width: 262px;
+    height: 127px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative; }
+    .change-profile-modal-content .detail-card-kbank .card-bg {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      height: 2px;
-      background-color: #4e4e4e; }
+      height: 100%;
+      object-fit: contain;
+      z-index: -1; }
+    .change-profile-modal-content .detail-card-kbank .left {
+      flex: 1;
+      border: 1px solid green;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 100%; }
+      .change-profile-modal-content .detail-card-kbank .left p {
+        font-size: 14px;
+        font-weight: 600; }
+    .change-profile-modal-content .detail-card-kbank .right {
+      flex: 1;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 5px; }
+      .change-profile-modal-content .detail-card-kbank .right .bank-info {
+        gap: 4px; }
+        .change-profile-modal-content .detail-card-kbank .right .bank-info p {
+          font-size: 14px;
+          font-weight: 600;
+          text-align: left;
+          width: 100%; }
+        .change-profile-modal-content .detail-card-kbank .right .bank-info .bank-icon {
+          width: 30px;
+          height: 30px;
+          object-fit: contain; }
+      .change-profile-modal-content .detail-card-kbank .right .balance {
+        font-weight: 600; }
+        .change-profile-modal-content .detail-card-kbank .right .balance :first-child {
+          font-size: 10px; }
+        .change-profile-modal-content .detail-card-kbank .right .balance :last-child {
+          font-size: 14px; }
+      .change-profile-modal-content .detail-card-kbank .right .visa {
+        width: 50px;
+        transform: translateX(-60%); }
+  .change-profile-modal-content .slide-image {
+    margin: 0; }
+    .change-profile-modal-content .slide-image .active,
+    .change-profile-modal-content .slide-image .none-active {
+      width: 47px; }
+  .change-profile-modal-content .change-password-hr .hr {
+    width: 100%;
+    height: 2px;
+    background-color: #4e4e4e; }
   .change-profile-modal-content .custom-btn {
     display: flex;
     flex-direction: row;
-    gap: 20px; }
+    margin: 0 auto;
+    gap: 12px; }
     .change-profile-modal-content .custom-btn .setting {
-      width: 100%;
-      height: 67px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 20px;
-      font-weight: 500; }
+      font-weight: 500;
+      width: 125px;
+      height: 40px; }
     .change-profile-modal-content .custom-btn .add-account {
-      width: 100%;
-      height: 67px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #000000;
-      font-size: 20px;
       font-weight: 500;
-      color: #ffff; }
+      color: #ffff;
+      width: 125px;
+      height: 40px; }
   .change-profile-modal-content .user {
     display: flex;
     justify-content: space-between; }
     .change-profile-modal-content .user .username {
-      font-size: 21px;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 14px; }
     .change-profile-modal-content .user .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 100; }
   .change-profile-modal-content .password {
     display: flex;
     justify-content: space-between; }
     .change-profile-modal-content .password .pass {
-      font-size: 21px;
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 14px; }
     .change-profile-modal-content .password .result {
-      font-size: 21px;
-      font-weight: 300; }
+      font-weight: 100;
+      font-size: 14px; }
   .change-profile-modal-content .change-password {
-    height: 66px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 16px;
     border-radius: 10px;
     border: 1px solid #fff;
-    background: #373737; }
+    background: #373737;
+    height: 40px;
+    gap: 11px; }
+    .change-profile-modal-content .change-password .icon {
+      width: 51px;
+      height: 51px; }
+      .change-profile-modal-content .change-password .icon svg {
+        width: 100%;
+        height: 100%; }
     .change-profile-modal-content .change-password p {
-      font-size: 26px;
+      font-size: 14px;
       font-weight: 600; }
+
+.add-account-content {
+  padding: 20px;
+  flex-direction: column;
+  gap: 15px; }
+  .add-account-content .bank-section p {
+    color: #f00;
+    font-size: 15px;
+    font-weight: 300; }
+  .add-account-content .bank-section .bank-list {
+    display: grid;
+    grid-template-columns: repeat(5, 40px);
+    gap: 9px 16px;
+    align-items: center; }
+    .add-account-content .bank-section .bank-list img {
+      width: 40px;
+      height: 40px; }
+  .add-account-content .bank-number {
+    width: 263px; }
+    .add-account-content .bank-number p {
+      color: #f00;
+      font-size: 15px;
+      font-weight: 300; }
+    .add-account-content .bank-number .bank-number-input {
+      height: 42px;
+      border-radius: 5px;
+      background: #433d3d;
+      gap: 2rem; }
+      .add-account-content .bank-number .bank-number-input .icon {
+        width: 20px;
+        height: 20px; }
+        .add-account-content .bank-number .bank-number-input .icon svg {
+          height: 100%;
+          width: 100%; }
+      .add-account-content .bank-number .bank-number-input input {
+        outline: none;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 14px; }
+        .add-account-content .bank-number .bank-number-input input::placeholder {
+          color: #999;
+          font-size: 14px;
+          font-weight: 300;
+          text-align: left; }
+  .add-account-content .button-warning {
+    width: 263px;
+    height: 40px; }
 
 .change-cashback-modal-content {
   width: 567px;
@@ -1830,56 +1970,54 @@ body {
         font-weight: 500;
         color: #ff0000; }
 
-.detail-card-kbank {
-  margin-top: 50px; }
-  .detail-card-kbank .card-kbank {
-    background-image: url("/assets/images/green-card-bg.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 250px;
-    height: 127px;
-    padding: 12px; }
-    .detail-card-kbank .card-kbank .left {
-      flex-direction: column;
-      gap: 0.5rem; }
-      .detail-card-kbank .card-kbank .left p {
+.detail-card-kbank .card-kbank {
+  background-image: url("/assets/images/green-card-bg.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 250px;
+  height: 127px;
+  padding: 12px; }
+  .detail-card-kbank .card-kbank .left {
+    flex-direction: column;
+    gap: 0.5rem; }
+    .detail-card-kbank .card-kbank .left p {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      width: 100%; }
+  .detail-card-kbank .card-kbank .right {
+    flex-direction: column;
+    gap: 10px; }
+    .detail-card-kbank .card-kbank .right .bank {
+      gap: 5px; }
+      .detail-card-kbank .card-kbank .right .bank h4 {
         font-size: 14px;
-        font-weight: 600;
-        text-align: left;
-        width: 100%; }
-    .detail-card-kbank .card-kbank .right {
-      flex-direction: column;
-      gap: 10px; }
-      .detail-card-kbank .card-kbank .right .bank {
-        gap: 5px; }
-        .detail-card-kbank .card-kbank .right .bank h4 {
-          font-size: 14px;
-          font-weight: 600; }
-        .detail-card-kbank .card-kbank .right .bank :last-child {
-          width: 30px;
-          height: 30px; }
-          .detail-card-kbank .card-kbank .right .bank :last-child img {
-            object-fit: contain; }
-      .detail-card-kbank .card-kbank .right .balance {
-        flex-direction: column; }
-        .detail-card-kbank .card-kbank .right .balance :first-child {
-          font-size: 10px;
-          font-weight: 600; }
-        .detail-card-kbank .card-kbank .right .balance :last-child {
-          font-size: 14px;
-          font-weight: 600; }
-      .detail-card-kbank .card-kbank .right .visa {
-        width: 50px;
-        transform: translateX(20px); }
-        .detail-card-kbank .card-kbank .right .visa img {
-          width: 100%;
-          height: 100%;
+        font-weight: 600; }
+      .detail-card-kbank .card-kbank .right .bank :last-child {
+        width: 30px;
+        height: 30px; }
+        .detail-card-kbank .card-kbank .right .bank :last-child img {
           object-fit: contain; }
-    .detail-card-kbank .card-kbank div {
-      display: flex;
-      justify-content: space-between; }
+    .detail-card-kbank .card-kbank .right .balance {
+      flex-direction: column; }
+      .detail-card-kbank .card-kbank .right .balance :first-child {
+        font-size: 10px;
+        font-weight: 600; }
+      .detail-card-kbank .card-kbank .right .balance :last-child {
+        font-size: 14px;
+        font-weight: 600; }
+    .detail-card-kbank .card-kbank .right .visa {
+      width: 50px;
+      transform: translateX(20px); }
+      .detail-card-kbank .card-kbank .right .visa img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+  .detail-card-kbank .card-kbank div {
+    display: flex;
+    justify-content: space-between; }
 
 .type-of-withdrawal {
   position: relative;
@@ -2762,7 +2900,7 @@ body {
         .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
           min-width: 167px;
           height: 45px;
-          background-color: #C1933B;
+          background-color: #c1933b;
           font-size: 28px;
           font-weight: 600;
           color: #fff;
@@ -2779,7 +2917,7 @@ body {
       display: flex;
       align-items: center;
       width: 100%;
-      background-color: #F3F3F3;
+      background-color: #f3f3f3;
       border-radius: 40px;
       padding-right: 20px; }
       .tournament-modal-content .top-recharge-select-container .top-recharge-select .select-icon {
@@ -2796,13 +2934,13 @@ body {
         font-size: 14px;
         font-weight: 500;
         color: #000;
-        background-color: #F3F3F3; }
+        background-color: #f3f3f3; }
         .tournament-modal-content .top-recharge-select-container .top-recharge-select .top-recharge-select-content:focus {
           outline: 0; }
   .tournament-modal-content .top-rank {
     font-size: 25px;
     font-weight: 600;
-    color: #FFB800;
+    color: #ffb800;
     margin-top: 17px; }
   .tournament-modal-content .slide-rank {
     width: 450px;
@@ -2819,14 +2957,14 @@ body {
       background-color: #000;
       margin: 20px 6px; }
       .tournament-modal-content .slide-rank .slide-rank-item.top1 {
-        border: 1px solid #FCABAB;
-        box-shadow: 0px 0px 4px 2px #FF0000; }
+        border: 1px solid #fcabab;
+        box-shadow: 0px 0px 4px 2px #ff0000; }
       .tournament-modal-content .slide-rank .slide-rank-item.top2 {
-        border: 1px solid #FFFB91;
-        box-shadow: 0px 0px 4px 2px #FF9900; }
+        border: 1px solid #fffb91;
+        box-shadow: 0px 0px 4px 2px #ff9900; }
       .tournament-modal-content .slide-rank .slide-rank-item.top3 {
-        border: 1px solid #A2DB00;
-        box-shadow: 0px 0px 4px 2px #368E00; }
+        border: 1px solid #a2db00;
+        box-shadow: 0px 0px 4px 2px #368e00; }
       .tournament-modal-content .slide-rank .slide-rank-item .rank-icon {
         position: absolute;
         top: 3px;
@@ -2863,7 +3001,7 @@ body {
         font-size: 19px;
         font-weight: 600;
         color: #fff;
-        background-color: #5E5E5E;
+        background-color: #5e5e5e;
         padding: 8px 22px;
         border-radius: 10px;
         display: flex; }
@@ -2900,7 +3038,7 @@ body {
       height: 46px;
       border: 0;
       border-radius: 5px;
-      background-color: #00FFFF;
+      background-color: #00ffff;
       font-size: 23px;
       font-weight: 600;
       color: #000;
@@ -2914,7 +3052,7 @@ body {
       align-self: self-start;
       font-size: 17px;
       font-weight: 400;
-      color: #FF0000; }
+      color: #ff0000; }
     .spinner-modal-content .spinner-modal-body .spinner-rule-container {
       display: flex;
       justify-content: center;
@@ -2940,7 +3078,7 @@ body {
       padding: 2px;
       border-radius: 26px; }
       .earn-modal-content .earn-qr-container .border-input-gold .earn-qr-content {
-        background-color: #3E3939;
+        background-color: #3e3939;
         border-radius: 26px;
         padding: 40px; }
         .earn-modal-content .earn-qr-container .border-input-gold .earn-qr-content .earn-qr-img {
@@ -2997,7 +3135,7 @@ body {
         .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
           width: 100%;
           height: 47px;
-          background: linear-gradient(180deg, #FFC757 0%, #A76F00 100%);
+          background: linear-gradient(180deg, #ffc757 0%, #a76f00 100%);
           border: 0;
           border-radius: 5px;
           font-size: 20px;
@@ -3031,7 +3169,7 @@ body {
   .earn-modal-content .read-earn-rule {
     font-size: 12px;
     font-weight: 300;
-    color: #00FFF0;
+    color: #00fff0;
     text-align: center;
     margin-top: 10px; }
     .earn-modal-content .read-earn-rule a {
