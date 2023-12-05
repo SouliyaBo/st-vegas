@@ -504,7 +504,7 @@ body {
   align-items: center;
 
   .sidebar {
-    width: 320px;
+    width: 300px;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -523,7 +523,7 @@ body {
     );
 
     animation: slideInFromLeft 0.5s ease-in-out;
-    padding: 39px 44px;
+    padding: 26px 31px;
 
     img {
       width: 100%;
@@ -531,12 +531,12 @@ body {
 
     .flexBetween {
       width: 100%;
-      margin: 20px 0;
+      margin: 12px 0;
     }
   }
 
   .balance {
-    height: 65px;
+    height: 55px;
     padding: 4px 8px;
     border-radius: 10px;
     border: 1px solid #f9df7b;
@@ -545,13 +545,13 @@ body {
     color: white;
 
     small {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       text-align: left;
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       text-align: right;
     }
@@ -560,11 +560,11 @@ body {
   .sidebar-button {
     cursor: pointer;
 
-    height: 65px;
+    height: 45px;
     background-color: #000;
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .download-container {
@@ -679,6 +679,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.flexAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-;
 }
 
 .font-14 {
@@ -1925,7 +1930,7 @@ body {
     }
 
     .modal-title {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .modal-icon-close {
@@ -1944,13 +1949,12 @@ body {
 
   .type-of-withdrawal {
     gap: 10;
-
     width: 80px;
     .withdrawal {
       margin: 0;
       img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
       }
       font-size: 13px;
     }
@@ -1994,36 +1998,34 @@ body {
   // Modal
   .modal {
     .modal-content {
-      min-width: 400px;
+      min-width: 370px;
 
       .modal-body {
         // Modal ฝากถอน
         .detail-card-kbank {
-          min-width: 400px;
+          min-width: 371px;
 
           .card-kbank {
-            padding: 18px 30px 0px 30px;
-            width: 100%;
-            width: 416.705px;
-            height: 201.99px;
+            padding: 18px 20px 0px 20px;
+            width: 370.705px;
           }
         }
 
         .type-of-withdrawal {
-          width: 127px;
+          width: 110px;
 
           .withdrawal {
             padding: 10px 14px 10px 10px;
-            font-size: 18px;
+            font-size: 13px;
           }
         }
 
         .button-line {
-          margin: 20px 0;
-
+          margin: 10px 0;
+          width: 98%;
           div {
-            padding: 8px 23px 8px 23px;
-            width: 80%;
+            padding: 5px 10px 5px 10px;
+            width: 98%;
           }
         }
         // End Modal ฝากถอน
@@ -2033,9 +2035,125 @@ body {
           .card-scb {
             width: 416.705px;
             height: 143.143px;
-
+            
             padding: 1rem 2rem;
-            margin-top: 50px;
+            margin-top: 30px;
+
+            display: flex;
+            justify-content: space-between;
+            .left {
+              font-size: 16px;
+              display: flex;
+              flex-direction: column;
+              gap: 0.8rem;
+            }
+            .right {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              justify-content: space-between;
+              .bank {
+                gap: 5px;
+                h4 {
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+        
+                & :last-child {
+                  width: 30px;
+                  height: 30px;
+                  img {
+                    object-fit: contain;
+                  }
+                }
+              }
+        
+              .balance {
+                flex-direction: column;
+                & :first-child {
+                  font-size: 10px;
+                  font-weight: 600;
+                }
+        
+                & :last-child {
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+              }
+        
+              .visa {
+                width: 50px;
+                transform: translateX(8px);
+        
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
+          }
+        }
+        .detail-card-scb1 {
+          .card-scb1 {
+            width: 416.705px;
+            height: 143.143px;
+            
+            padding: 1rem 2rem;
+            margin-top: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            .left {
+              font-size: 16px;
+              display: flex;
+              flex-direction: column;
+              gap: 0.8rem;
+            }
+            .right {
+              display: flex;
+              flex-direction: column;
+              gap: 16px;
+              justify-content: space-between;
+              .bank {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+        
+                & :last-child {
+                  width: 30px;
+                  height: 30px;
+                  img {
+                    object-fit: contain;
+                  }
+                }
+              }
+        
+              .balance {
+                flex-direction: column;
+                & :first-child {
+                  font-size: 10px;
+                  font-weight: 600;
+                }
+        
+                & :last-child {
+                  font-size: 14px;
+                  font-weight: 600;
+                }
+              }
+        
+              .visa {
+                width: 50px;
+                transform: translateX(8px);
+        
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+            }
           }
         }
 
@@ -2156,27 +2274,27 @@ body {
 
         // Start Slip Verify
         .slip-verify-content {
-          padding: 70px 33px 30px 33px;
-          gap: 20px;
+          padding: 40px 33px 30px 33px;
+          gap: 16px;
 
           .warning-text {
-            font-size: 23px;
+            font-size: 18px;
           }
 
           .bank-selector {
             label {
-              font-size: 18px;
+              font-size: 16px;
             }
 
             div {
               div {
-                height: 59px;
+                height: 54px;
               }
               input {
-                height: 59px;
+                height: 49px;
 
                 &::placeholder {
-                  font-size: 22px;
+                  font-size: 16px;
                 }
               }
             }
@@ -2184,26 +2302,26 @@ body {
 
           .bank-input {
             label {
-              font-size: 18px;
+              font-size: 14px;
             }
 
             input {
-              height: 63px;
-              font-size: 22px;
+              height: 54px;
+              font-size: 16px;
 
               &::placeholder {
-                font-size: 22px;
+                font-size: 14px;
               }
             }
 
             small {
-              font-size: 18px;
+              font-size: 14px;
             }
           }
 
           .button-warning {
-            height: 60px;
-            font-size: 25px;
+            height: 40px;
+            font-size: 18px;
           }
         }
 
@@ -2220,7 +2338,7 @@ body {
 
             .left {
               p {
-                font-size: 21px;
+                font-size: 18px;
               }
             }
             .right {
@@ -2245,30 +2363,36 @@ body {
         }
 
         .warning-box {
-          font-size: 22px;
+          font-size: 18px;
+          font-weight: 500;
           width: 445px;
         }
 
         .suggest-text {
-          font-size: 16px;
+          font-size: 14px;
         }
 
         .line-button {
-          height: 63px;
+          height: 43px;
           width: 396px;
+          justify-content: center;
           img {
             width: 44px;
           }
           p {
-            font-size: 20px;
+            font-size: 14px;
           }
         }
         // End True Wallet
 
         // Start Qr Modal
         .qr-pay-content-1 {
-          padding: 70px 33px 30px 33px;
-
+          padding: 35px  10px 0px 15px;
+          .notic-text {
+            width: 100%;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
           .bank-selector {
             #a img,
             .btn-select img {
@@ -2291,6 +2415,7 @@ body {
           }
 
           .confirmation {
+            margin-top: 20px;
           }
 
           .info-text {
@@ -2302,8 +2427,8 @@ body {
           .button-line {
             div {
               width: 396.029px;
-              height: 62.029px;
-              font-size: 20px;
+              height: 42.029px;
+              font-size: 14px;
               img {
                 width: 44px;
               }
@@ -2313,7 +2438,7 @@ body {
 
         .detail-qr {
           .div1 {
-            font-size: 20px;
+            font-size: 16px;
           }
 
           .div2 {
@@ -2321,27 +2446,27 @@ body {
           }
 
           .div3 {
-            width: 358px;
-            height: 359px;
+            width: 259px;
+            height: 259px;
           }
 
           .div4 {
             .save {
-              width: 149px;
-              height: 48px;
+              width: 119px;
+              height: 35px;
             }
             .refresh {
-              width: 149px;
-              height: 48px;
+              width: 119px;
+              height: 35px;
             }
           }
 
           .div5 {
-            font-size: 25px;
+            font-size: 20px;
           }
 
           .div6 {
-            font-size: 19px;
+            font-size: 12px;
 
             .danger {
             }
@@ -2358,7 +2483,7 @@ body {
     }
 
     .modal-title {
-      font-size: 30px;
+      font-size: 18px;
     }
   }
 
@@ -2468,8 +2593,11 @@ body {
   z-index: 10;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100vh;
+  padding: 80px;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
   animation-name: fadeIn;
@@ -2501,7 +2629,7 @@ body {
     padding: 2px;
     // min-width: 25%;
     // width: fit-content;
-    margin-top: 80px;
+    // margin-top: 80px;
     animation-name: slideIn;
     animation-duration: 0.4s;
   }
@@ -2547,10 +2675,10 @@ body {
     .modal-header::before {
       content: "";
       position: absolute;
-      top: -3px;
-      left: -3px;
-      right: -3px;
-      bottom: -3px;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
       z-index: -1;
       background: linear-gradient(
         90deg,
@@ -2581,6 +2709,8 @@ body {
     .modal-icon-close {
       position: absolute;
       right: 12px;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
     }
   }
@@ -2594,7 +2724,7 @@ body {
     font-weight: 600;
     color: #fff;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* The Close Button */
@@ -2622,11 +2752,9 @@ body {
 .change-profile-modal-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding-left: 12px;
-  padding-right: 12px;
+  gap: 14px;
   .detail-card-kbank {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2712,14 +2840,14 @@ body {
   .custom-btn {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 16px;
     .setting {
       width: 80%;
       height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       cursor: pointer;
     }
@@ -2730,7 +2858,7 @@ body {
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #000000;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 500;
       color: $white;
     }
@@ -2761,7 +2889,8 @@ body {
     }
   }
   .change-password {
-    height: 56px;
+    height: 50px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2773,7 +2902,7 @@ body {
     background: #373737;
     p {
       margin-top: -8px;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
     }
   }
@@ -2946,8 +3075,9 @@ body {
 }
 
 .detail-card-kbank {
-  margin-top: 50px;
-
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
   .card-kbank {
     background-image: url("/assets/images/green-card-bg.svg");
     background-size: contain;
@@ -3058,23 +3188,25 @@ body {
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-weight: 600;
     justify-content: center;
     align-items: center;
+    gap: 8px;
+    font-weight: 600;
   }
 }
 
 .button-line {
   display: flex;
   justify-content: center;
-
   color: white;
+  width: 90%;
+  cursor: pointer;
   div {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    font-size: 14px;
     background-color: $green;
     border: 1px solid $white;
   }
@@ -3082,9 +3214,8 @@ body {
 
 .slide-image {
   display: flex;
-  margin: 15px 0 18px 0;
   justify-content: center;
-  gap: 16px;
+  gap: 8px;
 
   .active {
     border-radius: 10px;
@@ -3121,7 +3252,7 @@ body {
 
   .card-scb {
     background-size: cover;
-    background-image: url("/assets/images/purple-card-bg.svg");
+    background-image: url("/assets/images/scb-img.png");
 
     background-size: contain;
     background-position: center;
@@ -3129,15 +3260,13 @@ body {
     margin: 0 auto;
 
     margin-top: 30px;
-    width: 262px;
-    height: 90px;
     padding: 16px;
 
     .left {
       flex-direction: column;
       gap: 0.3rem;
       p {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
         text-align: left;
         width: 100%;
@@ -3190,27 +3319,95 @@ body {
     }
   }
 }
+.detail-card-scb1 {
+  margin-top: 5px;
+  .card-scb1 {
+    background-size: cover;
+    background-image: url("/assets/images/scb-img.png");
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 16px;
+
+    .left {
+      flex-direction: column;
+      gap: 0.3rem;
+      p {
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
+    .right {
+      flex-direction: column;
+      gap: 16px;
+
+      .bank {
+        gap: 5px;
+        h4 {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          width: 30px;
+          height: 30px;
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+
+      .balance {
+        flex-direction: column;
+        & :first-child {
+          font-size: 10px;
+          font-weight: 600;
+        }
+
+        & :last-child {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+
+      .visa {
+        width: 50px;
+        transform: translateX(8px);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
 
 .button-validationt {
   border: 1px solid #ff0000;
-  padding: 15px 15px 15px 15px;
+  padding: 13px 0px 13px 0px;
   text-align: center;
   border-radius: 5px;
+  margin-top: 16px;
 }
 
 .confirm-the-amount {
   background-color: #c1933b;
   border-radius: 6px;
-  padding: 13px 0px 13px 0px;
-  font-weight: 600;
+  padding: 8px 0px 8px 0px;
+  font-weight:500;
   text-align: center;
-  font-size: 22px;
+  font-size: 17px;
   margin-top: 20px;
 }
 
 .text-amount-money {
   width: 100%;
-  height: 60px;
+  height: 40px;
   background: none;
   // display: block;
   outline: none;
@@ -3218,7 +3415,6 @@ body {
   font-size: 16px;
   color: white;
   border-bottom: 2px solid #545353;
-  margin-bottom: 10px;
 }
 
 .text-amount-money input:focus {
@@ -3227,7 +3423,7 @@ body {
 }
 .text-amount-money input::placeholder {
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -3780,7 +3976,8 @@ body {
 // Start QR Play
 
 .qr-pay-content-1 {
-  padding: 35px 17px 15px 17px;
+  padding: 35px  0px 0px 15px;
+  width: 400px;
   .notic-text {
     width: 100%;
     font-size: 15px;
@@ -3847,7 +4044,7 @@ body {
       margin-top: 10px;
       max-width: 350px;
       width: 66.19px;
-      height: 58.73px;
+      height: 44.73px;
       border-radius: 6px;
       border: 1px;
       text-align: center;
@@ -3876,15 +4073,16 @@ body {
     }
 
     .show-username-bank {
-      background-color: $color-background-input;
+      background-color: #0b0b0b;
       border: 2px solid #676767;
       margin-top: 10px;
-      height: 58.73px;
+      height: 44.73px;
       width: 73%;
       border-radius: 4px;
       font-size: 18px;
       color: $white;
-      padding: 13px 0 10px 0;
+      font-weight: 300;
+      padding: 8px 0 10px 0;
       text-align: center;
       outline: none;
     }
@@ -3894,14 +4092,15 @@ body {
   }
 
   .info-text {
+
     text-align: center;
-    margin-top: 10px;
+    margin-top: 18px;
   }
 
   .qrpay {
     margin-top: 20px;
     text-align: center;
-    padding: 0 30px 0 30px;
+    padding: 0 20px 0 20px;
   }
 
   .button-line {
@@ -3925,7 +4124,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 
   .div1 {
     font-weight: 500;
@@ -3941,8 +4140,8 @@ body {
   }
 
   .div3 {
-    width: 226px;
-    height: 226px;
+    width: 189px;
+    height: 189px;
     border-radius: 26px;
     border: 3px solid #f9df7b;
     background: #3e3939;
@@ -3959,13 +4158,13 @@ body {
   }
 
   .div4 {
-    width: 100%;
+    width: 87%;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 16px;
     .save {
       width: 100px;
-      height: 30px;
+      height: 26px;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -3973,13 +4172,13 @@ body {
       border-radius: 7px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       color: $white;
     }
     .refresh {
       width: 100px;
-      height: 30px;
+      height: 26px;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -3994,15 +4193,15 @@ body {
         #000000,
         #242424
       );
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       color: $white;
     }
   }
   .div5 {
-    font-size: 16px;
-    margin-top: 17px;
-    font-weight: 700;
+    font-size: 14px;
+    margin-top: 16px;
+    font-weight: 600;
     color: $white;
   }
   .div6 {
@@ -4010,7 +4209,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 12px;
     .danger {
       color: red;
     }
@@ -4024,7 +4223,7 @@ body {
   width: 100%;
   flex-direction: column;
   gap: 10px;
-  padding: 39px 10px 15px 10px;
+  padding: 0px 10px 15px 10px;
 
   & > * {
     width: 100%;
