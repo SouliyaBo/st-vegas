@@ -147,3 +147,49 @@ topRankSelect.addEventListener('change', function() {
     iconTopLose.style.display = 'block';
   }
 });
+
+
+// earn money modal
+const earnTabOverview = document.getElementById('earn-tab-overview')
+const earnTabIncome = document.getElementById('earn-tab-income')
+const earnTabWithdraw = document.getElementById('earn-tab-withdraw-income')
+earnTabOverview.classList.add('active');
+earnTabIncome.classList.remove('active');
+earnTabWithdraw.classList.remove('active');
+
+const earnDetailOverview = document.getElementById('earn-detail-overview')
+const earnDetailIncome = document.getElementById('earn-detail-income')
+const earnDetailWithdraw = document.getElementById('earn-detail-withdraw-income')
+earnDetailOverview.style.display = 'flex';
+earnDetailIncome.style.display = 'none';
+earnDetailWithdraw.style.display = 'none';
+
+earnTabOverview.addEventListener('click', function () {
+  earnTabOverview.classList.add('active');
+  earnTabIncome.classList.remove('active');
+  earnTabWithdraw.classList.remove('active');
+
+  earnDetailOverview.style.display = 'flex';
+  earnDetailIncome.style.display = 'none';
+  earnDetailWithdraw.style.display = 'none';
+})
+
+earnTabIncome.addEventListener('click', function () {
+  earnTabOverview.classList.remove('active');
+  earnTabIncome.classList.add('active');
+  earnTabWithdraw.classList.remove('active');
+
+  earnDetailOverview.style.display = 'none';
+  earnDetailIncome.style.display = 'flex';
+  earnDetailWithdraw.style.display = 'none';
+})
+
+earnTabWithdraw.addEventListener('click', function () {
+  earnTabOverview.classList.remove('active');
+  earnTabIncome.classList.remove('active');
+  earnTabWithdraw.classList.add('active');
+
+  earnDetailOverview.style.display = 'none';
+  earnDetailIncome.style.display = 'none';
+  earnDetailWithdraw.style.display = 'flex';
+})

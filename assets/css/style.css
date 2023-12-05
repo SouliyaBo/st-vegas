@@ -134,7 +134,9 @@ body {
 
 .brand {
   margin-top: 8px;
-  height: 237px; }
+  height: 307px;
+  padding-left: 25px;
+  padding-right: 25px; }
   .brand img {
     height: 100%;
     width: 100%; }
@@ -144,8 +146,8 @@ body {
   min-width: 200px; }
 
 .search-container {
-  margin: 12px 0;
-  width: 100%;
+  margin: 12px 12px 12px 25px;
+  width: 97%;
   height: 56px;
   border-radius: 33px;
   border: 1px solid #969696;
@@ -306,7 +308,7 @@ body {
   z-index: 10;
   align-items: center; }
   .sidebar-container .sidebar {
-    width: 320px;
+    width: 300px;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -316,14 +318,14 @@ body {
     border: 2px solid #f9df7b;
     background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000 81.25%, #242424 100%);
     animation: slideInFromLeft 0.5s ease-in-out;
-    padding: 39px 44px; }
+    padding: 26px 31px; }
     .sidebar-container .sidebar img {
       width: 100%; }
     .sidebar-container .sidebar .flexBetween {
       width: 100%;
-      margin: 20px 0; }
+      margin: 12px 0; }
   .sidebar-container .balance {
-    height: 65px;
+    height: 55px;
     padding: 4px 8px;
     border-radius: 10px;
     border: 1px solid #f9df7b;
@@ -331,20 +333,20 @@ body {
     box-shadow: 0px 4px 4px 0px #000;
     color: white; }
     .sidebar-container .balance small {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 300;
       text-align: left; }
     .sidebar-container .balance p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 600;
       text-align: right; }
   .sidebar-container .sidebar-button {
     cursor: pointer;
-    height: 65px;
+    height: 45px;
     background-color: #000;
     color: white;
     font-weight: 600;
-    font-size: 20px; }
+    font-size: 16px; }
   .sidebar-container .download-container {
     padding: 7px 14px;
     border-radius: 5px;
@@ -425,6 +427,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+
+.flexAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-; }
 
 .font-14 {
   color: #fff;
@@ -1287,10 +1294,10 @@ body {
   .modal .modal-header-container .modal-header {
     min-width: 230px; }
   .modal .modal-title {
-    font-size: 20px; }
+    font-size: 18px; }
   .modal .modal-icon-close {
-    width: 25px;
-    height: 25px; }
+    width: 18px !important;
+    height: 18px !important; }
   .detail-card-kbank {
     padding: 12px; }
     .detail-card-kbank .card-kbank {
@@ -1302,8 +1309,8 @@ body {
       margin: 0;
       font-size: 13px; }
       .type-of-withdrawal .withdrawal img {
-        width: 35px;
-        height: 35px; }
+        width: 30px;
+        height: 30px; }
   .button-line {
     margin: 20px 0; }
     .button-line div {
@@ -1320,29 +1327,107 @@ body {
   .game-section {
     display: none; }
   .modal .modal-content {
-    min-width: 501px; }
+    min-width: 370px; }
     .modal .modal-content .modal-body .detail-card-kbank {
-      min-width: 500px; }
+      min-width: 371px; }
       .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
         padding: 18px 20px 0px 20px;
-        width: 100%;
-        width: 416.705px;
-        height: 201.99px; }
+        width: 370.705px; }
     .modal .modal-content .modal-body .type-of-withdrawal {
-      width: 127px; }
+      width: 110px; }
       .modal .modal-content .modal-body .type-of-withdrawal .withdrawal {
         padding: 10px 14px 10px 10px;
-        font-size: 18px; }
+        font-size: 13px; }
     .modal .modal-content .modal-body .button-line {
-      margin: 20px 0; }
+      margin: 10px 0;
+      width: 98%; }
       .modal .modal-content .modal-body .button-line div {
-        padding: 8px 23px 8px 23px;
-        width: 80%; }
+        padding: 5px 10px 5px 10px;
+        width: 98%; }
     .modal .modal-content .modal-body .detail-card-scb .card-scb {
       width: 416.705px;
       height: 143.143px;
       padding: 1rem 2rem;
-      margin-top: 50px; }
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between; }
+      .modal .modal-content .modal-body .detail-card-scb .card-scb .left {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem; }
+      .modal .modal-content .modal-body .detail-card-scb .card-scb .right {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: space-between; }
+        .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank {
+          gap: 5px; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank h4 {
+            font-size: 14px;
+            font-weight: 600; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank :last-child {
+            width: 30px;
+            height: 30px; }
+            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank :last-child img {
+              object-fit: contain; }
+        .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance {
+          flex-direction: column; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance :first-child {
+            font-size: 10px;
+            font-weight: 600; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance :last-child {
+            font-size: 14px;
+            font-weight: 600; }
+        .modal .modal-content .modal-body .detail-card-scb .card-scb .right .visa {
+          width: 50px;
+          transform: translateX(8px); }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .visa img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+    .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 {
+      width: 416.705px;
+      height: 143.143px;
+      padding: 1rem 2rem;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between; }
+      .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .left {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem; }
+      .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: space-between; }
+        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px; }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child {
+            width: 30px;
+            height: 30px; }
+            .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child img {
+              object-fit: contain; }
+        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance {
+          flex-direction: column; }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :first-child {
+            font-size: 10px;
+            font-weight: 600; }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :last-child {
+            font-size: 14px;
+            font-weight: 600; }
+        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .visa {
+          width: 50px;
+          transform: translateX(8px); }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .visa img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
     .modal .modal-content .modal-body .promotion-modal-content {
       padding: 30px 65px;
       min-width: 500px;
@@ -1404,30 +1489,30 @@ body {
         height: 60px;
         font-size: 18px; }
     .modal .modal-content .modal-body .slip-verify-content {
-      padding: 70px 33px 30px 33px;
-      gap: 20px; }
+      padding: 40px 33px 30px 33px;
+      gap: 16px; }
       .modal .modal-content .modal-body .slip-verify-content .warning-text {
-        font-size: 23px; }
+        font-size: 18px; }
       .modal .modal-content .modal-body .slip-verify-content .bank-selector label {
-        font-size: 18px; }
+        font-size: 16px; }
       .modal .modal-content .modal-body .slip-verify-content .bank-selector div div {
-        height: 59px; }
+        height: 54px; }
       .modal .modal-content .modal-body .slip-verify-content .bank-selector div input {
-        height: 59px; }
+        height: 49px; }
         .modal .modal-content .modal-body .slip-verify-content .bank-selector div input::placeholder {
-          font-size: 22px; }
+          font-size: 16px; }
       .modal .modal-content .modal-body .slip-verify-content .bank-input label {
-        font-size: 18px; }
+        font-size: 14px; }
       .modal .modal-content .modal-body .slip-verify-content .bank-input input {
-        height: 63px;
-        font-size: 22px; }
+        height: 54px;
+        font-size: 16px; }
         .modal .modal-content .modal-body .slip-verify-content .bank-input input::placeholder {
-          font-size: 22px; }
+          font-size: 14px; }
       .modal .modal-content .modal-body .slip-verify-content .bank-input small {
-        font-size: 18px; }
+        font-size: 14px; }
       .modal .modal-content .modal-body .slip-verify-content .button-warning {
-        height: 60px;
-        font-size: 25px; }
+        height: 40px;
+        font-size: 18px; }
     .modal .modal-content .modal-body .true-wallet-content {
       padding: 40px 16px 15px 16px;
       gap: 20px; }
@@ -1435,7 +1520,7 @@ body {
         width: 415.873px;
         height: 142.857px; }
         .modal .modal-content .modal-body .true-wallet-content .card .left p {
-          font-size: 21px; }
+          font-size: 18px; }
         .modal .modal-content .modal-body .true-wallet-content .card .right {
           gap: 2rem; }
           .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title p {
@@ -1446,19 +1531,25 @@ body {
           .modal .modal-content .modal-body .true-wallet-content .card .right .visa {
             width: 80px; }
     .modal .modal-content .modal-body .warning-box {
-      font-size: 22px;
+      font-size: 18px;
+      font-weight: 500;
       width: 445px; }
     .modal .modal-content .modal-body .suggest-text {
-      font-size: 16px; }
+      font-size: 14px; }
     .modal .modal-content .modal-body .line-button {
-      height: 63px;
-      width: 396px; }
+      height: 43px;
+      width: 396px;
+      justify-content: center; }
       .modal .modal-content .modal-body .line-button img {
         width: 44px; }
       .modal .modal-content .modal-body .line-button p {
-        font-size: 20px; }
+        font-size: 14px; }
     .modal .modal-content .modal-body .qr-pay-content-1 {
-      padding: 70px 33px 30px 33px; }
+      padding: 35px  10px 0px 15px; }
+      .modal .modal-content .modal-body .qr-pay-content-1 .notic-text {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 10px; }
       .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a img,
       .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector .btn-select img {
         width: 30px; }
@@ -1470,33 +1561,35 @@ body {
       .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li span,
       .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector .btn-select li span {
         margin-left: 30px; }
+      .modal .modal-content .modal-body .qr-pay-content-1 .confirmation {
+        margin-top: 20px; }
       .modal .modal-content .modal-body .qr-pay-content-1 .button-line div {
         width: 396.029px;
-        height: 62.029px;
-        font-size: 20px; }
+        height: 42.029px;
+        font-size: 14px; }
         .modal .modal-content .modal-body .qr-pay-content-1 .button-line div img {
           width: 44px; }
     .modal .modal-content .modal-body .detail-qr .div1 {
-      font-size: 20px; }
+      font-size: 16px; }
     .modal .modal-content .modal-body .detail-qr .div2 {
       font-size: 40px; }
     .modal .modal-content .modal-body .detail-qr .div3 {
-      width: 358px;
-      height: 359px; }
+      width: 259px;
+      height: 259px; }
     .modal .modal-content .modal-body .detail-qr .div4 .save {
-      width: 149px;
-      height: 48px; }
+      width: 119px;
+      height: 35px; }
     .modal .modal-content .modal-body .detail-qr .div4 .refresh {
-      width: 149px;
-      height: 48px; }
+      width: 119px;
+      height: 35px; }
     .modal .modal-content .modal-body .detail-qr .div5 {
-      font-size: 25px; }
+      font-size: 20px; }
     .modal .modal-content .modal-body .detail-qr .div6 {
-      font-size: 19px; }
+      font-size: 12px; }
   .modal .modal-header-container .modal-header {
-    min-width: 384px; }
+    min-width: 284px; }
   .modal .modal-title {
-    font-size: 30px; }
+    font-size: 18px; }
   .history-modal-content {
     width: 464px;
     padding-top: 40px; } }
@@ -1561,8 +1654,11 @@ body {
   z-index: 10;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100vh;
+  padding: 80px;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
   animation-name: fadeIn;
@@ -1575,10 +1671,7 @@ body {
     background: linear-gradient(90deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%);
     border-radius: 20px;
     margin: auto;
-    padding: 3px;
-    min-width: 25%;
-    width: fit-content;
-    margin-top: 80px;
+    padding: 2px;
     animation-name: slideIn;
     animation-duration: 0.4s; }
   .modal .modal-content {
@@ -1590,7 +1683,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .modal .modal-header-container {
     position: absolute;
-    top: -45px;
+    top: -30px;
     width: 100%;
     display: flex;
     justify-content: center; }
@@ -1600,7 +1693,7 @@ body {
       width: fit-content;
       background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000000 81.25%, #242424 100%);
       border-radius: 15px;
-      padding: 20px;
+      padding: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1608,21 +1701,23 @@ body {
     .modal .modal-header-container .modal-header::before {
       content: "";
       position: absolute;
-      top: -3px;
-      left: -3px;
-      right: -3px;
-      bottom: -3px;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
       z-index: -1;
       background: linear-gradient(90deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%);
       border-radius: 15px;
       pointer-events: none; }
     .modal .modal-header-container .modal-icon-back {
       position: absolute;
-      left: 20px;
+      left: 10px;
       cursor: pointer; }
     .modal .modal-header-container .modal-icon-close {
       position: absolute;
-      right: 20px;
+      right: 12px;
+      width: 30px;
+      height: 30px;
       cursor: pointer; }
   .modal .modal-body {
     color: #fff;
@@ -1630,7 +1725,8 @@ body {
   .modal .modal-title {
     font-weight: 600;
     color: #fff;
-    margin: 0; }
+    margin: 0;
+    font-size: 18px; }
   .modal .close {
     color: #aaa;
     float: right;
@@ -1648,11 +1744,58 @@ body {
   animation-duration: 0.4s; }
 
 .change-profile-modal-content {
-  width: 500px;
-  padding: 78px 20px 32px 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px; }
+  gap: 14px; }
+  .change-profile-modal-content .detail-card-kbank {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .change-profile-modal-content .detail-card-kbank .card-kbank {
+      background-image: url("/assets/images/green-card-bg.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank .left {
+        flex-direction: column;
+        gap: 0.5rem; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .left p {
+          font-size: 12px;
+          font-weight: 600;
+          text-align: left;
+          width: 100%; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank .right {
+        flex-direction: column;
+        gap: 10px; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank {
+          gap: 5px; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank h4 {
+            font-size: 14px;
+            font-weight: 600; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank :last-child {
+            width: 30px;
+            height: 30px; }
+            .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank :last-child img {
+              object-fit: contain; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance {
+          flex-direction: column; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance :first-child {
+            font-size: 10px;
+            font-weight: 600; }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance :last-child {
+            font-size: 14px;
+            font-weight: 600; }
+        .change-profile-modal-content .detail-card-kbank .card-kbank .right .visa {
+          width: 50px;
+          transform: translateX(20px); }
+          .change-profile-modal-content .detail-card-kbank .card-kbank .right .visa img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank div {
+        display: flex;
+        justify-content: space-between; }
   .change-profile-modal-content .change-password-hr {
     padding: 6px 40px; }
     .change-profile-modal-content .change-password-hr .hr {
@@ -1662,54 +1805,59 @@ body {
   .change-profile-modal-content .custom-btn {
     display: flex;
     flex-direction: row;
-    gap: 20px; }
+    gap: 16px; }
     .change-profile-modal-content .custom-btn .setting {
-      width: 100%;
-      height: 67px;
+      width: 80%;
+      height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 20px;
-      font-weight: 500; }
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer; }
     .change-profile-modal-content .custom-btn .add-account {
-      width: 100%;
-      height: 67px;
+      cursor: pointer;
+      width: 80%;
+      height: 44px;
       border-radius: 10px;
       border: 1px solid #f9df7b;
       background: #000000;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       color: #ffff; }
   .change-profile-modal-content .user {
     display: flex;
     justify-content: space-between; }
     .change-profile-modal-content .user .username {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 700; }
     .change-profile-modal-content .user .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 100; }
   .change-profile-modal-content .password {
     display: flex;
     justify-content: space-between; }
     .change-profile-modal-content .password .pass {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 700; }
     .change-profile-modal-content .password .result {
-      font-size: 21px;
+      font-size: 14px;
       font-weight: 300; }
   .change-profile-modal-content .change-password {
-    height: 66px;
+    height: 50px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
     gap: 16px;
     border-radius: 10px;
     border: 1px solid #fff;
     background: #373737; }
     .change-profile-modal-content .change-password p {
-      font-size: 26px;
+      margin-top: -8px;
+      font-size: 17px;
       font-weight: 600; }
 
 .change-cashback-modal-content {
@@ -1831,16 +1979,15 @@ body {
         color: #ff0000; }
 
 .detail-card-kbank {
-  margin-top: 50px; }
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; }
   .detail-card-kbank .card-kbank {
     background-image: url("/assets/images/green-card-bg.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 250px;
-    height: 127px;
-    padding: 12px; }
+    margin: 0; }
     .detail-card-kbank .card-kbank .left {
       flex-direction: column;
       gap: 0.5rem; }
@@ -1897,28 +2044,30 @@ body {
     border-radius: 9px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    font-weight: 600;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    gap: 8px;
+    font-weight: 600; }
 
 .button-line {
   display: flex;
   justify-content: center;
-  color: white; }
+  color: white;
+  width: 90%;
+  cursor: pointer; }
   .button-line div {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    font-size: 14px;
     background-color: #0fb800;
     border: 1px solid #ffff; }
 
 .slide-image {
   display: flex;
-  margin: 15px 0 18px 0;
   justify-content: center;
-  gap: 16px; }
+  gap: 8px; }
   .slide-image .active {
     border-radius: 10px;
     min-width: 25%;
@@ -1934,20 +2083,18 @@ body {
   margin-top: 5px; }
   .detail-card-scb .card-scb {
     background-size: cover;
-    background-image: url("/assets/images/purple-card-bg.svg");
+    background-image: url("/assets/images/scb-img.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 auto;
     margin-top: 30px;
-    width: 262px;
-    height: 90px;
     padding: 16px; }
     .detail-card-scb .card-scb .left {
       flex-direction: column;
       gap: 0.3rem; }
       .detail-card-scb .card-scb .left p {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 600;
         text-align: left;
         width: 100%; }
@@ -1980,31 +2127,76 @@ body {
           height: 100%;
           object-fit: contain; }
 
+.detail-card-scb1 {
+  margin-top: 5px; }
+  .detail-card-scb1 .card-scb1 {
+    background-size: cover;
+    background-image: url("/assets/images/scb-img.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 16px; }
+    .detail-card-scb1 .card-scb1 .left {
+      flex-direction: column;
+      gap: 0.3rem; }
+      .detail-card-scb1 .card-scb1 .left p {
+        font-size: 15px;
+        font-weight: 600; }
+    .detail-card-scb1 .card-scb1 .right {
+      flex-direction: column;
+      gap: 16px; }
+      .detail-card-scb1 .card-scb1 .right .bank {
+        gap: 5px; }
+        .detail-card-scb1 .card-scb1 .right .bank h4 {
+          font-size: 14px;
+          font-weight: 600; }
+        .detail-card-scb1 .card-scb1 .right .bank :last-child {
+          width: 30px;
+          height: 30px; }
+          .detail-card-scb1 .card-scb1 .right .bank :last-child img {
+            object-fit: contain; }
+      .detail-card-scb1 .card-scb1 .right .balance {
+        flex-direction: column; }
+        .detail-card-scb1 .card-scb1 .right .balance :first-child {
+          font-size: 10px;
+          font-weight: 600; }
+        .detail-card-scb1 .card-scb1 .right .balance :last-child {
+          font-size: 14px;
+          font-weight: 600; }
+      .detail-card-scb1 .card-scb1 .right .visa {
+        width: 50px;
+        transform: translateX(8px); }
+        .detail-card-scb1 .card-scb1 .right .visa img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+
 .button-validationt {
   border: 1px solid #ff0000;
-  padding: 15px 15px 15px 15px;
+  padding: 13px 0px 13px 0px;
   text-align: center;
-  border-radius: 5px; }
+  border-radius: 5px;
+  margin-top: 16px; }
 
 .confirm-the-amount {
   background-color: #c1933b;
   border-radius: 6px;
-  padding: 13px 0px 13px 0px;
-  font-weight: 600;
+  padding: 8px 0px 8px 0px;
+  font-weight: 500;
   text-align: center;
-  font-size: 22px;
+  font-size: 17px;
   margin-top: 20px; }
 
 .text-amount-money {
   width: 100%;
-  height: 60px;
+  height: 40px;
   background: none;
   outline: none;
   border: none;
   font-size: 16px;
   color: white;
-  border-bottom: 2px solid #545353;
-  margin-bottom: 10px; }
+  border-bottom: 2px solid #545353; }
 
 .text-amount-money input:focus {
   border-bottom: 1px solid #0572ce;
@@ -2012,7 +2204,7 @@ body {
 
 .text-amount-money input::placeholder {
   text-align: end;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300; }
 
 .withdraw-modal-content {
@@ -2331,7 +2523,8 @@ body {
       background-color: #4e4e4e; }
 
 .qr-pay-content-1 {
-  padding: 35px 17px 15px 17px; }
+  padding: 35px  0px 0px 15px;
+  width: 400px; }
   .qr-pay-content-1 .notic-text {
     width: 100%;
     font-size: 15px; }
@@ -2367,7 +2560,7 @@ body {
       margin-top: 10px;
       max-width: 350px;
       width: 66.19px;
-      height: 58.73px;
+      height: 44.73px;
       border-radius: 6px;
       border: 1px;
       text-align: center;
@@ -2385,24 +2578,25 @@ body {
     .qr-pay-content-1 .bank-selector .btn-select:focus {
       outline: none; }
     .qr-pay-content-1 .bank-selector .show-username-bank {
-      background-color: #433d3d;
+      background-color: #0b0b0b;
       border: 2px solid #676767;
       margin-top: 10px;
-      height: 58.73px;
+      height: 44.73px;
       width: 73%;
       border-radius: 4px;
       font-size: 18px;
       color: #ffff;
-      padding: 13px 0 10px 0;
+      font-weight: 300;
+      padding: 8px 0 10px 0;
       text-align: center;
       outline: none; }
   .qr-pay-content-1 .info-text {
     text-align: center;
-    margin-top: 10px; }
+    margin-top: 18px; }
   .qr-pay-content-1 .qrpay {
     margin-top: 20px;
     text-align: center;
-    padding: 0 30px 0 30px; }
+    padding: 0 20px 0 20px; }
   .qr-pay-content-1 .button-line div {
     font-size: 13px;
     width: 249px;
@@ -2418,7 +2612,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px; }
+  gap: 6px; }
   .detail-qr .div1 {
     font-weight: 500;
     text-align: center;
@@ -2429,8 +2623,8 @@ body {
     text-align: center;
     color: #f2d570; }
   .detail-qr .div3 {
-    width: 226px;
-    height: 226px;
+    width: 189px;
+    height: 189px;
     border-radius: 26px;
     border: 3px solid #f9df7b;
     background: #3e3939;
@@ -2443,13 +2637,13 @@ body {
       height: 90%;
       border-radius: 26px; }
   .detail-qr .div4 {
-    width: 100%;
+    width: 87%;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px; }
+    margin-top: 16px; }
     .detail-qr .div4 .save {
       width: 100px;
-      height: 30px;
+      height: 26px;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -2457,12 +2651,12 @@ body {
       border-radius: 7px;
       border: 1px solid #f9df7b;
       background: #c1933b;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       color: #ffff; }
     .detail-qr .div4 .refresh {
       width: 100px;
-      height: 30px;
+      height: 26px;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -2470,20 +2664,20 @@ body {
       border-radius: 7px;
       border: 1px solid #f9df7b;
       background: linear-gradient(to left, #242424, #0a0000, #191919, #000000, #242424);
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       color: #ffff; }
   .detail-qr .div5 {
-    font-size: 16px;
-    margin-top: 17px;
-    font-weight: 700;
+    font-size: 14px;
+    margin-top: 16px;
+    font-weight: 600;
     color: #ffff; }
   .detail-qr .div6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 13px; }
+    font-size: 12px; }
     .detail-qr .div6 .danger {
       color: red; }
 
@@ -2491,7 +2685,7 @@ body {
   width: 100%;
   flex-direction: column;
   gap: 10px;
-  padding: 39px 10px 15px 10px; }
+  padding: 0px 10px 15px 10px; }
   .slip-verify-content > * {
     width: 100%; }
   .slip-verify-content .warning-text {
@@ -2930,7 +3124,7 @@ body {
         cursor: pointer; }
 
 .earn-modal-content {
-  padding: 60px 32px 32px 32px;
+  padding: 40px 10px 10px 10px;
   display: flex;
   flex-direction: column;
   gap: 20px; }
@@ -3038,3 +3232,136 @@ body {
       color: #fff;
       text-decoration: underline;
       cursor: pointer; }
+  .earn-modal-content .earn-tab-container {
+    padding: 0 40px; }
+    .earn-modal-content .earn-tab-container .border-input-gold {
+      border-radius: 10px; }
+      .earn-modal-content .earn-tab-container .border-input-gold .earn-tab {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden; }
+        .earn-modal-content .earn-tab-container .border-input-gold .earn-tab .earn-tab-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          font-size: 14px;
+          font-weight: 600px;
+          color: #fff;
+          cursor: pointer; }
+          .earn-modal-content .earn-tab-container .border-input-gold .earn-tab .earn-tab-item.active {
+            background-color: #3a2c12; }
+        .earn-modal-content .earn-tab-container .border-input-gold .earn-tab .earn-tab-item-2 {
+          width: 100%;
+          height: 100%;
+          padding: 0 1px;
+          border-radius: 0; }
+  .earn-modal-content .earn-detail-data {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+    .earn-modal-content .earn-detail-data .filter-date {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .earn-modal-content .earn-detail-data .filter-date .filter-label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff; }
+      .earn-modal-content .earn-detail-data .filter-date .filter-date-input {
+        min-width: 100px;
+        height: 40px;
+        padding: 8px;
+        border: 0;
+        border-radius: 5px; }
+        .earn-modal-content .earn-detail-data .filter-date .filter-date-input:focus {
+          outline: 0; }
+    .earn-modal-content .earn-detail-data .border-input-gold {
+      border-radius: 5px; }
+      .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date {
+        border-radius: 5px;
+        padding: 20px 10px 10px 10px;
+        background-color: #000; }
+        .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold {
+          border-radius: 5px; }
+          .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #000;
+            display: flex;
+            align-items: center; }
+            .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container .th-earn {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-size: 14px;
+              font-weight: 600px;
+              color: #fff; }
+        .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          margin-top: 10px;
+          height: 200px;
+          background-color: #000;
+          overflow-y: scroll; }
+          .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            padding: 4px;
+            background-color: #fff;
+            display: flex;
+            align-items: center; }
+            .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn .td-earn {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-size: 15px;
+              font-weight: 600px;
+              color: #000; }
+    .earn-modal-content .earn-detail-data .form-withdraw-income {
+      padding: 12px 16px;
+      border-radius: 5px;
+      background-color: #000;
+      text-align: center; }
+      .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 16px; }
+        .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-label {
+          font-size: 14px;
+          font-weight: 600;
+          color: #fff; }
+        .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input {
+          height: 40px;
+          border: 0;
+          border-radius: 5px;
+          padding: 8px 10px; }
+          .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input:focus {
+            outline: 0; }
+      .earn-modal-content .earn-detail-data .form-withdraw-income .btn-withdraw-income {
+        min-width: 140px;
+        height: 42px;
+        background: linear-gradient(180deg, #FFC757 0%, #A76F00 100%);
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer; }
