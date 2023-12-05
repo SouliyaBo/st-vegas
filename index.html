@@ -2947,7 +2947,12 @@
 
               <div class="earn-menu-content">
                 <div class="border-input-gold">
-                  <div class="earn-menu-item">
+                  <div 
+                    class="earn-menu-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#earnMoneyDetailModal"
+                    data-bs-dismiss="modal"
+                  >
                     <img class="earn-menu-item-img" src="/assets/images/img-total-plays.svg" alt="">
                     <p class="earn-menu-item-title">ยอดเล่น</p>
                     <p class="earn-menu-item-subtitle">ยอดเล่นของเพื่อนทั้งหมด</p>
@@ -2981,6 +2986,278 @@
                     <p class="earn-menu-item-subtitle">ดูรายละเอียด</p>
                   </div>
                 </div>
+              </div>
+
+              <div class="read-earn-rule">
+                หากมีข้อสงสัยเพิ่มเติม 
+                <a href="https://www.google.com/" target="_blank">อ่านกฏกติกา</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="earnMoneyDetailModal"
+      tabindex="-1"
+      aria-labelledby="earnMoneyDetailModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-border">
+        <div class="modal-content">
+          <div class="modal-header-container">
+            <div class="modal-header">
+              <img
+                src="./assets/icons/icon-back-modal.svg"
+                class="modal-icon-back"
+                alt=""
+                data-bs-toggle="modal"
+                data-bs-target="#bagModal"
+                data-bs-dismiss="modal"
+              />
+              <p class="modal-title">สร้างรายได้</p>
+              <img
+                src="./assets/icons/icon-close-modal.svg"
+                class="modal-icon-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="earn-modal-content">
+              <div class="earn-tab-container">
+                <div class="border-input-gold">
+                  <div class="earn-tab">
+                    <div id="earn-tab-overview" class="earn-tab-item active">ภาพรวม</div>
+                    <div class="border-input-gold earn-tab-item-2">
+                      <div id="earn-tab-income" class="earn-tab-item">รายได้</div>
+                    </div>
+                    <div id="earn-tab-withdraw-income" class="earn-tab-item">ถอนรายได้</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earn-detail-data" id="earn-detail-overview">
+                <div class="filter-date">
+                  <p class="filter-label">ภาพรวมวันที่</p>
+                  <input class="filter-date-input" type="date" name="" id="">
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">วันที่</span>
+                        <span class="th-earn">สมัคร</span>
+                        <span class="th-earn">ฝากเงิน</span>
+                        <span class="th-earn">รายได้</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container">
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">110</span>
+                        <span class="td-earn">40</span>
+                        <span class="td-earn">11,668</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="filter-date">
+                  <p class="filter-label">ภาพรวมทั้งเดือน</p>
+                  <select class="filter-date-input">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">เดือน</span>
+                        <span class="th-earn">สมัคร</span>
+                        <span class="th-earn">ฝากเงิน</span>
+                        <span class="th-earn">รายได้</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container">
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">January</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">1,336</span>
+                        <span class="td-earn">83,550</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earn-detail-data" id="earn-detail-income">
+                <div class="filter-date">
+                  <p class="filter-label">ประวัติรายได้</p>
+                  <input class="filter-date-input" type="date" name="" id="">
+                  <select class="filter-date-input">
+                    <option value=""></option>
+                  </select>
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">วัน/เวลา</span>
+                        <span class="th-earn">ยูสเซอร์</span>
+                        <span class="th-earn">ระดับขั้น</span>
+                        <span class="th-earn">จำนวนเงิน</span>
+                        <span class="th-earn">ชนิด</span>
+                        <span class="th-earn">หมวด</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container"></div>
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="earn-detail-data" id="earn-detail-withdraw-income">
+                <div class="border-input-gold">
+                  <div class="form-withdraw-income">
+                    <div class="form-withdraw-group">
+                      <label class="form-withdraw-label">รายได้ปัจจุบัน</label>
+                      <input type="text" class="form-withdraw-input">
+                    </div>
+                    <div class="form-withdraw-group">
+                      <label class="form-withdraw-label">จำนวนเงินที่ต้องการถอน</label>
+                      <input type="text" placeholder="ถอนไม่มีขั้นต่ำ" class="form-withdraw-input">
+                    </div>
+
+                    <button type="button" class="btn-withdraw-income">ถอนรายได้</button>
+                  </div>
+                </div>
+                <div class="filter-date">
+                  <p class="filter-label">ประวัติรายได้</p>
+                  <input class="filter-date-input" type="date" name="" id="">
+                </div>
+
+                <div class="border-input-gold">
+                  <div class="table-earn-date">
+                    <div class="border-input-gold">
+                      <div class="th-earn-container">
+                        <span class="th-earn">วัน/เวลา</span>
+                        <span class="th-earn">ยูสเซอร์</span>
+                        <span class="th-earn">จำนวนเงิน</span>
+                        <span class="th-earn">สถานะ</span>
+                      </div>
+                    </div>
+
+                    <div class="tr-earn-container">
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">xcczsaw</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">รับแล้ว</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">xcczsaw</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">รับแล้ว</span>
+                      </div>
+                      <div class="tr-earn">
+                        <span class="td-earn">1/01/66</span>
+                        <span class="td-earn">xcczsaw</span>
+                        <span class="td-earn">10,120</span>
+                        <span class="td-earn">รับแล้ว</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
               <div class="read-earn-rule">
