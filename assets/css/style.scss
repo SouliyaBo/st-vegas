@@ -2006,6 +2006,119 @@ body {
       }
 
       .modal-body {
+        // Start Profile Modal
+        .change-profile-modal-content {
+          width: 500px;
+          padding: 78px 20px 32px 20px;
+
+          .detail-card-kbank {
+            margin: 0;
+            border: 1px solid red;
+            .card-kbank {
+              margin: 0 auto;
+              width: 416.705px;
+              height: 201.99px;
+              border: 1px solid green;
+            }
+          }
+
+          .change-password-hr {
+            padding: 6px 40px;
+          }
+
+          .custom-btn {
+            gap: 20px;
+
+            .setting {
+              height: 67px;
+              width: 100%;
+
+              font-size: 20px;
+            }
+
+            .add-account {
+              height: 67px;
+              width: 100%;
+
+              font-size: 20px;
+            }
+          }
+
+          .user {
+            .username {
+              font-size: 21px;
+            }
+
+            .result {
+              font-size: 21px;
+            }
+          }
+
+          .password {
+            .pass {
+              font-size: 21px;
+            }
+
+            .result {
+              font-size: 21px;
+            }
+          }
+
+          .change-password {
+            height: 66px;
+            gap: 16px;
+
+            p {
+              font-size: 26px;
+            }
+          }
+        }
+        // End Profile Modal
+
+        // Modal ฝากถอน
+        .detail-card-kbank {
+          min-width: 500px;
+
+          .card-kbank {
+            padding: 18px 20px 0px 20px;
+            width: 100%;
+            width: 416.705px;
+            height: 201.99px;
+          }
+        }
+
+        .type-of-withdrawal {
+          width: 127px;
+
+          .withdrawal {
+            padding: 10px 14px 10px 10px;
+            font-size: 18px;
+          }
+        }
+
+        .button-line {
+          margin: 20px 0;
+
+          div {
+            padding: 8px 23px 8px 23px;
+            width: 80%;
+          }
+        }
+        // End Modal ฝากถอน
+
+        // Auto Modal
+        .detail-card-scb {
+          .card-scb {
+            width: 416.705px;
+            height: 143.143px;
+
+            padding: 1rem 2rem;
+            margin-top: 50px;
+          }
+        }
+
+        // End Auto Modal
+
         // Promotion Modal
         .promotion-modal-content {
           padding: 30px 65px;

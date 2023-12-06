@@ -1326,6 +1326,64 @@ body {
       height: 85px; }
     .modal .modal-content .modal-title {
       font-size: 30px; }
+    .modal .modal-content .modal-body .change-profile-modal-content {
+      width: 500px;
+      padding: 78px 20px 32px 20px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
+        margin: 0;
+        border: 1px solid red; }
+        .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank {
+          margin: 0 auto;
+          width: 416.705px;
+          height: 201.99px;
+          border: 1px solid green; }
+      .modal .modal-content .modal-body .change-profile-modal-content .change-password-hr {
+        padding: 6px 40px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
+        gap: 20px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .setting {
+          height: 67px;
+          width: 100%;
+          font-size: 20px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .add-account {
+          height: 67px;
+          width: 100%;
+          font-size: 20px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .user .username {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .user .result {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .password .pass {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .password .result {
+        font-size: 21px; }
+      .modal .modal-content .modal-body .change-profile-modal-content .change-password {
+        height: 66px;
+        gap: 16px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .change-password p {
+          font-size: 26px; }
+    .modal .modal-content .modal-body .detail-card-kbank {
+      min-width: 500px; }
+      .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
+        padding: 18px 20px 0px 20px;
+        width: 100%;
+        width: 416.705px;
+        height: 201.99px; }
+    .modal .modal-content .modal-body .type-of-withdrawal {
+      width: 127px; }
+      .modal .modal-content .modal-body .type-of-withdrawal .withdrawal {
+        padding: 10px 14px 10px 10px;
+        font-size: 18px; }
+    .modal .modal-content .modal-body .button-line {
+      margin: 20px 0; }
+      .modal .modal-content .modal-body .button-line div {
+        padding: 8px 23px 8px 23px;
+        width: 80%; }
+    .modal .modal-content .modal-body .detail-card-scb .card-scb {
+      width: 416.705px;
+      height: 143.143px;
+      padding: 1rem 2rem;
+      margin-top: 50px; }
     .modal .modal-content .modal-body .promotion-modal-content {
       padding: 30px 65px;
       min-width: 500px;
