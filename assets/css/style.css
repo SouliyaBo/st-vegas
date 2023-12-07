@@ -229,7 +229,7 @@ body {
       padding: 20px 32px;
       border-radius: 13px; }
       .card-container .game-group-container .game-group-item.active {
-        background: linear-gradient(180deg, #F9DF7B 0%, #B57E10 20%, #B78113 26%, #BE8C1F 32%, #CB9D32 38%, #DCB64E 44%, #F2D570 49%, #F9DF7B 51%, #FFF3A6 52%, #F9DF7B 59%, #B57E10 84%, #E5C25B 95%, #F9DF7B 100%); }
+        background: linear-gradient(180deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%); }
       .card-container .game-group-container .game-group-item .game-group-img {
         width: 100%;
         height: 100%;
@@ -270,7 +270,7 @@ body {
           border-radius: 10px;
           font-size: 18px;
           font-weight: 600;
-          background: linear-gradient(180deg, #F9DF7B 0%, #B57E10 20%, #B78113 26%, #BE8C1F 32%, #CB9D32 38%, #DCB64E 44%, #F2D570 49%, #F9DF7B 51%, #FFF3A6 52%, #F9DF7B 59%, #B57E10 84%, #E5C25B 95%, #F9DF7B 100%); }
+          background: linear-gradient(180deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%); }
 
 .info-wrapper {
   max-width: 1400px;
@@ -1446,62 +1446,7 @@ body {
         height: 48px; }
     .modal .modal-content .modal-title {
       font-size: 20px; }
-<<<<<<< HEAD
-    .modal .modal-content .modal-body {
-      min-width: 501px; }
-      .modal .modal-content .modal-body .change-profile-modal-content {
-        padding: 78px 20px 32px 20px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
-          margin: 0; }
-          .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank {
-            margin: 0 auto;
-            width: 416.705px;
-            height: 201.99px; }
-            .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank .visa {
-              margin-top: 30px;
-              margin-bottom: 25px;
-              display: flex;
-              justify-content: end; }
-        .modal .modal-content .modal-body .change-profile-modal-content .change-password-hr {
-          padding: 6px 40px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
-          gap: 20px; }
-          .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .setting {
-            height: 67px;
-            width: 100%;
-            font-size: 20px; }
-          .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .add-account {
-            height: 67px;
-            width: 100%;
-            font-size: 20px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .user .username {
-          font-size: 21px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .user .result {
-          font-size: 21px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .password .pass {
-          font-size: 21px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .password .result {
-          font-size: 21px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .change-password {
-          height: 66px;
-          gap: 16px; }
-          .modal .modal-content .modal-body .change-profile-modal-content .change-password p {
-            font-size: 26px; }
-      .modal .modal-content .modal-body .detail-card-kbank {
-        min-width: 371px; }
-        .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
-          padding: 18px 20px 0px 20px;
-          width: 370.705px; }
-      .modal .modal-content .modal-body .type-of-withdrawal {
-        width: 110px; }
-        .modal .modal-content .modal-body .type-of-withdrawal .withdrawal {
-          padding: 10px 14px 10px 10px;
-          font-size: 13px; }
-      .modal .modal-content .modal-body .button-line {
-        margin: 10px 0;
-=======
     .modal .modal-content .modal-body .change-profile-modal-content {
-      width: 500px;
       padding: 78px 20px 32px 20px; }
       .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
         margin: 0; }
@@ -1554,7 +1499,6 @@ body {
       width: 98%; }
       .modal .modal-content .modal-body .button-line div {
         padding: 5px 10px 5px 10px;
->>>>>>> lex8-12
         width: 98%; }
     .modal .modal-content .modal-body .detail-card-scb .card-scb {
       width: 416.705px;
@@ -1625,67 +1569,6 @@ body {
             height: 30px; }
             .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child img {
               object-fit: contain; }
-<<<<<<< HEAD
-      .modal .modal-content .modal-body .withdraw-modal-content .card {
-        width: 416.705px;
-        height: 201.99px;
-        background: url("/assets/images/green-card-bg.svg") linear-gradient(257deg, #00481D 0%, #00A036 100%);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none; }
-        .modal .modal-content .modal-body .withdraw-modal-content .card .left {
-          gap: 1rem; }
-          .modal .modal-content .modal-body .withdraw-modal-content .card .left p {
-            font-size: 22px; }
-        .modal .modal-content .modal-body .withdraw-modal-content .card .right {
-          gap: 10px; }
-          .modal .modal-content .modal-body .withdraw-modal-content .card .right .bank h4 {
-            font-size: 20px; }
-          .modal .modal-content .modal-body .withdraw-modal-content .card .right .bank :last-child {
-            width: 47px;
-            height: 47px; }
-          .modal .modal-content .modal-body .withdraw-modal-content .card .right .balance :first-child {
-            font-size: 18px; }
-          .modal .modal-content .modal-body .withdraw-modal-content .card .right .balance :last-child {
-            font-size: 25px; }
-          .modal .modal-content .modal-body .withdraw-modal-content .card .right .visa {
-            width: 79px; }
-      .modal .modal-content .modal-body .withdraw-modal-content .slider-wrapper .active.slider, .modal .modal-content .modal-body .withdraw-modal-content .slider-wrapper slider {
-        width: 75px;
-        height: 5px; }
-      .modal .modal-content .modal-body .withdraw-modal-content .money-input {
-        width: 394px; }
-        .modal .modal-content .modal-body .withdraw-modal-content .money-input p {
-          font-size: 16px; }
-      .modal .modal-content .modal-body .withdraw-modal-content .button-warning {
-        width: 395px;
-        height: 62px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px; }
-      .modal .modal-content .modal-body .withdraw-modal-content p {
-        font-size: 16px; }
-      .modal .modal-content .modal-body .withdraw-modal-content .line-button {
-        font-size: 25px;
-        width: 396.029px;
-        height: 62.029px;
-        margin-bottom: 10px; }
-      .modal .modal-content .modal-body .promotion-modal-content {
-        padding: 30px 15px;
-        min-width: 300px;
-        max-width: 500px; }
-        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-modal-image-container {
-          margin-top: 20px;
-          width: 270px;
-          height: 270px; }
-        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-content-title {
-          font-size: 22px;
-          margin-top: 20px; }
-        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-content-text {
-          font-size: 18px;
-=======
         .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance {
           flex-direction: column; }
           .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :first-child {
@@ -1701,6 +1584,53 @@ body {
             width: 100%;
             height: 100%;
             object-fit: contain; }
+    .modal .modal-content .modal-body .withdraw-modal-content .card {
+      width: 416.705px;
+      height: 201.99px;
+      background: url("/assets/images/green-card-bg.svg") linear-gradient(257deg, #00481d 0%, #00a036 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none; }
+      .modal .modal-content .modal-body .withdraw-modal-content .card .left {
+        gap: 1rem; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .left p {
+          font-size: 22px; }
+      .modal .modal-content .modal-body .withdraw-modal-content .card .right {
+        gap: 10px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .right .bank h4 {
+          font-size: 20px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .right .bank :last-child {
+          width: 47px;
+          height: 47px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .right .balance :first-child {
+          font-size: 18px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .right .balance :last-child {
+          font-size: 25px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .right .visa {
+          width: 79px; }
+    .modal .modal-content .modal-body .withdraw-modal-content .slider-wrapper .active.slider,
+    .modal .modal-content .modal-body .withdraw-modal-content .slider-wrapper slider {
+      width: 75px;
+      height: 5px; }
+    .modal .modal-content .modal-body .withdraw-modal-content .money-input {
+      width: 394px; }
+      .modal .modal-content .modal-body .withdraw-modal-content .money-input p {
+        font-size: 16px; }
+    .modal .modal-content .modal-body .withdraw-modal-content .button-warning {
+      width: 395px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px; }
+    .modal .modal-content .modal-body .withdraw-modal-content p {
+      font-size: 16px; }
+    .modal .modal-content .modal-body .withdraw-modal-content .line-button {
+      font-size: 25px;
+      width: 396.029px;
+      height: 62.029px;
+      margin-bottom: 10px; }
     .modal .modal-content .modal-body .promotion-modal-content {
       padding: 30px 15px;
       min-width: 300px;
@@ -1784,7 +1714,6 @@ body {
           padding: 0 10px; }
         .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
           gap: 22px;
->>>>>>> lex8-12
           margin-top: 10px; }
           .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
             height: 42px;
@@ -1793,7 +1722,7 @@ body {
             height: 42px;
             font-size: 16px; }
       .modal .modal-content .modal-body .earn-modal-content .earn-menu-content {
-        grid-template-columns: repeat(2, 168px);
+        grid-template-columns: repeat(2, 208px);
         gap: 20px; }
         .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
           height: 140px;
@@ -1812,47 +1741,7 @@ body {
           height: 50px; }
           .modal .modal-content .modal-body .earn-modal-content .earn-tab-container .earn-tab .earn-tab-item {
             font-size: 14px; }
-<<<<<<< HEAD
-          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-input {
-            height: 33px;
-            padding: 0 10px; }
-          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
-            gap: 22px;
-            margin-top: 10px; }
-            .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
-              height: 42px;
-              font-size: 16px; }
-            .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
-              height: 42px;
-              font-size: 16px; }
-        .modal .modal-content .modal-body .earn-modal-content .earn-menu-content {
-          grid-template-columns: repeat(2, 208px);
-          gap: 20px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
-            height: 140px;
-            padding: 14px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-img {
-              width: 65px;
-              height: 65px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-title {
-              font-size: 16px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-subtitle {
-              font-size: 12px; }
-        .modal .modal-content .modal-body .earn-modal-content .earn-tab-container {
-          padding: 0 40px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-tab-container .earn-tab {
-            width: 100%;
-            height: 50px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-tab-container .earn-tab .earn-tab-item {
-              font-size: 14px; }
-        .modal .modal-content .modal-body .earn-modal-content .earn-detail-data {
-          gap: 20px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .filter-date .filter-label {
-            font-size: 16px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .filter-date .filter-date-input {
-=======
       .modal .modal-content .modal-body .earn-modal-content .earn-detail-data {
-        width: 400px;
         gap: 20px; }
         .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .filter-date .filter-label {
           font-size: 16px; }
@@ -1866,7 +1755,6 @@ body {
             .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container .th-earn {
               font-size: 14px; }
           .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn {
->>>>>>> lex8-12
             height: 40px;
             padding: 4px; }
             .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn .td-earn {
@@ -4237,16 +4125,14 @@ body {
         color: #fff;
         cursor: pointer; }
 
-.mySlides {
-  display: none; }
-
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   margin: auto; }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -4266,7 +4152,8 @@ body {
   border-radius: 3px 0 0 3px; }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
 
 /* Caption text */
@@ -4298,7 +4185,8 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease; }
 
-.slide-active, .dot:hover {
+.slide-active,
+.dot:hover {
   background-color: #fff; }
 
 /* Fading animation */

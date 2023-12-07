@@ -386,7 +386,22 @@ body {
       border-radius: 13px;
 
       &.active {
-        background: linear-gradient(180deg, #F9DF7B 0%, #B57E10 20%, #B78113 26%, #BE8C1F 32%, #CB9D32 38%, #DCB64E 44%, #F2D570 49%, #F9DF7B 51%, #FFF3A6 52%, #F9DF7B 59%, #B57E10 84%, #E5C25B 95%, #F9DF7B 100%);
+        background: linear-gradient(
+          180deg,
+          #f9df7b 0%,
+          #b57e10 20%,
+          #b78113 26%,
+          #be8c1f 32%,
+          #cb9d32 38%,
+          #dcb64e 44%,
+          #f2d570 49%,
+          #f9df7b 51%,
+          #fff3a6 52%,
+          #f9df7b 59%,
+          #b57e10 84%,
+          #e5c25b 95%,
+          #f9df7b 100%
+        );
       }
 
       .game-group-img {
@@ -403,7 +418,7 @@ body {
     // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
-    
+
     .game-card {
       position: relative;
       border-radius: 30px;
@@ -419,9 +434,9 @@ body {
       img {
         width: 190px;
         height: 280px;
-  
+
         cursor: pointer;
-  
+
         &:hover {
           transform: translateY(-10px);
           // transform: scale(1.1);
@@ -429,7 +444,7 @@ body {
           // filter: grayscale(1);
         }
       }
-  
+
       .btn-play-game-container {
         display: none;
         position: absolute;
@@ -438,7 +453,7 @@ body {
         right: 0;
         bottom: 0;
         z-index: 10;
-  
+
         .btn-play-game {
           min-width: 80px;
           height: 47px;
@@ -446,7 +461,22 @@ body {
           border-radius: 10px;
           font-size: 18px;
           font-weight: 600;
-          background: linear-gradient(180deg, #F9DF7B 0%, #B57E10 20%, #B78113 26%, #BE8C1F 32%, #CB9D32 38%, #DCB64E 44%, #F2D570 49%, #F9DF7B 51%, #FFF3A6 52%, #F9DF7B 59%, #B57E10 84%, #E5C25B 95%, #F9DF7B 100%);
+          background: linear-gradient(
+            180deg,
+            #f9df7b 0%,
+            #b57e10 20%,
+            #b78113 26%,
+            #be8c1f 32%,
+            #cb9d32 38%,
+            #dcb64e 44%,
+            #f2d570 49%,
+            #f9df7b 51%,
+            #fff3a6 52%,
+            #f9df7b 59%,
+            #b57e10 84%,
+            #e5c25b 95%,
+            #f9df7b 100%
+          );
         }
       }
     }
@@ -2051,33 +2081,30 @@ body {
       background-image: url("/assets/images/purple-card-bg.svg");
       background-position: center;
 
-      .left{
-
+      .left {
       }
 
-      .right{
+      .right {
         height: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         gap: 4px;
-        img{
+        img {
           width: 30px;
           height: 30px;
         }
       }
 
-      .visa{
+      .visa {
         position: absolute;
         bottom: 5px;
         right: 5px;
 
         width: 50px;
-height: 14px;
+        height: 14px;
       }
     }
-
-
 
     .warning-box {
       border-radius: 5px;
@@ -2114,7 +2141,7 @@ height: 14px;
       padding: 10px;
       gap: 4px;
 
-      img{
+      img {
         width: 25px;
         height: 25px;
       }
@@ -2135,8 +2162,6 @@ height: 14px;
 // End of Mobile Page
 
 @media only screen and (min-width: 481px) {
-
-
   .featured-game-wrapper#mobile {
     display: none;
   }
@@ -2401,41 +2426,40 @@ height: 14px;
         // End Auto Modal
 
         // Start ຖອນເງິນ
-        .withdraw-modal-content{
-          .card{
-
-
+        .withdraw-modal-content {
+          .card {
             width: 416.705px;
             height: 201.99px;
-background:url("/assets/images/green-card-bg.svg") linear-gradient(257deg, #00481D 0%, #00A036 100%);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-border: none;
+            background: url("/assets/images/green-card-bg.svg")
+              linear-gradient(257deg, #00481d 0%, #00a036 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
 
-            .left{
+            .left {
               gap: 1rem;
 
-              p{
+              p {
                 font-size: 22px;
               }
             }
 
-            .right{
+            .right {
               gap: 10px;
 
-              .bank{
-                h4{
+              .bank {
+                h4 {
                   font-size: 20px;
                 }
 
-                & :last-child{
+                & :last-child {
                   width: 47px;
                   height: 47px;
                 }
               }
 
-              .balance{
+              .balance {
                 & :first-child {
                   font-size: 18px;
                 }
@@ -2445,47 +2469,47 @@ border: none;
                 }
               }
 
-              .visa{
+              .visa {
                 width: 79px;
               }
             }
           }
-          .slider-wrapper{
-            .active.slider, slider{
+          .slider-wrapper {
+            .active.slider,
+            slider {
               width: 75px;
               height: 5px;
             }
           }
 
-          .money-input{
+          .money-input {
             width: 394px;
-            p{
+            p {
               font-size: 16px;
             }
 
-            input{
-
+            input {
             }
           }
 
-          .button-warning{
+          .button-warning {
             width: 395px;
-height: 62px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 25px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
           }
 
-          p{
+          p {
             font-size: 16px;
           }
 
-          .line-button{
+          .line-button {
             font-size: 25px;
             width: 396.029px;
-height: 62.029px;
-margin-bottom: 10px;
+            height: 62.029px;
+            margin-bottom: 10px;
           }
         }
 
@@ -2930,21 +2954,21 @@ margin-bottom: 10px;
         .tournament-modal-content {
           padding: 35px 6px 12px 6px;
           max-height: fit-content;
-        
+
           .top-recharge-select-container {
             padding: 0 60px;
-        
+
             .top-recharge-select {
               background-color: #f3f3f3;
               border-radius: 40px;
               padding-right: 20px;
-        
+
               .select-icon {
                 position: absolute;
                 left: 10px;
                 z-index: 1;
               }
-        
+
               .top-recharge-select-content {
                 cursor: pointer;
                 padding: 10px 10px 10px 40px;
@@ -2954,7 +2978,7 @@ margin-bottom: 10px;
                 font-weight: 500;
                 color: #000;
                 background-color: #f3f3f3;
-        
+
                 &:focus {
                   outline: 0;
                 }
@@ -2972,9 +2996,8 @@ margin-bottom: 10px;
             width: 380px;
             overflow-x: auto;
             white-space: nowrap;
-        
+
             .slide-rank-item {
-              
               // width: 135px;
               // height: 191.7px;
               width: 117px;
@@ -2984,7 +3007,7 @@ margin-bottom: 10px;
               background-color: #000;
               margin: 15px 4px;
               background-size: 135px 191.7px;
-        
+
               &.top1 {
                 border: 1px solid #fcabab;
                 box-shadow: 0px 0px 4px 2px #ff0000;
@@ -3000,7 +3023,7 @@ margin-bottom: 10px;
                 box-shadow: 0px 0px 4px 2px #368e00;
                 background-size: 135px 191.7px;
               }
-        
+
               .rank-icon {
                 position: absolute;
                 top: 3px;
@@ -3029,19 +3052,19 @@ margin-bottom: 10px;
             display: flex;
             flex-direction: column;
             gap: 5px;
-        
+
             .table-rank-item {
               display: flex;
               justify-content: space-between;
               align-items: center;
-        
+
               .no-rank {
                 width: 60px;
                 font-size: 16px;
                 font-weight: 600;
                 color: #fff;
               }
-        
+
               .rank-detail {
                 width: 100%;
                 font-size: 15px;
@@ -3983,7 +4006,7 @@ margin-bottom: 10px;
   }
 }
 
-.deposit-withdraw-modal-content{
+.deposit-withdraw-modal-content {
   position: relative;
   .card {
     width: 262px;
@@ -4091,7 +4114,7 @@ margin-bottom: 10px;
     }
   }
 
-  .line-button{
+  .line-button {
     margin: 0 auto;
     width: 249px;
     height: 39px;
@@ -5927,7 +5950,7 @@ margin-bottom: 10px;
       border-radius: 10px;
       background-color: #000;
 
-      background: url('/assets/images/image-top10-bg.svg');
+      background: url("/assets/images/image-top10-bg.svg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: 110px 152.72px;
@@ -5935,7 +5958,7 @@ margin-bottom: 10px;
       &.top1 {
         border: 1px solid #fcabab;
         box-shadow: 0px 0px 4px 2px #ff0000;
-        background: url('/assets/images/image-top1-bg.svg');
+        background: url("/assets/images/image-top1-bg.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 110px 152.72px;
@@ -5943,7 +5966,7 @@ margin-bottom: 10px;
       &.top2 {
         border: 1px solid #fffb91;
         box-shadow: 0px 0px 4px 2px #ff9900;
-        background: url('/assets/images/image-top2-bg.svg');
+        background: url("/assets/images/image-top2-bg.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 110px 152.72px;
@@ -5951,7 +5974,7 @@ margin-bottom: 10px;
       &.top3 {
         border: 1px solid #a2db00;
         box-shadow: 0px 0px 4px 2px #368e00;
-        background: url('/assets/images/image-top3-bg.svg');
+        background: url("/assets/images/image-top3-bg.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 110px 152.72px;
@@ -6450,7 +6473,7 @@ margin-bottom: 10px;
 // .mySlides {display: none;}
 // img {vertical-align: middle;}
 
-.mySlides {display: none}
+// .mySlides {display: none}
 /* Slideshow container */
 .slideshow-container {
   // max-width: 1000px;
@@ -6459,7 +6482,8 @@ margin-bottom: 10px;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -6481,8 +6505,9 @@ margin-bottom: 10px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -6518,7 +6543,8 @@ margin-bottom: 10px;
   transition: background-color 0.6s ease;
 }
 
-.slide-active, .dot:hover {
+.slide-active,
+.dot:hover {
   // background-color: #717171;
   background-color: #fff;
 }
