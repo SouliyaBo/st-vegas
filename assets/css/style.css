@@ -54,8 +54,9 @@ body {
       border: 1px solid #a68859;
       cursor: pointer; }
     .header .right .desktop-button {
-      height: 45px;
-      width: 114px; }
+      height: 35px;
+      width: 114px;
+      font-size: 16px; }
     .header .right .mobile-button {
       display: none; }
     .header .right img {
@@ -148,7 +149,7 @@ body {
 .search-container {
   margin: 12px 12px 12px 25px;
   width: 97%;
-  height: 56px;
+  height: 46px;
   border-radius: 33px;
   border: 1px solid #969696;
   background: rgba(0, 0, 0, 0.76);
@@ -167,10 +168,10 @@ body {
     border: none;
     outline: none;
     padding: 30px;
-    font-size: 32px; }
+    font-size: 20px; }
     .search-container input::placeholder {
       color: #838383;
-      font-size: 32px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 400;
       line-height: normal; }
@@ -475,9 +476,9 @@ body {
   .login-modal .login-modal-wrapper {
     position: relative;
     flex-direction: column;
-    width: 734px;
-    height: 699px;
-    padding: 33px 63px;
+    width: 600px;
+    height: 599px;
+    padding: 30px 60px;
     background-color: black;
     border-radius: 60px;
     border: 3px solid #f9df7b;
@@ -490,16 +491,16 @@ body {
       position: absolute;
       top: 20px;
       right: 20px;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       cursor: pointer; }
     .login-modal .login-modal-wrapper img {
-      width: 476px;
+      width: 300px;
       display: block;
       margin: 0 auto; }
     .login-modal .login-modal-wrapper h3 {
       color: #fff;
-      font-size: 45px;
+      font-size: 38px;
       font-style: normal;
       font-weight: 600;
       margin: 20px 0;
@@ -508,14 +509,14 @@ body {
       border-radius: 10px;
       background: #433d3d;
       width: 100%;
-      height: 71px;
+      height: 51px;
       padding: 10px 17px;
       display: flex;
       align-items: center;
       gap: 10px; }
       .login-modal .login-modal-wrapper .phone-input img {
-        width: 50px;
-        height: 50px; }
+        width: 35px;
+        height: 35px; }
       .login-modal .login-modal-wrapper .phone-input input {
         width: 100%;
         height: 100%;
@@ -523,23 +524,23 @@ body {
         border: none;
         outline: none;
         color: #fff;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 600; }
         .login-modal .login-modal-wrapper .phone-input input::placeholder {
           color: #fff;
-          font-size: 25px;
+          font-size: 18px;
           font-weight: 600; }
     .login-modal .login-modal-wrapper .button-container {
-      margin-top: 57px;
+      margin-top: 47px;
       width: 100%; }
       .login-modal .login-modal-wrapper .button-container button {
         width: 100%;
-        height: 71px;
+        height: 51px;
         margin-bottom: 20px;
         border: none;
         outline: none;
         cursor: pointer;
-        font-size: 35px;
+        font-size: 25px;
         font-weight: 600; }
       .login-modal .login-modal-wrapper .button-container :first-child {
         border-radius: 10px;
@@ -547,9 +548,14 @@ body {
         color: black; }
       .login-modal .login-modal-wrapper .button-container :last-child {
         border-radius: 10px;
-        border: 4px solid #f9df7b;
+        border: 2px solid #f9df7b;
         background: #433d3d;
         color: white; }
+    .login-modal .login-modal-wrapper .problem {
+      text-decoration: underline;
+      color: #FA0;
+      font-size: 18px;
+      font-weight: 400; }
   .login-modal .background {
     background: rgba(0, 0, 0, 0.5);
     height: 100vh;
@@ -559,7 +565,7 @@ body {
 
 #signUpModal .modal-border {
   border-radius: 60px;
-  padding: 6px; }
+  padding: 2px; }
 
 #signUpModal .modal-content {
   border-radius: 60px;
@@ -568,7 +574,7 @@ body {
 
 #signUpModal .signup-modal-content {
   position: relative;
-  width: 734px;
+  width: 600px;
   color: #fff;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1; }
@@ -583,7 +589,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 66px; }
+    padding: 25px 63px; }
   #signUpModal .signup-modal-content .step-container {
     display: flex;
     justify-content: center;
@@ -596,11 +602,11 @@ body {
       flex-direction: column;
       align-items: center; }
       #signUpModal .signup-modal-content .step-container .step-item .step-item-box {
-        width: 94px;
-        height: 94px;
+        width: 60px;
+        height: 60px;
         border-radius: 10px;
         border: 1px solid #797979;
-        font-size: 45px;
+        font-size: 25px;
         font-weight: 600;
         color: #676767;
         background-color: #3d3d3d;
@@ -609,9 +615,9 @@ body {
         align-items: center; }
       #signUpModal .signup-modal-content .step-container .step-item .step-item-text {
         position: absolute;
-        top: 100px;
+        top: 80px;
         white-space: nowrap;
-        font-size: 30px;
+        font-size: 18px;
         font-weight: 300;
         color: #676767;
         text-align: center; }
@@ -642,19 +648,19 @@ body {
     width: 100%; }
   #signUpModal .signup-modal-content .signup-header {
     margin-top: 52px;
-    font-size: 33px;
+    font-size: 22px;
     font-weight: 600;
     color: #fff;
     width: 100%; }
   #signUpModal .signup-modal-content .signup-header-success {
-    margin-top: 82px;
-    font-size: 57px;
+    margin-top: 62px;
+    font-size: 37px;
     font-weight: 600;
     color: #fff;
     width: 100%;
     text-align: center; }
   #signUpModal .signup-modal-content .signup-title {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
     color: #ffaa00;
     width: 100%; }
@@ -662,15 +668,15 @@ body {
     border-radius: 10px;
     background: #433d3d;
     width: 100%;
-    height: 71px;
+    height: 55px;
     padding: 10px 17px;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 19px; }
     #signUpModal .signup-modal-content .phone-input img {
-      width: 50px;
-      height: 50px; }
+      width: 30px;
+      height: 30px; }
     #signUpModal .signup-modal-content .phone-input input {
       width: 100%;
       height: 100%;
@@ -678,21 +684,21 @@ body {
       border: none;
       outline: none;
       color: #fff;
-      font-size: 25px;
+      font-size: 18px;
       font-weight: 600; }
       #signUpModal .signup-modal-content .phone-input input::placeholder {
         color: #fff;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 600; }
   #signUpModal .signup-modal-content button {
     width: 100%;
-    height: 71px;
+    height: 51px;
     margin-top: 23px;
     margin-bottom: 20px;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 22px;
     font-weight: 600;
     border-radius: 10px;
     background: #c1933b;
@@ -700,7 +706,7 @@ body {
   #signUpModal .signup-modal-content .already-have-account {
     text-align: end;
     width: 100%;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff; }
     #signUpModal .signup-modal-content .already-have-account .go-to-login {
@@ -714,10 +720,15 @@ body {
     justify-content: center;
     grid-gap: 11px; }
     #signUpModal .signup-modal-content .bank-list-container .bank-item {
+      width: 50px;
+      height: 50px;
       text-align: center; }
   #signUpModal .signup-modal-content .img-success-container {
     width: 100%;
     text-align: center; }
+    #signUpModal .signup-modal-content .img-success-container .img-success {
+      width: 50%;
+      height: 50%; }
 
 #signUpModal .signup-background {
   position: absolute;
@@ -736,7 +747,7 @@ body {
   transform: scaleX(-1); }
 
 #signUpModal .logo {
-  width: 476px; }
+  width: 370px; }
 
 @media (max-width: 480px) {
   .header {
@@ -3573,3 +3584,64 @@ body {
         font-weight: 600;
         color: #fff;
         cursor: pointer; }
+
+* {
+  box-sizing: border-box; }
+
+.mySlides {
+  display: none; }
+
+img {
+  vertical-align: middle; }
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto; }
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center; }
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active {
+  background-color: #717171; }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px; } }
