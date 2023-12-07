@@ -1337,13 +1337,11 @@ body {
       width: 500px;
       padding: 78px 20px 32px 20px; }
       .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
-        margin: 0;
-        border: 1px solid red; }
+        margin: 0; }
         .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank {
           margin: 0 auto;
           width: 416.705px;
-          height: 201.99px;
-          border: 1px solid green; }
+          height: 201.99px; }
       .modal .modal-content .modal-body .change-profile-modal-content .change-password-hr {
         padding: 6px 40px; }
       .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
@@ -1685,7 +1683,7 @@ body {
       .modal .modal-content .modal-body .line-button p {
         font-size: 14px; }
     .modal .modal-content .modal-body .qr-pay-content-1 {
-      padding: 35px  10px 0px 15px; }
+      padding: 35px 10px 0px 15px; }
       .modal .modal-content .modal-body .qr-pay-content-1 .notic-text {
         width: 100%;
         font-size: 18px;
@@ -2722,7 +2720,7 @@ body {
       background-color: #4e4e4e; }
 
 .qr-pay-content-1 {
-  padding: 35px  0px 0px 15px;
+  padding: 35px 0px 0px 15px;
   width: 400px; }
   .qr-pay-content-1 .notic-text {
     width: 100%;
@@ -3566,7 +3564,7 @@ body {
       .earn-modal-content .earn-detail-data .form-withdraw-income .btn-withdraw-income {
         min-width: 140px;
         height: 42px;
-        background: linear-gradient(180deg, #FFC757 0%, #A76F00 100%);
+        background: linear-gradient(180deg, #ffc757 0%, #a76f00 100%);
         border: 0;
         border-radius: 5px;
         font-size: 20px;
