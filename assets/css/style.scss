@@ -1914,31 +1914,6 @@ body {
     }
   }
 
-  // Modal
-  .modal {
-    .modal-border {
-    }
-
-    .modal-content {
-      width: 300px;
-    }
-
-    .modal-header-container {
-      .modal-header {
-        min-width: 230px;
-      }
-    }
-
-    .modal-title {
-      font-size: 18px;
-    }
-
-    .modal-icon-close {
-      width: 18px !important;
-      height: 18px !important;
-    }
-  }
-
   // Modal ฝากถอน
   .detail-card-kbank {
     padding: 12px;
@@ -2001,14 +1976,15 @@ body {
       min-width: 370px;
 
       .modal-header-container {
+        top: -24px;
         .modal-header {
-          min-width: 384px;
-          height: 85px;
+          min-width: 280px;
+          height: 48px;
         }
       }
 
       .modal-title {
-        font-size: 30px;
+        font-size: 20px;
       }
 
       .modal-body {
@@ -2241,38 +2217,40 @@ body {
 
         // Promotion Modal
         .promotion-modal-content {
-          padding: 30px 65px;
+          padding: 30px 15px;
 
-          min-width: 500px;
+          min-width: 300px;
           max-width: 500px;
 
           .promotion-modal-body {
             .promotion-modal-image-container {
               margin-top: 20px;
-              width: 370px;
-              height: 370px;
+              // width: 370px;
+              // height: 370px;
+              width: 270px;
+              height: 270px;
             }
 
             .promotion-content-title {
-              font-size: 30px;
-              margin-top: 29px;
+              font-size: 22px;
+              margin-top: 20px;
             }
             .promotion-content-text {
-              font-size: 21px;
+              font-size: 18px;
               margin-top: 10px;
             }
           }
 
           .promotion-modal-footer {
             // padding: 0 27px;
-            margin-top: 30px;
+            margin-top: 20px;
 
             .promotion-modal-footer-content {
-              padding: 15px 40px;
+              padding: 15px 20px;
               height: 114px;
 
               .promotion-modal-footer-title {
-                font-size: 30px;
+                font-size: 18px;
               }
 
               .promotion-modal-footer-text {
@@ -2280,7 +2258,7 @@ body {
               }
 
               .promotion-checkbox-title {
-                font-size: 20px;
+                font-size: 14px;
                 padding: 8px;
 
                 .promotion-custom-radio {
@@ -2315,25 +2293,35 @@ body {
 
         // Start Bag Modal
         .bag-modal-content {
-          padding: 56px 28px 20px 28px;
-          max-width: 1000px;
+          padding: 36px 16px 20px 16px;
+          max-width: 678px;
 
           .bag-modal-slide-container {
-            width: 905px;
-            height: 402px;
+            // width: 905px;
+            // height: 402px;
+            width: 100%;
+            height: auto;
             margin-top: 0;
           }
           .bag-modal-menu {
             grid-gap: 21px;
 
             .bag-modal-menu-item {
-              width: 134px;
-              height: 134px;
-              padding: 20px;
+              // width: 134px;
+              // height: 134px;
+              width: 87px;
+              height: 87px;
+              padding: 10px;
 
               .bag-menu-img-container {
-                width: 66px;
-                height: 66px;
+                // width: 66px;
+                // height: 66px;
+                width: 42px;
+                height: 42px;
+              }
+              .bag-modal-menu-title {
+                margin-top: 6px;
+                font-size: 12.5px;
               }
             }
           }
@@ -2342,24 +2330,28 @@ body {
 
         // Start Earn Money
         .earn-modal-content {
-          padding: 32px 32px 32px 32px;
+          // padding: 32px 32px 32px 32px;
+          padding: 32px 20px 20px 20px;
           gap: 20px;
           // max-height: 980px;
           overflow: unset;
           max-height: unset;
 
           .earn-qr-container {
-            width: 340px;
-            height: 340px;
+            width: 240px;
+            height: 240px;
             margin: 0 auto;
             // padding: 0 48px;
 
             .earn-qr-content {
-              padding: 40px;
+              padding: 28px;
 
               .earn-qr-img {
-                width: 259px;
-                height: 259px;
+                // width: 259px;
+                // height: 259px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
               }
             }
           }
@@ -2370,11 +2362,11 @@ body {
               gap: 8px;
 
               .link-shared-title {
-                font-size: 20px;
+                font-size: 16px;
               }
 
               .link-shared-subtitle {
-                font-size: 17px;
+                font-size: 14px;
               }
 
               .link-shared-input {
@@ -2388,40 +2380,41 @@ body {
 
                 .border-input-gold.border-btn {
                   .btn-copy-link {
-                    height: 47px;
-                    font-size: 20px;
+                    height: 42px;
+                    font-size: 16px;
                   }
                 }
 
                 .btn-share-link {
-                  height: 47px;
-                  font-size: 20px;
+                  height: 42px;
+                  font-size: 16px;
                 }
               }
             }
           }
 
           .earn-menu-content {
-            grid-template-columns: repeat(2, 208px);
+            // grid-template-columns: repeat(2, 208px);
+            grid-template-columns: repeat(2, 168px);
 
             gap: 20px;
 
             .border-input-gold {
               .earn-menu-item {
-                height: 153px;
+                height: 140px;
                 padding: 14px;
 
                 .earn-menu-item-img {
-                  width: 70px;
-                  height: 70px;
+                  width: 65px;
+                  height: 65px;
                 }
 
                 .earn-menu-item-title {
-                  font-size: 20px;
+                  font-size: 16px;
                 }
 
                 .earn-menu-item-subtitle {
-                  font-size: 15px;
+                  font-size: 12px;
                 }
               }
             }
@@ -2432,7 +2425,7 @@ body {
 
         // Start Free Credit and Diamond
         .credit-modal-content {
-          padding: 110px 37px 90px 37px;
+          padding: 60px 20px;
 
           .credit-modal-body {
             width: 500px;
@@ -2486,33 +2479,36 @@ body {
 
         // Start Spinner Modal
         .spinner-modal-content {
-          padding: 64px 43px 27px 43px;
+          padding: 40px 0px 27px 0px;
 
           .spinner-modal-title {
-            font-size: 26px;
+            font-size: 18px;
           }
           .spinner-modal-subtitle {
-            font-size: 23px;
+            font-size: 14px;
           }
 
           .spinner-modal-body {
-            padding: 10px 48px 0 48px;
+            padding: 10px 16px 0 16px;
 
             .spinner-modal-img {
-              width: 280px;
+              width: 240px;
             }
 
             .btn-spinner {
-              width: 188px;
-              height: 47px;
-              font-size: 23px;
+              width: 148px;
+              height: 42px;
+              font-size: 18px;
             }
 
             .spinner-modal-subtitle2 {
-              font-size: 21px;
+              font-size: 15px;
+            }
+            .input-box-spinner {
+              height: 42px;
             }
             .spinner-modal-text-danger {
-              font-size: 17px;
+              font-size: 14px;
             }
 
             .spinner-rule-container {
@@ -2528,8 +2524,8 @@ body {
 
             .button-confirm-warning {
               width: 315px;
-              height: 78px;
-              font-size: 25px;
+              height: 48px;
+              font-size: 18px;
             }
           }
         }
@@ -2923,13 +2919,14 @@ body {
   // PC
   .modal-header-container {
     position: absolute;
-    top: -30px;
+    top: -21px;
     width: 100%;
     display: flex;
     justify-content: center;
 
     .modal-header {
-      height: 54px;
+      min-width: 214px;
+      height: 42px;
       position: relative;
       margin: auto;
       width: fit-content;
@@ -3001,7 +2998,7 @@ body {
     font-weight: 600;
     color: #fff;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   /* The Close Button */
@@ -4938,7 +4935,6 @@ body {
 
     .free-credit {
       width: 254px;
-      transform: translateX(-6%);
       margin: 0 auto;
       background-color: #000;
       border-radius: 10px;
@@ -4989,138 +4985,163 @@ body {
   }
 }
 
-.tournament-modal-content {
-  padding: 50px 12px 12px 12px;
-
-  .top-recharge-select-container {
-    padding: 0 60px;
-
-    .top-recharge-select {
-      position: relative;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      background-color: #f3f3f3;
-      border-radius: 40px;
-      padding-right: 20px;
-
-      .select-icon {
-        position: absolute;
-        left: 10px;
-        z-index: 1;
-      }
-
-      .top-recharge-select-content {
+#tournamentModal {
+  .modal-body {
+    padding: 0 10px;
+  }
+  .tournament-modal-content {
+    padding: 35px 6px 12px 6px;
+  
+    .top-recharge-select-container {
+      padding: 0 60px;
+  
+      .top-recharge-select {
         position: relative;
+        display: flex;
+        align-items: center;
         width: 100%;
-        cursor: pointer;
-        padding: 10px 10px 10px 40px;
-        border: 0;
-        border-radius: 40px 0 0 40px;
-        font-size: 14px;
-        font-weight: 500;
-        color: #000;
         background-color: #f3f3f3;
-
-        &:focus {
-          outline: 0;
+        border-radius: 40px;
+        padding-right: 20px;
+  
+        .select-icon {
+          position: absolute;
+          left: 10px;
+          z-index: 1;
+        }
+  
+        .top-recharge-select-content {
+          position: relative;
+          width: 100%;
+          cursor: pointer;
+          padding: 10px 10px 10px 40px;
+          border: 0;
+          border-radius: 40px 0 0 40px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #000;
+          background-color: #f3f3f3;
+  
+          &:focus {
+            outline: 0;
+          }
         }
       }
     }
-  }
-  .top-rank {
-    font-size: 25px;
-    font-weight: 600;
-    color: #ffb800;
-    margin-top: 17px;
-  }
-  .slide-rank {
-    width: 450px;
-    overflow-x: auto;
-    white-space: nowrap;
-
-    .slide-rank-item {
-      position: relative;
-      display: inline-block;
-      text-align: center;
-      width: 135px;
-      height: 191.7px;
-      border: 1px solid rgba(203, 157, 50, 0.8);
-      border-radius: 10px;
-      background-color: #000;
-      margin: 20px 6px;
-
-      &.top1 {
-        border: 1px solid #fcabab;
-        box-shadow: 0px 0px 4px 2px #ff0000;
-      }
-      &.top2 {
-        border: 1px solid #fffb91;
-        box-shadow: 0px 0px 4px 2px #ff9900;
-      }
-      &.top3 {
-        border: 1px solid #a2db00;
-        box-shadow: 0px 0px 4px 2px #368e00;
-      }
-
-      .rank-icon {
-        position: absolute;
-        top: 3px;
-        left: 3px;
-        width: 35.1px;
-        height: 43.2px;
-        object-fit: contain;
-      }
-      .rank-profile {
-        width: 62px;
-        height: 62px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-top: 32.4px;
-      }
-      .rank-item-text {
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
+    .top-rank {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffb800;
+      margin-top: 17px;
+    }
+    .slide-rank {
+      // width: 450px;
+      width: 380px;
+      overflow-x: auto;
+      white-space: nowrap;
+  
+      .slide-rank-item {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        // width: 135px;
+        // height: 191.7px;
+        width: 117px;
+        height: 166.14px;
+        border: 1px solid rgba(203, 157, 50, 0.8);
+        border-radius: 10px;
+        background-color: #000;
+        margin: 15px 4px;
+        background: url('/assets/images/image-top10-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 135px 191.7px;
+  
+        &.top1 {
+          border: 1px solid #fcabab;
+          box-shadow: 0px 0px 4px 2px #ff0000;
+          background: url('/assets/images/image-top1-bg.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 135px 191.7px;
+        }
+        &.top2 {
+          border: 1px solid #fffb91;
+          box-shadow: 0px 0px 4px 2px #ff9900;
+          background: url('/assets/images/image-top2-bg.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 135px 191.7px;
+        }
+        &.top3 {
+          border: 1px solid #a2db00;
+          box-shadow: 0px 0px 4px 2px #368e00;
+          background: url('/assets/images/image-top3-bg.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 135px 191.7px;
+        }
+  
+        .rank-icon {
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          // width: 35.1px;
+          // height: 43.2px;
+          width: 28px;
+          object-fit: contain;
+        }
+        .rank-profile {
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-top: 32.4px;
+        }
+        .rank-item-text {
+          font-size: 12px;
+          font-weight: 600;
+          color: #fff;
+        }
       }
     }
-  }
-  .table-rank {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    .table-rank-item {
+    .table-rank {
+      width: 100%;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .no-rank {
-        width: 60px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-      }
-
-      .rank-detail {
-        width: 100%;
-        font-size: 19px;
-        font-weight: 600;
-        color: #fff;
-        background-color: #5e5e5e;
-        padding: 8px 22px;
-        border-radius: 10px;
+      flex-direction: column;
+      gap: 5px;
+  
+      .table-rank-item {
         display: flex;
-      }
-      .rank-phone {
-        width: 50%;
-      }
-      .rank-detail-title {
-        width: 20%;
-      }
-      .rank-money {
-        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+  
+        .no-rank {
+          width: 60px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+        }
+  
+        .rank-detail {
+          width: 100%;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fff;
+          background-color: #5e5e5e;
+          padding: 8px 22px;
+          border-radius: 10px;
+          display: flex;
+        }
+        .rank-phone {
+          width: 50%;
+        }
+        .rank-detail-title {
+          width: 20%;
+        }
+        .rank-money {
+          width: 30%;
+        }
       }
     }
   }
