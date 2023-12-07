@@ -3202,6 +3202,7 @@ body {
   .modal-header-container {
     position: absolute;
     top: -21px;
+    z-index: 10;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -5433,13 +5434,13 @@ height: 39px;
         background-color: #f3f3f3;
         border-radius: 40px;
         padding-right: 20px;
-  
+
         .select-icon {
           position: absolute;
           left: 10px;
           z-index: 1;
         }
-  
+
         .top-recharge-select-content {
           position: relative;
           width: 100%;
@@ -5451,7 +5452,7 @@ height: 39px;
           font-weight: 500;
           color: #000;
           background-color: #f3f3f3;
-  
+
           &:focus {
             outline: 0;
           }
@@ -5541,14 +5542,14 @@ height: 39px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-  
+
         .no-rank {
           width: 60px;
           font-size: 16px;
           font-weight: 600;
           color: #fff;
         }
-  
+
         .rank-detail {
           width: 100%;
           font-size: 15px;
