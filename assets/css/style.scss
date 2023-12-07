@@ -366,28 +366,88 @@ body {
 }
 
 .card-container {
+  display: flex;
   width: 1400px;
-  display: block;
   margin: 27px auto;
 
+  .game-group-container {
+    width: 720px;
+    background-color: #000;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+
+    .game-group-item {
+      width: 100%;
+      height: 89px;
+      padding: 20px 32px;
+      border-radius: 13px;
+
+      &.active {
+        background: linear-gradient(180deg, #F9DF7B 0%, #B57E10 20%, #B78113 26%, #BE8C1F 32%, #CB9D32 38%, #DCB64E 44%, #F2D570 49%, #F9DF7B 51%, #FFF3A6 52%, #F9DF7B 59%, #B57E10 84%, #E5C25B 95%, #F9DF7B 100%);
+      }
+
+      .game-group-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
   .card-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
-
-    img {
-      width: 190px;
-      height: 280px;
-
-      cursor: pointer;
+    
+    .game-card {
+      position: relative;
+      border-radius: 30px;
 
       &:hover {
-        transform: translateY(-10px);
-        // transform: scale(1.1);
-        transition: all 0.3s ease-in-out;
-        // filter: grayscale(1);
+        .btn-play-game-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+      img {
+        width: 190px;
+        height: 280px;
+  
+        cursor: pointer;
+  
+        &:hover {
+          transform: translateY(-10px);
+          // transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+          // filter: grayscale(1);
+        }
+      }
+  
+      .btn-play-game-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+  
+        .btn-play-game {
+          min-width: 80px;
+          height: 47px;
+          border: 0;
+          border-radius: 10px;
+          font-size: 18px;
+          font-weight: 600;
+          background: linear-gradient(180deg, #F9DF7B 0%, #B57E10 20%, #B78113 26%, #BE8C1F 32%, #CB9D32 38%, #DCB64E 44%, #F2D570 49%, #F9DF7B 51%, #FFF3A6 52%, #F9DF7B 59%, #B57E10 84%, #E5C25B 95%, #F9DF7B 100%);
+        }
       }
     }
   }
@@ -2107,7 +2167,6 @@ height: 14px;
       }
 
       .modal-body {
-        min-width: 501px;
         // Start Profile Modal
         .change-profile-modal-content {
           // width: 500px;
@@ -2869,64 +2928,130 @@ margin-bottom: 10px;
 
         // Start Tournament Modal
         .tournament-modal-content {
-          max-height: unset;
-          padding: 50px 12px 12px 12px;
-
+          padding: 35px 6px 12px 6px;
+          max-height: fit-content;
+        
           .top-recharge-select-container {
             padding: 0 60px;
-
+        
             .top-recharge-select {
+              background-color: #f3f3f3;
+              border-radius: 40px;
               padding-right: 20px;
+        
               .select-icon {
+                position: absolute;
                 left: 10px;
+                z-index: 1;
               }
-
+        
               .top-recharge-select-content {
+                cursor: pointer;
                 padding: 10px 10px 10px 40px;
+                border: 0;
+                border-radius: 40px 0 0 40px;
                 font-size: 14px;
+                font-weight: 500;
+                color: #000;
+                background-color: #f3f3f3;
+        
+                &:focus {
+                  outline: 0;
+                }
               }
             }
           }
           .top-rank {
-            font-size: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffb800;
             margin-top: 17px;
           }
           .slide-rank {
-            width: 450px;
-
+            // width: 450px;
+            width: 380px;
+            overflow-x: auto;
+            white-space: nowrap;
+        
             .slide-rank-item {
-              width: 135px;
-              height: 191.7px;
-              margin: 20px 6px;
-
-              .rank-icon {
-                width: 35.1px;
-                height: 43.2px;
+              
+              // width: 135px;
+              // height: 191.7px;
+              width: 117px;
+              height: 166.14px;
+              border: 1px solid rgba(203, 157, 50, 0.8);
+              border-radius: 10px;
+              background-color: #000;
+              margin: 15px 4px;
+              background-size: 135px 191.7px;
+        
+              &.top1 {
+                border: 1px solid #fcabab;
+                box-shadow: 0px 0px 4px 2px #ff0000;
+                background-size: 135px 191.7px;
               }
-
+              &.top2 {
+                border: 1px solid #fffb91;
+                box-shadow: 0px 0px 4px 2px #ff9900;
+                background-size: 135px 191.7px;
+              }
+              &.top3 {
+                border: 1px solid #a2db00;
+                box-shadow: 0px 0px 4px 2px #368e00;
+                background-size: 135px 191.7px;
+              }
+        
+              .rank-icon {
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                // width: 35.1px;
+                // height: 43.2px;
+                width: 28px;
+                object-fit: contain;
+              }
               .rank-profile {
-                width: 62px;
-                height: 62px;
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                object-fit: cover;
                 margin-top: 32.4px;
               }
-
               .rank-item-text {
-                font-size: 16px;
+                font-size: 12px;
+                font-weight: 600;
+                color: #fff;
               }
             }
           }
           .table-rank {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        
             .table-rank-item {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+        
               .no-rank {
                 width: 60px;
                 font-size: 16px;
+                font-weight: 600;
+                color: #fff;
               }
-
+        
               .rank-detail {
-                font-size: 19px;
+                width: 100%;
+                font-size: 15px;
+                font-weight: 600;
+                color: #fff;
+                background-color: #5e5e5e;
                 padding: 8px 22px;
+                border-radius: 10px;
+                display: flex;
               }
-
               .rank-phone {
                 width: 50%;
               }
@@ -5802,17 +5927,34 @@ margin-bottom: 10px;
       border-radius: 10px;
       background-color: #000;
 
+      background: url('/assets/images/image-top10-bg.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 110px 152.72px;
+
       &.top1 {
         border: 1px solid #fcabab;
         box-shadow: 0px 0px 4px 2px #ff0000;
+        background: url('/assets/images/image-top1-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110px 152.72px;
       }
       &.top2 {
         border: 1px solid #fffb91;
         box-shadow: 0px 0px 4px 2px #ff9900;
+        background: url('/assets/images/image-top2-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110px 152.72px;
       }
       &.top3 {
         border: 1px solid #a2db00;
         box-shadow: 0px 0px 4px 2px #368e00;
+        background: url('/assets/images/image-top3-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110px 152.72px;
       }
 
       .rank-icon {
@@ -6308,44 +6450,77 @@ margin-bottom: 10px;
 // .mySlides {display: none;}
 // img {vertical-align: middle;}
 
+.mySlides {display: none}
 /* Slideshow container */
 .slideshow-container {
   // max-width: 1000px;
   position: relative;
   margin: auto;
-
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  /* The dots/bullets/indicators */
 }
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
 .dot {
+  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  // background-color: #bbb;
+  background-color: #717171;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.slide-active {
-  background-color: #717171;
+
+.slide-active, .dot:hover {
+  // background-color: #717171;
+  background-color: #fff;
 }
 
 /* Fading animation */
@@ -6362,4 +6537,3 @@ margin-bottom: 10px;
     opacity: 1;
   }
 }
-/* Caption text */
