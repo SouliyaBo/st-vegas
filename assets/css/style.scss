@@ -289,7 +289,7 @@ body {
 
     &::placeholder {
       color: #838383;
-      font-size:22px;
+      font-size: 22px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -401,7 +401,6 @@ body {
         }
       }
     }
-    
   }
 }
 
@@ -847,11 +846,10 @@ body {
         background: #433d3d;
         color: white;
       }
-
     }
     .problem {
       text-decoration: underline;
-      color: #FA0;
+      color: #fa0;
       font-size: 18px;
       font-weight: 400;
     }
@@ -1847,7 +1845,7 @@ body {
         }
       }
     }
-    .specific-all-games{
+    .specific-all-games {
       display: grid;
       grid: auto-flow / repeat(3, 110px);
       gap: 10px;
@@ -1992,10 +1990,10 @@ body {
   // End Modal ฝากถอน
 
   //Start  LeaveAdecimal
-  .leaveAdecimal1{
+  .leaveAdecimal1 {
     flex-direction: column;
     padding-top: 60px;
-    .ຍອດເງິນທີ່ຕ້ອງໂອນ{
+    .ຍອດເງິນທີ່ຕ້ອງໂອນ {
       font-size: 14px;
       font-weight: 500;
     }
@@ -2913,7 +2911,7 @@ body {
 
         // Start True Wallet
         .true-wallet-content {
-  padding: 70px 33px 30px 33px;
+          padding: 70px 33px 30px 33px;
 
           gap: 20px;
 
@@ -2972,7 +2970,7 @@ body {
 
         // Start Qr Modal
         .qr-pay-content-1 {
-  // width: 400px;
+          // width: 400px;
 
           padding: 35px 10px 0px 15px;
           .notic-text {
@@ -4120,9 +4118,9 @@ body {
     }
   }
 
-  .button-line{
+  .button-line {
     width: 249px;
-height: 39px;
+    height: 39px;
   }
 }
 .detail-card-scb1 {
@@ -6061,7 +6059,6 @@ height: 39px;
   }
 
   /* The dots/bullets/indicators */
-
 }
 .dot {
   height: 15px;
@@ -6076,7 +6073,6 @@ height: 39px;
   background-color: #717171;
 }
 
-
 /* Fading animation */
 .fade-slide {
   animation-name: fade-slide;
@@ -6088,7 +6084,7 @@ height: 39px;
   display: flex;
   justify-content: center;
   align-items: center;
-  .game-name{
+  .game-name {
     position: absolute;
     display: none;
     z-index: 10;
@@ -6102,15 +6098,13 @@ height: 39px;
   }
 
   &:hover {
-
-    img{
+    img {
       filter: grayscale(1);
       transition: all 0.3s ease-in-out;
     }
-    .game-name{
+    .game-name {
       position: absolute;
       display: block;
     }
   }
 }
-
