@@ -272,6 +272,7 @@ body {
 
 .bank-container {
   display: flex;
+  overflow: auto;
   align-items: center;
   justify-content: flex-end;
   margin-top: 20px;
@@ -553,7 +554,7 @@ body {
         color: white; }
     .login-modal .login-modal-wrapper .problem {
       text-decoration: underline;
-      color: #FA0;
+      color: #fa0;
       font-size: 18px;
       font-weight: 400; }
   .login-modal .background {
@@ -1320,10 +1321,69 @@ body {
       font-size: 14px; }
   .leaveAdecimal1 {
     flex-direction: column;
-    padding-top: 60px; }
-    .leaveAdecimal1 .ຍອດເງິນທີ່ຕ້ອງໂອນ {
+    padding-top: 30px;
+    gap: 10px; }
+    .leaveAdecimal1 p {
       font-size: 14px;
       font-weight: 500; }
+    .leaveAdecimal1 .money-value {
+      color: #f2d570;
+      font-size: 30px;
+      font-weight: 700; }
+    .leaveAdecimal1 .bank-card {
+      padding: 7px;
+      position: relative;
+      width: 262px;
+      height: 85px;
+      border-radius: 15px;
+      border: 2px solid #f9df7b;
+      background: url(<path-to-image>), lightgray -35.773px -30.472px/127.308% 138.095% no-repeat, linear-gradient(257deg, #3e0048 0%, #8900a0 100%);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      background-image: url("/assets/images/purple-card-bg.svg");
+      background-position: center; }
+      .leaveAdecimal1 .bank-card .right {
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px; }
+        .leaveAdecimal1 .bank-card .right img {
+          width: 30px;
+          height: 30px; }
+      .leaveAdecimal1 .bank-card .visa {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 50px;
+        height: 14px; }
+    .leaveAdecimal1 .warning-box {
+      border-radius: 5px;
+      border: 1px solid #f00;
+      background: #0b0b0b;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      width: 288px;
+      height: 40px;
+      flex-shrink: 0; }
+    .leaveAdecimal1 .contact {
+      font-size: 12px; }
+      .leaveAdecimal1 .contact a {
+        font-size: 13px;
+        color: #00fcfc; }
+    .leaveAdecimal1 .line-button {
+      width: 249px;
+      height: 39px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      border: 1px solid #fff;
+      background: #0fb800;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      color: #fff;
+      font-weight: 600;
+      padding: 10px;
+      gap: 4px; }
+      .leaveAdecimal1 .line-button img {
+        width: 25px;
+        height: 25px; }
   .history-modal-content {
     padding-top: 20px; } }
 
@@ -1346,7 +1406,6 @@ body {
     .modal .modal-content .modal-body {
       min-width: 501px; }
       .modal .modal-content .modal-body .change-profile-modal-content {
-        width: 500px;
         padding: 78px 20px 32px 20px; }
         .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
           margin: 0; }
@@ -1484,6 +1543,52 @@ body {
               width: 100%;
               height: 100%;
               object-fit: contain; }
+      .modal .modal-content .modal-body .withdraw-modal-content .card {
+        width: 416.705px;
+        height: 201.99px;
+        background: url("/assets/images/green-card-bg.svg") linear-gradient(257deg, #00481D 0%, #00A036 100%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .left {
+          gap: 1rem; }
+          .modal .modal-content .modal-body .withdraw-modal-content .card .left p {
+            font-size: 22px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .card .right {
+          gap: 10px; }
+          .modal .modal-content .modal-body .withdraw-modal-content .card .right .bank h4 {
+            font-size: 20px; }
+          .modal .modal-content .modal-body .withdraw-modal-content .card .right .bank :last-child {
+            width: 47px;
+            height: 47px; }
+          .modal .modal-content .modal-body .withdraw-modal-content .card .right .balance :first-child {
+            font-size: 18px; }
+          .modal .modal-content .modal-body .withdraw-modal-content .card .right .balance :last-child {
+            font-size: 25px; }
+          .modal .modal-content .modal-body .withdraw-modal-content .card .right .visa {
+            width: 79px; }
+      .modal .modal-content .modal-body .withdraw-modal-content .slider-wrapper .active.slider, .modal .modal-content .modal-body .withdraw-modal-content .slider-wrapper slider {
+        width: 75px;
+        height: 5px; }
+      .modal .modal-content .modal-body .withdraw-modal-content .money-input {
+        width: 394px; }
+        .modal .modal-content .modal-body .withdraw-modal-content .money-input p {
+          font-size: 16px; }
+      .modal .modal-content .modal-body .withdraw-modal-content .button-warning {
+        width: 395px;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px; }
+      .modal .modal-content .modal-body .withdraw-modal-content p {
+        font-size: 16px; }
+      .modal .modal-content .modal-body .withdraw-modal-content .line-button {
+        font-size: 25px;
+        width: 396.029px;
+        height: 62.029px;
+        margin-bottom: 10px; }
       .modal .modal-content .modal-body .promotion-modal-content {
         padding: 30px 15px;
         min-width: 300px;
@@ -1575,7 +1680,7 @@ body {
               height: 42px;
               font-size: 16px; }
         .modal .modal-content .modal-body .earn-modal-content .earn-menu-content {
-          grid-template-columns: repeat(2, 168px);
+          grid-template-columns: repeat(2, 208px);
           gap: 20px; }
           .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
             height: 140px;
@@ -1595,7 +1700,6 @@ body {
             .modal .modal-content .modal-body .earn-modal-content .earn-tab-container .earn-tab .earn-tab-item {
               font-size: 14px; }
         .modal .modal-content .modal-body .earn-modal-content .earn-detail-data {
-          width: 400px;
           gap: 20px; }
           .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .filter-date .filter-label {
             font-size: 16px; }
@@ -1952,7 +2056,8 @@ body {
   width: 100%;
   height: 100vh;
   padding: 80px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.7);
   animation-name: fadeIn;
   animation-duration: 0.4s;
@@ -2016,6 +2121,8 @@ body {
       height: 30px;
       cursor: pointer; }
   .modal .modal-body {
+    min-width: 315px;
+    max-width: 315px;
     color: #fff;
     padding: 8px 16px; }
   .modal .modal-title {
@@ -2282,6 +2389,84 @@ body {
   .add-account-content .button-warning {
     width: 263px;
     height: 40px; }
+
+.deposit-withdraw-modal-content {
+  position: relative; }
+  .deposit-withdraw-modal-content .card {
+    width: 262px;
+    height: 127px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 15px;
+    border: 2px solid #f9df7b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-image: url("/assets/images/green-card-bg.svg");
+    background-position: center; }
+    .deposit-withdraw-modal-content .card .left {
+      flex-direction: column;
+      gap: 0.5rem; }
+      .deposit-withdraw-modal-content .card .left p {
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        width: 100%; }
+    .deposit-withdraw-modal-content .card .right {
+      flex-direction: column;
+      gap: 10px; }
+      .deposit-withdraw-modal-content .card .right .bank {
+        gap: 5px; }
+        .deposit-withdraw-modal-content .card .right .bank h4 {
+          font-size: 14px;
+          font-weight: 600; }
+        .deposit-withdraw-modal-content .card .right .bank :last-child {
+          width: 30px;
+          height: 30px; }
+          .deposit-withdraw-modal-content .card .right .bank :last-child img {
+            object-fit: contain; }
+      .deposit-withdraw-modal-content .card .right .balance :first-child {
+        font-size: 10px;
+        font-weight: 600; }
+      .deposit-withdraw-modal-content .card .right .balance :last-child {
+        font-size: 14px;
+        font-weight: 600; }
+      .deposit-withdraw-modal-content .card .right .visa {
+        width: 50px;
+        transform: translateX(20px); }
+        .deposit-withdraw-modal-content .card .right .visa img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+  .deposit-withdraw-modal-content .slider-wrapper {
+    gap: 6px;
+    margin-top: 10px;
+    margin-bottom: 14px; }
+    .deposit-withdraw-modal-content .slider-wrapper .active.slider,
+    .deposit-withdraw-modal-content .slider-wrapper .slider {
+      width: 47px;
+      height: 3px;
+      border-radius: 16px; }
+    .deposit-withdraw-modal-content .slider-wrapper .active.slider {
+      background: linear-gradient(90deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%); }
+    .deposit-withdraw-modal-content .slider-wrapper .slider {
+      background: #d9d9d9; }
+  .deposit-withdraw-modal-content .line-button {
+    margin: 0 auto;
+    width: 249px;
+    height: 39px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #0fb800;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px; }
+    .deposit-withdraw-modal-content .line-button img {
+      width: 28px;
+      object-fit: contain; }
 
 .change-cashback-modal-content {
   display: flex;
@@ -3035,6 +3220,7 @@ body {
         object-fit: contain; }
 
 .detail-qr {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3865,7 +4051,7 @@ body {
 
 @keyframes fade-slide {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
