@@ -1316,6 +1316,12 @@ body {
     .button-line div {
       margin: 6px;
       font-size: 14px; }
+  .leaveAdecimal1 {
+    flex-direction: column;
+    padding-top: 60px; }
+    .leaveAdecimal1 .ຍອດເງິນທີ່ຕ້ອງໂອນ {
+      font-size: 14px;
+      font-weight: 500; }
   .history-modal-content {
     padding-top: 20px; } }
 
@@ -1333,397 +1339,536 @@ body {
       height: 85px; }
     .modal .modal-content .modal-title {
       font-size: 30px; }
-    .modal .modal-content .modal-body .change-profile-modal-content {
-      width: 500px;
-      padding: 78px 20px 32px 20px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
-        margin: 0; }
-        .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank {
-          margin: 0 auto;
-          width: 416.705px;
-          height: 201.99px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .change-password-hr {
-        padding: 6px 40px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
-        gap: 20px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .setting {
-          height: 67px;
-          width: 100%;
-          font-size: 20px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .add-account {
-          height: 67px;
-          width: 100%;
-          font-size: 20px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .user .username {
-        font-size: 21px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .user .result {
-        font-size: 21px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .password .pass {
-        font-size: 21px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .password .result {
-        font-size: 21px; }
-      .modal .modal-content .modal-body .change-profile-modal-content .change-password {
-        height: 66px;
-        gap: 16px; }
-        .modal .modal-content .modal-body .change-profile-modal-content .change-password p {
-          font-size: 26px; }
-    .modal .modal-content .modal-body .detail-card-kbank {
-      min-width: 371px; }
-      .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
-        padding: 18px 20px 0px 20px;
-        width: 370.705px; }
-    .modal .modal-content .modal-body .type-of-withdrawal {
-      width: 110px; }
-      .modal .modal-content .modal-body .type-of-withdrawal .withdrawal {
-        padding: 10px 14px 10px 10px;
-        font-size: 13px; }
-    .modal .modal-content .modal-body .button-line {
-      margin: 10px 0;
-      width: 98%; }
-      .modal .modal-content .modal-body .button-line div {
-        padding: 5px 10px 5px 10px;
-        width: 98%; }
-    .modal .modal-content .modal-body .detail-card-scb .card-scb {
-      width: 416.705px;
-      height: 143.143px;
-      padding: 1rem 2rem;
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between; }
-      .modal .modal-content .modal-body .detail-card-scb .card-scb .left {
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem; }
-      .modal .modal-content .modal-body .detail-card-scb .card-scb .right {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        justify-content: space-between; }
-        .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank {
-          gap: 5px; }
-          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank h4 {
-            font-size: 14px;
-            font-weight: 600; }
-          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank :last-child {
-            width: 30px;
-            height: 30px; }
-            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank :last-child img {
-              object-fit: contain; }
-        .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance {
-          flex-direction: column; }
-          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance :first-child {
-            font-size: 10px;
-            font-weight: 600; }
-          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance :last-child {
-            font-size: 14px;
-            font-weight: 600; }
-        .modal .modal-content .modal-body .detail-card-scb .card-scb .right .visa {
-          width: 50px;
-          transform: translateX(8px); }
-          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .visa img {
+    .modal .modal-content .modal-body {
+      min-width: 501px; }
+      .modal .modal-content .modal-body .change-profile-modal-content {
+        width: 500px;
+        padding: 78px 20px 32px 20px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank {
+          margin: 0; }
+          .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank {
+            margin: 0 auto;
+            width: 416.705px;
+            height: 201.99px; }
+            .modal .modal-content .modal-body .change-profile-modal-content .detail-card-kbank .card-kbank .visa {
+              margin-top: 30px;
+              margin-bottom: 25px;
+              display: flex;
+              justify-content: end; }
+        .modal .modal-content .modal-body .change-profile-modal-content .change-password-hr {
+          padding: 6px 40px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
+          gap: 20px; }
+          .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .setting {
+            height: 67px;
             width: 100%;
-            height: 100%;
-            object-fit: contain; }
-    .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 {
-      width: 416.705px;
-      height: 143.143px;
-      padding: 1rem 2rem;
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-between; }
-      .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .left {
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem; }
-      .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        justify-content: space-between; }
-        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 5px; }
-          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child {
-            width: 30px;
-            height: 30px; }
-            .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child img {
-              object-fit: contain; }
-        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance {
-          flex-direction: column; }
-          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :first-child {
-            font-size: 10px;
-            font-weight: 600; }
-          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :last-child {
-            font-size: 14px;
-            font-weight: 600; }
-        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .visa {
-          width: 50px;
-          transform: translateX(8px); }
-          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .visa img {
+            font-size: 20px; }
+          .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .add-account {
+            height: 67px;
             width: 100%;
-            height: 100%;
-            object-fit: contain; }
-    .modal .modal-content .modal-body .promotion-modal-content {
-      padding: 30px 65px;
-      min-width: 500px;
-      max-width: 500px; }
-      .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-modal-image-container {
-        margin-top: 20px;
-        width: 370px;
-        height: 370px; }
-      .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-content-title {
-        font-size: 30px;
-        margin-top: 29px; }
-      .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-content-text {
-        font-size: 21px;
-        margin-top: 10px; }
-      .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer {
-        margin-top: 30px; }
-        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content {
-          padding: 15px 40px;
-          height: 114px; }
-          .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-modal-footer-title {
-            font-size: 30px; }
-          .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-modal-footer-text {
-            font-size: 22px; }
-          .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-checkbox-title {
-            font-size: 20px;
-            padding: 8px; }
-            .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-checkbox-title .promotion-custom-radio {
-              width: 24px;
-              height: 24px; }
-          .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-checkbox-group {
-            width: 100%; }
-    .modal .modal-content .modal-body .change-password-modal-content {
-      width: 500px; }
-      .modal .modal-content .modal-body .change-password-modal-content .input-for-border-gold {
-        height: 60px; }
-      .modal .modal-content .modal-body .change-password-modal-content .button-warning {
-        height: 60px; }
-    .modal .modal-content .modal-body .bag-modal-content {
-      padding: 56px 28px 20px 28px;
-      max-width: 1000px; }
-      .modal .modal-content .modal-body .bag-modal-content .bag-modal-slide-container {
-        width: 905px;
-        height: 402px;
-        margin-top: 0; }
-      .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu {
-        grid-gap: 21px; }
-        .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu .bag-modal-menu-item {
-          width: 134px;
-          height: 134px;
-          padding: 20px; }
-          .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu .bag-modal-menu-item .bag-menu-img-container {
-            width: 66px;
-            height: 66px; }
-    .modal .modal-content .modal-body .earn-modal-content {
-      padding: 32px 32px 32px 32px;
-      gap: 20px;
-      overflow: unset;
-      max-height: unset; }
-      .modal .modal-content .modal-body .earn-modal-content .earn-qr-container {
-        width: 340px;
-        height: 340px;
-        margin: 0 auto; }
-        .modal .modal-content .modal-body .earn-modal-content .earn-qr-container .earn-qr-content {
-          padding: 40px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-qr-container .earn-qr-content .earn-qr-img {
-            width: 259px;
-            height: 259px; }
-      .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared {
-        padding: 12px 18px 18px 18px;
-        gap: 8px; }
-        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-title {
-          font-size: 20px; }
-        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-subtitle {
-          font-size: 17px; }
-        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-input {
-          height: 33px;
-          padding: 0 10px; }
-        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
-          gap: 22px;
-          margin-top: 10px; }
-          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
-            height: 47px;
             font-size: 20px; }
-          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
-            height: 47px;
-            font-size: 20px; }
-      .modal .modal-content .modal-body .earn-modal-content .earn-menu-content {
-        grid-template-columns: repeat(2, 208px);
-        gap: 20px; }
-        .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
-          height: 153px;
-          padding: 14px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-img {
-            width: 70px;
-            height: 70px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-title {
-            font-size: 20px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-subtitle {
-            font-size: 15px; }
-    .modal .modal-content .modal-body .credit-modal-content {
-      padding: 110px 37px 90px 37px; }
-      .modal .modal-content .modal-body .credit-modal-content .credit-modal-body {
-        width: 500px; }
-        .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit {
-          margin: 2px;
-          padding: 42px 37px; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit .no-credit-right .no-credit-text {
-            font-size: 28px; }
-        .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit {
-          width: unset;
-          transform: unset;
-          margin: 2px;
-          padding: 29px 24px 24px 50px;
-          border: none; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
-            width: 87px;
-            height: 87px; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
-            font-size: 28px; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
-            font-size: 24px; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
-            min-width: 167px;
-            height: 45px;
-            font-size: 28px; }
-    .modal .modal-content .modal-body .spinner-modal-content {
-      padding: 64px 43px 27px 43px; }
-      .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-title {
-        font-size: 26px; }
-      .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-subtitle {
-        font-size: 23px; }
-      .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body {
-        padding: 10px 48px 0 48px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-img {
-          width: 280px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .btn-spinner {
-          width: 188px;
-          height: 47px;
-          font-size: 23px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-subtitle2 {
+        .modal .modal-content .modal-body .change-profile-modal-content .user .username {
           font-size: 21px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-text-danger {
-          font-size: 17px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-rule-text {
-          font-size: 17px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-icon-info {
-          width: 26px;
-          height: 26px; }
-        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .button-confirm-warning {
-          width: 315px;
-          height: 78px;
-          font-size: 25px; }
-    .modal .modal-content .modal-body .code-modal-content {
-      width: 476px;
-      padding: 78px 20px 42px 20px;
-      gap: 44px; }
-      .modal .modal-content .modal-body .code-modal-content .button-warning {
-        height: 60px;
-        font-size: 18px; }
-    .modal .modal-content .modal-body .slip-verify-content {
-      padding: 40px 33px 30px 33px;
-      gap: 16px; }
-      .modal .modal-content .modal-body .slip-verify-content .warning-text {
-        font-size: 18px; }
-      .modal .modal-content .modal-body .slip-verify-content .bank-selector label {
-        font-size: 16px; }
-      .modal .modal-content .modal-body .slip-verify-content .bank-selector div div {
-        height: 54px; }
-      .modal .modal-content .modal-body .slip-verify-content .bank-selector div input {
-        height: 49px; }
-        .modal .modal-content .modal-body .slip-verify-content .bank-selector div input::placeholder {
-          font-size: 16px; }
-      .modal .modal-content .modal-body .slip-verify-content .bank-input label {
-        font-size: 14px; }
-      .modal .modal-content .modal-body .slip-verify-content .bank-input input {
-        height: 54px;
-        font-size: 16px; }
-        .modal .modal-content .modal-body .slip-verify-content .bank-input input::placeholder {
-          font-size: 14px; }
-      .modal .modal-content .modal-body .slip-verify-content .bank-input small {
-        font-size: 14px; }
-      .modal .modal-content .modal-body .slip-verify-content .button-warning {
-        height: 40px;
-        font-size: 18px; }
-    .modal .modal-content .modal-body .true-wallet-content {
-      padding: 40px 16px 15px 16px;
-      gap: 20px; }
-      .modal .modal-content .modal-body .true-wallet-content .card {
-        width: 415.873px;
-        height: 142.857px; }
-        .modal .modal-content .modal-body .true-wallet-content .card .left p {
-          font-size: 18px; }
-        .modal .modal-content .modal-body .true-wallet-content .card .right {
-          gap: 2rem; }
-          .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title p {
+        .modal .modal-content .modal-body .change-profile-modal-content .user .result {
+          font-size: 21px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .password .pass {
+          font-size: 21px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .password .result {
+          font-size: 21px; }
+        .modal .modal-content .modal-body .change-profile-modal-content .change-password {
+          height: 66px;
+          gap: 16px; }
+          .modal .modal-content .modal-body .change-profile-modal-content .change-password p {
+            font-size: 26px; }
+      .modal .modal-content .modal-body .detail-card-kbank {
+        min-width: 371px; }
+        .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
+          padding: 18px 20px 0px 20px;
+          width: 370.705px; }
+      .modal .modal-content .modal-body .type-of-withdrawal {
+        width: 110px; }
+        .modal .modal-content .modal-body .type-of-withdrawal .withdrawal {
+          padding: 10px 14px 10px 10px;
+          font-size: 13px; }
+      .modal .modal-content .modal-body .button-line {
+        margin: 10px 0;
+        width: 98%; }
+        .modal .modal-content .modal-body .button-line div {
+          padding: 5px 10px 5px 10px;
+          width: 98%; }
+      .modal .modal-content .modal-body .detail-card-scb .card-scb {
+        width: 416.705px;
+        height: 143.143px;
+        padding: 1rem 2rem;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between; }
+        .modal .modal-content .modal-body .detail-card-scb .card-scb .left {
+          font-size: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem; }
+        .modal .modal-content .modal-body .detail-card-scb .card-scb .right {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          justify-content: space-between; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank {
+            gap: 5px; }
+            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank h4 {
+              font-size: 14px;
+              font-weight: 600; }
+            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank :last-child {
+              width: 30px;
+              height: 30px; }
+              .modal .modal-content .modal-body .detail-card-scb .card-scb .right .bank :last-child img {
+                object-fit: contain; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance {
+            flex-direction: column; }
+            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance :first-child {
+              font-size: 10px;
+              font-weight: 600; }
+            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .balance :last-child {
+              font-size: 14px;
+              font-weight: 600; }
+          .modal .modal-content .modal-body .detail-card-scb .card-scb .right .visa {
+            width: 50px;
+            transform: translateX(8px); }
+            .modal .modal-content .modal-body .detail-card-scb .card-scb .right .visa img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain; }
+      .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 {
+        width: 416.705px;
+        height: 143.143px;
+        padding: 1rem 2rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between; }
+        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .left {
+          font-size: 16px;
+          display: flex;
+          flex-direction: column;
+          gap: 0.8rem; }
+        .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          justify-content: space-between; }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px; }
+            .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child {
+              width: 30px;
+              height: 30px; }
+              .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .bank :last-child img {
+                object-fit: contain; }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance {
+            flex-direction: column; }
+            .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :first-child {
+              font-size: 10px;
+              font-weight: 600; }
+            .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .balance :last-child {
+              font-size: 14px;
+              font-weight: 600; }
+          .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .visa {
+            width: 50px;
+            transform: translateX(8px); }
+            .modal .modal-content .modal-body .detail-card-scb1 .card-scb1 .right .visa img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain; }
+      .modal .modal-content .modal-body .promotion-modal-content {
+        padding: 30px 65px;
+        min-width: 500px;
+        max-width: 500px; }
+        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-modal-image-container {
+          margin-top: 20px;
+          width: 370px;
+          height: 370px; }
+        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-content-title {
+          font-size: 30px;
+          margin-top: 29px; }
+        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-body .promotion-content-text {
+          font-size: 21px;
+          margin-top: 10px; }
+        .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer {
+          margin-top: 30px; }
+          .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content {
+            padding: 15px 40px;
+            height: 114px; }
+            .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-modal-footer-title {
+              font-size: 30px; }
+            .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-modal-footer-text {
+              font-size: 22px; }
+            .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-checkbox-title {
+              font-size: 20px;
+              padding: 8px; }
+              .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-checkbox-title .promotion-custom-radio {
+                width: 24px;
+                height: 24px; }
+            .modal .modal-content .modal-body .promotion-modal-content .promotion-modal-footer .promotion-modal-footer-content .promotion-checkbox-group {
+              width: 100%; }
+      .modal .modal-content .modal-body .change-password-modal-content {
+        width: 500px; }
+        .modal .modal-content .modal-body .change-password-modal-content .input-for-border-gold {
+          height: 60px; }
+        .modal .modal-content .modal-body .change-password-modal-content .button-warning {
+          height: 60px; }
+      .modal .modal-content .modal-body .bag-modal-content {
+        padding: 56px 28px 20px 28px;
+        max-width: 1000px; }
+        .modal .modal-content .modal-body .bag-modal-content .bag-modal-slide-container {
+          width: 905px;
+          height: 402px;
+          margin-top: 0; }
+        .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu {
+          grid-gap: 21px; }
+          .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu .bag-modal-menu-item {
+            width: 134px;
+            height: 134px;
+            padding: 20px; }
+            .modal .modal-content .modal-body .bag-modal-content .bag-modal-menu .bag-modal-menu-item .bag-menu-img-container {
+              width: 66px;
+              height: 66px; }
+      .modal .modal-content .modal-body .earn-modal-content {
+        padding: 32px 32px 32px 32px;
+        gap: 20px;
+        overflow: unset;
+        max-height: unset; }
+        .modal .modal-content .modal-body .earn-modal-content .earn-qr-container {
+          width: 340px;
+          height: 340px;
+          margin: 0 auto; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-qr-container .earn-qr-content {
+            padding: 40px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-qr-container .earn-qr-content .earn-qr-img {
+              width: 259px;
+              height: 259px; }
+        .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared {
+          padding: 12px 18px 18px 18px;
+          gap: 8px; }
+          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-title {
             font-size: 20px; }
-          .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title div {
-            width: 48px;
-            height: 48px; }
-          .modal .modal-content .modal-body .true-wallet-content .card .right .visa {
-            width: 80px; }
-    .modal .modal-content .modal-body .warning-box {
-      font-size: 18px;
-      font-weight: 500;
-      width: 445px; }
-    .modal .modal-content .modal-body .suggest-text {
-      font-size: 14px; }
-    .modal .modal-content .modal-body .line-button {
-      height: 43px;
-      width: 396px;
-      justify-content: center; }
-      .modal .modal-content .modal-body .line-button img {
-        width: 44px; }
-      .modal .modal-content .modal-body .line-button p {
-        font-size: 14px; }
-    .modal .modal-content .modal-body .qr-pay-content-1 {
-      padding: 35px 10px 0px 15px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .notic-text {
-        width: 100%;
+          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-subtitle {
+            font-size: 17px; }
+          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-input {
+            height: 33px;
+            padding: 0 10px; }
+          .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group {
+            gap: 22px;
+            margin-top: 10px; }
+            .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .border-input-gold.border-btn .btn-copy-link {
+              height: 47px;
+              font-size: 20px; }
+            .modal .modal-content .modal-body .earn-modal-content .border-input-gold .link-shared .link-shared-btn-group .btn-share-link {
+              height: 47px;
+              font-size: 20px; }
+        .modal .modal-content .modal-body .earn-modal-content .earn-menu-content {
+          grid-template-columns: repeat(2, 208px);
+          gap: 20px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item {
+            height: 153px;
+            padding: 14px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-img {
+              width: 70px;
+              height: 70px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-title {
+              font-size: 20px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-menu-content .border-input-gold .earn-menu-item .earn-menu-item-subtitle {
+              font-size: 15px; }
+        .modal .modal-content .modal-body .earn-modal-content .earn-tab-container {
+          padding: 0 40px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-tab-container .earn-tab {
+            width: 100%;
+            height: 50px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-tab-container .earn-tab .earn-tab-item {
+              font-size: 14px; }
+        .modal .modal-content .modal-body .earn-modal-content .earn-detail-data {
+          width: 400px;
+          gap: 20px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .filter-date .filter-label {
+            font-size: 16px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .filter-date .filter-date-input {
+            height: 40px;
+            padding: 8px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date {
+            padding: 20px 10px 10px 10px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container {
+              height: 40px; }
+              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container .th-earn {
+                font-size: 14px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn {
+              height: 40px;
+              padding: 4px; }
+              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn .td-earn {
+                font-size: 15px; }
+          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income {
+            padding: 12px 16px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group {
+              margin-bottom: 16px; }
+              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-label {
+                font-size: 14px; }
+              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input {
+                padding: 8px 10px;
+                height: 40px; }
+            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .btn-withdraw-income {
+              min-width: 140px;
+              height: 42px;
+              font-size: 20px; }
+      .modal .modal-content .modal-body .credit-modal-content {
+        padding: 110px 37px 90px 37px; }
+        .modal .modal-content .modal-body .credit-modal-content .credit-modal-body {
+          width: 500px; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit {
+            margin: 2px;
+            padding: 42px 37px; }
+            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit .no-credit-right .no-credit-text {
+              font-size: 28px; }
+          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit {
+            width: unset;
+            transform: unset;
+            margin: 2px;
+            padding: 29px 24px 24px 50px;
+            border: none; }
+            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
+              width: 87px;
+              height: 87px; }
+            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
+              font-size: 28px; }
+            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
+              font-size: 24px; }
+            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
+              min-width: 167px;
+              height: 45px;
+              font-size: 28px; }
+      .modal .modal-content .modal-body .change-cashback-modal-content {
+        width: 567px;
+        height: 467px;
+        max-height: 467px;
+        padding-top: 78px;
+        gap: 16px; }
+        .modal .modal-content .modal-body .change-cashback-modal-content .card-cashback {
+          grid-template-columns: repeat(2, 229px);
+          gap: 16px 13px; }
+          .modal .modal-content .modal-body .change-cashback-modal-content .card-cashback .card-body .name-cashback-game {
+            width: 227px;
+            gap: 10px;
+            height: 120px; }
+            .modal .modal-content .modal-body .change-cashback-modal-content .card-cashback .card-body .name-cashback-game img {
+              height: 80px;
+              width: 80px; }
+      .modal .modal-content .modal-body .change-cashback-detail-modal-content {
+        width: 500px;
+        padding: 60px 10px 20px 10px; }
+        .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail {
+          gap: 16px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .title {
+            font-size: 14px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount {
+            gap: 30px; }
+            .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-left {
+              font-size: 22px; }
+            .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-right {
+              font-size: 22px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .your-lose {
+            font-size: 25px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .loss {
+            font-size: 50px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .updated {
+            font-size: 19px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .btn {
+            gap: 34px; }
+            .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .btn .receive-credit {
+              width: 361.902px;
+              height: 63.582px;
+              font-size: 22px; }
+            .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .btn .withdraw-to-accont {
+              width: 361.902px;
+              height: 63.582px;
+              font-size: 22px; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .description {
+            margin-top: 60px; }
+            .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .description .text-left {
+              font-size: 19px; }
+            .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .description .text-right {
+              font-size: 19px; }
+      .modal .modal-content .modal-body .tournament-modal-content {
+        max-height: unset;
+        padding: 50px 12px 12px 12px; }
+        .modal .modal-content .modal-body .tournament-modal-content .top-recharge-select-container {
+          padding: 0 60px; }
+          .modal .modal-content .modal-body .tournament-modal-content .top-recharge-select-container .top-recharge-select {
+            padding-right: 20px; }
+            .modal .modal-content .modal-body .tournament-modal-content .top-recharge-select-container .top-recharge-select .select-icon {
+              left: 10px; }
+            .modal .modal-content .modal-body .tournament-modal-content .top-recharge-select-container .top-recharge-select .top-recharge-select-content {
+              padding: 10px 10px 10px 40px;
+              font-size: 14px; }
+        .modal .modal-content .modal-body .tournament-modal-content .top-rank {
+          font-size: 25px;
+          margin-top: 17px; }
+        .modal .modal-content .modal-body .tournament-modal-content .slide-rank {
+          width: 450px; }
+          .modal .modal-content .modal-body .tournament-modal-content .slide-rank .slide-rank-item {
+            width: 135px;
+            height: 191.7px;
+            margin: 20px 6px; }
+            .modal .modal-content .modal-body .tournament-modal-content .slide-rank .slide-rank-item .rank-icon {
+              width: 35.1px;
+              height: 43.2px; }
+            .modal .modal-content .modal-body .tournament-modal-content .slide-rank .slide-rank-item .rank-profile {
+              width: 62px;
+              height: 62px;
+              margin-top: 32.4px; }
+            .modal .modal-content .modal-body .tournament-modal-content .slide-rank .slide-rank-item .rank-item-text {
+              font-size: 16px; }
+        .modal .modal-content .modal-body .tournament-modal-content .table-rank .table-rank-item .no-rank {
+          width: 60px;
+          font-size: 16px; }
+        .modal .modal-content .modal-body .tournament-modal-content .table-rank .table-rank-item .rank-detail {
+          font-size: 19px;
+          padding: 8px 22px; }
+        .modal .modal-content .modal-body .tournament-modal-content .table-rank .table-rank-item .rank-phone {
+          width: 50%; }
+        .modal .modal-content .modal-body .tournament-modal-content .table-rank .table-rank-item .rank-detail-title {
+          width: 20%; }
+        .modal .modal-content .modal-body .tournament-modal-content .table-rank .table-rank-item .rank-money {
+          width: 30%; }
+      .modal .modal-content .modal-body .spinner-modal-content {
+        padding: 64px 43px 27px 43px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-title {
+          font-size: 26px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-subtitle {
+          font-size: 23px; }
+        .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body {
+          padding: 10px 48px 0 48px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-img {
+            width: 280px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .btn-spinner {
+            width: 188px;
+            height: 47px;
+            font-size: 23px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-subtitle2 {
+            font-size: 21px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-modal-text-danger {
+            font-size: 17px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-rule-text {
+            font-size: 17px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .spinner-rule-container .spinner-icon-info {
+            width: 26px;
+            height: 26px; }
+          .modal .modal-content .modal-body .spinner-modal-content .spinner-modal-body .button-confirm-warning {
+            width: 315px;
+            height: 78px;
+            font-size: 25px; }
+      .modal .modal-content .modal-body .code-modal-content {
+        width: 476px;
+        padding: 78px 20px 42px 20px;
+        gap: 44px; }
+        .modal .modal-content .modal-body .code-modal-content .button-warning {
+          height: 60px;
+          font-size: 18px; }
+      .modal .modal-content .modal-body .slip-verify-content {
+        padding: 40px 33px 30px 33px;
+        gap: 16px; }
+        .modal .modal-content .modal-body .slip-verify-content .warning-text {
+          font-size: 18px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-selector label {
+          font-size: 16px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-selector div div {
+          height: 54px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-selector div input {
+          height: 49px; }
+          .modal .modal-content .modal-body .slip-verify-content .bank-selector div input::placeholder {
+            font-size: 16px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-input label {
+          font-size: 14px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-input input {
+          height: 54px;
+          font-size: 16px; }
+          .modal .modal-content .modal-body .slip-verify-content .bank-input input::placeholder {
+            font-size: 14px; }
+        .modal .modal-content .modal-body .slip-verify-content .bank-input small {
+          font-size: 14px; }
+        .modal .modal-content .modal-body .slip-verify-content .button-warning {
+          height: 40px;
+          font-size: 18px; }
+      .modal .modal-content .modal-body .true-wallet-content {
+        padding: 70px 33px 30px 33px;
+        gap: 20px; }
+        .modal .modal-content .modal-body .true-wallet-content .card {
+          width: 415.873px;
+          height: 142.857px; }
+          .modal .modal-content .modal-body .true-wallet-content .card .left p {
+            font-size: 18px; }
+          .modal .modal-content .modal-body .true-wallet-content .card .right {
+            gap: 2rem; }
+            .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title p {
+              font-size: 20px; }
+            .modal .modal-content .modal-body .true-wallet-content .card .right .true-wallet-title div {
+              width: 48px;
+              height: 48px; }
+            .modal .modal-content .modal-body .true-wallet-content .card .right .visa {
+              width: 80px; }
+      .modal .modal-content .modal-body .warning-box {
         font-size: 18px;
-        margin-bottom: 10px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a img,
-      .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector .btn-select img {
-        width: 30px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li {
-        list-style: none;
-        width: 68px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li img {
-        margin: 14px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li span,
-      .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector .btn-select li span {
-        margin-left: 30px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .confirmation {
-        margin-top: 20px; }
-      .modal .modal-content .modal-body .qr-pay-content-1 .button-line div {
-        width: 396.029px;
-        height: 42.029px;
+        font-weight: 500;
+        width: 445px; }
+      .modal .modal-content .modal-body .suggest-text {
         font-size: 14px; }
-        .modal .modal-content .modal-body .qr-pay-content-1 .button-line div img {
+      .modal .modal-content .modal-body .line-button {
+        height: 43px;
+        width: 396px;
+        justify-content: center; }
+        .modal .modal-content .modal-body .line-button img {
           width: 44px; }
-    .modal .modal-content .modal-body .detail-qr .div1 {
-      font-size: 16px; }
-    .modal .modal-content .modal-body .detail-qr .div2 {
-      font-size: 40px; }
-    .modal .modal-content .modal-body .detail-qr .div3 {
-      width: 259px;
-      height: 259px; }
-    .modal .modal-content .modal-body .detail-qr .div4 .save {
-      width: 119px;
-      height: 35px; }
-    .modal .modal-content .modal-body .detail-qr .div4 .refresh {
-      width: 119px;
-      height: 35px; }
-    .modal .modal-content .modal-body .detail-qr .div5 {
-      font-size: 20px; }
-    .modal .modal-content .modal-body .detail-qr .div6 {
-      font-size: 12px; }
+        .modal .modal-content .modal-body .line-button p {
+          font-size: 14px; }
+      .modal .modal-content .modal-body .qr-pay-content-1 {
+        padding: 35px 10px 0px 15px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .notic-text {
+          width: 100%;
+          font-size: 18px;
+          margin-bottom: 10px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a img,
+        .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector .btn-select img {
+          width: 30px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li {
+          list-style: none;
+          width: 68px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li img {
+          margin: 14px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector #a li span,
+        .modal .modal-content .modal-body .qr-pay-content-1 .bank-selector .btn-select li span {
+          margin-left: 30px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .confirmation {
+          margin-top: 20px; }
+        .modal .modal-content .modal-body .qr-pay-content-1 .button-line div {
+          width: 396.029px;
+          height: 42.029px;
+          font-size: 14px; }
+          .modal .modal-content .modal-body .qr-pay-content-1 .button-line div img {
+            width: 44px; }
+      .modal .modal-content .modal-body .detail-qr .div1 {
+        font-size: 16px; }
+      .modal .modal-content .modal-body .detail-qr .div2 {
+        font-size: 40px; }
+      .modal .modal-content .modal-body .detail-qr .div3 {
+        width: 259px;
+        height: 259px; }
+      .modal .modal-content .modal-body .detail-qr .div4 .save {
+        width: 119px;
+        height: 35px; }
+      .modal .modal-content .modal-body .detail-qr .div4 .refresh {
+        width: 119px;
+        height: 35px; }
+      .modal .modal-content .modal-body .detail-qr .div5 {
+        font-size: 20px; }
+      .modal .modal-content .modal-body .detail-qr .div6 {
+        font-size: 12px; }
   .modal .modal-header-container .modal-header {
     min-width: 284px; }
   .modal .modal-title {
@@ -1821,6 +1966,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .modal .modal-header-container {
     position: absolute;
+    z-index: 10;
     top: -30px;
     width: 100%;
     display: flex;
@@ -1895,46 +2041,13 @@ body {
       background-image: url("/assets/images/green-card-bg.svg");
       background-size: contain;
       background-position: center;
-      background-repeat: no-repeat; }
-      .change-profile-modal-content .detail-card-kbank .card-kbank .left {
-        flex-direction: column;
-        gap: 0.5rem; }
-        .change-profile-modal-content .detail-card-kbank .card-kbank .left p {
-          font-size: 12px;
-          font-weight: 600;
-          text-align: left;
-          width: 100%; }
-      .change-profile-modal-content .detail-card-kbank .card-kbank .right {
-        flex-direction: column;
-        gap: 10px; }
-        .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank {
-          gap: 5px; }
-          .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank h4 {
-            font-size: 14px;
-            font-weight: 600; }
-          .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank :last-child {
-            width: 30px;
-            height: 30px; }
-            .change-profile-modal-content .detail-card-kbank .card-kbank .right .bank :last-child img {
-              object-fit: contain; }
-        .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance {
-          flex-direction: column; }
-          .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance :first-child {
-            font-size: 10px;
-            font-weight: 600; }
-          .change-profile-modal-content .detail-card-kbank .card-kbank .right .balance :last-child {
-            font-size: 14px;
-            font-weight: 600; }
-        .change-profile-modal-content .detail-card-kbank .card-kbank .right .visa {
-          width: 50px;
-          transform: translateX(20px); }
-          .change-profile-modal-content .detail-card-kbank .card-kbank .right .visa img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; }
-      .change-profile-modal-content .detail-card-kbank .card-kbank div {
-        display: flex;
-        justify-content: space-between; }
+      background-repeat: no-repeat;
+      font-size: 14px;
+      padding: 0 12px; }
+      .change-profile-modal-content .detail-card-kbank .card-kbank .bank :last-child img {
+        width: 30px;
+        height: 30px;
+        margin-top: -5px; }
   .change-profile-modal-content .change-password-hr .hr {
     width: 100%;
     height: 2px;
@@ -2009,6 +2122,108 @@ body {
       font-size: 17px;
       font-weight: 600; }
 
+.change-profile-modal-content-mobile {
+  flex-direction: column; }
+  .change-profile-modal-content-mobile .card {
+    margin-top: 35px;
+    padding: 5px;
+    width: 262px;
+    height: 120px;
+    border-radius: 15px;
+    border: 2px solid #f9df7b;
+    background-image: url("/assets/images/green-card-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); }
+    .change-profile-modal-content-mobile .card .left {
+      height: 100%; }
+    .change-profile-modal-content-mobile .card .right {
+      display: flex;
+      flex-direction: column;
+      gap: 8px; }
+      .change-profile-modal-content-mobile .card .right .bank {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: flex-end; }
+        .change-profile-modal-content-mobile .card .right .bank p {
+          font-weight: bold; }
+        .change-profile-modal-content-mobile .card .right .bank img {
+          width: 30px;
+          height: 30px; }
+      .change-profile-modal-content-mobile .card .right .balance {
+        font-weight: 600; }
+        .change-profile-modal-content-mobile .card .right .balance small {
+          font-size: 10px; }
+        .change-profile-modal-content-mobile .card .right .balance p {
+          font-size: 14px; }
+      .change-profile-modal-content-mobile .card .right .visa {
+        width: 50px;
+        height: 14px;
+        transform: translate(30px, -6px); }
+        .change-profile-modal-content-mobile .card .right .visa img {
+          width: 100%;
+          height: 100%; }
+  .change-profile-modal-content-mobile .slider-container {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    gap: 6px; }
+    .change-profile-modal-content-mobile .slider-container .active-slider {
+      width: 47px;
+      height: 3px;
+      border-radius: 16px;
+      background: linear-gradient(90deg, rgba(249, 223, 123, 0.8) 0%, rgba(181, 126, 16, 0.8) 20%, rgba(183, 129, 19, 0.8) 26%, rgba(190, 140, 31, 0.8) 32%, rgba(203, 157, 50, 0.8) 38%, rgba(220, 182, 78, 0.8) 44%, rgba(242, 213, 112, 0.8) 49%, rgba(249, 223, 123, 0.8) 51%, rgba(255, 243, 166, 0.8) 52%, rgba(249, 223, 123, 0.8) 59%, rgba(181, 126, 16, 0.8) 84%, rgba(229, 194, 91, 0.8) 95%, rgba(249, 223, 123, 0.8) 100%); }
+    .change-profile-modal-content-mobile .slider-container .slider {
+      width: 47px;
+      height: 3px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      background: #d9d9d9; }
+  .change-profile-modal-content-mobile .button-container {
+    gap: 12px;
+    margin-bottom: 10px; }
+    .change-profile-modal-content-mobile .button-container .left {
+      width: 125px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #f9df7b;
+      background: #c1933b; }
+    .change-profile-modal-content-mobile .button-container .right {
+      width: 125px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #f9df7b;
+      background: #000; }
+  .change-profile-modal-content-mobile hr {
+    width: 225px;
+    height: 1px;
+    background: #4e4e4e; }
+  .change-profile-modal-content-mobile .user-detail {
+    width: 100%; }
+    .change-profile-modal-content-mobile .user-detail .left p {
+      font-weight: 600;
+      margin: 10px 0; }
+    .change-profile-modal-content-mobile .user-detail .right small {
+      display: block;
+      font-weight: 100;
+      margin: 10px 0; }
+  .change-profile-modal-content-mobile .change-password-container {
+    gap: 11px;
+    width: 263px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background: #373737; }
+    .change-profile-modal-content-mobile .change-password-container svg {
+      width: 30px;
+      height: 30px; }
+    .change-profile-modal-content-mobile .change-password-container p {
+      font-weight: 600;
+      font-size: 14px;
+      color: white; }
+
 .add-account-content {
   padding: 20px;
   flex-direction: column;
@@ -2058,16 +2273,18 @@ body {
     height: 40px; }
 
 .change-cashback-modal-content {
-  width: 567px;
-  padding: 78px 10px 32px 10px;
   display: flex;
   flex-direction: column;
-  gap: 16px; }
+  max-height: 427px;
+  height: 427px;
+  overflow-y: auto;
+  padding-top: 40px; }
   .change-cashback-modal-content .card-cashback {
+    grid-template-columns: 1fr;
+    gap: 15px;
     display: grid;
-    grid-template-columns: repeat(2, 264px);
+    place-items: center;
     justify-content: center;
-    gap: 16px;
     cursor: pointer; }
     .change-cashback-modal-content .card-cashback .card-body {
       position: relative;
@@ -2080,13 +2297,18 @@ body {
       animation-name: slideIn;
       animation-duration: 0.4s; }
       .change-cashback-modal-content .card-cashback .card-body .name-cashback-game {
-        height: 120px;
+        width: 259px;
+        height: 96px;
         display: flex;
-        gap: 10px;
+        gap: 27px;
         justify-content: center;
+        align-items: center;
         border-radius: 10px;
         background: linear-gradient(270deg, #242424 0%, #0a0000 23.44%, #191919 52.6%, #000 81.25%, #242424 100%);
         padding-left: 16px; }
+        .change-cashback-modal-content .card-cashback .card-body .name-cashback-game img {
+          width: 65px;
+          height: 65px; }
         .change-cashback-modal-content .card-cashback .card-body .name-cashback-game .text {
           display: flex;
           flex-direction: column;
@@ -2096,22 +2318,20 @@ body {
             font-size: 18px;
             font-weight: 600; }
           .change-cashback-modal-content .card-cashback .card-body .name-cashback-game .text .balance {
-            font-size: 15px;
-            font-weight: 600; }
+            font-weight: 600;
+            font-size: 15px; }
 
 .change-cashback-detail-modal-content {
-  width: 500px;
-  padding: 60px 10px 20px 10px;
   display: flex;
   flex-direction: column;
-  gap: 16px; }
+  padding-top: 40px; }
   .change-cashback-detail-modal-content .detail {
     width: 100%s;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    gap: 8px; }
     .change-cashback-detail-modal-content .detail .title {
-      font-size: 14px;
       font-weight: 600px; }
     .change-cashback-detail-modal-content .detail .accumulated-lot-amount {
       width: 100%;
@@ -2123,55 +2343,51 @@ body {
         display: flex;
         justify-content: space-between; }
         .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-left {
-          font-size: 22px;
+          font-size: 16px;
           font-weight: 600; }
-        .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-left {
-          font-size: 22px;
-          font-weight: 500; }
+        .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-right {
+          font-size: 16px;
+          font-weight: 400; }
     .change-cashback-detail-modal-content .detail .your-loss {
-      font-size: 25px;
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: 16px; }
     .change-cashback-detail-modal-content .detail .loss {
-      font-size: 50px;
-      font-weight: 600; }
+      font-weight: 600;
+      font-size: 25px; }
     .change-cashback-detail-modal-content .detail .updated {
-      font-size: 19px;
+      font-size: 14px;
       font-weight: 400;
       margin-bottom: 18px; }
     .change-cashback-detail-modal-content .detail .btn {
       display: flex;
       flex-direction: column;
-      gap: 34px; }
+      gap: 20px; }
       .change-cashback-detail-modal-content .detail .btn .receive-credit {
         border-radius: 5px;
         background: #c1933b;
-        width: 361.902px;
-        height: 63.582px;
+        width: 217.141px;
+        height: 38.129px;
         flex-shrink: 0;
-        font-size: 22px;
         font-weight: 600;
         color: #ffff; }
       .change-cashback-detail-modal-content .detail .btn .withdraw-to-accont {
+        width: 217.141px;
+        height: 38.129px;
         border-radius: 5px;
         border-color: #e5c25b;
         background: #0000;
-        width: 361.902px;
-        height: 63.582px;
-        flex-shrink: 0;
-        font-size: 22px;
         font-weight: 600;
         color: #ffff; }
     .change-cashback-detail-modal-content .detail .description {
       background: none;
       width: 100%;
-      margin-top: 60px;
       display: flex;
       justify-content: space-between; }
       .change-cashback-detail-modal-content .detail .description .text-left {
-        font-size: 19px;
-        font-weight: 500; }
+        font-weight: 500;
+        font-size: 14px; }
       .change-cashback-detail-modal-content .detail .description .text-right {
-        font-size: 19px;
+        font-size: 13px;
         font-weight: 500;
         color: #ff0000; }
 
@@ -2323,6 +2539,9 @@ body {
           width: 100%;
           height: 100%;
           object-fit: contain; }
+  .detail-card-scb .button-line {
+    width: 249px;
+    height: 39px; }
 
 .detail-card-scb1 {
   margin-top: 5px; }
@@ -2720,8 +2939,7 @@ body {
       background-color: #4e4e4e; }
 
 .qr-pay-content-1 {
-  padding: 35px 0px 0px 15px;
-  width: 400px; }
+  padding: 35px 0px 0px 15px; }
   .qr-pay-content-1 .notic-text {
     width: 100%;
     font-size: 15px; }
@@ -2794,15 +3012,16 @@ body {
     margin-top: 20px;
     text-align: center;
     padding: 0 20px 0 20px; }
-  .qr-pay-content-1 .button-line div {
-    font-size: 13px;
-    width: 249px;
-    height: 39px;
-    gap: 5px; }
-    .qr-pay-content-1 .button-line div img {
-      width: 28px;
-      height: 100%;
-      object-fit: contain; }
+  .qr-pay-content-1 .button-line {
+    margin: 0 auto; }
+    .qr-pay-content-1 .button-line div {
+      font-size: 13px;
+      height: 39px;
+      gap: 5px; }
+      .qr-pay-content-1 .button-line div img {
+        width: 28px;
+        height: 100%;
+        object-fit: contain; }
 
 .detail-qr {
   display: flex;
@@ -2882,7 +3101,7 @@ body {
   width: 100%;
   flex-direction: column;
   gap: 10px;
-  padding: 0px 10px 15px 10px; }
+  padding: 30px 10px 15px 10px; }
   .slip-verify-content > * {
     width: 100%; }
   .slip-verify-content .warning-text {
@@ -2951,7 +3170,7 @@ body {
       color: #00fcfc; }
 
 .true-wallet-content {
-  padding: 70px 33px 30px 33px;
+  padding: 40px 16px 15px 16px;
   gap: 20px;
   flex-direction: column; }
   .true-wallet-content .card {
@@ -3161,53 +3380,53 @@ body {
           height: 30px; }
 
 .tournament-modal-content {
-  padding: 50px 12px 12px 12px; }
+  padding-top: 32px;
+  max-height: 520px;
+  overflow-y: auto;
+  overflow-x: hidden; }
   .tournament-modal-content .top-recharge-select-container {
-    padding: 0 60px; }
+    padding: 0 15px; }
     .tournament-modal-content .top-recharge-select-container .top-recharge-select {
+      padding-right: 20px;
+      left: 10px;
       position: relative;
       display: flex;
       align-items: center;
       width: 100%;
       background-color: #f3f3f3;
-      border-radius: 40px;
-      padding-right: 20px; }
+      border-radius: 40px; }
       .tournament-modal-content .top-recharge-select-container .top-recharge-select .select-icon {
         position: absolute;
-        left: 10px;
         z-index: 1; }
       .tournament-modal-content .top-recharge-select-container .top-recharge-select .top-recharge-select-content {
+        padding: 10px 10px 10px 40px;
+        font-size: 14px;
         position: relative;
         width: 100%;
         cursor: pointer;
-        padding: 10px 10px 10px 40px;
         border: 0;
         border-radius: 40px 0 0 40px;
-        font-size: 14px;
         font-weight: 500;
         color: #000;
         background-color: #f3f3f3; }
         .tournament-modal-content .top-recharge-select-container .top-recharge-select .top-recharge-select-content:focus {
           outline: 0; }
   .tournament-modal-content .top-rank {
-    font-size: 25px;
     font-weight: 600;
-    color: #ffb800;
-    margin-top: 17px; }
+    margin-top: 20px;
+    color: #ffb800; }
   .tournament-modal-content .slide-rank {
-    width: 450px;
+    width: 300px;
     overflow-x: auto;
     white-space: nowrap; }
     .tournament-modal-content .slide-rank .slide-rank-item {
       position: relative;
       display: inline-block;
       text-align: center;
-      width: 135px;
-      height: 191.7px;
+      margin: 10px 3px;
       border: 1px solid rgba(203, 157, 50, 0.8);
       border-radius: 10px;
-      background-color: #000;
-      margin: 20px 6px; }
+      background-color: #000; }
       .tournament-modal-content .slide-rank .slide-rank-item.top1 {
         border: 1px solid #fcabab;
         box-shadow: 0px 0px 4px 2px #ff0000; }
@@ -3221,20 +3440,19 @@ body {
         position: absolute;
         top: 3px;
         left: 3px;
-        width: 35.1px;
-        height: 43.2px;
         object-fit: contain; }
       .tournament-modal-content .slide-rank .slide-rank-item .rank-profile {
-        width: 62px;
-        height: 62px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         object-fit: cover;
-        margin-top: 32.4px; }
+        margin-top: 24px; }
       .tournament-modal-content .slide-rank .slide-rank-item .rank-item-text {
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 600;
         color: #fff; }
   .tournament-modal-content .table-rank {
+    margin-top: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -3245,16 +3463,13 @@ body {
       align-items: center; }
       .tournament-modal-content .table-rank .table-rank-item .no-rank {
         width: 60px;
-        font-size: 16px;
         font-weight: 600;
         color: #fff; }
       .tournament-modal-content .table-rank .table-rank-item .rank-detail {
         width: 100%;
-        font-size: 19px;
         font-weight: 600;
         color: #fff;
         background-color: #5e5e5e;
-        padding: 8px 22px;
         border-radius: 10px;
         display: flex; }
       .tournament-modal-content .table-rank .table-rank-item .rank-phone {
@@ -3439,25 +3654,24 @@ body {
       text-decoration: underline;
       cursor: pointer; }
   .earn-modal-content .earn-tab-container {
-    padding: 0 40px; }
+    padding: 0 20px; }
     .earn-modal-content .earn-tab-container .border-input-gold {
       border-radius: 10px; }
       .earn-modal-content .earn-tab-container .border-input-gold .earn-tab {
-        width: 100%;
-        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        overflow: hidden; }
+        overflow: hidden;
+        height: 40px; }
         .earn-modal-content .earn-tab-container .border-input-gold .earn-tab .earn-tab-item {
           display: flex;
           justify-content: center;
           align-items: center;
+          font-size: 12px;
           width: 100%;
           height: 100%;
           background-color: #000;
-          font-size: 14px;
           font-weight: 600px;
           color: #fff;
           cursor: pointer; }
@@ -3469,23 +3683,21 @@ body {
           padding: 0 1px;
           border-radius: 0; }
   .earn-modal-content .earn-detail-data {
-    width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 20px; }
+    gap: 10px; }
     .earn-modal-content .earn-detail-data .filter-date {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center; }
       .earn-modal-content .earn-detail-data .filter-date .filter-label {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         color: #fff; }
       .earn-modal-content .earn-detail-data .filter-date .filter-date-input {
-        min-width: 100px;
-        height: 40px;
-        padding: 8px;
+        min-width: 80px;
+        padding: 2px;
         border: 0;
         border-radius: 5px; }
         .earn-modal-content .earn-detail-data .filter-date .filter-date-input:focus {
@@ -3494,13 +3706,13 @@ body {
       border-radius: 5px; }
       .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date {
         border-radius: 5px;
-        padding: 20px 10px 10px 10px;
-        background-color: #000; }
+        background-color: #000;
+        padding: 10px 5px 5px 5px;
+        font-size: 9px; }
         .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold {
           border-radius: 5px; }
           .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container {
             width: 100%;
-            height: 40px;
             border-radius: 5px;
             background-color: #000;
             display: flex;
@@ -3511,7 +3723,6 @@ body {
               justify-content: center;
               align-items: center;
               text-align: center;
-              font-size: 14px;
               font-weight: 600px;
               color: #fff; }
         .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container {
@@ -3524,23 +3735,22 @@ body {
           overflow-y: scroll; }
           .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn {
             width: 100%;
-            height: 40px;
             border-radius: 5px;
-            padding: 4px;
             background-color: #fff;
             display: flex;
-            align-items: center; }
+            align-items: center;
+            font-weight: 600;
+            padding: 4px; }
             .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn .td-earn {
               width: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
               text-align: center;
-              font-size: 15px;
               font-weight: 600px;
               color: #000; }
     .earn-modal-content .earn-detail-data .form-withdraw-income {
-      padding: 12px 16px;
+      padding: 6px 8px;
       border-radius: 5px;
       background-color: #000;
       text-align: center; }
@@ -3549,25 +3759,23 @@ body {
         display: flex;
         flex-direction: column;
         gap: 6px;
-        margin-bottom: 16px; }
+        margin-bottom: 8px; }
         .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-label {
-          font-size: 14px;
           font-weight: 600;
-          color: #fff; }
+          color: #fff;
+          font-size: 12px; }
         .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input {
-          height: 40px;
+          padding: 4px 5px;
           border: 0;
-          border-radius: 5px;
-          padding: 8px 10px; }
+          border-radius: 5px; }
           .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input:focus {
             outline: 0; }
       .earn-modal-content .earn-detail-data .form-withdraw-income .btn-withdraw-income {
-        min-width: 140px;
-        height: 42px;
+        width: 83px;
+        height: 26px;
         background: linear-gradient(180deg, #ffc757 0%, #a76f00 100%);
         border: 0;
         border-radius: 5px;
-        font-size: 20px;
         font-weight: 600;
         color: #fff;
         cursor: pointer; }
