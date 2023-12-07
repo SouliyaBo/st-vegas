@@ -130,7 +130,10 @@
 
     <section class="card-container">
       <div class="card-wrapper">
-        <img src="/assets/images/jilli_card.svg" alt="card" />
+        <div class="playing">
+          <button class="game-name">bosly</button>
+          <img src="/assets/images/jilli_card.svg"  alt="card" />
+        </div>
         <img src="/assets/images/jilli_card.svg" alt="card" />
         <img src="/assets/images/jilli_card.svg" alt="card" />
         <img src="/assets/images/jilli_card.svg" alt="card" />
@@ -788,7 +791,7 @@
     <!-- end profile -->
 
     <!-- start cashback -->
-    <div class="modal fade" id="cashback" tabindex="-1" aria-labelledby="cashback" aria-hidden="true">
+    <div class="modal fade" id="cashback" tabindex="-1" aria-labelledby="cashback" aria-hidden="true" data-bs-dismiss="modal">
       <div class="modal-border">
         <div class="modal-content">
           <div class="modal-header-container">
@@ -1729,7 +1732,7 @@
   <!-- bag modal end -->
 
   <!-- promotion modal -->
-  <div class="modal fade" id="promotionModal" tabindex="-1" aria-labelledby="promotionModalLabel" aria-hidden="true">
+  <div class="modal fade" id="promotionModal" tabindex="-1" aria-labelledby="promotionModalLabel" aria-hidden="true"  data-bs-dismiss="modal">
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -1778,7 +1781,7 @@
   <!-- promotion modal end -->
 
   <!-- code modal -->
-  <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true">
+  <div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="codeModalLabel" aria-hidden="true"  data-bs-dismiss="modal">
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -1803,7 +1806,7 @@
   <!-- code modal end -->
 
   <!-- credit modal -->
-  <div class="modal fade" id="creditModal" tabindex="-1" aria-labelledby="creditModalLabel" aria-hidden="true">
+  <div class="modal fade" id="creditModal" tabindex="-1" aria-labelledby="creditModalLabel" aria-hidden="true" data-bs-dismiss="modal" >
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -1848,7 +1851,7 @@
   <!-- credit modal end -->
 
   <!-- diamond modal -->
-  <div class="modal fade" id="diamondModal" tabindex="-1" aria-labelledby="diamondModalLabel" aria-hidden="true">
+  <div class="modal fade" id="diamondModal" tabindex="-1" aria-labelledby="diamondModalLabel" aria-hidden="true" data-bs-dismiss="modal">
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -1893,7 +1896,7 @@
   <!-- diamond modal end -->
 
   <!-- tournament modal -->
-  <div class="modal fade" id="tournamentModal" tabindex="-1" aria-labelledby="tournamentModalLabel" aria-hidden="true">
+  <div class="modal fade" id="tournamentModal" tabindex="-1" aria-labelledby="tournamentModalLabel" aria-hidden="true" data-bs-dismiss="modal">
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -2079,7 +2082,7 @@
   <!-- tournament modal end -->
 
   <!-- spinner modal -->
-  <div class="modal fade" id="spinnerModal" tabindex="-1" aria-labelledby="spinnerModalLabel" aria-hidden="true">
+  <div class="modal fade" id="spinnerModal" tabindex="-1" aria-labelledby="spinnerModalLabel" aria-hidden="true" data-bs-dismiss="modal">
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -2120,7 +2123,7 @@
   <!-- spinner modal end -->
 
   <!-- earn money modal -->
-  <div class="modal fade" id="earnMoneyModal" tabindex="-1" aria-labelledby="earnMoneyModalLabel" aria-hidden="true">
+  <div class="modal fade" id="earnMoneyModal" tabindex="-1" aria-labelledby="earnMoneyModalLabel" aria-hidden="true" data-bs-dismiss="modal">
     <div class="modal-border">
       <div class="modal-content">
         <div class="modal-header-container">
@@ -2542,20 +2545,22 @@
     function showSlides() {
       let i;
       let slides = document.getElementsByClassName("mySlides");
+      let left = document.getElementsByClassName("click-left");
+      let right = document.getElementsByClassName("click-right");
       let dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
       slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
+      if (slideIndex > slides.length) { slideIndex = 1 }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" slide-active", "");
       }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " slide-active";
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " slide-active";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
-    </script>
+  </script>
 </body>
 
 </html>
