@@ -2000,7 +2000,87 @@ body {
     .modal-content {
       min-width: 370px;
 
+      .modal-header-container {
+        .modal-header {
+          min-width: 384px;
+          height: 85px;
+        }
+      }
+
+      .modal-title {
+        font-size: 30px;
+      }
+
       .modal-body {
+        // Start Profile Modal
+        .change-profile-modal-content {
+          width: 500px;
+          padding: 78px 20px 32px 20px;
+
+          .detail-card-kbank {
+            margin: 0;
+            border: 1px solid red;
+            .card-kbank {
+              margin: 0 auto;
+              width: 416.705px;
+              height: 201.99px;
+              border: 1px solid green;
+            }
+          }
+
+          .change-password-hr {
+            padding: 6px 40px;
+          }
+
+          .custom-btn {
+            gap: 20px;
+
+            .setting {
+              height: 67px;
+              width: 100%;
+
+              font-size: 20px;
+            }
+
+            .add-account {
+              height: 67px;
+              width: 100%;
+
+              font-size: 20px;
+            }
+          }
+
+          .user {
+            .username {
+              font-size: 21px;
+            }
+
+            .result {
+              font-size: 21px;
+            }
+          }
+
+          .password {
+            .pass {
+              font-size: 21px;
+            }
+
+            .result {
+              font-size: 21px;
+            }
+          }
+
+          .change-password {
+            height: 66px;
+            gap: 16px;
+
+            p {
+              font-size: 26px;
+            }
+          }
+        }
+        // End Profile Modal
+
         // Modal ฝากถอน
         .detail-card-kbank {
           min-width: 371px;
@@ -2259,6 +2339,202 @@ body {
           }
         }
         // End Bag Modal
+
+        // Start Earn Money
+        .earn-modal-content {
+          padding: 32px 32px 32px 32px;
+          gap: 20px;
+          // max-height: 980px;
+          overflow: unset;
+          max-height: unset;
+
+          .earn-qr-container {
+            width: 340px;
+            height: 340px;
+            margin: 0 auto;
+            // padding: 0 48px;
+
+            .earn-qr-content {
+              padding: 40px;
+
+              .earn-qr-img {
+                width: 259px;
+                height: 259px;
+              }
+            }
+          }
+
+          .border-input-gold {
+            .link-shared {
+              padding: 12px 18px 18px 18px;
+              gap: 8px;
+
+              .link-shared-title {
+                font-size: 20px;
+              }
+
+              .link-shared-subtitle {
+                font-size: 17px;
+              }
+
+              .link-shared-input {
+                height: 33px;
+                padding: 0 10px;
+              }
+
+              .link-shared-btn-group {
+                gap: 22px;
+                margin-top: 10px;
+
+                .border-input-gold.border-btn {
+                  .btn-copy-link {
+                    height: 47px;
+                    font-size: 20px;
+                  }
+                }
+
+                .btn-share-link {
+                  height: 47px;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+
+          .earn-menu-content {
+            grid-template-columns: repeat(2, 208px);
+
+            gap: 20px;
+
+            .border-input-gold {
+              .earn-menu-item {
+                height: 153px;
+                padding: 14px;
+
+                .earn-menu-item-img {
+                  width: 70px;
+                  height: 70px;
+                }
+
+                .earn-menu-item-title {
+                  font-size: 20px;
+                }
+
+                .earn-menu-item-subtitle {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+
+        // End Earn Money
+
+        // Start Free Credit and Diamond
+        .credit-modal-content {
+          padding: 110px 37px 90px 37px;
+
+          .credit-modal-body {
+            width: 500px;
+
+            .no-credit {
+              margin: 2px;
+              padding: 42px 37px;
+
+              .no-credit-right {
+                .no-credit-text {
+                  font-size: 28px;
+                }
+              }
+            }
+
+            .free-credit {
+              // width: 425px;
+              // // transform: translateX(-6%);
+              width: unset;
+              transform: unset;
+              margin: 2px;
+              padding: 29px 24px 24px 50px;
+              border: none;
+
+              .credit-point-content {
+                .credit-point-img {
+                  width: 87px;
+                  height: 87px;
+                }
+
+                .credit-point-text {
+                  font-size: 28px;
+                }
+              }
+
+              .credit-button-content {
+                .credit-button-title {
+                  font-size: 24px;
+                }
+                .btn-credit-confirm {
+                  min-width: 167px;
+                  height: 45px;
+                  font-size: 28px;
+                }
+              }
+            }
+          }
+        }
+
+        // End Free Credit
+
+        // Start Spinner Modal
+        .spinner-modal-content {
+          padding: 64px 43px 27px 43px;
+
+          .spinner-modal-title {
+            font-size: 26px;
+          }
+          .spinner-modal-subtitle {
+            font-size: 23px;
+          }
+
+          .spinner-modal-body {
+            padding: 10px 48px 0 48px;
+
+            .spinner-modal-img {
+              width: 280px;
+            }
+
+            .btn-spinner {
+              width: 188px;
+              height: 47px;
+              font-size: 23px;
+            }
+
+            .spinner-modal-subtitle2 {
+              font-size: 21px;
+            }
+            .spinner-modal-text-danger {
+              font-size: 17px;
+            }
+
+            .spinner-rule-container {
+              .spinner-rule-text {
+                font-size: 17px;
+              }
+
+              .spinner-icon-info {
+                width: 26px;
+                height: 26px;
+              }
+            }
+
+            .button-confirm-warning {
+              width: 315px;
+              height: 78px;
+              font-size: 25px;
+            }
+          }
+        }
+
+        // End Spinner Modal
 
         // Start Code Modal
         .code-modal-content {
@@ -2653,6 +2929,7 @@ body {
     justify-content: center;
 
     .modal-header {
+      height: 54px;
       position: relative;
       margin: auto;
       width: fit-content;
@@ -2829,7 +3106,6 @@ body {
     }
   }
   .change-password-hr {
-    padding: 6px 40px;
     .hr {
       width: 100%;
       height: 2px;
@@ -2861,6 +3137,8 @@ body {
       font-size: 16px;
       font-weight: 500;
       color: $white;
+      width: 125px;
+      height: 40px;
     }
   }
 
@@ -2870,6 +3148,7 @@ body {
     .username {
       font-size: 14px;
       font-weight: 700;
+      font-size: 14px;
     }
     .result {
       font-size: 14px;
@@ -2882,6 +3161,7 @@ body {
     .pass {
       font-size: 14px;
       font-weight: 700;
+      font-size: 14px;
     }
     .result {
       font-size: 14px;
@@ -2900,11 +3180,97 @@ body {
     border-radius: 10px;
     border: 1px solid #fff;
     background: #373737;
+    height: 40px;
+    gap: 11px;
+
+    .icon {
+      width: 51px;
+      height: 51px;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     p {
       margin-top: -8px;
       font-size: 17px;
       font-weight: 600;
     }
+  }
+}
+
+.add-account-content {
+  padding: 20px;
+  flex-direction: column;
+  gap: 15px;
+
+  .bank-section {
+    p {
+      color: #f00;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    .bank-list {
+      display: grid;
+      grid-template-columns: repeat(5, 40px);
+      gap: 9px 16px;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .bank-number {
+    width: 263px;
+    p {
+      color: #f00;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    .bank-number-input {
+      height: 42px;
+      border-radius: 5px;
+      background: #433d3d;
+      gap: 2rem;
+      .icon {
+        width: 20px;
+        height: 20px;
+
+        svg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      input {
+        outline: none;
+        background: none;
+        border: none;
+
+        color: #fff;
+        font-size: 14px;
+
+        &::placeholder {
+          color: #999;
+          font-size: 14px;
+          font-weight: 300;
+
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .button-warning {
+    width: 263px;
+    height: 40px;
   }
 }
 
@@ -4551,15 +4917,12 @@ body {
 }
 
 .credit-modal-content {
-  width: 500px;
-  padding: 110px 37px 90px 37px;
+  padding: 65px 23px 55px 23px;
 
   .credit-modal-body {
     width: 100%;
-    
+
     .no-credit {
-      margin: 2px;
-      padding: 42px 37px;
       background-color: #414141;
       border-radius: 10px;
       display: flex;
@@ -4567,7 +4930,6 @@ body {
 
       .no-credit-right {
         .no-credit-text {
-          font-size: 28px;
           font-weight: 500;
           color: #828282;
         }
@@ -4575,25 +4937,28 @@ body {
     }
 
     .free-credit {
-      margin: 2px;
-      padding: 29px 24px 24px 50px;
+      width: 254px;
+      transform: translateX(-6%);
+      margin: 0 auto;
       background-color: #000;
       border-radius: 10px;
+      border: 2px solid #f9df7b;
       display: flex;
       justify-content: space-between;
+      padding: 13px 16px;
 
       .credit-point-content {
         text-align: center;
         .credit-point-img {
-          width: 87px;
-          height: 87px;
+          width: 42px;
+          height: 42px;
           object-fit: cover;
         }
         .credit-point-text {
-          font-size: 28px;
           font-weight: 700;
           color: #fff;
           margin: 0;
+          font-size: 16px;
         }
       }
       .credit-button-content {
@@ -4603,21 +4968,21 @@ body {
         align-items: flex-end;
 
         .credit-button-title {
-          font-size: 24px;
           font-weight: 700;
           color: #fff;
           margin: 0;
+          font-size: 15px;
         }
         .btn-credit-confirm {
-          min-width: 167px;
-          height: 45px;
-          background-color: #C1933B;
-          font-size: 28px;
+          background-color: #c1933b;
           font-weight: 600;
           color: #fff;
           border: 0;
           border-radius: 10px;
           cursor: pointer;
+          font-size: 17px;
+          width: 98px;
+          height: 30px;
         }
       }
     }
@@ -4635,7 +5000,7 @@ body {
       display: flex;
       align-items: center;
       width: 100%;
-      background-color: #F3F3F3;
+      background-color: #f3f3f3;
       border-radius: 40px;
       padding-right: 20px;
 
@@ -4655,26 +5020,25 @@ body {
         font-size: 14px;
         font-weight: 500;
         color: #000;
-        background-color: #F3F3F3;
+        background-color: #f3f3f3;
 
         &:focus {
           outline: 0;
         }
       }
-    
     }
   }
   .top-rank {
     font-size: 25px;
     font-weight: 600;
-    color: #FFB800;
+    color: #ffb800;
     margin-top: 17px;
   }
   .slide-rank {
     width: 450px;
     overflow-x: auto;
     white-space: nowrap;
-  
+
     .slide-rank-item {
       position: relative;
       display: inline-block;
@@ -4685,18 +5049,18 @@ body {
       border-radius: 10px;
       background-color: #000;
       margin: 20px 6px;
-     
+
       &.top1 {
-        border: 1px solid #FCABAB;
-        box-shadow: 0px 0px 4px 2px #FF0000;
+        border: 1px solid #fcabab;
+        box-shadow: 0px 0px 4px 2px #ff0000;
       }
       &.top2 {
-        border: 1px solid #FFFB91;
-        box-shadow: 0px 0px 4px 2px #FF9900;
+        border: 1px solid #fffb91;
+        box-shadow: 0px 0px 4px 2px #ff9900;
       }
       &.top3 {
-        border: 1px solid #A2DB00;
-        box-shadow: 0px 0px 4px 2px #368E00;
+        border: 1px solid #a2db00;
+        box-shadow: 0px 0px 4px 2px #368e00;
       }
 
       .rank-icon {
@@ -4744,7 +5108,7 @@ body {
         font-size: 19px;
         font-weight: 600;
         color: #fff;
-        background-color: #5E5E5E;
+        background-color: #5e5e5e;
         padding: 8px 22px;
         border-radius: 10px;
         display: flex;
@@ -4763,21 +5127,19 @@ body {
 }
 
 .spinner-modal-content {
-  padding: 64px 43px 27px 43px;
-
+  padding: 39px 26px 19px 26px;
   .spinner-modal-title {
-    font-size: 26px;
     font-weight: 500;
+    font-size: 18px;
     color: #fff;
   }
   .spinner-modal-subtitle {
-    font-size: 23px;
+    font-size: 11px;
     font-weight: 500;
     color: #fff;
   }
   .spinner-modal-body {
     width: 100%;
-    padding: 10px 48px 0 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4785,31 +5147,32 @@ body {
     gap: 20px;
 
     .spinner-modal-img {
-      width: 280px;
       height: auto;
+      width: 167px;
     }
     .btn-spinner {
-      width: 161px;
-      height: 46px;
+      width: 97px;
+      height: 28px;
+      font-size: 15px;
+
       border: 0;
       border-radius: 5px;
-      background-color: #00FFFF;
-      font-size: 23px;
+      background-color: #00ffff;
       font-weight: 600;
       color: #000;
       cursor: pointer;
     }
     .spinner-modal-subtitle2 {
       align-self: self-start;
-      font-size: 21px;
       font-weight: 600;
       color: #fff;
+      font-size: 18px;
     }
     .spinner-modal-text-danger {
       align-self: self-start;
-      font-size: 17px;
       font-weight: 400;
-      color: #FF0000;
+      color: #ff0000;
+      font-size: 13px;
     }
 
     .spinner-rule-container {
@@ -4819,15 +5182,21 @@ body {
       gap: 10px;
 
       .spinner-rule-text {
-        font-size: 17px;
         font-weight: 600;
         color: #fff;
       }
       .spinner-icon-info {
-        width: 26px;
-        height: 26px;
         cursor: pointer;
+
+        width: 15px;
+        height: 15px;
       }
+    }
+
+    .button-confirm-warning {
+      width: 188px;
+      height: 47px;
+      font-size: 16px;
     }
   }
 }
@@ -4836,25 +5205,30 @@ body {
   padding: 40px 10px 10px 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1rem;
+  max-height: 589px;
+  overflow-y: scroll;
 
   .earn-qr-container {
-    padding: 0 48px;
+    width: 202px;
+    height: 202px;
+    margin: 0 auto;
 
     .border-input-gold {
       padding: 2px;
       border-radius: 26px;
 
       .earn-qr-content {
-        background-color: #3E3939;
+        background-color: #3e3939;
         border-radius: 26px;
-        padding: 40px;
-  
+        padding: 24px;
+
         .earn-qr-img {
-          width: 259px;
-          height: 259px;
           object-fit: cover;
           border-radius: 16px;
+
+          width: 154px;
+          height: 154px;
         }
       }
     }
@@ -4864,71 +5238,72 @@ body {
     border-radius: 20px;
 
     .link-shared {
-      padding: 12px 18px 18px 18px;
+      gap: 8px;
+      padding: 11px;
+
       background-color: #000;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 8px;
-  
+
       .link-shared-title {
-        font-size: 20px;
         font-weight: 600;
         color: #fff;
+        font-size: 14px;
       }
       .link-shared-subtitle {
-        font-size: 17px;
         font-weight: 400;
         color: #fff;
+        font-size: 10px;
       }
       .link-shared-input {
         width: 100%;
-        height: 33px;
         border: 0;
         border-radius: 5px;
         padding: 0 10px;
-        
+        height: 20px;
         &:focus {
           outline: 0;
         }
       }
-  
+
       .link-shared-btn-group {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 22px;
-        margin-top: 10px;
+        gap: 13px;
 
         .border-input-gold.border-btn {
           border-radius: 5px;
-          
+
           .btn-copy-link {
             width: 100%;
-            height: 47px;
             background-color: #000;
             border: 0;
             border-radius: 5px;
-            font-size: 20px;
             font-weight: 600;
             color: #fff;
             cursor: pointer;
-          }
 
+            height: 28px;
+            font-size: 14px;
+          }
         }
         .btn-share-link {
           width: 100%;
-          height: 47px;
-          background: linear-gradient(180deg, #FFC757 0%, #A76F00 100%);
+          background: linear-gradient(180deg, #ffc757 0%, #a76f00 100%);
           border: 0;
           border-radius: 5px;
           font-size: 20px;
           font-weight: 600;
           color: #fff;
           cursor: pointer;
+
+          height: 28px;
+          font-size: 14px;
         }
       }
     }
@@ -4936,15 +5311,16 @@ body {
 
   .earn-menu-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 124px);
+    align-items: center;
+    gap: 11px;
 
     .border-input-gold {
       border-radius: 20px;
 
       .earn-menu-item {
         width: 100%;
-        padding: 14px;
+        height: 91px;
         border-radius: 20px;
         background-color: #000;
         display: flex;
@@ -4954,15 +5330,16 @@ body {
         cursor: pointer;
 
         .earn-menu-item-img {
-          
+          width: 40px;
+          height: 40px;
         }
         .earn-menu-item-title {
-          font-size: 20px;
+          font-size: 14px;
           font-weight: 600;
           color: #fff;
         }
         .earn-menu-item-subtitle {
-          font-size: 15px;
+          font-size: 10px;
           font-weight: 400;
           color: #fff;
         }
@@ -4973,7 +5350,7 @@ body {
   .read-earn-rule {
     font-size: 12px;
     font-weight: 300;
-    color: #00FFF0;
+    color: #00fff0;
     text-align: center;
     margin-top: 10px;
 
