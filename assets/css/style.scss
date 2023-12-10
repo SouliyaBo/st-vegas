@@ -420,71 +420,70 @@ body {
     flex-wrap: wrap;
     gap: 23px;
 
-      .game-card {
-        position: relative;
-        border-radius: 30px;
-        background: #c1933b;
-        &:hover {
-          .btn-play-game-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .btn-play-game {
-              background: #c1933b;
-              border-radius: 5px;
-            }
-          }
-        }
-        img {
-          width: 190px;
-          height: 280px;
-
-          cursor: pointer;
-
-          &:hover {
-            transform: translateY(-10px);
-            // transform: scale(1.1);
-            transition: all 0.3s ease-in-out;
-            // filter: grayscale(1);
-          }
-        }
-
+    .game-card {
+      position: relative;
+      border-radius: 30px;
+      background: #c1933b;
+      &:hover {
         .btn-play-game-container {
-          display: none;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 10;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .btn-play-game {
-            min-width: 80px;
-            height: 47px;
-            border: 0;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: 600;
-            background: linear-gradient(
-              180deg,
-              #f9df7b 0%,
-              #b57e10 20%,
-              #b78113 26%,
-              #be8c1f 32%,
-              #cb9d32 38%,
-              #dcb64e 44%,
-              #f2d570 49%,
-              #f9df7b 51%,
-              #fff3a6 52%,
-              #f9df7b 59%,
-              #b57e10 84%,
-              #e5c25b 95%,
-              #f9df7b 100%
-            );
+            background: #c1933b;
+            border-radius: 5px;
           }
         }
       }
+      img {
+        width: 190px;
+        height: 280px;
 
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-10px);
+          // transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+          // filter: grayscale(1);
+        }
+      }
+
+      .btn-play-game-container {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+
+        .btn-play-game {
+          min-width: 80px;
+          height: 47px;
+          border: 0;
+          border-radius: 10px;
+          font-size: 18px;
+          font-weight: 600;
+          background: linear-gradient(
+            180deg,
+            #f9df7b 0%,
+            #b57e10 20%,
+            #b78113 26%,
+            #be8c1f 32%,
+            #cb9d32 38%,
+            #dcb64e 44%,
+            #f2d570 49%,
+            #f9df7b 51%,
+            #fff3a6 52%,
+            #f9df7b 59%,
+            #b57e10 84%,
+            #e5c25b 95%,
+            #f9df7b 100%
+          );
+        }
+      }
+    }
   }
 }
 
@@ -1250,7 +1249,7 @@ body {
     .brand {
       height: 155px;
 
-      img{
+      img {
         src: url("/assets/images/brand-mobile.png");
       }
     }
@@ -1509,13 +1508,50 @@ body {
       cursor: pointer;
     }
 
+    .logo {
+      width: 144px;
+      height: 40px;
+    }
+
+    .banner {
+      border-radius: 10px;
+      border: 2px solid #f9df7b;
+      width: 345px;
+      height: 146px;
+      overflow: hidden;
+
+      margin-top: 25px;
+      margin-bottom: 16px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .slide-game{
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 9px;
+      overflow-x: scroll;
+      padding:0 17px;
+      img{
+        width: 157px;
+height: 66px;
+border-radius: 5px;
+border: 1px solid  #F9DF7B;
+      }
+    }
+
     .phone-input {
       .input-container {
         width: 320px;
         height: 50px;
         border-radius: 5px;
         background: #433d3d;
-        margin-bottom: 33px;
+        margin-bottom: 20px;
 
         img {
           width: 20px;
@@ -1574,6 +1610,8 @@ body {
       margin: 20px 0;
     }
 
+
+
     .button-container {
       flex-direction: column;
       margin-bottom: 8px;
@@ -1609,15 +1647,11 @@ body {
   }
 
   .register-page {
-    .logo {
-      width: 216px;
-      height: 60px;
-    }
+
 
     .progress-step-container {
       gap: 7px;
-      margin-top: 20px;
-      margin-bottom: 50px;
+      margin: 20px 0;
       .progress-step {
         color: #fff;
         font-size: 11px;
@@ -1923,7 +1957,8 @@ body {
 
     .all-mobile-games {
       display: grid;
-      grid: auto-flow / repeat(2, 1fr);
+      // grid: auto-flow / repeat(2, 1fr);
+      grid-template-columns: 1fr;
 
       place-items: center;
       button {
@@ -1931,8 +1966,8 @@ body {
         outline: none;
         border: none;
 
-        width: 170px;
-        height: 54px;
+        // width: 170px;
+        // height: 54px;
 
         cursor: pointer;
 
@@ -2224,7 +2259,6 @@ body {
 
 @media only screen and (min-width: 481px) {
   .brand {
-
     img {
       height: 100%;
       width: 100%;
@@ -2500,12 +2534,12 @@ body {
         .withdraw-modal-content {
           .card {
             width: 416.705px;
-            height: 201.99px;
+            height: 220px;
             background: url("/assets/images/green-card-bg.svg")
               linear-gradient(257deg, #00481d 0%, #00a036 100%);
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
+            // background-position: center;
             border: none;
 
             .left {
@@ -2547,7 +2581,7 @@ body {
           }
           .slider-wrapper {
             .active.slider,
-            slider {
+            .slider {
               width: 75px;
               height: 5px;
             }
@@ -4748,7 +4782,7 @@ body {
   gap: 20px;
   .card {
     width: 262px;
-    height: 127px;
+    height: 120px;
     margin: 0 auto;
     margin-top: 30px;
     padding: 12px;
@@ -4776,7 +4810,7 @@ body {
       gap: 10px;
 
       .bank {
-        gap: 5px;
+        gap: 10px;
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -6541,9 +6575,6 @@ body {
     }
   }
 }
-
-
-
 
 .slideshow-container {
   // max-width: 1000px;
