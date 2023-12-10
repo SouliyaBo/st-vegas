@@ -418,23 +418,20 @@ body {
     // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
-    .playing {
-      // position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
 
       .game-card {
         position: relative;
         border-radius: 30px;
-
+        background: #c1933b;
         &:hover {
           .btn-play-game-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
+            .btn-play-game {
+              background: #c1933b;
+              border-radius: 5px;
+            }
           }
         }
         img {
@@ -486,7 +483,7 @@ body {
           }
         }
       }
-    }
+    
   }
 }
 
@@ -1946,19 +1943,42 @@ body {
       gap: 10px;
       place-items: center;
       justify-content: center;
-      button {
+      .playing-mobile {
+        position: relative;
         background: none;
         outline: none;
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         width: 110px;
         height: 145px;
 
         cursor: pointer;
-
+        
+        .game-name {
+          position: absolute;
+          text-decoration: none;
+          padding: 5px 10px 5px 10px;
+          background-color: #c1933b;
+          color: #000;
+          font-weight: 600;
+          border-radius: 5px;
+          display: none;
+        }
         img {
           width: 100%;
           height: 100%;
+        }
+        &:hover {
+          transform: translateY(-10px);
+          // transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+          // filter: grayscale(1);
+          .game-name {
+            display: block;
+          }
         }
       }
     }
