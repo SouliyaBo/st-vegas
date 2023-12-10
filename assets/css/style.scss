@@ -1193,6 +1193,15 @@ body {
 
 // Responsive Mobile
 @media (max-width: 480px) {
+
+  .modal{
+    .modal-border{
+      .modal-content{
+        max-width: 315px;
+      }
+    }
+  }
+
   .header {
     padding: 13px 7px;
 
@@ -2177,7 +2186,7 @@ body {
   // Modal
   .modal {
     .modal-content {
-      min-width: 370px;
+      min-width: 375px;
 
       .modal-header-container {
         top: -24px;
@@ -2194,8 +2203,8 @@ body {
       .modal-body {
         // Start Profile Modal
         .change-profile-modal-content {
-          // width: 500px;
-          padding: 78px 20px 32px 20px;
+          width: 100%;
+          padding: 40px 10px 16px 10px;
 
           .detail-card-kbank {
             margin: 0;
@@ -3214,7 +3223,6 @@ body {
 
         // Start True Wallet
         .true-wallet-content {
-          padding: 70px 33px 30px 33px;
 
           gap: 20px;
 
@@ -3525,6 +3533,7 @@ body {
 
   /* Add more styling to .card as needed for content */
   .modal-content {
+    // max-width: 315px;
     position: relative;
     z-index: -10;
     background-color: #000;
@@ -3609,7 +3618,7 @@ body {
 
   .modal-body {
     min-width: 315px;
-    max-width: 315px;
+    // max-width: 315px;
     color: #fff;
     padding: 8px 16px;
   }
@@ -3644,6 +3653,7 @@ body {
 }
 
 .change-profile-modal-content {
+
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -4153,6 +4163,7 @@ body {
     justify-content: center;
     cursor: pointer;
     .card-body {
+
       position: relative;
       z-index: -15;
       background: linear-gradient(
@@ -4181,8 +4192,8 @@ body {
         width: 259px;
 
         height: 96px;
-        display: flex;
         gap: 27px;
+        display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
@@ -4194,17 +4205,20 @@ body {
           #000 81.25%,
           #242424 100%
         );
-        padding-left: 16px;
+        // padding-left: 16px;
 
         img {
           width: 65px;
           height: 65px;
         }
         .text {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          width: unset;
+          position: unset;
+          padding: 0;
+          // display: flex;
+          // flex-direction: column;
+          // justify-content: center;
+          // align-items: center;
           .name-game {
             font-size: 18px;
 
