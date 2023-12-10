@@ -243,11 +243,12 @@ body {
 .brand {
   margin-top: 8px;
   height: 307px;
-  padding-left: 25px;
-  padding-right: 25px;
+  // padding-left: 25px;
+  // padding-right: 25px;
   img {
     height: 100%;
     width: 100%;
+    // object-fit: cover;
   }
 }
 
@@ -1251,6 +1252,10 @@ body {
 
     .brand {
       height: 155px;
+
+      img{
+        src: url("/assets/images/brand-mobile.png");
+      }
     }
 
     .featured-game-wrapper#mobile {
@@ -2198,6 +2203,16 @@ body {
 // End of Mobile Page
 
 @media only screen and (min-width: 481px) {
+  .brand {
+
+    img {
+      height: 100%;
+      width: 100%;
+
+      src: url("/assets/images/brand.png");
+    }
+  }
+
   .featured-game-wrapper#mobile {
     display: none;
   }
@@ -6507,16 +6522,20 @@ body {
   }
 }
 
-// * {box-sizing: border-box;}
-// .mySlides {display: none;}
-// img {vertical-align: middle;}
 
-// .mySlides {display: none}
-/* Slideshow container */
+
+
 .slideshow-container {
   // max-width: 1000px;
   position: relative;
   margin: auto;
+  width: 100%;
+  height: 100%;
+
+  .mySlides {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Next & previous buttons */
