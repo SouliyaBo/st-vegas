@@ -425,64 +425,65 @@ body {
       align-items: center;
       cursor: pointer;
 
-    .game-card {
-      position: relative;
-      border-radius: 30px;
-
-      &:hover {
-        .btn-play-game-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: rgba(0, 0, 0, 0.5);
-        }
-      }
-      img {
-        width: 190px;
-        height: 280px;
-
-        cursor: pointer;
+      .game-card {
+        position: relative;
+        border-radius: 30px;
 
         &:hover {
-          transform: translateY(-10px);
-          // transform: scale(1.1);
-          transition: all 0.3s ease-in-out;
-          // filter: grayscale(1);
+          .btn-play-game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
         }
-      }
+        img {
+          width: 190px;
+          height: 280px;
 
-      .btn-play-game-container {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10;
+          cursor: pointer;
 
-        .btn-play-game {
-          min-width: 80px;
-          height: 47px;
-          border: 0;
-          border-radius: 10px;
-          font-size: 18px;
-          font-weight: 600;
-          background: linear-gradient(
-            180deg,
-            #f9df7b 0%,
-            #b57e10 20%,
-            #b78113 26%,
-            #be8c1f 32%,
-            #cb9d32 38%,
-            #dcb64e 44%,
-            #f2d570 49%,
-            #f9df7b 51%,
-            #fff3a6 52%,
-            #f9df7b 59%,
-            #b57e10 84%,
-            #e5c25b 95%,
-            #f9df7b 100%
-          );
+          &:hover {
+            transform: translateY(-10px);
+            // transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            // filter: grayscale(1);
+          }
+        }
+
+        .btn-play-game-container {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 10;
+
+          .btn-play-game {
+            min-width: 80px;
+            height: 47px;
+            border: 0;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(
+              180deg,
+              #f9df7b 0%,
+              #b57e10 20%,
+              #b78113 26%,
+              #be8c1f 32%,
+              #cb9d32 38%,
+              #dcb64e 44%,
+              #f2d570 49%,
+              #f9df7b 51%,
+              #fff3a6 52%,
+              #f9df7b 59%,
+              #b57e10 84%,
+              #e5c25b 95%,
+              #f9df7b 100%
+            );
+          }
         }
       }
     }
@@ -1199,10 +1200,9 @@ body {
 
 // Responsive Mobile
 @media (max-width: 480px) {
-
-  .modal{
-    .modal-border{
-      .modal-content{
+  .modal {
+    .modal-border {
+      .modal-content {
         max-width: 315px;
       }
     }
@@ -3250,7 +3250,6 @@ body {
 
         // Start True Wallet
         .true-wallet-content {
-
           gap: 20px;
 
           .card {
@@ -3680,7 +3679,6 @@ body {
 }
 
 .change-profile-modal-content {
-
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -4190,7 +4188,6 @@ body {
     justify-content: center;
     cursor: pointer;
     .card-body {
-
       position: relative;
       z-index: -15;
       background: linear-gradient(

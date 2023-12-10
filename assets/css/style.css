@@ -240,55 +240,42 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 23px; }
-<<<<<<< HEAD
-    .card-container .card-wrapper .game-card {
-      position: relative;
-      border-radius: 30px; }
-      .card-container .card-wrapper .game-card:hover .btn-play-game-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(0, 0, 0, 0.5); }
-      .card-container .card-wrapper .game-card img {
-        width: 190px;
-        height: 280px;
-        cursor: pointer; }
-        .card-container .card-wrapper .game-card img:hover {
-          transform: translateY(-10px);
-          transition: all 0.3s ease-in-out; }
-      .card-container .card-wrapper .game-card .btn-play-game-container {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10; }
-        .card-container .card-wrapper .game-card .btn-play-game-container .btn-play-game {
-          min-width: 80px;
-          height: 47px;
-          border: 0;
-          border-radius: 10px;
-          font-size: 18px;
-          font-weight: 600;
-          background: linear-gradient(180deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%); }
-=======
     .card-container .card-wrapper .playing {
       display: flex;
       justify-content: center;
       align-items: center;
       cursor: pointer; }
-      .card-container .card-wrapper .playing .game-name {
-        display: none; }
-      .card-container .card-wrapper .playing img {
-        width: 190px;
-        height: 280px; }
-      .card-container .card-wrapper .playing:hover {
-        transform: translateY(-10px);
-        transition: all 0.3s ease-in-out; }
-        .card-container .card-wrapper .playing:hover .game-name {
-          display: block; }
->>>>>>> mobile-all-game
+      .card-container .card-wrapper .playing .game-card {
+        position: relative;
+        border-radius: 30px; }
+        .card-container .card-wrapper .playing .game-card:hover .btn-play-game-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgba(0, 0, 0, 0.5); }
+        .card-container .card-wrapper .playing .game-card img {
+          width: 190px;
+          height: 280px;
+          cursor: pointer; }
+          .card-container .card-wrapper .playing .game-card img:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out; }
+        .card-container .card-wrapper .playing .game-card .btn-play-game-container {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 10; }
+          .card-container .card-wrapper .playing .game-card .btn-play-game-container .btn-play-game {
+            min-width: 80px;
+            height: 47px;
+            border: 0;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(180deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%); }
 
 .info-wrapper {
   max-width: 1400px;
@@ -1805,7 +1792,6 @@ body {
             .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input {
               padding: 8px 10px;
               height: 40px; }
-<<<<<<< HEAD
           .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .btn-withdraw-income {
             min-width: 140px;
             height: 42px;
@@ -1840,7 +1826,7 @@ body {
       width: 567px;
       height: 467px;
       max-height: 467px;
-      padding-top: 78px;
+      padding-top: 50px;
       gap: 16px; }
       .modal .modal-content .modal-body .change-cashback-modal-content .card-cashback {
         grid-template-columns: repeat(2, 229px);
@@ -1856,59 +1842,6 @@ body {
       width: 500px;
       padding: 60px 10px 20px 10px; }
       .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail {
-=======
-              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .border-input-gold .th-earn-container .th-earn {
-                font-size: 14px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn {
-              height: 40px;
-              padding: 4px; }
-              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .border-input-gold .table-earn-date .tr-earn-container .tr-earn .td-earn {
-                font-size: 15px; }
-          .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income {
-            padding: 12px 16px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group {
-              margin-bottom: 16px; }
-              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-label {
-                font-size: 14px; }
-              .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .form-withdraw-group .form-withdraw-input {
-                padding: 8px 10px;
-                height: 40px; }
-            .modal .modal-content .modal-body .earn-modal-content .earn-detail-data .form-withdraw-income .btn-withdraw-income {
-              min-width: 140px;
-              height: 42px;
-              font-size: 20px; }
-      .modal .modal-content .modal-body .credit-modal-content {
-        padding: 60px 20px; }
-        .modal .modal-content .modal-body .credit-modal-content .credit-modal-body {
-          width: 500px; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit {
-            margin: 2px;
-            padding: 42px 37px; }
-            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit .no-credit-right .no-credit-text {
-              font-size: 28px; }
-          .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit {
-            width: unset;
-            transform: unset;
-            margin: 2px;
-            padding: 29px 24px 24px 50px;
-            border: none; }
-            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
-              width: 87px;
-              height: 87px; }
-            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
-              font-size: 28px; }
-            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
-              font-size: 24px; }
-            .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
-              min-width: 167px;
-              height: 45px;
-              font-size: 28px; }
-      .modal .modal-content .modal-body .change-cashback-modal-content {
-        width: 567px;
-        height: 467px;
-        max-height: 467px;
-        padding-top: 50px;
->>>>>>> mobile-all-game
         gap: 16px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .title {
           font-size: 14px; }
@@ -4215,7 +4148,6 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-<<<<<<< HEAD
   margin: auto; }
 
 /* Next & previous buttons */
@@ -4238,40 +4170,6 @@ body {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px; }
-=======
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* Number text (1/3 etc) */
-  /* The dots/bullets/indicators */ }
-  .slideshow-container .modal-icon-back {
-    position: absolute;
-    left: 5px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer; }
-  .slideshow-container .modal-icon-next {
-    position: absolute;
-    right: 5px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer; }
-  .slideshow-container .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center; }
-  .slideshow-container .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0; }
->>>>>>> mobile-all-game
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -4316,33 +4214,8 @@ body {
   animation-name: fade-slide;
   animation-duration: 1.5s; }
 
-<<<<<<< HEAD
 @keyframes fade-slide {
   from {
     opacity: 0.4; }
   to {
     opacity: 1; } }
-=======
-.playing {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .playing .game-name {
-    position: absolute;
-    display: none;
-    z-index: 10;
-    padding: 3px 10px 3px 10px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 11px;
-    border-radius: 5px;
-    color: #000000;
-    background: #ffc757; }
-  .playing:hover img {
-    filter: grayscale(1);
-    transition: all 0.3s ease-in-out; }
-  .playing:hover .game-name {
-    position: absolute;
-    display: block; }
->>>>>>> mobile-all-game
