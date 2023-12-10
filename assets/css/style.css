@@ -240,8 +240,7 @@ body {
     gap: 23px; }
     .card-container .card-wrapper .game-card {
       position: relative;
-      border-radius: 30px;
-      background: #c1933b; }
+      border-radius: 30px; }
       .card-container .card-wrapper .game-card:hover .btn-play-game-container {
         display: flex;
         justify-content: center;
@@ -1508,26 +1507,26 @@ body {
       .modal .modal-content .modal-body .change-profile-modal-content .custom-btn {
         gap: 20px; }
         .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .setting {
-          height: 67px;
+          height: 45px;
           width: 100%;
-          font-size: 20px; }
+          font-size: 18px; }
         .modal .modal-content .modal-body .change-profile-modal-content .custom-btn .add-account {
-          height: 67px;
+          height: 45px;
           width: 100%;
-          font-size: 20px; }
+          font-size: 18px; }
       .modal .modal-content .modal-body .change-profile-modal-content .user .username {
-        font-size: 21px; }
+        font-size: 18px; }
       .modal .modal-content .modal-body .change-profile-modal-content .user .result {
-        font-size: 21px; }
+        font-size: 20px; }
       .modal .modal-content .modal-body .change-profile-modal-content .password .pass {
-        font-size: 21px; }
+        font-size: 18px; }
       .modal .modal-content .modal-body .change-profile-modal-content .password .result {
         font-size: 21px; }
       .modal .modal-content .modal-body .change-profile-modal-content .change-password {
-        height: 66px;
+        height: 45px;
         gap: 16px; }
         .modal .modal-content .modal-body .change-profile-modal-content .change-password p {
-          font-size: 26px; }
+          font-size: 18px; }
     .modal .modal-content .modal-body .detail-card-kbank {
       min-width: 371px; }
       .modal .modal-content .modal-body .detail-card-kbank .card-kbank {
@@ -1835,13 +1834,13 @@ body {
             width: 87px;
             height: 87px; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
-            font-size: 28px; }
+            font-size: 23px; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
-            font-size: 24px; }
+            font-size: 20px; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
             min-width: 167px;
             height: 45px;
-            font-size: 28px; }
+            font-size: 20px; }
     .modal .modal-content .modal-body .change-cashback-modal-content {
       width: 567px;
       height: 467px;
@@ -4243,3 +4242,6 @@ body {
     opacity: 0.4; }
   to {
     opacity: 1; } }
+
+.marquee-custome {
+  margin-top: 21px; }
