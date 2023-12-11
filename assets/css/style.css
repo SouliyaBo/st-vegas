@@ -1482,9 +1482,9 @@ body {
     .detail-card-kbank .card-kbank {
       width: 100%; }
   .type-of-withdrawal {
-    gap: 10;
     width: 80px; }
     .type-of-withdrawal .withdrawal {
+      padding: 8px 0;
       margin: 0;
       font-size: 13px; }
       .type-of-withdrawal .withdrawal img {
