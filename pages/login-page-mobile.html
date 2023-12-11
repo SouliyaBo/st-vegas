@@ -15,11 +15,20 @@
       />
 
       <img
-        width="332"
-        height="92"
+        class="logo"
         src="../assets/images/logo-landscape.svg"
         alt="banner"
       />
+
+      <div class="banner">
+        <img src="/assets/images/login-banner.png" alt="login-banner" />
+      </div>
+
+      <div class="slide-game ">
+        <img src="/assets/images/login-game-1.png" alt="game" />
+        <img src="/assets/images/login-game-2.png" alt="game" />
+        <img src="/assets/images/login-game-3.png" alt="game" />
+      </div>
 
       <h1>เข้าสู่ระบบ</h1>
 
@@ -54,11 +63,6 @@
     const homeBtn = document.getElementById("mobile-home-button");
 
     loginBtn.addEventListener("click", () => {
-      // if (phoneInput.value.length < 9) {
-      //   alert("กรุณากรอกเบอร์โทรศัพท์ให้ครบ");
-      // } else {
-      //
-      // }
       window.location.href = "/pages/after-login-mobile.html";
     });
 
