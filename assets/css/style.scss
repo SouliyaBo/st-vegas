@@ -419,138 +419,52 @@ body {
     // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
-      .game-card {
-        position: relative;
-        border-radius: 30px;
-        
-        &:hover {
-          .btn-play-game-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .btn-play-game {
-              background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
-              border-radius: 20px;
-              color: $white;
-              cursor: pointer;
-            }
-            box-shadow: 0 0 50px $white;
-            width: 190px;
-            height: 278px;
-            border-radius: 10px;
+    .game-card {
+      position: relative;
+      border-radius: 30px;
 
-          }
-          .game-container-home {
-            box-shadow: 0 0 50px $white;
-            width: 190px;
-            height: 278px;
-            border-radius: 10px;
-          }
-
-          transform: translateY(-10px);
-          transition: all 0.3s ease-in-out;
-        }
-
-        img {
-          width: 193px;
-          height: 280px;
-
-          cursor: pointer;
-
-          &:hover {
-            transform: translateY(-10px);
-            // transform: scale(1.1);
-            transition: all 0.3s ease-in-out;
-            // filter: grayscale(1);
-            
-          }
-        }
-
+      &:hover {
         .btn-play-game-container {
-          display: none;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 10;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
           .btn-play-game {
-            min-width: 80px;
-            height: 47px;
-            border: 0;
-            border-radius: 10px;
-            font-size: 18px;
-            font-weight: 600;
             background: linear-gradient(
-              180deg,
-              #f9df7b 0%,
-              #b57e10 20%,
-              #b78113 26%,
-              #be8c1f 32%,
-              #cb9d32 38%,
-              #dcb64e 44%,
-              #f2d570 49%,
-              #f9df7b 51%,
-              #fff3a6 52%,
-              #f9df7b 59%,
-              #b57e10 84%,
-              #e5c25b 95%,
-              #f9df7b 100%
+              109.6deg,
+              rgb(255, 219, 47) 11.2%,
+              rgb(244, 253, 0) 100.2%
             );
+            border-radius: 20px;
+            color: $white;
+            cursor: pointer;
           }
+          box-shadow: 0 0 50px $white;
+          width: 190px;
+          height: 278px;
+          border-radius: 10px;
         }
+        .game-container-home {
+          box-shadow: 0 0 50px $white;
+          width: 190px;
+          height: 278px;
+          border-radius: 10px;
+        }
+
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
       }
 
-  }
-  .card-wrapper-home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 23px;
-      .game-card {
-        position: relative;
-        border-radius: 30px;
-        
-        &:hover {
-          .btn-play-game-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .btn-play-game {
-              background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
-              border-radius: 20px;
-              color: $white;
-              cursor: pointer;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-            box-shadow: 0 0 50px $white;
-            width: 190px;
-            height: 278px;
-            border-radius: 10px;
-
-          }
-          transform: translateY(-10px);
-          transition: all 0.3s ease-in-out;
-        }
-
-        img {
-          width: 193px;
-          height: 280px;
+      img {
+        width: 193px;
+        height: 280px;
 
         cursor: pointer;
 
-          &:hover {
-            transform: translateY(-10px);
-            // transform: scale(1.1);
-            transition: all 0.3s ease-in-out;
-            // filter: grayscale(1);
-            
-          }
+        &:hover {
+          transform: translateY(-10px);
+          // transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+          // filter: grayscale(1);
         }
       }
 
@@ -587,6 +501,94 @@ body {
             #f9df7b 100%
           );
         }
+      }
+    }
+  }
+  .card-wrapper-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 23px;
+    .game-card {
+      position: relative;
+      border-radius: 30px;
+
+      &:hover {
+        .btn-play-game-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btn-play-game {
+            background: linear-gradient(
+              109.6deg,
+              rgb(255, 219, 47) 11.2%,
+              rgb(244, 253, 0) 100.2%
+            );
+            border-radius: 20px;
+            color: $white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          box-shadow: 0 0 50px $white;
+          width: 190px;
+          height: 278px;
+          border-radius: 10px;
+        }
+        transform: translateY(-10px);
+        transition: all 0.3s ease-in-out;
+      }
+
+      img {
+        width: 193px;
+        height: 280px;
+
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-10px);
+          // transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+          // filter: grayscale(1);
+        }
+      }
+    }
+
+    .btn-play-game-container {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+
+      .btn-play-game {
+        min-width: 80px;
+        height: 47px;
+        border: 0;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        background: linear-gradient(
+          180deg,
+          #f9df7b 0%,
+          #b57e10 20%,
+          #b78113 26%,
+          #be8c1f 32%,
+          #cb9d32 38%,
+          #dcb64e 44%,
+          #f2d570 49%,
+          #f9df7b 51%,
+          #fff3a6 52%,
+          #f9df7b 59%,
+          #b57e10 84%,
+          #e5c25b 95%,
+          #f9df7b 100%
+        );
       }
     }
   }
@@ -1634,19 +1636,19 @@ body {
       }
     }
 
-    .slide-game{
+    .slide-game {
       width: 100%;
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
       gap: 9px;
       overflow-x: scroll;
-      padding:0 17px;
-      img{
+      padding: 0 17px;
+      img {
         width: 157px;
-height: 66px;
-border-radius: 5px;
-border: 1px solid  #F9DF7B;
+        height: 66px;
+        border-radius: 5px;
+        border: 1px solid #f9df7b;
       }
     }
 
@@ -1716,8 +1718,6 @@ border: 1px solid  #F9DF7B;
       margin: 20px 0;
     }
 
-
-
     .button-container {
       flex-direction: column;
       margin-bottom: 8px;
@@ -1753,8 +1753,6 @@ border: 1px solid  #F9DF7B;
   }
 
   .register-page {
-
-
     .progress-step-container {
       gap: 7px;
       margin: 20px 0;
@@ -2107,7 +2105,11 @@ border: 1px solid  #F9DF7B;
           position: absolute;
           text-decoration: none;
           padding: 2px 10px 2px 10px;
-          background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+          background: linear-gradient(
+            109.6deg,
+            rgb(255, 219, 47) 11.2%,
+            rgb(244, 253, 0) 100.2%
+          );
           color: $white;
           font-weight: 600;
           border-radius: 10px;
@@ -5078,8 +5080,8 @@ border: 1px solid  #F9DF7B;
     height: 400px;
   }
   .history-withdraw {
-     overflow: scroll;
-     height: 400px;
+    overflow: scroll;
+    height: 400px;
   }
   .history-bonus {
     overflow: scroll;

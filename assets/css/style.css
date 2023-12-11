@@ -320,22 +320,22 @@ body {
         .card-container .card-wrapper-home .game-card img:hover {
           transform: translateY(-10px);
           transition: all 0.3s ease-in-out; }
-      .card-container .card-wrapper-home .game-card .btn-play-game-container {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 10; }
-        .card-container .card-wrapper-home .game-card .btn-play-game-container .btn-play-game {
-          min-width: 80px;
-          height: 47px;
-          border: 0;
-          border-radius: 10px;
-          font-size: 18px;
-          font-weight: 600;
-          background: linear-gradient(180deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%); }
+    .card-container .card-wrapper-home .btn-play-game-container {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10; }
+      .card-container .card-wrapper-home .btn-play-game-container .btn-play-game {
+        min-width: 80px;
+        height: 47px;
+        border: 0;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        background: linear-gradient(180deg, #f9df7b 0%, #b57e10 20%, #b78113 26%, #be8c1f 32%, #cb9d32 38%, #dcb64e 44%, #f2d570 49%, #f9df7b 51%, #fff3a6 52%, #f9df7b 59%, #b57e10 84%, #e5c25b 95%, #f9df7b 100%); }
 
 .info-wrapper {
   max-width: 1400px;
@@ -1086,7 +1086,7 @@ body {
         width: 157px;
         height: 66px;
         border-radius: 5px;
-        border: 1px solid  #F9DF7B; }
+        border: 1px solid #f9df7b; }
     .register-page .phone-input .input-container,
     .login-page .phone-input .input-container {
       width: 320px;
@@ -1724,14 +1724,8 @@ body {
             height: 100%;
             object-fit: contain; }
     .modal .modal-content .modal-body .withdraw-modal-content .card {
-<<<<<<< HEAD
       width: 416.705px;
       height: 220px;
-=======
-      width: 400px;
-      height: 201.99px;
-      margin-top: 40px;
->>>>>>> dev04
       background: url("/assets/images/green-card-bg.svg") linear-gradient(257deg, #00481d 0%, #00a036 100%);
       background-size: contain;
       background-repeat: no-repeat;
