@@ -419,33 +419,138 @@ body {
     // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
+      .game-card {
+        position: relative;
+        border-radius: 30px;
+        
+        &:hover {
+          .btn-play-game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn-play-game {
+              background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+              border-radius: 20px;
+              color: $white;
+              cursor: pointer;
+            }
+            box-shadow: 0 0 50px $white;
+            width: 190px;
+            height: 278px;
+            border-radius: 10px;
 
-    .game-card {
-      position: relative;
-      border-radius: 30px;
-      background: #c1933b;
-      &:hover {
+          }
+          .game-container-home {
+            box-shadow: 0 0 50px $white;
+            width: 190px;
+            height: 278px;
+            border-radius: 10px;
+          }
+
+          transform: translateY(-10px);
+          transition: all 0.3s ease-in-out;
+        }
+
+        img {
+          width: 193px;
+          height: 280px;
+
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-10px);
+            // transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            // filter: grayscale(1);
+            
+          }
+        }
+
         .btn-play-game-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 10;
+
           .btn-play-game {
-            background: #c1933b;
-            border-radius: 5px;
+            min-width: 80px;
+            height: 47px;
+            border: 0;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(
+              180deg,
+              #f9df7b 0%,
+              #b57e10 20%,
+              #b78113 26%,
+              #be8c1f 32%,
+              #cb9d32 38%,
+              #dcb64e 44%,
+              #f2d570 49%,
+              #f9df7b 51%,
+              #fff3a6 52%,
+              #f9df7b 59%,
+              #b57e10 84%,
+              #e5c25b 95%,
+              #f9df7b 100%
+            );
           }
         }
       }
-      img {
-        width: 190px;
-        height: 280px;
+
+  }
+  .card-wrapper-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 23px;
+      .game-card {
+        position: relative;
+        border-radius: 30px;
+        
+        &:hover {
+          .btn-play-game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .btn-play-game {
+              background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+              border-radius: 20px;
+              color: $white;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            box-shadow: 0 0 50px $white;
+            width: 190px;
+            height: 278px;
+            border-radius: 10px;
+
+          }
+          transform: translateY(-10px);
+          transition: all 0.3s ease-in-out;
+        }
+
+        img {
+          width: 193px;
+          height: 280px;
 
         cursor: pointer;
 
-        &:hover {
-          transform: translateY(-10px);
-          // transform: scale(1.1);
-          transition: all 0.3s ease-in-out;
-          // filter: grayscale(1);
+          &:hover {
+            transform: translateY(-10px);
+            // transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+            // filter: grayscale(1);
+            
+          }
         }
       }
 
@@ -1597,6 +1702,7 @@ border: 1px solid  #F9DF7B;
       flex-shrink: 0;
       outline: none;
       border: none;
+      margin-bottom: 10px;
 
       cursor: pointer;
     }
@@ -1991,7 +2097,7 @@ border: 1px solid  #F9DF7B;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        padding: none;
         width: 110px;
         height: 145px;
 
@@ -2000,11 +2106,11 @@ border: 1px solid  #F9DF7B;
         .game-name {
           position: absolute;
           text-decoration: none;
-          padding: 5px 10px 5px 10px;
-          background-color: #c1933b;
-          color: #000;
+          padding: 2px 10px 2px 10px;
+          background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+          color: $white;
           font-weight: 600;
-          border-radius: 5px;
+          border-radius: 10px;
           display: none;
         }
         img {
@@ -2016,6 +2122,9 @@ border: 1px solid  #F9DF7B;
           // transform: scale(1.1);
           transition: all 0.3s ease-in-out;
           // filter: grayscale(1);
+          box-shadow: 0 0 50px $white;
+          border-radius: 10px;
+
           .game-name {
             display: block;
           }
@@ -2326,33 +2435,33 @@ border: 1px solid  #F9DF7B;
             gap: 20px;
 
             .setting {
-              height: 67px;
+              height: 45px;
               width: 100%;
 
-              font-size: 20px;
+              font-size: 18px;
             }
 
             .add-account {
-              height: 67px;
+              height: 45px;
               width: 100%;
 
-              font-size: 20px;
+              font-size: 18px;
             }
           }
 
           .user {
             .username {
-              font-size: 21px;
+              font-size: 18px;
             }
 
             .result {
-              font-size: 21px;
+              font-size: 20px;
             }
           }
 
           .password {
             .pass {
-              font-size: 21px;
+              font-size: 18px;
             }
 
             .result {
@@ -2361,11 +2470,12 @@ border: 1px solid  #F9DF7B;
           }
 
           .change-password {
-            height: 66px;
+            height: 45px;
             gap: 16px;
+            cursor: pointer;
 
             p {
-              font-size: 26px;
+              font-size: 18px;
             }
           }
         }
@@ -2546,7 +2656,7 @@ border: 1px solid  #F9DF7B;
               gap: 1rem;
 
               p {
-                font-size: 22px;
+                font-size: 18px;
               }
             }
 
@@ -2555,7 +2665,7 @@ border: 1px solid  #F9DF7B;
 
               .bank {
                 h4 {
-                  font-size: 20px;
+                  font-size: 18px;
                 }
 
                 & :last-child {
@@ -2736,6 +2846,7 @@ border: 1px solid  #F9DF7B;
         // Start Earn Money
         .earn-modal-content {
           // padding: 32px 32px 32px 32px;
+          width: 450px;
           padding: 32px 20px 20px 20px;
           gap: 20px;
           // max-height: 980px;
@@ -2743,7 +2854,7 @@ border: 1px solid  #F9DF7B;
           max-height: unset;
 
           .earn-qr-container {
-            width: 240px;
+            width: 250px;
             height: 240px;
             margin: 0 auto;
             // padding: 0 48px;
@@ -2938,18 +3049,18 @@ border: 1px solid  #F9DF7B;
                 }
 
                 .credit-point-text {
-                  font-size: 28px;
+                  font-size: 23px;
                 }
               }
 
               .credit-button-content {
                 .credit-button-title {
-                  font-size: 24px;
+                  font-size: 20px;
                 }
                 .btn-credit-confirm {
                   min-width: 167px;
                   height: 45px;
-                  font-size: 28px;
+                  font-size: 20px;
                 }
               }
             }
@@ -4614,6 +4725,9 @@ border: 1px solid  #F9DF7B;
         font-weight: 600;
         text-align: left;
         width: 100%;
+        span {
+          cursor: pointer;
+        }
       }
     }
 
@@ -4958,6 +5072,18 @@ border: 1px solid  #F9DF7B;
         color: #fff;
       }
     }
+  }
+  .history-deposit {
+    overflow: scroll;
+    height: 400px;
+  }
+  .history-withdraw {
+     overflow: scroll;
+     height: 400px;
+  }
+  .history-bonus {
+    overflow: scroll;
+    height: 400px;
   }
 
   .history-list {
@@ -6670,4 +6796,8 @@ border: 1px solid  #F9DF7B;
   to {
     opacity: 1;
   }
+}
+
+.marquee-custome {
+  margin-top: 21px;
 }
