@@ -189,3 +189,5 @@ if (sessionLang) {
   $(".btn-select").html(langArray[langIndex]);
   //$('.btn-select').attr('value', 'en');
 }
+
+
