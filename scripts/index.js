@@ -189,3 +189,59 @@ if (sessionLang) {
   $(".btn-select").html(langArray[langIndex]);
   //$('.btn-select').attr('value', 'en');
 }
+
+
+
+
+var langArray1 = [];
+$(".vodiapicker1 option").each(function () {
+  var img = $(this).attr("data-thumbnail");
+  var text = this.innerText;
+  var value = $(this).val();
+  var item =
+    '<li><img src="' +
+    img +
+    '" alt="" value="' +
+    value +
+    '"/><span>' +
+    text +
+    "</span></li>";
+  langArray1.push(item);
+});
+
+$("#a1").html(langArray1);
+
+//Set the button value to the first el of the array
+$(".btn-select1").html(langArray1[0]);
+$(".btn-select1").attr("value", "en");
+
+//change button stuff on click
+$("#a1 li").click(function () {
+  var img = $(this).find("img").attr("src");
+  var value = $(this).find("img").attr("value");
+  var text = this.innerText;
+  var item =
+    '<li><img src="' + img + '" alt="" /><span>' + text + "</span></li>";
+  $(".btn-select1").html(item);
+  $(".btn-select1").attr("value", value);
+  $(".b1").toggle();
+  //console.log(value);
+});
+
+$(".btn-select1").click(function () {
+  $(".b1").toggle();
+});
+
+//check local storage for the lang
+var sessionLang1 = localStorage.getItem("lang");
+if (sessionLang1) {
+  //find an item with value of sessionLang
+  var langIndex1 = langArray1.indexOf(sessionLang1);
+  $(".btn-select1").html(langArray1[langIndex1]);
+  $(".btn-select1").attr("value", sessionLang1);
+} else {
+  var langIndex1 = langArray1.indexOf("ch");
+  console.log(langIndex1);
+  $(".btn-select1").html(langArray1[langIndex1]);
+  //$('.btn-select').attr('value', 'en');
+}

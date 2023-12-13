@@ -2537,6 +2537,7 @@ body {
               gap: 16px;
               justify-content: space-between;
               .bank {
+                display: flex;
                 gap: 5px;
                 h4 {
                   font-size: 14px;
@@ -2544,8 +2545,9 @@ body {
                 }
 
                 & :last-child {
-                  width: 30px;
-                  height: 30px;
+                  margin-top: -1px;
+                  width: 33px;
+                  height: 33px;
                   img {
                     object-fit: contain;
                   }
@@ -2566,8 +2568,8 @@ body {
               }
 
               .visa {
-                width: 50px;
-                transform: translateX(8px);
+                width: 70px;
+                transform: translateX(1px);
 
                 img {
                   width: 100%;
@@ -2712,11 +2714,11 @@ body {
 
           .button-warning {
             width: 395px;
-            height: 62px;
+            height: 42px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 25px;
+            font-size: 18px;
           }
 
           p {
@@ -2726,7 +2728,7 @@ body {
           .line-button {
             font-size: 25px;
             width: 396.029px;
-            height: 62.029px;
+            height: 42.029px;
             margin-bottom: 10px;
           }
         }
@@ -2796,6 +2798,7 @@ body {
         // Start Change Password
 
         .change-password-modal-content {
+          padding: 50px 20px 32px 20px;
           width: 500px;
 
           .input-for-border-gold {
@@ -3495,9 +3498,10 @@ body {
           padding: 35px 10px 0px 15px;
           .notic-text {
             width: 100%;
-            font-size: 18px;
+            font-size: 16px;
             margin-bottom: 10px;
           }
+
           .bank-selector {
             #a img,
             .btn-select img {
@@ -5436,7 +5440,7 @@ body {
 }
 
 .change-password-modal-content {
-  padding: 78px 20px 32px 20px;
+  padding: 40px 20px 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -5712,35 +5716,139 @@ body {
     font-size: 15px;
   }
 
-  .bank-selector {
-    label {
-      font-weight: 300;
-      color: #f00;
-      font-size: 14px;
+  // .bank-selector {
+  //   label {
+  //     font-weight: 300;
+  //     color: #f00;
+  //     font-size: 14px;
+  //   }
+    // div {
+    //   div {
+    //     height: 37px;
+    //     border-radius: 6px;
+    //     border: 1px solid #7d7d7d;
+    //     background: #151515;
+    //   }
+    //   input {
+    //     border-radius: 6px;
+    //     border: 1px solid #7d7d7d;
+    //     background: #151515;
+    //     outline: none;
+    //     color: #fff;
+    //     height: 37px;
+
+    //     &::placeholder {
+    //       color: #fff;
+    //       font-weight: 300;
+    //       text-align: center;
+    //       font-size: 12px;
+    //     }
+    //   }
+    // }
+  // }
+  .bank-selector1 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+    .vodiapicker1 {
+      display: none;
+      position: relative;
+      border: 1px solid green;
     }
 
-    div {
-      div {
-        height: 37px;
-        border-radius: 6px;
-        border: 1px solid #7d7d7d;
-        background: #151515;
-      }
-      input {
-        border-radius: 6px;
-        border: 1px solid #7d7d7d;
-        background: #151515;
-        outline: none;
-        color: #fff;
-        height: 37px;
+    #a1 {
+      padding-left: 0px;
+      position: absolute;
+      z-index: 9000;
+      height: auto;
+      background: #3d3d3d;
+    }
 
-        &::placeholder {
-          color: #fff;
-          font-weight: 300;
-          text-align: center;
-          font-size: 12px;
-        }
-      }
+    #a1 img,
+    .btn-select1 img {
+      width: 30px;
+      height: 30px;
+    }
+
+    #a1 li {
+      list-style: none;
+      // width: 68px;
+    }
+
+    #a1 li:hover {
+      background-color: #242424;
+    }
+
+    #a1 li img {
+      // margin: 14px;
+    }
+
+    #a1 li span,
+    .btn-select1 li span {
+      margin-left: 30px;
+    }
+
+    /* item list */
+
+    .b1 {
+      display: none;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+    }
+
+    .open {
+      display: show !important;
+    }
+
+    .btn-select1 {
+      margin-top: 10px;
+      max-width: 350px;
+      width: 66.19px;
+      height: 44.73px;
+      border-radius: 6px;
+      border: 1px;
+      text-align: center;
+      background-color: #1f1e1eb3;
+      border: 1px solid #7d7d7d;
+    }
+
+    .btn-select1 li {
+      list-style: none;
+      margin-right: -20px;
+      padding-bottom: 0px;
+    }
+
+    .btn-select1:hover li {
+      margin-left: 0px;
+    }
+
+    .btn-select1:hover {
+      background-color: #1f1e1eb3;
+      border: 1px solid transparent;
+      // box-shadow: inset 0 0px 0px 1px #ccc;
+    }
+
+    .btn-select1:focus {
+      outline: none;
+    }
+
+    .show-username-bank {
+      background-color: #0b0b0b;
+      border: 2px solid #676767;
+      margin-top: 10px;
+      height: 44.73px;
+      width: 73%;
+      border-radius: 4px;
+      font-size: 18px;
+      color: $white;
+      font-weight: 300;
+      padding: 8px 0 10px 0;
+      text-align: center;
+      outline: none;
     }
   }
 
