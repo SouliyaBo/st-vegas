@@ -744,7 +744,7 @@
             </button>
             <button
               class="gradient-border sidebar-button flexCenter"
-              style="font-size: 17px; width: 50%"
+              style="width: 50%"
             >
               ติดต่อพนักงาน
             </button>
@@ -1582,33 +1582,7 @@
                     <p>ธนาคารกสิกรไทย</p>
                     <p>
                       026-999999-9
-                      <span
-                        ><svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                        >
-                          <circle
-                            cx="15.9048"
-                            cy="15.9048"
-                            r="15.9048"
-                            fill="#2E2D2D"
-                          />
-                          <path
-                            d="M22.4442 12.7236H14.6685C13.5949 12.7236 12.7246 13.594 12.7246 14.6675V22.4432C12.7246 23.5168 13.5949 24.3871 14.6685 24.3871H22.4442C23.5178 24.3871 24.3881 23.5168 24.3881 22.4432V14.6675C24.3881 13.594 23.5178 12.7236 22.4442 12.7236Z"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M20.1464 12.3704V10.4265C20.1464 9.9109 19.9416 9.41646 19.577 9.0519C19.2125 8.68735 18.718 8.48254 18.2025 8.48254H10.4268C9.91127 8.48254 9.41682 8.68735 9.05227 9.0519C8.68771 9.41646 8.48291 9.9109 8.48291 10.4265V18.2021C8.48291 18.7177 8.68771 19.2121 9.05227 19.5767C9.41682 19.9412 9.91127 20.146 10.4268 20.146H12.3707"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          /></svg
-                      ></span>
+                      <span><img src="/assets/images/icon-coppy.svg" alt="" style="width: 20px; height: 20px; margin-bottom: -3px;"/></span>
                     </p>
                     <p>นาย xxxxx xxxxx</p>
                   </div>
@@ -1700,7 +1674,7 @@
               </div>
             </div>
             <div class="modal-body">
-              <div style="padding: 20px">
+              <div style="padding: 20px; padding-top: 30px;">
                 <ul>
                   <li>ฝากขั้นต่ำ 1.00 บาท สูงสุด 2,000.00 บาท</li>
                 </ul>
@@ -1905,24 +1879,39 @@
           </div>
           <div class="modal-body">
             <div class="withdraw-modal-content flexCenter">
-              <div class="card flexBetween">
-                <div class="left flexCenter">
-                  <p>ธนาคารกสิกรไทย</p>
-                  <p>นาย xxxxx xxxxx</p>
-                  <p>026-999999-9</p>
-                </div>
-                <div class="right flexCenter">
-                  <div class="flexCenter bank">
-                    <h4>KBank</h4>
-                    <div style="background-color: #fff; border-radius: 100%">
-                      <img src="/assets/images/kbank 1.png" alt="kbank" />
+              <div class="detail-card-kbank">
+                <div class="card-kbank">
+                  <div class="font-17">
+                    <p>ธนาคารกสิกรไทย</p>
+                    <div
+                      style="display: flex; justify-content: space-between"
+                    >
+                      <div style="margin-right: 10px">KBank</div>
+                      <img
+                        src="./assets/icons/logo-kbank.svg"
+                        alt="logo"
+                        style="margin-top: -10px"
+                      />
                     </div>
                   </div>
-                  <div class="balance">
-                    <p>ยอดคงเหลือในระบบ</p>
+                  <div>
+                    <p class="font-17">นาย xxxxx xxxxx</p>
+                    <p style="margin-top: 13px; font-size: 14px">
+                      ยอดคงเหลือในระบบ
+                    </p>
+                  </div>
+                  <div class="font-17">
+                    <p>026-999999-9</p>
                     <p>1000.00 บาท</p>
                   </div>
-                  <div class="visa">
+                  <div
+                    style="
+                      margin-top: 30px;
+                      margin-bottom: 25px;
+                      display: flex;
+                      justify-content: end;
+                    "
+                  >
                     <img src="/assets/icons/visa.svg" alt="visa" />
                   </div>
                 </div>
@@ -1964,7 +1953,6 @@
       tabindex="-1"
       aria-labelledby="qrplay"
       aria-hidden="true"
-      data-bs-dismiss="modal"
     >
       <div class="modal-border">
         <div class="modal-content">
@@ -2202,8 +2190,36 @@
               <p class="warning-text">
                 *ใช้ในกรณีที่ธนาคารมีปัญหาหรือยอดฝากไม่เข้า*
               </p>
-              <div class="bank-selector">
+              <div class="bank-selector1">
+                <select class="vodiapicker1">
+                  <option
+                    value="kbank"
+                    class="test"
+                    data-thumbnail="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png"
+                  ></option>
+                  <option
+                    value="au"
+                    data-thumbnail="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png"
+                  ></option>
+                </select>
+
+                <div class="lang-select1">
+                  <button class="btn-select1" value=""></button
+                  ><img
+                    src="/assets/icons/icon-drow.svg"
+                    alt=""
+                    style="margin: 5px 0 0 -27px"
+                  />
+                  <div class="b1">
+                    <ul id="a1"></ul>
+                  </div>
+                </div>
+
+                <div class="show-username-bank">นาย ปปปปป ปปปปป</div>
+              </div>
+              <!-- <div class="bank-selector">
                 <label for="name">เลือกธนาคารบัญชีฝาก</label>
+                
                 <div class="flexCenter" style="gap: 8px">
                   <div class="flexCenter" style="width: 20%">
                     <img
@@ -2233,7 +2249,7 @@
                     placeholder="นาย ปปปปป ปปปปป"
                   />
                 </div>
-              </div>
+              </div> -->
 
               <div class="bank-input">
                 <label for="bank">เลือกธนาคารที่ทำรายการฝาก</label>
