@@ -90,7 +90,7 @@ const formStepTwo = document.getElementById("form-step-two");
 const formStepThree = document.getElementById("form-step-three");
 formStepOne.style.display = "block";
 formStepTwo.style.display = "none";
-formStepThree.style.display = "none";
+// formStepThree.style.display = "none";
 
 const goToStepTwo = document.getElementById("goto-step2");
 const goToStepThree = document.getElementById("goto-step3");

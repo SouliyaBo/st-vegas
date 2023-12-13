@@ -808,6 +808,16 @@
               maxlength="9"
             />
           </div>
+          <div class="phone-input" style="margin-top: 20px;">
+            <img src="../assets/icons/lock-alt.svg" alt="lock icon" />
+            <label for="phone"></label>
+            <input
+              name="password"
+              id="password"
+              type="password"
+              placeholder="กรอกรหัสผ่าน"
+            />
+          </div>
 
           <div class="button-container">
             <button id="login-btn">เข้าสู่ระบบ</button>
@@ -853,11 +863,11 @@
                     <span class="step-item-box">2</span>
                     <span class="step-item-text">บัญชีธนาคาร</span>
                   </div>
-                  <span class="step-line"></span>
+                  <!-- <span class="step-line"></span>
                   <div class="step-item" id="step-item3">
                     <span class="step-item-box">3</span>
                     <span class="step-item-text">สำเร็จ</span>
-                  </div>
+                  </div> -->
                 </div>
 
                 <!-- step one -->
@@ -1023,12 +1033,20 @@
                     />
                   </div>
 
-                  <button id="goto-step3">ถัดไป</button>
+                  <button 
+                    id="goto-step3" 
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#successRegisterModal"
+                  >
+                    ถัดไป
+                  </button>
                 </div>
                 <!-- step two end -->
 
                 <!-- step three -->
-                <div class="step-three" id="form-step-three">
+                <!-- <div class="step-three" id="form-step-three">
                   <h3 class="signup-header-success">สมัครสมาชิกสำเร็จ</h3>
                   <div class="img-success-container">
                     <img
@@ -1045,8 +1063,59 @@
                   >
                     เข้าสู่ระบบ
                   </button>
-                </div>
+                </div> -->
                 <!-- step three end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="successRegisterModal"
+        tabindex="-1"
+        aria-labelledby="successRegisterModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <p class="modal-title">สมัครสมาชิกสำเร็จ</p>
+                <img
+                  src="../assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="register-success-modal-content">
+                <div class="border-input-gold">
+                  <div class="register-info-content">
+                    <p class="register-info-title">ข้อมูลสมัคร</p>
+                    <div class="register-info-group">
+                      <p class="register-info-text">Username :</p>
+                      <p class="register-info-text-bold">0181449403</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="suggest-info">
+                  รหัสคือเลขบัญชีธนาคารที่ลูกค้าสมัครเลยนะคะ ขอให้เล่นให้สนุกเฮงเฮงรวยรวยนะคะลูกค้า
+                </div>
+
+                <button 
+                  class="next-step-button btn-register-success" 
+                  id="goToLoginBtn"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  เข้าสู่ระบบ
+                </button>
               </div>
             </div>
           </div>
@@ -2006,7 +2075,7 @@
                   ></option>
                 </select>
 
-                <div class="lang-select">
+                <!-- <div class="lang-select">
                   <button class="btn-select" value=""></button
                   ><img
                     src="/assets/icons/icon-drow.svg"
@@ -2015,6 +2084,20 @@
                   />
                   <div class="b">
                     <ul id="a"></ul>
+                  </div>
+                </div> -->
+                <div class="custom-dropdown" id="custom-dropdown">
+                  <div class="selected-item" id="selected-item"></div>
+                  <img
+                    src="/assets/icons/icon-drow.svg"
+                    alt=""
+                    class="dropdown-icon"
+                  />
+                  <div class="dropdown-list" id="dropdown-list">
+                    <!-- <div class="dropdown-option"><img class="dropdown-item-img" src="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png" alt=""></div>
+                    <div class="dropdown-option"><img class="dropdown-item-img" src="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png" alt=""></div> -->
+                    <img class="dropdown-item-img" src="https://www.kasikornbank.com/SiteCollectionDocuments/about/img/logo/logo.png" alt="">
+                    <img class="dropdown-item-img" src="https://www.uhub.co.th/assets/images/icons/mobile/scb-icon.png" alt="">
                   </div>
                 </div>
 
