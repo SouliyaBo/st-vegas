@@ -44,12 +44,7 @@
     </header>
     <main class="home">
       <!-- Section Start -->
-      <div>
-        <marquee class="description">
-          เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ
-          100 ล้าน สล็อต บาคาร่า หวย กีฬา มีครบจบที่เดียว
-        </marquee>
-      </div>
+
 
       <div class="search-container">
         <img
@@ -61,9 +56,35 @@
         <input type="text" name="search" id="search" placeholder="ค้นหา" />
       </div>
       <div class="brand">
-        <img src="/assets/images/brand.png" alt="brand" />
-      </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade-slide">
+            <img src="/assets/images/brand.png" style="width: 100%" alt="brand" />
+          </div>
 
+          <div class="mySlides fade-slide">
+            <img src="/assets/images/brand.png" style="width: 100%" alt="brand" />
+          </div>
+
+          <div class="mySlides fade-slide">
+            <img src="/assets/images/brand.png" style="width: 100%" alt="brand" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <div class="marquee-custome">
+        <marquee class="description">
+          เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ
+          100 ล้าน สล็อต บาคาร่า หวย กีฬา มีครบจบที่เดียว
+        </marquee>
+      </div>
       <section class="featured-game-wrapper">
         <div class="container flexBetween">
           <div class="featured-game flexBetween">
@@ -3187,7 +3208,43 @@
         </div>
       </div>
     </footer>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" slide-active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " slide-active";
+      }
+
+      // Auto slide every 3 seconds
+      setInterval(function () {
+        plusSlides(1);
+      }, 3000);
+    </script>
     <script type="module" src="/scripts/sidebar.js"></script>
     <script type="module" src="/scripts/modal/login.js"></script>
     <script type="module" src="/scripts/index.js"></script>
