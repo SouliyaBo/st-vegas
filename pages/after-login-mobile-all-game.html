@@ -51,7 +51,7 @@
           </div>
         </div>
       </header>
-      <div class="marquee-container">
+      <div class="marquee-container" style="z-index: 5;">
         <marquee class="description">
           เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ
           100 ล้าน สล็อต บาคาร่า หวย กีฬา มีครบจบที่เดียว
@@ -3088,6 +3088,34 @@
 
     logoutBtn.addEventListener("click", () => {
       window.location.href = "/";
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("scroll", function () {
+        const mobileNavigatorGame =
+          document.getElementById("mobile-after-login");
+        const specificGameContainer = document.getElementsByClassName(
+          "specific-all-games"
+        );
+
+        let sectionPosition = mobileNavigatorGame.getBoundingClientRect().top;
+
+        if (sectionPosition <= 113.20000457763672) {
+          mobileNavigatorGame.style.position = "fixed";
+          mobileNavigatorGame.style.top = "15%";
+          mobileNavigatorGame.style.zIndex = "5";
+        } else {
+          mobileNavigatorGame.style.position = "unset";
+        }
+
+        let paymentBtnContainerPosition =
+          specificGameContainer[0].getBoundingClientRect().top;
+
+        if (paymentBtnContainerPosition >= 170.8000030517578) {
+          mobileNavigatorGame.style.position = "unset";
+        }
+      });
     });
   </script>
 </html>
