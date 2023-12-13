@@ -193,3 +193,36 @@ earnTabWithdraw.addEventListener('click', function () {
   earnDetailIncome.style.display = 'none';
   earnDetailWithdraw.style.display = 'flex';
 })
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+// });
+const customDropdown = document.getElementById("custom-dropdown");
+const selectedItem = document.getElementById("selected-item");
+const dropdownList = document.getElementById("dropdown-list");
+const dropdownItem = document.querySelectorAll(".dropdown-item-img")
+
+// Toggle the dropdown list visibility
+customDropdown.addEventListener("click", function () {
+  customDropdown.classList.toggle("active");
+});
+
+function selectImage(imageSrc) {
+  // Create a new image element
+  const newImage = document.createElement("img");
+  newImage.src = imageSrc;
+
+  while (selectedItem.firstChild) {
+    selectedItem.removeChild(selectedItem.firstChild);
+  }
+  selectedItem.appendChild(newImage);
+
+  dropdownList.classList.remove("active");
+}
+
+dropdownItem.forEach(function (option) {
+  option.addEventListener("click", function () {
+    const imageSrc = option.src;
+    selectImage(imageSrc);
+  });
+});
