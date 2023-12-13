@@ -1428,9 +1428,10 @@ body {
       bottom: 0;
       z-index: 10; }
       .after-login-mobile-page .footer .menu-wrapper {
-        gap: 34px;
+        gap: 10px;
         width: 100%;
-        justify-content: space-around; }
+        justify-content: space-between;
+        padding: 0 20px; }
         .after-login-mobile-page .footer .menu-wrapper .footer-item img {
           height: 30px;
           width: 30px; }

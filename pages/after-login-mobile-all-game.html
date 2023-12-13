@@ -3101,12 +3101,10 @@
 
         let sectionPosition = mobileNavigatorGame.getBoundingClientRect().top;
 
-        if (sectionPosition <= 113.20000457763672) {
+        if (sectionPosition >= 113.20000457763672) {
           mobileNavigatorGame.style.position = "fixed";
-          mobileNavigatorGame.style.top = "15%";
+          mobileNavigatorGame.style.top = "12%";
           mobileNavigatorGame.style.zIndex = "5";
-        } else {
-          mobileNavigatorGame.style.position = "unset";
         }
 
         let paymentBtnContainerPosition =

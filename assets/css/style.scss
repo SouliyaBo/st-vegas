@@ -2141,9 +2141,10 @@ body {
       z-index: 10;
 
       .menu-wrapper {
-        gap: 34px;
+        gap: 10px;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 20px;
 
         .footer-item {
           img {
