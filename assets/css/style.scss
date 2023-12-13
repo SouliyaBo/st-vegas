@@ -3027,7 +3027,7 @@ body {
           padding: 60px 20px;
 
           .credit-modal-body {
-            width: 500px;
+            width: 400px;
 
             .no-credit {
               margin: 2px;
@@ -3045,18 +3045,18 @@ body {
               // // transform: translateX(-6%);
               width: unset;
               transform: unset;
-              margin: 2px;
+              margin: 1px;
               padding: 29px 24px 24px 50px;
               border: none;
 
               .credit-point-content {
                 .credit-point-img {
-                  width: 87px;
-                  height: 87px;
+                  width: 77px;
+                  height: 77px;
                 }
 
                 .credit-point-text {
-                  font-size: 23px;
+                  font-size: 18px;
                 }
               }
 
@@ -3065,9 +3065,9 @@ body {
                   font-size: 20px;
                 }
                 .btn-credit-confirm {
-                  min-width: 167px;
-                  height: 45px;
-                  font-size: 20px;
+                  min-width: 160px;
+                  height: 40px;
+                  font-size: 18px;
                 }
               }
             }
@@ -3113,60 +3113,72 @@ body {
 
         // Start Cash back detail
         .change-cashback-detail-modal-content {
-          width: 500px;
-          padding: 60px 10px 20px 10px;
+          width: 450px;
+          padding: 40px 10px 20px 10px;
 
           .detail {
-            gap: 16px;
+            gap: 12px;
 
             .title {
               font-size: 14px;
             }
 
             .accumulated-lot-amount {
-              gap: 30px;
+              gap: 16px;
 
               .text-amount {
                 .text-left {
-                  font-size: 22px;
+                  font-weight: 500;
+                  font-size: 20px;
                 }
                 .text-right {
-                  font-size: 22px;
+                  font-weight: 300;
+
+                }
+                .history-background {
+                  font-weight: 500;
+                  color: #000;
+                  background-color: #0FF;
+                  border-radius: 5px;
+                  padding: 5px 8px 5px 8px;
                 }
               }
             }
 
             .your-lose {
-              font-size: 25px;
+              font-size: 26px;
             }
             .loss {
-              font-size: 50px;
+              font-size: 40px;
             }
             .updated {
-              font-size: 19px;
+              font-size: 16px;
             }
             .btn {
+              margin-top: -8px;
               gap: 34px;
 
               .receive-credit {
-                width: 361.902px;
-                height: 63.582px;
-                font-size: 22px;
+                width: 361px;
+                height: 58px;
+                font-size: 20px;
               }
               .withdraw-to-accont {
-                width: 361.902px;
-                height: 63.582px;
-                font-size: 22px;
+                width: 361px;
+                height: 58px;
+                font-size: 20px;
               }
             }
             .description {
-              margin-top: 60px;
+              margin-top: 50px;
 
               .text-left {
-                font-size: 19px;
+                font-weight: 500;
+                font-size: 18px;
               }
               .text-right {
-                font-size: 19px;
+                font-weight: 500;
+                font-size: 18px;
               }
             }
           }

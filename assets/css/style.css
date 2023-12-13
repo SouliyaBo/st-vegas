@@ -1918,7 +1918,7 @@ body {
     .modal .modal-content .modal-body .credit-modal-content {
       padding: 60px 20px; }
       .modal .modal-content .modal-body .credit-modal-content .credit-modal-body {
-        width: 500px; }
+        width: 400px; }
         .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .no-credit {
           margin: 2px;
           padding: 42px 37px; }
@@ -1927,20 +1927,20 @@ body {
         .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit {
           width: unset;
           transform: unset;
-          margin: 2px;
+          margin: 1px;
           padding: 29px 24px 24px 50px;
           border: none; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-img {
-            width: 87px;
-            height: 87px; }
+            width: 77px;
+            height: 77px; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-point-content .credit-point-text {
-            font-size: 23px; }
+            font-size: 18px; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .credit-button-title {
             font-size: 20px; }
           .modal .modal-content .modal-body .credit-modal-content .credit-modal-body .free-credit .credit-button-content .btn-credit-confirm {
-            min-width: 167px;
-            height: 45px;
-            font-size: 20px; }
+            min-width: 160px;
+            height: 40px;
+            font-size: 18px; }
     .modal .modal-content .modal-body .change-cashback-modal-content {
       width: 567px;
       height: 467px;
@@ -1958,40 +1958,50 @@ body {
             height: 80px;
             width: 80px; }
     .modal .modal-content .modal-body .change-cashback-detail-modal-content {
-      width: 500px;
-      padding: 60px 10px 20px 10px; }
+      width: 450px;
+      padding: 40px 10px 20px 10px; }
       .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail {
-        gap: 16px; }
+        gap: 12px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .title {
           font-size: 14px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount {
-          gap: 30px; }
+          gap: 16px; }
           .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-left {
-            font-size: 22px; }
+            font-weight: 500;
+            font-size: 20px; }
           .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .text-right {
-            font-size: 22px; }
+            font-weight: 300; }
+          .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .accumulated-lot-amount .text-amount .history-background {
+            font-weight: 500;
+            color: #000;
+            background-color: #0FF;
+            border-radius: 5px;
+            padding: 5px 8px 5px 8px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .your-lose {
-          font-size: 25px; }
+          font-size: 26px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .loss {
-          font-size: 50px; }
+          font-size: 40px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .updated {
-          font-size: 19px; }
+          font-size: 16px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .btn {
+          margin-top: -8px;
           gap: 34px; }
           .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .btn .receive-credit {
-            width: 361.902px;
-            height: 63.582px;
-            font-size: 22px; }
+            width: 361px;
+            height: 58px;
+            font-size: 20px; }
           .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .btn .withdraw-to-accont {
-            width: 361.902px;
-            height: 63.582px;
-            font-size: 22px; }
+            width: 361px;
+            height: 58px;
+            font-size: 20px; }
         .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .description {
-          margin-top: 60px; }
+          margin-top: 50px; }
           .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .description .text-left {
-            font-size: 19px; }
+            font-weight: 500;
+            font-size: 18px; }
           .modal .modal-content .modal-body .change-cashback-detail-modal-content .detail .description .text-right {
-            font-size: 19px; }
+            font-weight: 500;
+            font-size: 18px; }
     .modal .modal-content .modal-body .tournament-modal-content {
       padding: 35px 6px 12px 6px;
       max-height: fit-content; }
