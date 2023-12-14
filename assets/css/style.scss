@@ -5124,6 +5124,7 @@ body {
   gap: 8px;
 
   .active {
+    width: 80px;
     border-radius: 10px;
     min-width: 25%;
     padding: 2px;
@@ -5144,6 +5145,7 @@ body {
   }
 
   .none-active {
+    width: 80px;
     border-radius: 10px;
     border: 2px solid $white;
     min-width: 25%;
@@ -5324,6 +5326,7 @@ body {
   padding: 8px 0px 8px 0px;
   font-weight: 500;
   text-align: center;
+  
   font-size: 17px;
   margin-top: 20px;
 }
@@ -5332,7 +5335,7 @@ body {
   width: 100%;
   height: 40px;
   background: none;
-  // display: block;
+  display: block;
   outline: none;
   border: none;
   font-size: 16px;
