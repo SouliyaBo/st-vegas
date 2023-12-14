@@ -95,6 +95,7 @@
         <label for="search"></label>
         <input type="text" name="search" id="search" placeholder="ค้นหา" />
       </div>
+
       <div class="brand">
         <div class="slideshow-container">
           <div class="mySlides fade-slide">
@@ -119,12 +120,14 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-      <div class="marquee-custome">
+
+      <div class="marquee-custome" id="mobile">
         <marquee class="description">
           เว็บตรง ไม่ผ่านเอเย่นต์ อันดับ 1 ฝาก-ถอน ไม่มีขั้นต่ำ ถอนสูงสุดวันละ
           100 ล้าน สล็อต บาคาร่า หวย กีฬา มีครบจบที่เดียว
         </marquee>
       </div>
+
       <section class="featured-game-wrapper" id="desktop">
         <div class="container flexBetween">
           <div class="featured-game flexBetween">
@@ -683,6 +686,9 @@
       <!-- Side Bar -->
       <div class="sidebar-container">
         <aside class="sidebar">
+          <div class="icon-turn-back">
+            <img src="/assets/images/turn-back 1.png" alt="" />
+          </div>
           <img src="/assets/images/logo-landscape.svg" alt="logo" />
           <div class="flexBetween font-14">
             <p>Username:</p>
@@ -1196,7 +1202,11 @@
                 </div>
                 <div class="custom-btn">
                   <button class="setting">ตั้งเป็นบัญชีหลัก</button>
-                  <button class="add-account">เพิ่มบัญชี</button>
+                  <button 
+                  class="add-account" 
+                  data-bs-toggle="modal"
+                  data-bs-target="#addAccount"
+                  data-bs-dismiss="modal">เพิ่มบัญชี</button>
                 </div>
                 <div class="change-password-hr">
                   <div class="hr"></div>
@@ -1249,7 +1259,178 @@
         </div>
       </div>
       <!-- end profile -->
+      <!-- start  modal add account -->
+      <div
+        class="modal fade"
+        id="addAccount"
+        tabindex="-1"
+        aria-labelledby="addAccount"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <img
+                  src="/assets/icons/icon-back-modal.svg"
+                  class="modal-icon-back"
+                  alt=""
+                  data-bs-toggle="modal"
+                  data-bs-dismiss="modal"
+                />
+                <p class="modal-title" id="addAccount">เพิ่มบัญชี</p>
+                <img
+                  src="/assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="add-account-content-pc flexCenter">
+                <div class="bank-section">
+                  <p>กรุณาเลือกธนาคาร</p>
+                  <div class="bank-list">
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 10.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 11.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 12.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 13.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 14.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 15.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 16.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 17.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 18.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 19.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 20.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 21.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 22.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 23.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 24.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 25.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 26.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 27.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 28.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                    <img
+                      src="/assets/icons/icon-bank-default/Ellipse 29.svg"
+                      alt=""
+                      class="bank-icon"
+                    />
+                  </div>
+                </div>
 
+                <div class="bank-number">
+                  <p>กรุณากรอกเลขบัญชี</p>
+                  <div class="bank-number-input flexCenter">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_912_2229)">
+                          <path
+                            d="M1.6665 16.6665H18.3332V18.3332H1.6665V16.6665ZM3.33317 9.99984H4.99984V15.8332H3.33317V9.99984ZM7.49984 9.99984H9.1665V15.8332H7.49984V9.99984ZM10.8332 9.99984H12.4998V15.8332H10.8332V9.99984ZM14.9998 9.99984H16.6665V15.8332H14.9998V9.99984ZM1.6665 5.83317L9.99984 1.6665L18.3332 5.83317V9.1665H1.6665V5.83317ZM9.99984 6.6665C10.2209 6.6665 10.4328 6.57871 10.5891 6.42243C10.7454 6.26615 10.8332 6.05418 10.8332 5.83317C10.8332 5.61216 10.7454 5.4002 10.5891 5.24392C10.4328 5.08764 10.2209 4.99984 9.99984 4.99984C9.77882 4.99984 9.56686 5.08764 9.41058 5.24392C9.2543 5.4002 9.1665 5.61216 9.1665 5.83317C9.1665 6.05418 9.2543 6.26615 9.41058 6.42243C9.56686 6.57871 9.77882 6.6665 9.99984 6.6665Z"
+                            fill="white"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_912_2229">
+                            <rect width="20" height="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <input type="number" placeholder="เลขบัญชีธนาคาร" />
+                  </div>
+                </div>
+
+                <button class="button-warning">ยืนยัน</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end  modal add account -->
       <!-- start cashback -->
       <div
         class="modal fade"

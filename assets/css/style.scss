@@ -233,6 +233,7 @@ body {
 
 .description {
   margin-top: 1.5px;
+  // margin-top: -8.5px;
   text-align: end;
   font-size: 14px;
   background: #242424;
@@ -734,6 +735,16 @@ body {
     .flexBetween {
       width: 100%;
       margin: 12px 0;
+    }
+
+    .icon-turn-back {
+      margin-top: -18px;
+      margin-right: -25px;
+      margin-bottom: -6px;
+      float: right;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
     }
   }
 
@@ -2149,6 +2160,8 @@ body {
 
     .all-mobile-games {
       display: grid;
+      padding-left: 20px;
+      padding-right: 20px;
       // grid: auto-flow / repeat(2, 1fr);
       grid-template-columns: 1fr;
 
@@ -2256,13 +2269,20 @@ body {
       padding: 28px 17px;
 
       display: flex;
-      align-items: center;
+      align-items: end;
       flex-direction: column;
 
       img {
         width: 100%;
       }
-
+      .icon-turn-back {
+        margin-top: -22px;
+        margin-right: -10px;
+        margin-bottom: -6px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+      }
       .flexBetween {
         width: 100%;
 
@@ -2272,7 +2292,6 @@ body {
 
         margin: 10px;
       }
-
       .balance {
         width: 154px;
         height: 42px;
@@ -2353,7 +2372,7 @@ body {
     gap: 10px;
 
     p {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 500;
     }
 
@@ -2434,6 +2453,7 @@ body {
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
       color: #fff;
+      font-size: 12px;
       font-weight: 600;
       padding: 10px;
       gap: 4px;
@@ -2457,6 +2477,8 @@ body {
 }
 
 // End of Mobile Page
+
+
 
 @media only screen and (min-width: 481px) {
   .brand {
@@ -3722,55 +3744,82 @@ body {
 
   // End Modal
 
-  .register-success-modal-content {
-    width: 320px;
-    padding: 30px 0 14px 0;
-    display: flex;
+  // Start Add Account 
+  .add-account-content-pc {
+    margin-top: 20px;
+    padding: 15px;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-    .register-info-content {
-      padding: 14px 12px;
-      border-radius: 10px;
-      background-color: #000;
-
-      .register-info-title {
-        font-size: 18px;
-        font-weight: 600;
-        color: #ffaa00;
-        margin-bottom: 10px;
+    gap: 15px;
+  
+    .bank-section {
+      p {
+        color: #f00;
+        font-size: 15px;
+        font-weight: 300;
       }
-      .register-info-group {
-        display: flex;
-        justify-content: space-between;
-      }
-      .register-info-text {
-        font-size: 14px;
-        font-weight: 500;
-        color: #fff;
-      }
-      .register-info-text-bold {
-        font-size: 14px;
-        font-weight: 700;
-        color: #fff;
+  
+      .bank-list {
+        display: grid;
+        grid-template-columns: repeat(5, 50px);
+        gap: 9px 16px;
+        align-items: center;
+  
+        img {
+          width: 50px;
+          height: 50px;
+        }
       }
     }
-
-    .btn-register-success {
+  
+    .bank-number {
       width: 100%;
-      height: 51px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-
-      font-size: 22px;
-      font-weight: 600;
-      border-radius: 10px;
-      background: #c1933b;
-      color: black;
+      p {
+        color: #f00;
+        font-size: 15px;
+        font-weight: 300;
+      }
+  
+      .bank-number-input {
+        height: 42px;
+        border-radius: 5px;
+        background: #433d3d;
+        gap: 2rem;
+        .icon {
+          width: 20px;
+          height: 20px;
+  
+          svg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+  
+        input {
+          outline: none;
+          background: none;
+          border: none;
+          width: 229px;
+          color: #fff;
+          font-size: 14px;
+  
+          &::placeholder {
+            color: #999;
+            font-size: 14px;
+            font-weight: 300;
+  
+            text-align: left;
+          }
+        }
+      }
+    }
+  
+    .button-warning {
+      width: 100%;
+      height: 40px;
     }
   }
+  
+ // End Add Account 
 }
 
 // Animation
@@ -4631,12 +4680,19 @@ body {
         display: flex;
         justify-content: space-between;
         .text-left {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
         }
         .text-right {
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 400;
+        }
+        .history-background {
+          font-weight: 500;
+          color: #000;
+          background-color: #0FF;
+          border-radius: 5px;
+          padding: 2px 5px 2px 5px;
         }
       }
     }
