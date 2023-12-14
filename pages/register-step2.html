@@ -26,11 +26,6 @@
           <div class="step-active flexCenter">2</div>
           <small>บัญชีธนาคาร</small>
         </div>
-        <hr />
-        <div class="progress-step flexCenter">
-          <div class="step flexCenter">3</div>
-          <small>สำเร็จ</small>
-        </div>
       </div>
 
       <div class="text-container">
@@ -54,10 +49,55 @@
         </div>
       </div>
 
-      <button class="next-step-button">ถัดไป</button>
+      <button class="next-step-button" data-bs-toggle="modal" data-bs-target="#successRegisterModal">ถัดไป</button>
+
+      <div
+        class="modal fade"
+        id="successRegisterModal"
+        tabindex="-1"
+        aria-labelledby="successRegisterModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-border">
+          <div class="modal-content">
+            <div class="modal-header-container">
+              <div class="modal-header">
+                <p class="modal-title">สมัครสมาชิกสำเร็จ</p>
+                <img
+                  src="../assets/icons/icon-close-modal.svg"
+                  class="modal-icon-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="register-success-modal-content">
+                <div class="border-input-gold">
+                  <div class="register-info-content">
+                    <p class="register-info-title">ข้อมูลสมัคร</p>
+                    <div class="register-info-group">
+                      <p class="register-info-text">Username :</p>
+                      <p class="register-info-text-bold">0181449403</p>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="suggest-info">
+                  รหัสคือเลขบัญชีธนาคารที่ลูกค้าสมัครเลยนะคะ ขอให้เล่นให้สนุกเฮงเฮงรวยรวยนะคะลูกค้า
+                </div>
+
+                <button class="next-step-button btn-register-success" id="btn-register-success">เข้าสู่ระบบ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 
+  <script type="module" src="../scripts/main.js"></script>
   <script>
     const homeBtn = document.getElementById("mobile-home-button");
 
@@ -65,10 +105,10 @@
       window.location.href = "/";
     });
 
-    const nextStepBtn = document.querySelector(".next-step-button");
+    const goToLogin = document.getElementById("btn-register-success");
 
-    nextStepBtn.addEventListener("click", () => {
-      window.location.href = "/pages/register-step3.html";
+    goToLogin.addEventListener("click", () => {
+      window.location.href = "/pages/login-page-mobile.html";
     });
 
     const bankingList = document.querySelector(".banking-list");
