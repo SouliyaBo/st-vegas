@@ -1037,7 +1037,23 @@ body {
     .home #term-condition {
       font-size: 14px; }
   .footer {
-    display: none; }
+    height: unset;
+    padding: 10px 0; }
+    .footer .menu-wrapper {
+      gap: 10px;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 20px;
+      min-width: auto; }
+      .footer .menu-wrapper .footer-item {
+        width: 80px; }
+        .footer .menu-wrapper .footer-item img {
+          height: 30px;
+          width: 30px; }
+        .footer .menu-wrapper .footer-item p {
+          font-size: 12px;
+          color: white;
+          font-weight: 500; }
   .register-page,
   .login-page {
     background-image: url("/assets//images/login-modal-background.png");
