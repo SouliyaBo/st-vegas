@@ -196,6 +196,9 @@
       <!-- Side Bar -->
       <div class="sidebar-container">
         <aside class="sidebar">
+          <div class="icon-turn-back">
+            <img src="/assets/images/turn-back 1.png" alt="" />
+          </div>
           <img src="/assets/images/logo-landscape.svg" alt="logo" />
           <div class="flexBetween">
             <p>Username:</p>
@@ -856,7 +859,7 @@
                 <div class="card-scb flexBetween">
                   <div class="left flexCenter">
                     <p>ธนาคารกสิกรไทย</p>
-                    <p>นาย xxxxx xxxxx</p>
+                    <p>นาย xxxxx xxxxx <span><img src="/assets/images/icon-coppy.svg" alt="" style="width: 20px; height: 20px; margin-bottom: -3px;"/></span></p>
                     <p>026-999999-9</p>
                   </div>
                   <div class="right flexCenter">
@@ -940,7 +943,7 @@
               </div>
             </div>
             <div class="modal-body">
-              <div style="padding: 20px; margin-top: 30px">
+              <div style="padding: 20px; margin-top: 20px; font-size: 14px;">
                 <ul>
                   <li>ฝากขั้นต่ำ 1.00 บาท สูงสุด 2,000.00 บาท</li>
                 </ul>
@@ -977,10 +980,10 @@
                   >
                 </div>
               </div>
-              <div class="button-line" style="cursor: pointer; width: 95%; margin: 0 auto;">
-                <div>
-                  <img src="/assets/icons/icon-line.svg" alt="line" /> ไลน์บอท /
-                  แจ้งเตือนยอดฝาก - ถอน
+              <div class="button-line" style="cursor: pointer; width: 95%;;">
+                <div style=" padding: 5px 5px;  border-radius: 5px">
+                  <img src="/assets/icons/icon-line.svg" alt="line" style="width: 20px; height: 20px;" /> 
+                  <p>ไลน์บอท / แจ้งเตือนยอดฝาก - ถอน</p>
                 </div>
               </div>
             </div>
@@ -1214,7 +1217,7 @@
                   </p>
                 </div>
                 <div class="button-line" style="width: 95%;">
-                  <div class="flexBetween">
+                  <div class="flexBetween" style="padding: 5px 5px; border-radius: 5px;">
                     <img src="/assets/icons/icon-line.svg" alt="line" /> ไลน์บอท
                     / แจ้งเตือนยอดฝาก - ถอน
                   </div>
@@ -1430,7 +1433,7 @@
                 <div class="card flexBetween">
                   <div class="flexCenter left">
                     <p>ทรูมันนี่ วอทเล็ท</p>
-                    <p>026-999999-9</p>
+                    <p>026-999999-9 <span><img src="/assets/images/icon-coppy.svg" alt="" style="width: 20px; height: 20px; margin-bottom: -3px;"/></span></p>
                     <p>นาย xxxxx xxxxx</p>
                   </div>
                   <div class="flexBetween right">
@@ -2733,7 +2736,7 @@
                     </div>
                     <div class="text-amount">
                       <div class="text-left">ยอดเสียสะสม 0</div>
-                      <div class="text-right">Cashback 5.00 %</div>
+                      <div class="text-right history-background">ประวัติการรับ</div>
                     </div>
                   </div>
                   <div class="your-loss">ยอดเสียของคุณ</div>
@@ -3152,18 +3155,19 @@
           "specific-all-games"
         );
 
+
         let sectionPosition = mobileNavigatorGame.getBoundingClientRect().top;
 
         if (sectionPosition >= 113.20000457763672) {
           mobileNavigatorGame.style.position = "fixed";
           mobileNavigatorGame.style.top = "8%";
-          mobileNavigatorGame.style.zIndex = "5";
+          mobileNavigatorGame.style.zIndex = "10";
         }
 
         let paymentBtnContainerPosition =
           specificGameContainer[0].getBoundingClientRect().top;
 
-        if (paymentBtnContainerPosition >= 170.8000030517578) {
+        if (paymentBtnContainerPosition >= 146.8000030517578) {
           mobileNavigatorGame.style.position = "unset";
         }
       });
