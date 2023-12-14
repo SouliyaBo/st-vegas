@@ -878,6 +878,63 @@ body {
   color: #fff; }
 
 @media (max-width: 480px) {
+  .brand {
+    height: 100px; }
+  .slideshow-container-after-login {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */
+    /* Caption text */
+    /* Number text (1/3 etc) */
+    /* The dots/bullets/indicators */ }
+    .slideshow-container-after-login .mySlides {
+      width: 100%;
+      height: 100%; }
+    .slideshow-container-after-login .prev,
+    .slideshow-container-after-login .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 36px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none; }
+    .slideshow-container-after-login .next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+    .slideshow-container-after-login .prev:hover,
+    .slideshow-container-after-login .next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+    .slideshow-container-after-login .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center; }
+    .slideshow-container-after-login .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0; }
+    .slideshow-container-after-login .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      background-color: #717171;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease; }
   .modal .modal-border .modal-content {
     max-width: 315px; }
   .header {
@@ -1318,7 +1375,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 7.5rem 0; }
+    padding: 5.5rem 0; }
     .after-login-mobile-page .header {
       height: 73px;
       width: 100%;
@@ -1470,7 +1527,7 @@ body {
     .after-login-mobile-page .specific-all-games {
       display: grid;
       grid: auto-flow/repeat(3, 110px);
-      gap: 10px;
+      gap: 15px 10px;
       place-items: center;
       justify-content: center; }
       .after-login-mobile-page .specific-all-games .playing-mobile {
@@ -4548,7 +4605,6 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
   background-color: #717171;
   border-radius: 50%;
   display: inline-block;

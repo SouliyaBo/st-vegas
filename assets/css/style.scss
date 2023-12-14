@@ -38,11 +38,15 @@ $breakpoint-desktop: 1024px;
     @media (max-width: $breakpoint-mobile) {
       @content;
     }
-  } @else if $breakpoint ==tablet {
+  }
+
+  @else if $breakpoint ==tablet {
     @media (max-width: $breakpoint-tablet) {
       @content;
     }
-  } @else if $breakpoint ==desktop {
+  }
+
+  @else if $breakpoint ==desktop {
     @media (max-width: $breakpoint-desktop) {
       @content;
     }
@@ -80,14 +84,12 @@ body {
   justify-content: space-between;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(
-    to right,
-    #242424,
-    #0a0000,
-    #191919,
-    #000000,
-    #242424
-  );
+  background: linear-gradient(to right,
+      #242424,
+      #0a0000,
+      #191919,
+      #000000,
+      #242424);
   padding: 16px 23px 18px 23px;
 
   .left {
@@ -144,14 +146,12 @@ body {
   justify-content: space-around;
   width: 100vw;
   height: 61px;
-  background: linear-gradient(
-    to right,
-    #242424,
-    #0a0000,
-    #191919,
-    #000000,
-    #242424
-  );
+  background: linear-gradient(to right,
+      #242424,
+      #0a0000,
+      #191919,
+      #000000,
+      #242424);
   padding: 16px 23px 18px 23px;
 
   .coin-balance,
@@ -244,6 +244,7 @@ body {
 .brand {
   margin-top: 8px;
   height: 307px;
+
   // padding-left: 25px;
   // padding-right: 25px;
   img {
@@ -322,14 +323,12 @@ body {
       /* !importanté */
       border-radius: 1em;
       border: 3px solid #f9df7b;
-      background: linear-gradient(
-        0deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(0deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000 81.25%,
+          #242424 100%);
 
       box-shadow: 0px 5px 4px 0px #000;
 
@@ -388,22 +387,20 @@ body {
       border-radius: 13px;
 
       &.active {
-        background: linear-gradient(
-          180deg,
-          #f9df7b 0%,
-          #b57e10 20%,
-          #b78113 26%,
-          #be8c1f 32%,
-          #cb9d32 38%,
-          #dcb64e 44%,
-          #f2d570 49%,
-          #f9df7b 51%,
-          #fff3a6 52%,
-          #f9df7b 59%,
-          #b57e10 84%,
-          #e5c25b 95%,
-          #f9df7b 100%
-        );
+        background: linear-gradient(180deg,
+            #f9df7b 0%,
+            #b57e10 20%,
+            #b78113 26%,
+            #be8c1f 32%,
+            #cb9d32 38%,
+            #dcb64e 44%,
+            #f2d570 49%,
+            #f9df7b 51%,
+            #fff3a6 52%,
+            #f9df7b 59%,
+            #b57e10 84%,
+            #e5c25b 95%,
+            #f9df7b 100%);
       }
 
       .game-group-img {
@@ -413,6 +410,7 @@ body {
       }
     }
   }
+
   .card-wrapper {
     display: flex;
     align-items: center;
@@ -420,6 +418,7 @@ body {
     // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
+
     .game-card {
       position: relative;
       border-radius: 30px;
@@ -429,21 +428,22 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
+
           .btn-play-game {
-            background: linear-gradient(
-              109.6deg,
-              rgb(255, 219, 47) 11.2%,
-              rgb(244, 253, 0) 100.2%
-            );
+            background: linear-gradient(109.6deg,
+                rgb(255, 219, 47) 11.2%,
+                rgb(244, 253, 0) 100.2%);
             border-radius: 20px;
             color: $white;
             cursor: pointer;
           }
+
           box-shadow: 0 0 50px $white;
           width: 190px;
           height: 278px;
           border-radius: 10px;
         }
+
         .game-container-home {
           box-shadow: 0 0 50px $white;
           width: 190px;
@@ -485,26 +485,25 @@ body {
           border-radius: 10px;
           font-size: 18px;
           font-weight: 600;
-          background: linear-gradient(
-            180deg,
-            #f9df7b 0%,
-            #b57e10 20%,
-            #b78113 26%,
-            #be8c1f 32%,
-            #cb9d32 38%,
-            #dcb64e 44%,
-            #f2d570 49%,
-            #f9df7b 51%,
-            #fff3a6 52%,
-            #f9df7b 59%,
-            #b57e10 84%,
-            #e5c25b 95%,
-            #f9df7b 100%
-          );
+          background: linear-gradient(180deg,
+              #f9df7b 0%,
+              #b57e10 20%,
+              #b78113 26%,
+              #be8c1f 32%,
+              #cb9d32 38%,
+              #dcb64e 44%,
+              #f2d570 49%,
+              #f9df7b 51%,
+              #fff3a6 52%,
+              #f9df7b 59%,
+              #b57e10 84%,
+              #e5c25b 95%,
+              #f9df7b 100%);
         }
       }
     }
   }
+
   .card-wrapper-home {
     display: flex;
     align-items: center;
@@ -512,6 +511,7 @@ body {
     // justify-content: space-around;
     flex-wrap: wrap;
     gap: 23px;
+
     .game-card {
       position: relative;
       border-radius: 30px;
@@ -521,12 +521,11 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
+
           .btn-play-game {
-            background: linear-gradient(
-              109.6deg,
-              rgb(255, 219, 47) 11.2%,
-              rgb(244, 253, 0) 100.2%
-            );
+            background: linear-gradient(109.6deg,
+                rgb(255, 219, 47) 11.2%,
+                rgb(244, 253, 0) 100.2%);
             border-radius: 20px;
             color: $white;
             cursor: pointer;
@@ -534,11 +533,13 @@ body {
             justify-content: center;
             align-items: center;
           }
+
           box-shadow: 0 0 50px $white;
           width: 190px;
           height: 278px;
           border-radius: 10px;
         }
+
         transform: translateY(-10px);
         transition: all 0.3s ease-in-out;
       }
@@ -574,22 +575,20 @@ body {
         border-radius: 10px;
         font-size: 18px;
         font-weight: 600;
-        background: linear-gradient(
-          180deg,
-          #f9df7b 0%,
-          #b57e10 20%,
-          #b78113 26%,
-          #be8c1f 32%,
-          #cb9d32 38%,
-          #dcb64e 44%,
-          #f2d570 49%,
-          #f9df7b 51%,
-          #fff3a6 52%,
-          #f9df7b 59%,
-          #b57e10 84%,
-          #e5c25b 95%,
-          #f9df7b 100%
-        );
+        background: linear-gradient(180deg,
+            #f9df7b 0%,
+            #b57e10 20%,
+            #b78113 26%,
+            #be8c1f 32%,
+            #cb9d32 38%,
+            #dcb64e 44%,
+            #f2d570 49%,
+            #f9df7b 51%,
+            #fff3a6 52%,
+            #f9df7b 59%,
+            #b57e10 84%,
+            #e5c25b 95%,
+            #f9df7b 100%);
       }
     }
   }
@@ -608,6 +607,7 @@ body {
 
   ol {
     padding-left: 1rem;
+
     li {
       margin-bottom: 0.5rem;
     }
@@ -643,7 +643,7 @@ body {
   gap: 1rem;
   justify-content: center;
 
-  & > div {
+  &>div {
     img {
       width: 100px;
       height: 100px;
@@ -716,14 +716,12 @@ body {
 
     border-radius: 0px 20px 20px 0px;
     border: 2px solid #f9df7b;
-    background: linear-gradient(
-      270deg,
-      #242424 0%,
-      #0a0000 23.44%,
-      #191919 52.6%,
-      #000 81.25%,
-      #242424 100%
-    );
+    background: linear-gradient(270deg,
+        #242424 0%,
+        #0a0000 23.44%,
+        #191919 52.6%,
+        #000 81.25%,
+        #242424 100%);
 
     animation: slideInFromLeft 0.5s ease-in-out;
     padding: 26px 31px;
@@ -823,14 +821,12 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(
-    270deg,
-    #242424 0%,
-    #0a0000 23.44%,
-    #191919 52.6%,
-    #000 81.25%,
-    #242424 100%
-  );
+  background: linear-gradient(270deg,
+      #242424 0%,
+      #0a0000 23.44%,
+      #191919 52.6%,
+      #000 81.25%,
+      #242424 100%);
   box-shadow: 0px -4px 7px 0px rgba(0, 0, 0, 0.39);
 
   .menu-wrapper {
@@ -893,6 +889,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .flexAround {
   display: flex;
   align-items: center;
@@ -1048,6 +1045,7 @@ body {
         color: white;
       }
     }
+
     .problem {
       text-decoration: underline;
       color: #fa0;
@@ -1070,11 +1068,13 @@ body {
     border-radius: 60px;
     padding: 2px;
   }
+
   .modal-content {
     border-radius: 60px;
     overflow: hidden;
     padding: 0;
   }
+
   .signup-modal-content {
     position: relative;
     width: 600px;
@@ -1090,12 +1090,14 @@ body {
       height: 60px;
       cursor: pointer;
     }
+
     .signup-modal-body {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 25px 63px;
     }
+
     .step-container {
       display: flex;
       justify-content: center;
@@ -1133,6 +1135,7 @@ body {
           text-align: center;
         }
       }
+
       .step-item.active {
         .step-item-box {
           position: relative;
@@ -1149,22 +1152,20 @@ body {
           right: -3px;
           bottom: -3px;
           border-radius: 10px;
-          background: linear-gradient(
-            90deg,
-            rgba(249, 223, 123, 1) 0%,
-            rgba(181, 126, 16, 1) 20%,
-            rgba(183, 129, 19, 1) 26%,
-            rgba(190, 140, 31, 1) 32%,
-            rgba(203, 157, 50, 1) 38%,
-            rgba(220, 182, 78, 1) 44%,
-            rgba(242, 213, 112, 1) 49%,
-            rgba(249, 223, 123, 1) 51%,
-            rgba(255, 243, 166, 1) 52%,
-            rgba(249, 223, 123, 1) 59%,
-            rgba(181, 126, 16, 1) 84%,
-            rgba(229, 194, 91, 1) 95%,
-            rgba(249, 223, 123, 1) 100%
-          );
+          background: linear-gradient(90deg,
+              rgba(249, 223, 123, 1) 0%,
+              rgba(181, 126, 16, 1) 20%,
+              rgba(183, 129, 19, 1) 26%,
+              rgba(190, 140, 31, 1) 32%,
+              rgba(203, 157, 50, 1) 38%,
+              rgba(220, 182, 78, 1) 44%,
+              rgba(242, 213, 112, 1) 49%,
+              rgba(249, 223, 123, 1) 51%,
+              rgba(255, 243, 166, 1) 52%,
+              rgba(249, 223, 123, 1) 59%,
+              rgba(181, 126, 16, 1) 84%,
+              rgba(229, 194, 91, 1) 95%,
+              rgba(249, 223, 123, 1) 100%);
           z-index: -1;
         }
 
@@ -1172,17 +1173,20 @@ body {
           color: #fff;
         }
       }
+
       .step-line {
         width: 79px;
         height: 1px;
         background-color: #676767;
       }
     }
+
     .step-one,
     .step-two,
     .step-three {
       width: 100%;
     }
+
     .signup-header {
       margin-top: 52px;
       font-size: 22px;
@@ -1190,6 +1194,7 @@ body {
       color: #fff;
       width: 100%;
     }
+
     .signup-header-success {
       margin-top: 62px;
       font-size: 37px;
@@ -1198,12 +1203,14 @@ body {
       width: 100%;
       text-align: center;
     }
+
     .signup-title {
       font-size: 18px;
       font-weight: 600;
       color: #ffaa00;
       width: 100%;
     }
+
     .phone-input {
       border-radius: 10px;
       background: #433d3d;
@@ -1238,6 +1245,7 @@ body {
         }
       }
     }
+
     button {
       width: 100%;
       height: 51px;
@@ -1253,6 +1261,7 @@ body {
       background: #c1933b;
       color: black;
     }
+
     .already-have-account {
       text-align: end;
       width: 100%;
@@ -1269,10 +1278,9 @@ body {
     .bank-list-container {
       padding: 16px 12px;
       display: grid;
-      grid-template-columns: repeat(
-        8,
-        1fr
-      ); /* Creates 3 columns of equal size */
+      grid-template-columns: repeat(8,
+          1fr);
+      /* Creates 3 columns of equal size */
       justify-content: center;
       grid-gap: 11px;
 
@@ -1286,12 +1294,14 @@ body {
     .img-success-container {
       width: 100%;
       text-align: center;
+
       .img-success {
         width: 50%;
         height: 50%;
       }
     }
   }
+
   .signup-background {
     position: absolute;
     top: 0;
@@ -1308,6 +1318,7 @@ body {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
+
   .logo {
     width: 370px;
   }
@@ -1328,6 +1339,83 @@ body {
 
 // Responsive Mobile
 @media (max-width: 480px) {
+  .brand {
+    height: 100px;
+  }
+  .slideshow-container-after-login {
+    // max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+    .mySlides {
+      width: 100%;
+      height: 100%;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 36px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      // margin: 0 2px;
+      // background-color: #bbb;
+      background-color: #717171;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+  }
+
   .modal {
     .modal-border {
       .modal-content {
@@ -1353,6 +1441,7 @@ body {
       .desktop-button {
         display: none;
       }
+
       .mobile-button {
         display: inherit;
 
@@ -1402,7 +1491,7 @@ body {
 
       top: 30px;
 
-      & > * {
+      &>* {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1537,10 +1626,12 @@ body {
       .title {
         .left {
           gap: 4px;
+
           img {
             width: 50px;
             height: 50px;
           }
+
           h4 {
             font-size: 15px;
             font-weight: 700;
@@ -1568,6 +1659,7 @@ body {
         height: 100%;
         margin: 10px 0;
       }
+
       .game-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1599,7 +1691,7 @@ body {
       gap: 1rem;
       justify-content: center;
 
-      & > div {
+      &>div {
         img {
           width: 40px;
           height: 40px;
@@ -1629,6 +1721,7 @@ body {
 
       .footer-item {
         width: 80px;
+
         img {
           height: 30px;
           width: 30px;
@@ -1676,15 +1769,18 @@ body {
           color: #ffaa00;
           margin-bottom: 10px;
         }
+
         .register-info-group {
           display: flex;
           justify-content: space-between;
         }
+
         .register-info-text {
           font-size: 14px;
           font-weight: 500;
           color: #fff;
         }
+
         .register-info-text-bold {
           font-size: 14px;
           font-weight: 700;
@@ -1706,6 +1802,7 @@ body {
         color: black;
       }
     }
+
     #mobile-home-button {
       position: absolute;
       top: 14px;
@@ -1743,6 +1840,7 @@ body {
       gap: 9px;
       overflow-x: scroll;
       padding: 0 17px;
+
       img {
         width: 157px;
         height: 66px;
@@ -1821,6 +1919,7 @@ body {
       flex-direction: column;
       margin-bottom: 8px;
       gap: 14px;
+
       button {
         width: 320px;
         height: 50px;
@@ -1855,6 +1954,7 @@ body {
     .progress-step-container {
       gap: 7px;
       margin: 20px 0;
+
       .progress-step {
         color: #fff;
         font-size: 11px;
@@ -1959,7 +2059,7 @@ body {
     background-position: center;
     background-size: cover;
 
-    padding: 7.5rem 0;
+    padding: 5.5rem 0;
 
     .header {
       height: 73px;
@@ -2027,6 +2127,7 @@ body {
         .system-option {
           flex-direction: column;
           gap: 10px;
+
           .thai-logo {
             width: 15px;
             height: 15px;
@@ -2102,7 +2203,7 @@ body {
       padding: 6px 17px;
       color: white;
 
-      & > * {
+      &>* {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2166,6 +2267,7 @@ body {
       grid-template-columns: 1fr;
 
       place-items: center;
+
       button {
         background: none;
         outline: none;
@@ -2182,12 +2284,14 @@ body {
         }
       }
     }
+
     .specific-all-games {
       display: grid;
       grid: auto-flow / repeat(3, 110px);
-      gap: 10px;
+      gap: 15px 10px;
       place-items: center;
       justify-content: center;
+
       .playing-mobile {
         position: relative;
         background: none;
@@ -2206,20 +2310,20 @@ body {
           position: absolute;
           text-decoration: none;
           padding: 2px 10px 2px 10px;
-          background: linear-gradient(
-            109.6deg,
-            rgb(255, 219, 47) 11.2%,
-            rgb(244, 253, 0) 100.2%
-          );
+          background: linear-gradient(109.6deg,
+              rgb(255, 219, 47) 11.2%,
+              rgb(244, 253, 0) 100.2%);
           color: $white;
           font-weight: 600;
           border-radius: 10px;
           display: none;
         }
+
         img {
           width: 100%;
           height: 100%;
         }
+
         &:hover {
           transform: translateY(-10px);
           // transform: scale(1.1);
@@ -2234,6 +2338,7 @@ body {
         }
       }
     }
+
     .footer {
       display: flex;
       align-items: center;
@@ -2275,6 +2380,7 @@ body {
       img {
         width: 100%;
       }
+
       .icon-turn-back {
         margin-top: -22px;
         margin-right: -10px;
@@ -2283,6 +2389,7 @@ body {
         height: 23px;
         cursor: pointer;
       }
+
       .flexBetween {
         width: 100%;
 
@@ -2292,6 +2399,7 @@ body {
 
         margin: 10px;
       }
+
       .balance {
         width: 154px;
         height: 42px;
@@ -2335,6 +2443,7 @@ body {
   // Modal ฝากถอน
   .detail-card-kbank {
     padding: 12px;
+
     .card-kbank {
       width: 100%;
     }
@@ -2346,10 +2455,12 @@ body {
     .withdrawal {
       padding: 8px 0;
       margin: 0;
+
       img {
         width: 30px;
         height: 30px;
       }
+
       font-size: 13px;
     }
   }
@@ -2362,6 +2473,7 @@ body {
       font-size: 14px;
     }
   }
+
   // End Modal ฝากถอน
 
   //Start  LeaveAdecimal
@@ -2397,8 +2509,7 @@ body {
       background-image: url("/assets/images/purple-card-bg.svg");
       background-position: center;
 
-      .left {
-      }
+      .left {}
 
       .right {
         height: 100%;
@@ -2406,6 +2517,7 @@ body {
         align-items: flex-start;
         justify-content: center;
         gap: 4px;
+
         img {
           width: 30px;
           height: 30px;
@@ -2471,6 +2583,7 @@ body {
   .history-modal-content {
     padding-top: 20px;
   }
+
   // End History Modal
 
   // End Modal
@@ -2494,7 +2607,7 @@ body {
     display: none;
   }
 
-  #footer-desktop{
+  #footer-desktop {
     display: flex;
   }
 
@@ -2517,6 +2630,7 @@ body {
 
       .modal-header-container {
         top: -24px;
+
         .modal-header {
           min-width: 280px;
           height: 48px;
@@ -2531,6 +2645,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+
         // Start Profile Modal
         .change-profile-modal-content {
           width: 100%;
@@ -2538,6 +2653,7 @@ body {
 
           .detail-card-kbank {
             margin: 0;
+
             .card-kbank {
               margin: 0 auto;
               width: 416.705px;
@@ -2629,11 +2745,13 @@ body {
         .button-line {
           margin: 10px 0;
           width: 98%;
+
           div {
             padding: 5px 10px 5px 10px;
             width: 98%;
           }
         }
+
         // End Modal ฝากถอน
 
         // Auto Modal
@@ -2647,20 +2765,24 @@ body {
 
             display: flex;
             justify-content: space-between;
+
             .left {
               font-size: 16px;
               display: flex;
               flex-direction: column;
               gap: 0.8rem;
             }
+
             .right {
               display: flex;
               flex-direction: column;
               gap: 16px;
               justify-content: space-between;
+
               .bank {
                 display: flex;
                 gap: 5px;
+
                 h4 {
                   font-size: 14px;
                   font-weight: 600;
@@ -2670,6 +2792,7 @@ body {
                   margin-top: -1px;
                   width: 33px;
                   height: 33px;
+
                   img {
                     object-fit: contain;
                   }
@@ -2678,6 +2801,7 @@ body {
 
               .balance {
                 flex-direction: column;
+
                 & :first-child {
                   font-size: 10px;
                   font-weight: 600;
@@ -2702,6 +2826,7 @@ body {
             }
           }
         }
+
         .detail-card-scb1 {
           .card-scb1 {
             width: 416.705px;
@@ -2712,17 +2837,20 @@ body {
 
             display: flex;
             justify-content: space-between;
+
             .left {
               font-size: 16px;
               display: flex;
               flex-direction: column;
               gap: 0.8rem;
             }
+
             .right {
               display: flex;
               flex-direction: column;
               gap: 16px;
               justify-content: space-between;
+
               .bank {
                 display: flex;
                 justify-content: center;
@@ -2732,6 +2860,7 @@ body {
                 & :last-child {
                   width: 30px;
                   height: 30px;
+
                   img {
                     object-fit: contain;
                   }
@@ -2740,6 +2869,7 @@ body {
 
               .balance {
                 flex-direction: column;
+
                 & :first-child {
                   font-size: 10px;
                   font-weight: 600;
@@ -2772,8 +2902,7 @@ body {
           .card {
             width: 416.705px;
             height: 220px;
-            background: url("/assets/images/green-card-bg.svg")
-              linear-gradient(257deg, #00481d 0%, #00a036 100%);
+            background: url("/assets/images/green-card-bg.svg") linear-gradient(257deg, #00481d 0%, #00a036 100%);
             background-size: contain;
             background-repeat: no-repeat;
             // background-position: center;
@@ -2816,7 +2945,9 @@ body {
               }
             }
           }
+
           .slider-wrapper {
+
             .active.slider,
             .slider {
               width: 75px;
@@ -2826,12 +2957,12 @@ body {
 
           .money-input {
             width: 394px;
+
             p {
               font-size: 16px;
             }
 
-            input {
-            }
+            input {}
           }
 
           .button-warning {
@@ -2877,6 +3008,7 @@ body {
               font-size: 22px;
               margin-top: 20px;
             }
+
             .promotion-content-text {
               font-size: 18px;
               margin-top: 10px;
@@ -2915,6 +3047,7 @@ body {
             }
           }
         }
+
         // End Promotion Modal
 
         // Start Change Password
@@ -2946,6 +3079,7 @@ body {
             height: auto;
             margin-top: 0;
           }
+
           .bag-modal-menu {
             grid-gap: 21px;
 
@@ -2962,6 +3096,7 @@ body {
                 width: 42px;
                 height: 42px;
               }
+
               .bag-modal-menu-title {
                 margin-top: 6px;
                 font-size: 12.5px;
@@ -2969,6 +3104,7 @@ body {
             }
           }
         }
+
         // End Bag Modal
 
         // Start Earn Money
@@ -3080,6 +3216,7 @@ body {
           .earn-detail-data {
             // width: 400px;
             gap: 20px;
+
             .filter-date {
               .filter-label {
                 font-size: 16px;
@@ -3127,11 +3264,13 @@ body {
                 .form-withdraw-label {
                   font-size: 14px;
                 }
+
                 .form-withdraw-input {
                   padding: 8px 10px;
                   height: 40px;
                 }
               }
+
               .btn-withdraw-income {
                 min-width: 140px;
                 height: 42px;
@@ -3185,6 +3324,7 @@ body {
                 .credit-button-title {
                   font-size: 20px;
                 }
+
                 .btn-credit-confirm {
                   min-width: 160px;
                   height: 40px;
@@ -3208,28 +3348,29 @@ body {
           .card-cashback {
             grid-template-columns: repeat(2, 229px);
             gap: 16px 13px;
+
             .card-body {
               .name-cashback-game {
                 width: 227px;
                 gap: 10px;
 
                 height: 120px;
+
                 img {
                   height: 80px;
                   width: 80px;
                 }
 
                 .text {
-                  .name-game {
-                  }
+                  .name-game {}
 
-                  .balance {
-                  }
+                  .balance {}
                 }
               }
             }
           }
         }
+
         // End Cash Back
 
         // Start Cash back detail
@@ -3252,9 +3393,11 @@ body {
                   font-weight: 500;
                   font-size: 20px;
                 }
+
                 .text-right {
                   font-weight: 300;
                 }
+
                 .history-background {
                   font-weight: 500;
                   color: #000;
@@ -3268,12 +3411,15 @@ body {
             .your-lose {
               font-size: 26px;
             }
+
             .loss {
               font-size: 40px;
             }
+
             .updated {
               font-size: 16px;
             }
+
             .btn {
               margin-top: -8px;
               gap: 34px;
@@ -3283,12 +3429,14 @@ body {
                 height: 58px;
                 font-size: 20px;
               }
+
               .withdraw-to-accont {
                 width: 361px;
                 height: 58px;
                 font-size: 20px;
               }
             }
+
             .description {
               margin-top: 50px;
 
@@ -3296,6 +3444,7 @@ body {
                 font-weight: 500;
                 font-size: 18px;
               }
+
               .text-right {
                 font-weight: 500;
                 font-size: 18px;
@@ -3303,6 +3452,7 @@ body {
             }
           }
         }
+
         // End Cash back detail
 
         // Start Tournament Modal
@@ -3340,12 +3490,14 @@ body {
               }
             }
           }
+
           .top-rank {
             font-size: 18px;
             font-weight: 600;
             color: #ffb800;
             margin-top: 17px;
           }
+
           .slide-rank {
             // width: 450px;
             width: 380px;
@@ -3368,11 +3520,13 @@ body {
                 box-shadow: 0px 0px 4px 2px #ff0000;
                 background-size: 135px 191.7px;
               }
+
               &.top2 {
                 border: 1px solid #fffb91;
                 box-shadow: 0px 0px 4px 2px #ff9900;
                 background-size: 135px 191.7px;
               }
+
               &.top3 {
                 border: 1px solid #a2db00;
                 box-shadow: 0px 0px 4px 2px #368e00;
@@ -3388,6 +3542,7 @@ body {
                 width: 28px;
                 object-fit: contain;
               }
+
               .rank-profile {
                 width: 65px;
                 height: 65px;
@@ -3395,6 +3550,7 @@ body {
                 object-fit: cover;
                 margin-top: 32.4px;
               }
+
               .rank-item-text {
                 font-size: 12px;
                 font-weight: 600;
@@ -3402,6 +3558,7 @@ body {
               }
             }
           }
+
           .table-rank {
             width: 100%;
             display: flex;
@@ -3430,12 +3587,15 @@ body {
                 border-radius: 10px;
                 display: flex;
               }
+
               .rank-phone {
                 width: 50%;
               }
+
               .rank-detail-title {
                 width: 20%;
               }
+
               .rank-money {
                 width: 30%;
               }
@@ -3452,6 +3612,7 @@ body {
           .spinner-modal-title {
             font-size: 18px;
           }
+
           .spinner-modal-subtitle {
             font-size: 14px;
           }
@@ -3472,9 +3633,11 @@ body {
             .spinner-modal-subtitle2 {
               font-size: 15px;
             }
+
             .input-box-spinner {
               height: 42px;
             }
+
             .spinner-modal-text-danger {
               font-size: 14px;
             }
@@ -3505,11 +3668,13 @@ body {
           width: 476px;
           padding: 78px 20px 42px 20px;
           gap: 44px;
+
           .button-warning {
             height: 60px;
             font-size: 18px;
           }
         }
+
         // End Code Modal
 
         // Start Slip Verify
@@ -3530,6 +3695,7 @@ body {
               div {
                 height: 54px;
               }
+
               input {
                 height: 49px;
 
@@ -3580,6 +3746,7 @@ body {
                 font-size: 18px;
               }
             }
+
             .right {
               gap: 2rem;
 
@@ -3615,13 +3782,16 @@ body {
           height: 43px;
           width: 396px;
           justify-content: center;
+
           img {
             width: 44px;
           }
+
           p {
             font-size: 14px;
           }
         }
+
         // End True Wallet
 
         // Start Qr Modal
@@ -3629,6 +3799,7 @@ body {
           // width: 400px;
 
           padding: 35px 10px 0px 15px;
+
           .notic-text {
             width: 100%;
             font-size: 16px;
@@ -3636,6 +3807,7 @@ body {
           }
 
           .bank-selector {
+
             #a img,
             .btn-select img {
               width: 30px;
@@ -3660,17 +3832,16 @@ body {
             margin-top: 20px;
           }
 
-          .info-text {
-          }
+          .info-text {}
 
-          .qrpay {
-          }
+          .qrpay {}
 
           .button-line {
             div {
               width: 396.029px;
               height: 42.029px;
               font-size: 14px;
+
               img {
                 width: 44px;
               }
@@ -3697,6 +3868,7 @@ body {
               width: 119px;
               height: 35px;
             }
+
             .refresh {
               width: 119px;
               height: 35px;
@@ -3710,14 +3882,14 @@ body {
           .div6 {
             font-size: 12px;
 
-            .danger {
-            }
+            .danger {}
           }
         }
 
         // End Qr Modal
       }
     }
+
     .modal-header-container {
       .modal-header {
         min-width: 284px;
@@ -3750,50 +3922,52 @@ body {
     padding: 15px;
     flex-direction: column;
     gap: 15px;
-  
+
     .bank-section {
       p {
         color: #f00;
         font-size: 15px;
         font-weight: 300;
       }
-  
+
       .bank-list {
         display: grid;
         grid-template-columns: repeat(5, 50px);
         gap: 9px 16px;
         align-items: center;
-  
+
         img {
           width: 50px;
           height: 50px;
         }
       }
     }
-  
+
     .bank-number {
       width: 100%;
+
       p {
         color: #f00;
         font-size: 15px;
         font-weight: 300;
       }
-  
+
       .bank-number-input {
         height: 42px;
         border-radius: 5px;
         background: #433d3d;
         gap: 2rem;
+
         .icon {
           width: 20px;
           height: 20px;
-  
+
           svg {
             height: 100%;
             width: 100%;
           }
         }
-  
+
         input {
           outline: none;
           background: none;
@@ -3801,25 +3975,25 @@ body {
           width: 229px;
           color: #fff;
           font-size: 14px;
-  
+
           &::placeholder {
             color: #999;
             font-size: 14px;
             font-weight: 300;
-  
+
             text-align: left;
           }
         }
       }
     }
-  
+
     .button-warning {
       width: 100%;
       height: 40px;
     }
   }
-  
- // End Add Account 
+
+  // End Add Account 
 }
 
 // Animation
@@ -3835,6 +4009,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -3844,6 +4019,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes slideOut {
   from {
     bottom: 0;
@@ -3855,6 +4031,7 @@ body {
     opacity: 0;
   }
 }
+
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
@@ -3928,22 +4105,20 @@ body {
     position: relative;
 
     z-index: -15;
-    background: linear-gradient(
-      90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%);
     border-radius: 20px;
     margin: auto;
     padding: 2px;
@@ -3980,14 +4155,12 @@ body {
       position: relative;
       margin: auto;
       width: fit-content;
-      background: linear-gradient(
-        270deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(270deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000000 81.25%,
+          #242424 100%);
       border-radius: 15px;
       padding: 10px;
       display: flex;
@@ -4004,22 +4177,20 @@ body {
       right: -2px;
       bottom: -2px;
       z-index: -1;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 0.8) 0%,
-        rgba(181, 126, 16, 0.8) 20%,
-        rgba(183, 129, 19, 0.8) 26%,
-        rgba(190, 140, 31, 0.8) 32%,
-        rgba(203, 157, 50, 0.8) 38%,
-        rgba(220, 182, 78, 0.8) 44%,
-        rgba(242, 213, 112, 0.8) 49%,
-        rgba(249, 223, 123, 0.8) 51%,
-        rgba(255, 243, 166, 0.8) 52%,
-        rgba(249, 223, 123, 0.8) 59%,
-        rgba(181, 126, 16, 0.8) 84%,
-        rgba(229, 194, 91, 0.8) 95%,
-        rgba(249, 223, 123, 0.8) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%);
       border-radius: 15px;
       pointer-events: none;
     }
@@ -4103,11 +4274,13 @@ body {
           }
         }
       }
+
       // margin: 0;
 
       // gap: 9px;
     }
   }
+
   .change-password-hr {
     .hr {
       width: 100%;
@@ -4120,6 +4293,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 16px;
+
     .setting {
       width: 80%;
       height: 44px;
@@ -4130,6 +4304,7 @@ body {
       font-weight: 500;
       cursor: pointer;
     }
+
     .add-account {
       cursor: pointer;
       width: 80%;
@@ -4148,29 +4323,35 @@ body {
   .user {
     display: flex;
     justify-content: space-between;
+
     .username {
       font-size: 14px;
       font-weight: 700;
       font-size: 14px;
     }
+
     .result {
       font-size: 14px;
       font-weight: 100;
     }
   }
+
   .password {
     display: flex;
     justify-content: space-between;
+
     .pass {
       font-size: 14px;
       font-weight: 700;
       font-size: 14px;
     }
+
     .result {
       font-size: 14px;
       font-weight: 300;
     }
   }
+
   .change-password {
     height: 50px;
     margin-bottom: 10px;
@@ -4206,6 +4387,7 @@ body {
 
 .change-profile-modal-content-mobile {
   flex-direction: column;
+
   .card {
     margin-top: 35px;
     padding: 5px;
@@ -4227,6 +4409,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 8px;
+
       .bank {
         display: flex;
         gap: 5px;
@@ -4236,6 +4419,7 @@ body {
         p {
           font-weight: bold;
         }
+
         img {
           width: 30px;
           height: 30px;
@@ -4244,9 +4428,11 @@ body {
 
       .balance {
         font-weight: 600;
+
         small {
           font-size: 10px;
         }
+
         p {
           font-size: 14px;
         }
@@ -4269,26 +4455,25 @@ body {
     margin-top: 5px;
     margin-bottom: 10px;
     gap: 6px;
+
     .active-slider {
       width: 47px;
       height: 3px;
       border-radius: 16px;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 0.8) 0%,
-        rgba(181, 126, 16, 0.8) 20%,
-        rgba(183, 129, 19, 0.8) 26%,
-        rgba(190, 140, 31, 0.8) 32%,
-        rgba(203, 157, 50, 0.8) 38%,
-        rgba(220, 182, 78, 0.8) 44%,
-        rgba(242, 213, 112, 0.8) 49%,
-        rgba(249, 223, 123, 0.8) 51%,
-        rgba(255, 243, 166, 0.8) 52%,
-        rgba(249, 223, 123, 0.8) 59%,
-        rgba(181, 126, 16, 0.8) 84%,
-        rgba(229, 194, 91, 0.8) 95%,
-        rgba(249, 223, 123, 0.8) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%);
     }
 
     .slider {
@@ -4303,6 +4488,7 @@ body {
   .button-container {
     gap: 12px;
     margin-bottom: 10px;
+
     .left {
       width: 125px;
       height: 40px;
@@ -4311,6 +4497,7 @@ body {
       border: 1px solid #f9df7b;
       background: #c1933b;
     }
+
     .right {
       width: 125px;
       height: 40px;
@@ -4329,12 +4516,14 @@ body {
 
   .user-detail {
     width: 100%;
+
     .left {
       p {
         font-weight: 600;
         margin: 10px 0;
       }
     }
+
     .right {
       small {
         display: block;
@@ -4392,6 +4581,7 @@ body {
 
   .bank-number {
     width: 263px;
+
     p {
       color: #f00;
       font-size: 15px;
@@ -4403,6 +4593,7 @@ body {
       border-radius: 5px;
       background: #433d3d;
       gap: 2rem;
+
       .icon {
         width: 20px;
         height: 20px;
@@ -4440,6 +4631,7 @@ body {
 
 .deposit-withdraw-modal-content {
   position: relative;
+
   .card {
     width: 262px;
     height: 120px;
@@ -4457,6 +4649,7 @@ body {
     .left {
       flex-direction: column;
       gap: 0.5rem;
+
       p {
         font-size: 14px;
         font-weight: 600;
@@ -4471,6 +4664,7 @@ body {
 
       .bank {
         gap: 5px;
+
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -4479,6 +4673,7 @@ body {
         & :last-child {
           width: 30px;
           height: 30px;
+
           img {
             object-fit: contain;
           }
@@ -4523,22 +4718,20 @@ body {
     }
 
     .active.slider {
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 0.8) 0%,
-        rgba(181, 126, 16, 0.8) 20%,
-        rgba(183, 129, 19, 0.8) 26%,
-        rgba(190, 140, 31, 0.8) 32%,
-        rgba(203, 157, 50, 0.8) 38%,
-        rgba(220, 182, 78, 0.8) 44%,
-        rgba(242, 213, 112, 0.8) 49%,
-        rgba(249, 223, 123, 0.8) 51%,
-        rgba(255, 243, 166, 0.8) 52%,
-        rgba(249, 223, 123, 0.8) 59%,
-        rgba(181, 126, 16, 0.8) 84%,
-        rgba(229, 194, 91, 0.8) 95%,
-        rgba(249, 223, 123, 0.8) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%);
     }
 
     .slider {
@@ -4555,6 +4748,7 @@ body {
     border: 1px solid #fff;
     background: #0fb800;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
     img {
       width: 28px;
       object-fit: contain;
@@ -4577,6 +4771,7 @@ body {
   height: 427px;
   overflow-y: auto;
   padding-top: 40px;
+
   .card-cashback {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -4584,31 +4779,31 @@ body {
     place-items: center;
     justify-content: center;
     cursor: pointer;
+
     .card-body {
       position: relative;
       z-index: -15;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 1) 0%,
+          rgba(181, 126, 16, 1) 20%,
+          rgba(183, 129, 19, 1) 26%,
+          rgba(190, 140, 31, 1) 32%,
+          rgba(203, 157, 50, 1) 38%,
+          rgba(220, 182, 78, 1) 44%,
+          rgba(242, 213, 112, 1) 49%,
+          rgba(249, 223, 123, 1) 51%,
+          rgba(255, 243, 166, 1) 52%,
+          rgba(249, 223, 123, 1) 59%,
+          rgba(181, 126, 16, 1) 84%,
+          rgba(229, 194, 91, 1) 95%,
+          rgba(249, 223, 123, 1) 100%);
       border-radius: 10px;
       margin: auto;
       padding: 2px;
       min-width: 25%;
       animation-name: slideIn;
       animation-duration: 0.4s;
+
       .name-cashback-game {
         width: 259px;
 
@@ -4618,24 +4813,24 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        background: linear-gradient(
-          270deg,
-          #242424 0%,
-          #0a0000 23.44%,
-          #191919 52.6%,
-          #000 81.25%,
-          #242424 100%
-        );
+        background: linear-gradient(270deg,
+            #242424 0%,
+            #0a0000 23.44%,
+            #191919 52.6%,
+            #000 81.25%,
+            #242424 100%);
         // padding-left: 16px;
 
         img {
           width: 65px;
           height: 65px;
         }
+
         .text {
           width: unset;
           position: unset;
           padding: 0;
+
           // display: flex;
           // flex-direction: column;
           // justify-content: center;
@@ -4645,6 +4840,7 @@ body {
 
             font-weight: 600;
           }
+
           .balance {
             font-weight: 600;
             font-size: 15px;
@@ -4667,26 +4863,32 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 8px;
+
     .title {
       font-weight: 600px;
     }
+
     .accumulated-lot-amount {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 30px;
+
       .text-amount {
         width: 100%;
         display: flex;
         justify-content: space-between;
+
         .text-left {
           font-size: 14px;
           font-weight: 600;
         }
+
         .text-right {
           font-size: 14px;
           font-weight: 400;
         }
+
         .history-background {
           font-weight: 500;
           color: #000;
@@ -4696,23 +4898,28 @@ body {
         }
       }
     }
+
     .your-loss {
       font-weight: 600;
       font-size: 16px;
     }
+
     .loss {
       font-weight: 600;
       font-size: 25px;
     }
+
     .updated {
       font-size: 14px;
       font-weight: 400;
       margin-bottom: 18px;
     }
+
     .btn {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
       .receive-credit {
         border-radius: 5px;
         background: #c1933b;
@@ -4723,6 +4930,7 @@ body {
         font-weight: 600;
         color: $white;
       }
+
       .withdraw-to-accont {
         width: 217.141px;
         height: 38.129px;
@@ -4734,16 +4942,19 @@ body {
         color: $white;
       }
     }
+
     .description {
       background: none;
       width: 100%;
       display: flex;
       justify-content: space-between;
+
       // background-color: #00c136;
       .text-left {
         font-weight: 500;
         font-size: 14px;
       }
+
       .text-right {
         font-size: 13px;
         font-weight: 500;
@@ -4757,6 +4968,7 @@ body {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+
   .card-kbank {
     background-image: url("/assets/images/green-card-bg.svg");
     background-size: contain;
@@ -4767,6 +4979,7 @@ body {
     .left {
       flex-direction: column;
       gap: 0.5rem;
+
       p {
         font-size: 14px;
         font-weight: 600;
@@ -4781,6 +4994,7 @@ body {
 
       .bank {
         gap: 5px;
+
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -4789,6 +5003,7 @@ body {
         & :last-child {
           width: 30px;
           height: 30px;
+
           img {
             object-fit: contain;
           }
@@ -4797,6 +5012,7 @@ body {
 
       .balance {
         flex-direction: column;
+
         & :first-child {
           font-size: 10px;
           font-weight: 600;
@@ -4831,22 +5047,20 @@ body {
 .type-of-withdrawal {
   position: relative;
   z-index: -15;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 223, 123, 1) 0%,
-    rgba(181, 126, 16, 1) 20%,
-    rgba(183, 129, 19, 1) 26%,
-    rgba(190, 140, 31, 1) 32%,
-    rgba(203, 157, 50, 1) 38%,
-    rgba(220, 182, 78, 1) 44%,
-    rgba(242, 213, 112, 1) 49%,
-    rgba(249, 223, 123, 1) 51%,
-    rgba(255, 243, 166, 1) 52%,
-    rgba(249, 223, 123, 1) 59%,
-    rgba(181, 126, 16, 1) 84%,
-    rgba(229, 194, 91, 1) 95%,
-    rgba(249, 223, 123, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%);
   border-radius: 10px;
   margin: auto;
   padding: 2px;
@@ -4855,14 +5069,12 @@ body {
   animation-duration: 0.4s;
 
   .withdrawal {
-    background: linear-gradient(
-      to left,
-      #242424,
-      #0a0000,
-      #191919,
-      #000000,
-      #242424
-    );
+    background: linear-gradient(to left,
+        #242424,
+        #0a0000,
+        #191919,
+        #000000,
+        #242424);
     width: 100%;
     border-radius: 9px;
     display: flex;
@@ -4880,6 +5092,7 @@ body {
   color: white;
   width: 90%;
   cursor: pointer;
+
   div {
     display: flex;
     justify-content: center;
@@ -4900,22 +5113,20 @@ body {
     border-radius: 10px;
     min-width: 25%;
     padding: 2px;
-    background: linear-gradient(
-      90deg,
-      rgba(249, 223, 123, 1) 0%,
-      rgba(181, 126, 16, 1) 20%,
-      rgba(183, 129, 19, 1) 26%,
-      rgba(190, 140, 31, 1) 32%,
-      rgba(203, 157, 50, 1) 38%,
-      rgba(220, 182, 78, 1) 44%,
-      rgba(242, 213, 112, 1) 49%,
-      rgba(249, 223, 123, 1) 51%,
-      rgba(255, 243, 166, 1) 52%,
-      rgba(249, 223, 123, 1) 59%,
-      rgba(181, 126, 16, 1) 84%,
-      rgba(229, 194, 91, 1) 95%,
-      rgba(249, 223, 123, 1) 100%
-    );
+    background: linear-gradient(90deg,
+        rgba(249, 223, 123, 1) 0%,
+        rgba(181, 126, 16, 1) 20%,
+        rgba(183, 129, 19, 1) 26%,
+        rgba(190, 140, 31, 1) 32%,
+        rgba(203, 157, 50, 1) 38%,
+        rgba(220, 182, 78, 1) 44%,
+        rgba(242, 213, 112, 1) 49%,
+        rgba(249, 223, 123, 1) 51%,
+        rgba(255, 243, 166, 1) 52%,
+        rgba(249, 223, 123, 1) 59%,
+        rgba(181, 126, 16, 1) 84%,
+        rgba(229, 194, 91, 1) 95%,
+        rgba(249, 223, 123, 1) 100%);
   }
 
   .none-active {
@@ -4944,11 +5155,13 @@ body {
     .left {
       flex-direction: column;
       gap: 0.3rem;
+
       p {
         font-size: 15px;
         font-weight: 600;
         text-align: left;
         width: 100%;
+
         span {
           cursor: pointer;
         }
@@ -4961,6 +5174,7 @@ body {
 
       .bank {
         gap: 5px;
+
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -4969,6 +5183,7 @@ body {
         & :last-child {
           width: 30px;
           height: 30px;
+
           img {
             object-fit: contain;
           }
@@ -4977,6 +5192,7 @@ body {
 
       .balance {
         flex-direction: column;
+
         & :first-child {
           font-size: 10px;
           font-weight: 600;
@@ -5006,8 +5222,10 @@ body {
     height: 39px;
   }
 }
+
 .detail-card-scb1 {
   margin-top: 5px;
+
   .card-scb1 {
     background-size: cover;
     background-image: url("/assets/images/scb-img.png");
@@ -5021,6 +5239,7 @@ body {
     .left {
       flex-direction: column;
       gap: 0.3rem;
+
       p {
         font-size: 15px;
         font-weight: 600;
@@ -5033,6 +5252,7 @@ body {
 
       .bank {
         gap: 5px;
+
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -5041,6 +5261,7 @@ body {
         & :last-child {
           width: 30px;
           height: 30px;
+
           img {
             object-fit: contain;
           }
@@ -5049,6 +5270,7 @@ body {
 
       .balance {
         flex-direction: column;
+
         & :first-child {
           font-size: 10px;
           font-weight: 600;
@@ -5108,6 +5330,7 @@ body {
   border-bottom: 1px solid #0572ce;
   color: white;
 }
+
 .text-amount-money input::placeholder {
   text-align: end;
   font-size: 16px;
@@ -5118,6 +5341,7 @@ body {
 .withdraw-modal-content {
   flex-direction: column;
   gap: 20px;
+
   .card {
     width: 262px;
     height: 120px;
@@ -5135,6 +5359,7 @@ body {
     .left {
       flex-direction: column;
       gap: 0.5rem;
+
       p {
         font-size: 14px;
         font-weight: 600;
@@ -5149,6 +5374,7 @@ body {
 
       .bank {
         gap: 10px;
+
         h4 {
           font-size: 14px;
           font-weight: 600;
@@ -5157,6 +5383,7 @@ body {
         & :last-child {
           width: 30px;
           height: 30px;
+
           img {
             object-fit: contain;
           }
@@ -5199,22 +5426,20 @@ body {
     }
 
     .active.slider {
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 0.8) 0%,
-        rgba(181, 126, 16, 0.8) 20%,
-        rgba(183, 129, 19, 0.8) 26%,
-        rgba(190, 140, 31, 0.8) 32%,
-        rgba(203, 157, 50, 0.8) 38%,
-        rgba(220, 182, 78, 0.8) 44%,
-        rgba(242, 213, 112, 0.8) 49%,
-        rgba(249, 223, 123, 0.8) 51%,
-        rgba(255, 243, 166, 0.8) 52%,
-        rgba(249, 223, 123, 0.8) 59%,
-        rgba(181, 126, 16, 0.8) 84%,
-        rgba(229, 194, 91, 0.8) 95%,
-        rgba(249, 223, 123, 0.8) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 0.8) 0%,
+          rgba(181, 126, 16, 0.8) 20%,
+          rgba(183, 129, 19, 0.8) 26%,
+          rgba(190, 140, 31, 0.8) 32%,
+          rgba(203, 157, 50, 0.8) 38%,
+          rgba(220, 182, 78, 0.8) 44%,
+          rgba(242, 213, 112, 0.8) 49%,
+          rgba(249, 223, 123, 0.8) 51%,
+          rgba(255, 243, 166, 0.8) 52%,
+          rgba(249, 223, 123, 0.8) 59%,
+          rgba(181, 126, 16, 0.8) 84%,
+          rgba(229, 194, 91, 0.8) 95%,
+          rgba(249, 223, 123, 0.8) 100%);
     }
 
     .slider {
@@ -5230,6 +5455,7 @@ body {
       width: 50%;
       font-size: 13px;
     }
+
     input {
       border: none;
       outline: none;
@@ -5266,6 +5492,7 @@ body {
     border: 1px solid #fff;
     background: #0fb800;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
     img {
       width: 28px;
       object-fit: contain;
@@ -5277,6 +5504,7 @@ body {
     color: #fff;
   }
 }
+
 // End ถอนเงิน Modal
 
 .history-modal-content {
@@ -5297,14 +5525,17 @@ body {
       }
     }
   }
+
   .history-deposit {
     overflow: scroll;
     height: 400px;
   }
+
   .history-withdraw {
     overflow: scroll;
     height: 400px;
   }
+
   .history-bonus {
     overflow: scroll;
     height: 400px;
@@ -5314,6 +5545,7 @@ body {
     display: flex;
     padding: 16px 0 24px 0;
     border-bottom: 1px solid #ffffff;
+
     &.border-0 {
       border: 0;
     }
@@ -5330,6 +5562,7 @@ body {
         color: #fff;
       }
     }
+
     .history-list-right {
       padding-top: 14px;
       width: 100%;
@@ -5352,6 +5585,7 @@ body {
           color: #fff;
         }
       }
+
       .history-date {
         font-size: 14px;
         font-weight: 500;
@@ -5397,14 +5631,12 @@ body {
       text-align: center;
       color: #fff;
       border-radius: 10px;
-      background: linear-gradient(
-        270deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(270deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000000 81.25%,
+          #242424 100%);
       cursor: pointer;
     }
 
@@ -5416,33 +5648,34 @@ body {
       right: -1.5px;
       bottom: -1.5px;
       border-radius: 10px;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 1) 0%,
+          rgba(181, 126, 16, 1) 20%,
+          rgba(183, 129, 19, 1) 26%,
+          rgba(190, 140, 31, 1) 32%,
+          rgba(203, 157, 50, 1) 38%,
+          rgba(220, 182, 78, 1) 44%,
+          rgba(242, 213, 112, 1) 49%,
+          rgba(249, 223, 123, 1) 51%,
+          rgba(255, 243, 166, 1) 52%,
+          rgba(249, 223, 123, 1) 59%,
+          rgba(181, 126, 16, 1) 84%,
+          rgba(229, 194, 91, 1) 95%,
+          rgba(249, 223, 123, 1) 100%);
       z-index: -1;
     }
+
     .bag-menu-img-container {
       width: 35px;
       height: 35px;
     }
+
     .bag-menu-icon {
       width: 100%;
       height: 100%;
       object-fit: contain;
     }
+
     .bag-modal-menu-title {
       font-size: 13px;
       font-weight: 600;
@@ -5453,22 +5686,20 @@ body {
 .border-gradient-gold {
   position: relative;
   z-index: -15;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 223, 123, 1) 0%,
-    rgba(181, 126, 16, 1) 20%,
-    rgba(183, 129, 19, 1) 26%,
-    rgba(190, 140, 31, 1) 32%,
-    rgba(203, 157, 50, 1) 38%,
-    rgba(220, 182, 78, 1) 44%,
-    rgba(242, 213, 112, 1) 49%,
-    rgba(249, 223, 123, 1) 51%,
-    rgba(255, 243, 166, 1) 52%,
-    rgba(249, 223, 123, 1) 59%,
-    rgba(181, 126, 16, 1) 84%,
-    rgba(229, 194, 91, 1) 95%,
-    rgba(249, 223, 123, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%);
   border-radius: 10px;
   margin: auto;
   padding: 30px;
@@ -5495,11 +5726,13 @@ body {
         object-fit: cover;
       }
     }
+
     .promotion-content-title {
       font-size: 15px;
       font-weight: 600;
       color: #ff8a00;
     }
+
     .promotion-content-text {
       font-size: 12px;
       font-weight: 300;
@@ -5522,14 +5755,12 @@ body {
       width: 100%;
       border-radius: 20px;
       height: 71px;
-      background: linear-gradient(
-        270deg,
-        #242424 0%,
-        #0a0000 23.44%,
-        #191919 52.6%,
-        #000000 81.25%,
-        #242424 100%
-      );
+      background: linear-gradient(270deg,
+          #242424 0%,
+          #0a0000 23.44%,
+          #191919 52.6%,
+          #000000 81.25%,
+          #242424 100%);
     }
 
     .promotion-modal-footer-content::before {
@@ -5540,22 +5771,20 @@ body {
       right: -1.5px;
       bottom: -1.5px;
       border-radius: 20px;
-      background: linear-gradient(
-        90deg,
-        rgba(249, 223, 123, 1) 0%,
-        rgba(181, 126, 16, 1) 20%,
-        rgba(183, 129, 19, 1) 26%,
-        rgba(190, 140, 31, 1) 32%,
-        rgba(203, 157, 50, 1) 38%,
-        rgba(220, 182, 78, 1) 44%,
-        rgba(242, 213, 112, 1) 49%,
-        rgba(249, 223, 123, 1) 51%,
-        rgba(255, 243, 166, 1) 52%,
-        rgba(249, 223, 123, 1) 59%,
-        rgba(181, 126, 16, 1) 84%,
-        rgba(229, 194, 91, 1) 95%,
-        rgba(249, 223, 123, 1) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(249, 223, 123, 1) 0%,
+          rgba(181, 126, 16, 1) 20%,
+          rgba(183, 129, 19, 1) 26%,
+          rgba(190, 140, 31, 1) 32%,
+          rgba(203, 157, 50, 1) 38%,
+          rgba(220, 182, 78, 1) 44%,
+          rgba(242, 213, 112, 1) 49%,
+          rgba(249, 223, 123, 1) 51%,
+          rgba(255, 243, 166, 1) 52%,
+          rgba(249, 223, 123, 1) 59%,
+          rgba(181, 126, 16, 1) 84%,
+          rgba(229, 194, 91, 1) 95%,
+          rgba(249, 223, 123, 1) 100%);
       z-index: -1;
     }
 
@@ -5564,6 +5793,7 @@ body {
       color: #fff;
       margin-bottom: 12px;
     }
+
     .promotion-checkbox-group {
       width: 90%;
       display: flex;
@@ -5576,28 +5806,28 @@ body {
         position: fixed;
         width: 0;
       }
-      .promotion-default-radio:checked + .promotion-checkbox-title {
-        background: linear-gradient(
-          180deg,
-          rgba(249, 223, 123, 0.8) 0%,
-          rgba(181, 126, 16, 0.8) 20%,
-          rgba(183, 129, 19, 0.8) 26%,
-          rgba(190, 140, 31, 0.8) 32%,
-          rgba(203, 157, 50, 0.8) 38%,
-          rgba(220, 182, 78, 0.8) 44%,
-          rgba(242, 213, 112, 0.8) 49%,
-          rgba(249, 223, 123, 0.8) 51%,
-          rgba(255, 243, 166, 0.8) 52%,
-          rgba(249, 223, 123, 0.8) 59%,
-          rgba(181, 126, 16, 0.8) 84%,
-          rgba(229, 194, 91, 0.8) 95%,
-          rgba(249, 223, 123, 0.8) 100%
-        );
+
+      .promotion-default-radio:checked+.promotion-checkbox-title {
+        background: linear-gradient(180deg,
+            rgba(249, 223, 123, 0.8) 0%,
+            rgba(181, 126, 16, 0.8) 20%,
+            rgba(183, 129, 19, 0.8) 26%,
+            rgba(190, 140, 31, 0.8) 32%,
+            rgba(203, 157, 50, 0.8) 38%,
+            rgba(220, 182, 78, 0.8) 44%,
+            rgba(242, 213, 112, 0.8) 49%,
+            rgba(249, 223, 123, 0.8) 51%,
+            rgba(255, 243, 166, 0.8) 52%,
+            rgba(249, 223, 123, 0.8) 59%,
+            rgba(181, 126, 16, 0.8) 84%,
+            rgba(229, 194, 91, 0.8) 95%,
+            rgba(249, 223, 123, 0.8) 100%);
 
         .promotion-custom-radio {
           background-color: #000;
         }
       }
+
       .promotion-checkbox-title {
         font-size: 13px;
         padding: 4px;
@@ -5606,12 +5836,10 @@ body {
         color: #fff;
         margin: 0;
         border-radius: 5px;
-        background: linear-gradient(
-          180deg,
-          #000000 0%,
-          #3c3b3b 48.96%,
-          #000000 100%
-        );
+        background: linear-gradient(180deg,
+            #000000 0%,
+            #3c3b3b 48.96%,
+            #000000 100%);
 
         display: flex;
         justify-content: center;
@@ -5626,23 +5854,22 @@ body {
           border-radius: 50%;
           background-color: #fff;
         }
+
         &.active {
-          background: linear-gradient(
-            180deg,
-            rgba(249, 223, 123, 0.8) 0%,
-            rgba(181, 126, 16, 0.8) 20%,
-            rgba(183, 129, 19, 0.8) 26%,
-            rgba(190, 140, 31, 0.8) 32%,
-            rgba(203, 157, 50, 0.8) 38%,
-            rgba(220, 182, 78, 0.8) 44%,
-            rgba(242, 213, 112, 0.8) 49%,
-            rgba(249, 223, 123, 0.8) 51%,
-            rgba(255, 243, 166, 0.8) 52%,
-            rgba(249, 223, 123, 0.8) 59%,
-            rgba(181, 126, 16, 0.8) 84%,
-            rgba(229, 194, 91, 0.8) 95%,
-            rgba(249, 223, 123, 0.8) 100%
-          );
+          background: linear-gradient(180deg,
+              rgba(249, 223, 123, 0.8) 0%,
+              rgba(181, 126, 16, 0.8) 20%,
+              rgba(183, 129, 19, 0.8) 26%,
+              rgba(190, 140, 31, 0.8) 32%,
+              rgba(203, 157, 50, 0.8) 38%,
+              rgba(220, 182, 78, 0.8) 44%,
+              rgba(242, 213, 112, 0.8) 49%,
+              rgba(249, 223, 123, 0.8) 51%,
+              rgba(255, 243, 166, 0.8) 52%,
+              rgba(249, 223, 123, 0.8) 59%,
+              rgba(181, 126, 16, 0.8) 84%,
+              rgba(229, 194, 91, 0.8) 95%,
+              rgba(249, 223, 123, 0.8) 100%);
         }
       }
     }
@@ -5664,6 +5891,7 @@ body {
 
   .change-password-hr {
     padding: 6px 40px;
+
     .hr {
       width: 100%;
       height: 2px;
@@ -5676,6 +5904,7 @@ body {
 
 .qr-pay-content-1 {
   padding: 35px 0px 0px 15px;
+
   .notic-text {
     width: 100%;
     font-size: 15px;
@@ -5786,8 +6015,7 @@ body {
     }
   }
 
-  .confirmation {
-  }
+  .confirmation {}
 
   .info-text {
     text-align: center;
@@ -5802,10 +6030,12 @@ body {
 
   .button-line {
     margin: 0 auto;
+
     div {
       font-size: 13px;
       height: 39px;
       gap: 5px;
+
       img {
         width: 28px;
 
@@ -5860,6 +6090,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 16px;
+
     .save {
       width: 100px;
       height: 26px;
@@ -5874,6 +6105,7 @@ body {
       font-weight: 500;
       color: $white;
     }
+
     .refresh {
       width: 100px;
       height: 26px;
@@ -5883,31 +6115,32 @@ body {
       flex-shrink: 0;
       border-radius: 7px;
       border: 1px solid #f9df7b;
-      background: linear-gradient(
-        to left,
-        #242424,
-        #0a0000,
-        #191919,
-        #000000,
-        #242424
-      );
+      background: linear-gradient(to left,
+          #242424,
+          #0a0000,
+          #191919,
+          #000000,
+          #242424);
       font-size: 16px;
       font-weight: 500;
       color: $white;
     }
   }
+
   .div5 {
     font-size: 14px;
     margin-top: 16px;
     font-weight: 600;
     color: $white;
   }
+
   .div6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 12px;
+
     .danger {
       color: red;
     }
@@ -5923,7 +6156,7 @@ body {
   gap: 10px;
   padding: 30px 10px 15px 10px;
 
-  & > * {
+  &>* {
     width: 100%;
   }
 
@@ -6072,7 +6305,7 @@ body {
   .bank-input {
     position: relative;
 
-    & > * {
+    &>* {
       display: block;
       width: 100%;
     }
@@ -6115,11 +6348,13 @@ body {
     height: 40px;
     font-size: 20px;
   }
+
   p {
     text-align: center;
     font-size: 12px;
     color: white;
     font-weight: 600;
+
     a {
       color: #00fcfc;
     }
@@ -6159,8 +6394,10 @@ body {
     .right {
       gap: 1.5rem;
       flex-direction: column;
+
       .true-wallet-title {
         gap: 10px;
+
         p {
           font-size: 14px;
           font-weight: 600;
@@ -6260,6 +6497,7 @@ body {
   &:focus-within {
     outline: 0;
   }
+
   &::placeholder {
     color: #9d9d9d;
   }
@@ -6282,6 +6520,7 @@ body {
   &:focus-within {
     outline: 0;
   }
+
   &::placeholder {
     color: #565656;
   }
@@ -6299,6 +6538,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
+
 .button-confirm-warning {
   width: 100%;
   height: 78px;
@@ -6312,22 +6552,20 @@ body {
 }
 
 .border-input-gold {
-  background: linear-gradient(
-    90deg,
-    rgba(249, 223, 123, 1) 0%,
-    rgba(181, 126, 16, 1) 20%,
-    rgba(183, 129, 19, 1) 26%,
-    rgba(190, 140, 31, 1) 32%,
-    rgba(203, 157, 50, 1) 38%,
-    rgba(220, 182, 78, 1) 44%,
-    rgba(242, 213, 112, 1) 49%,
-    rgba(249, 223, 123, 1) 51%,
-    rgba(255, 243, 166, 1) 52%,
-    rgba(249, 223, 123, 1) 59%,
-    rgba(181, 126, 16, 1) 84%,
-    rgba(229, 194, 91, 1) 95%,
-    rgba(249, 223, 123, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(249, 223, 123, 1) 0%,
+      rgba(181, 126, 16, 1) 20%,
+      rgba(183, 129, 19, 1) 26%,
+      rgba(190, 140, 31, 1) 32%,
+      rgba(203, 157, 50, 1) 38%,
+      rgba(220, 182, 78, 1) 44%,
+      rgba(242, 213, 112, 1) 49%,
+      rgba(249, 223, 123, 1) 51%,
+      rgba(255, 243, 166, 1) 52%,
+      rgba(249, 223, 123, 1) 59%,
+      rgba(181, 126, 16, 1) 84%,
+      rgba(229, 194, 91, 1) 95%,
+      rgba(249, 223, 123, 1) 100%);
   border-radius: 10px;
   margin: auto;
   padding: 1px;
@@ -6348,6 +6586,7 @@ body {
   &:focus-within {
     outline: 0;
   }
+
   &::placeholder {
     color: #565656;
   }
@@ -6385,11 +6624,13 @@ body {
 
       .credit-point-content {
         text-align: center;
+
         .credit-point-img {
           width: 42px;
           height: 42px;
           object-fit: cover;
         }
+
         .credit-point-text {
           font-weight: 700;
           color: #fff;
@@ -6397,6 +6638,7 @@ body {
           font-size: 16px;
         }
       }
+
       .credit-button-content {
         display: flex;
         flex-direction: column;
@@ -6409,6 +6651,7 @@ body {
           margin: 0;
           font-size: 15px;
         }
+
         .btn-credit-confirm {
           background-color: #c1933b;
           font-weight: 600;
@@ -6434,6 +6677,7 @@ body {
   .top-recharge-select-container {
     // position: fixed;
     padding: 0 15px;
+
     .top-recharge-select {
       padding-right: 20px;
       left: 10px;
@@ -6491,11 +6735,13 @@ body {
       }
     }
   }
+
   .top-rank {
     font-weight: 600;
     margin-top: 20px;
     color: #ffb800;
   }
+
   .slide-rank {
     width: 300px;
     overflow-x: auto;
@@ -6524,6 +6770,7 @@ body {
         background-position: center;
         background-size: 110px 152.72px;
       }
+
       &.top2 {
         border: 1px solid #fffb91;
         box-shadow: 0px 0px 4px 2px #ff9900;
@@ -6532,6 +6779,7 @@ body {
         background-position: center;
         background-size: 110px 152.72px;
       }
+
       &.top3 {
         border: 1px solid #a2db00;
         box-shadow: 0px 0px 4px 2px #368e00;
@@ -6548,6 +6796,7 @@ body {
 
         object-fit: contain;
       }
+
       .rank-profile {
         width: 45px;
         height: 45px;
@@ -6555,6 +6804,7 @@ body {
         object-fit: cover;
         margin-top: 24px;
       }
+
       .rank-item-text {
         font-size: 13px;
         font-weight: 600;
@@ -6562,6 +6812,7 @@ body {
       }
     }
   }
+
   .table-rank {
     margin-top: 20px;
     width: 100%;
@@ -6608,12 +6859,15 @@ body {
           border-radius: 10px;
           display: flex;
         }
+
         .rank-phone {
           width: 50%;
         }
+
         .rank-detail-title {
           width: 20%;
         }
+
         .rank-money {
           width: 30%;
         }
@@ -6624,16 +6878,19 @@ body {
 
 .spinner-modal-content {
   padding: 39px 26px 19px 26px;
+
   .spinner-modal-title {
     font-weight: 500;
     font-size: 18px;
     color: #fff;
   }
+
   .spinner-modal-subtitle {
     font-size: 11px;
     font-weight: 500;
     color: #fff;
   }
+
   .spinner-modal-body {
     width: 100%;
     display: flex;
@@ -6646,6 +6903,7 @@ body {
       height: auto;
       width: 167px;
     }
+
     .btn-spinner {
       width: 97px;
       height: 28px;
@@ -6658,12 +6916,14 @@ body {
       color: #000;
       cursor: pointer;
     }
+
     .spinner-modal-subtitle2 {
       align-self: self-start;
       font-weight: 600;
       color: #fff;
       font-size: 18px;
     }
+
     .spinner-modal-text-danger {
       align-self: self-start;
       font-weight: 400;
@@ -6681,6 +6941,7 @@ body {
         font-weight: 600;
         color: #fff;
       }
+
       .spinner-icon-info {
         cursor: pointer;
 
@@ -6749,17 +7010,20 @@ body {
         color: #fff;
         font-size: 14px;
       }
+
       .link-shared-subtitle {
         font-weight: 400;
         color: #fff;
         font-size: 10px;
       }
+
       .link-shared-input {
         width: 100%;
         border: 0;
         border-radius: 5px;
         padding: 0 10px;
         height: 20px;
+
         &:focus {
           outline: 0;
         }
@@ -6788,6 +7052,7 @@ body {
             font-size: 14px;
           }
         }
+
         .btn-share-link {
           width: 100%;
           background: linear-gradient(180deg, #ffc757 0%, #a76f00 100%);
@@ -6829,11 +7094,13 @@ body {
           width: 40px;
           height: 40px;
         }
+
         .earn-menu-item-title {
           font-size: 14px;
           font-weight: 600;
           color: #fff;
         }
+
         .earn-menu-item-subtitle {
           font-size: 10px;
           font-weight: 400;
@@ -6859,6 +7126,7 @@ body {
 
   .earn-tab-container {
     padding: 0 20px;
+
     .border-input-gold {
       border-radius: 10px;
 
@@ -6886,6 +7154,7 @@ body {
             background-color: #3a2c12;
           }
         }
+
         .earn-tab-item-2 {
           width: 100%;
           height: 100%;
@@ -6912,6 +7181,7 @@ body {
         font-weight: 600;
         color: #fff;
       }
+
       .filter-date-input {
         min-width: 80px;
         padding: 2px;
@@ -6943,6 +7213,7 @@ body {
             background-color: #000;
             display: flex;
             align-items: center;
+
             .th-earn {
               width: 100%;
               display: flex;
@@ -6972,6 +7243,7 @@ body {
             align-items: center;
             font-weight: 600;
             padding: 4px;
+
             .td-earn {
               width: 100%;
               display: flex;
@@ -7004,6 +7276,7 @@ body {
           color: #fff;
           font-size: 12px;
         }
+
         .form-withdraw-input {
           padding: 4px 5px;
 
@@ -7015,6 +7288,7 @@ body {
           }
         }
       }
+
       .btn-withdraw-income {
         width: 83px;
         height: 26px;
@@ -7097,7 +7371,7 @@ body {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  // margin: 0 2px;
   // background-color: #bbb;
   background-color: #717171;
   border-radius: 50%;
@@ -7121,6 +7395,7 @@ body {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -7155,6 +7430,7 @@ body {
       height: 33px;
     }
   }
+
   .dropdown-icon {
     position: absolute;
     top: 20px;
